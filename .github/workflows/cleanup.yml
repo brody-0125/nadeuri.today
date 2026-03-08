@@ -14,11 +14,11 @@ jobs:
     steps:
       - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
 
-      - name: Delete data older than 10 days
+      - name: Delete data older than 7 days
         run: |
           find data/ -maxdepth 1 -type d -name "20*" | while read dir; do
             dir_date=$(basename "$dir")
-            cutoff=$(date -d "10 days ago" +%Y-%m-%d)
+            cutoff=$(date -d "7 days ago" +%Y-%m-%d)
             if [[ "$dir_date" < "$cutoff" ]]; then
               rm -rf "$dir"
               echo "Deleted: $dir"
@@ -27,5 +27,5 @@ jobs:
 
       - uses: stefanzweifel/git-auto-commit-action@b863ae1933cb653a53c021fe36dbb774e1fb9403 # v5
         with:
-          commit_message: 'chore: cleanup data older than 30 days'
+          commit_message: 'chore: cleanup data older than 7 days'
           file_pattern: 'data/**'
