@@ -82,8 +82,52 @@ function normalizeEnvironmentData(environmentData) {
   };
 }
 
+async function loadPreviousLatest() {
+  const outputPath = path.join(ROOT, "web", "public", "data", "latest.json");
+  return readJsonFile(outputPath);
+}
+
+function extractRealtimeFromLatest(latest, type) {
+  if (!latest?.stations) return null;
+
+  const facilities = [];
+  for (const [code, station] of Object.entries(latest.stations)) {
+    const typeFacilities = station.facilities?.[type] || [];
+    for (const f of typeFacilities) {
+      facilities.push({
+        station_code: code,
+        station_name: station.name || "",
+        line: station.lines?.[0] || "",
+        facility_id: f.facility_id || "",
+        location_detail: f.location_detail || "",
+        floor_from: f.floor_from || "",
+        floor_to: f.floor_to || "",
+        status: f.status || "UNKNOWN",
+        status_code: f.status_code || "04",
+      });
+    }
+  }
+
+  if (facilities.length === 0) return null;
+
+  const operatingCount = facilities.filter((f) => f.status === "OPERATING").length;
+  const faultCount = facilities.filter((f) => f.status === "FAULT").length;
+
+  return {
+    collected_at: latest.updated_at,
+    source_api: "fallback",
+    total_count: facilities.length,
+    operating_count: operatingCount,
+    fault_count: faultCount,
+    facilities,
+  };
+}
+
 async function main() {
   console.log("Building latest.json...");
+
+  // Load previous latest.json for fallback
+  const previousLatest = await loadPreviousLatest();
 
   // Find most recent data directory
   const { dirPath, date, time } = await findLatestDataDir();
@@ -98,7 +142,14 @@ async function main() {
       realtimeData[type] = data;
       console.log(`  Loaded ${type}: ${data.total_count} facilities`);
     } else {
-      console.warn(`  WARNING: Missing ${type}.json`);
+      // Fall back to previous latest.json data for this type
+      const fallback = extractRealtimeFromLatest(previousLatest, type);
+      if (fallback) {
+        realtimeData[type] = fallback;
+        console.warn(`  FALLBACK ${type}: using previous data (${fallback.total_count} facilities)`);
+      } else {
+        console.warn(`  WARNING: Missing ${type}.json and no fallback available`);
+      }
     }
   }
 
