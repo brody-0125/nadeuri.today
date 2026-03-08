@@ -1,5 +1,6 @@
 import "dotenv/config";
-import { mkdir, writeFile } from "fs/promises";
+import { createHash } from "crypto";
+import { mkdir, readFile, writeFile } from "fs/promises";
 import path from "path";
 import { fileURLToPath } from "url";
 
@@ -11,6 +12,7 @@ import { collect as collectSafetyBoard } from "./api/safety-board.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
+const HASH_FILE = path.join(ROOT, "data", ".last-hashes.json");
 
 /**
  * Check if a collection result contains meaningful data.
@@ -26,6 +28,37 @@ function isValidCollection(result) {
   );
 
   return hasAnyValidFacility;
+}
+
+/**
+ * Hash facility data for change detection.
+ * Excludes collected_at so only actual facility state changes are detected.
+ */
+function hashFacilities(result) {
+  const payload = result.facilities.map((f) => ({
+    station_code: f.station_code,
+    facility_id: f.facility_id,
+    status: f.status,
+    status_code: f.status_code,
+    location_detail: f.location_detail,
+    floor_from: f.floor_from,
+    floor_to: f.floor_to,
+  }));
+  return createHash("sha256").update(JSON.stringify(payload)).digest("hex");
+}
+
+async function loadHashes() {
+  try {
+    const content = await readFile(HASH_FILE, "utf-8");
+    return JSON.parse(content);
+  } catch {
+    return {};
+  }
+}
+
+async function saveHashes(hashes) {
+  await mkdir(path.dirname(HASH_FILE), { recursive: true });
+  await writeFile(HASH_FILE, JSON.stringify(hashes, null, 2), "utf-8");
 }
 
 const REALTIME_TYPES = [
@@ -51,12 +84,15 @@ async function main() {
   }
 
   const outDir = path.join(ROOT, "data", "realtime");
-  await mkdir(outDir, { recursive: true });
 
   console.log(`Collecting realtime data to ${outDir}`);
 
+  const prevHashes = await loadHashes();
+  const newHashes = { ...prevHashes };
   const errors = [];
   const skipped = [];
+  const unchanged = [];
+  let hasChanges = false;
 
   for (const { name, collect } of REALTIME_TYPES) {
     try {
@@ -70,6 +106,18 @@ async function main() {
         continue;
       }
 
+      // Hash-based change detection: skip writing if data unchanged
+      const hash = hashFacilities(result);
+      if (prevHashes[name] === hash) {
+        console.log(`  ${name}: unchanged (${result.total_count} facilities) — skipped`);
+        unchanged.push(name);
+        continue;
+      }
+
+      newHashes[name] = hash;
+      hasChanges = true;
+
+      await mkdir(outDir, { recursive: true });
       const filePath = path.join(outDir, `${name}.json`);
       await writeFile(filePath, JSON.stringify(result, null, 2), "utf-8");
       console.log(`  ${name}: ${result.total_count} facilities (${result.operating_count} operating, ${result.fault_count} fault)`);
@@ -77,6 +125,11 @@ async function main() {
       console.error(`  ERROR collecting ${name}: ${err.message}`);
       errors.push({ name, error: err.message });
     }
+  }
+
+  // Save updated hashes
+  if (hasChanges) {
+    await saveHashes(newHashes);
   }
 
   // Set COLLECT_TIME env var for GitHub Actions commit message
@@ -98,14 +151,18 @@ async function main() {
     await appendFile(process.env.GITHUB_ENV, `COLLECT_TIME=${collectTime}\n`);
   }
 
+  if (unchanged.length > 0) {
+    console.log(`\nUnchanged ${unchanged.length} type(s): ${unchanged.join(", ")}`);
+  }
+
   if (skipped.length > 0) {
-    console.log(`\nSkipped ${skipped.length} type(s) due to invalid data: ${skipped.join(", ")}`);
+    console.log(`Skipped ${skipped.length} type(s) due to invalid data: ${skipped.join(", ")}`);
   }
 
   if (errors.length > 0) {
-    console.log(`\nCompleted with ${errors.length} error(s):`);
+    console.log(`Completed with ${errors.length} error(s):`);
     errors.forEach(({ name, error }) => console.log(`  - ${name}: ${error}`));
-  } else if (skipped.length === 0) {
+  } else if (skipped.length === 0 && unchanged.length === 0) {
     console.log("\nAll collections completed successfully.");
   }
 
