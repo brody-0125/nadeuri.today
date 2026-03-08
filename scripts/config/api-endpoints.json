@@ -1,32 +1,22 @@
 {
   "realtime": {
-    "elevator": {
-      "datasetIds": ["OA-22740", "OA-15994"],
-      "url": "http://openapi.seoul.go.kr:8088/{KEY}/json/tbTraficElvtr/1/1000/",
-      "serviceName": "tbTraficElvtr",
+    "_unified": {
+      "url": "http://openapi.seoul.go.kr:8088/{KEY}/json/SeoulMetroFaciInfo/{START}/{END}/",
+      "serviceName": "SeoulMetroFaciInfo",
+      "pageSize": 1000,
+      "facilityTypes": {
+        "elevator": "EV",
+        "escalator": "ES",
+        "wheelchair-lift": "WL"
+      },
       "fields": {
-        "station_code": ["RAIL_OPR_ISTT_CD", "STATN_ID", "STATN_CD"],
-        "station_name": ["STATN_NM"],
-        "facility_id": ["ELV_NO", "ELVTR_NO"],
-        "status_code": ["OPER_STTS_CD", "OPER_STTUS_CD"],
-        "location_detail": ["INSTL_PSTN", "INSTALL_POS"],
-        "line": ["LN_NM", "LINE_NM"],
-        "floor_from": ["STRT_FLOOR", "FROM_FLOOR"],
-        "floor_to": ["END_FLOOR", "TO_FLOOR"]
-      }
-    },
-    "escalator": {
-      "url": "http://openapi.seoul.go.kr:8088/{KEY}/json/tbTraficEsclt/1/1000/",
-      "serviceName": "tbTraficEsclt",
-      "fields": {
-        "station_code": "RAIL_OPR_ISTT_CD",
-        "station_name": "STATN_NM",
-        "facility_id": "ESCLT_NO",
-        "status_code": "OPER_STTS_CD",
+        "station_code": "STN_CD",
+        "station_name": "STN_NM",
+        "facility_id": "ELVTR_NM",
+        "status": "USE_YN",
         "location_detail": "INSTL_PSTN",
-        "line": "LN_NM",
-        "floor_from": "STRT_FLOOR",
-        "floor_to": "END_FLOOR"
+        "floor_range": "OPR_SEC",
+        "facility_type": "ELVTR_SE"
       }
     },
     "moving-walk": {
@@ -36,20 +26,6 @@
         "station_code": "RAIL_OPR_ISTT_CD",
         "station_name": "STATN_NM",
         "facility_id": "MOVWK_NO",
-        "status_code": "OPER_STTS_CD",
-        "location_detail": "INSTL_PSTN",
-        "line": "LN_NM",
-        "floor_from": "STRT_FLOOR",
-        "floor_to": "END_FLOOR"
-      }
-    },
-    "wheelchair-lift": {
-      "url": "http://openapi.seoul.go.kr:8088/{KEY}/json/tbTraficWhlchairLift/1/1000/",
-      "serviceName": "tbTraficWhlchairLift",
-      "fields": {
-        "station_code": "RAIL_OPR_ISTT_CD",
-        "station_name": "STATN_NM",
-        "facility_id": "WHLCHAIR_LIFT_NO",
         "status_code": "OPER_STTS_CD",
         "location_detail": "INSTL_PSTN",
         "line": "LN_NM",
