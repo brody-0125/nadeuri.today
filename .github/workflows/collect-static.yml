@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
 
 jobs:
   collect-static:
@@ -36,8 +37,20 @@ jobs:
         run: node build-latest.js || echo "Skipped (no realtime data yet)"
         working-directory: scripts
 
-      - name: Commit data
-        uses: stefanzweifel/git-auto-commit-action@b863ae1933cb653a53c021fe36dbb774e1fb9403 # v5
+      - name: Create pull request with data
+        id: cpr
+        uses: peter-evans/create-pull-request@271a8d0340265f705b14b6d32b9829c1cb33d45e # v7
         with:
-          commit_message: 'chore: update static facility data'
-          file_pattern: 'data-static/** web/public/data/**'
+          commit-message: 'chore: update static facility data'
+          branch: auto/collect-static
+          title: 'chore: update static facility data'
+          body: 'Automated static facility data collection.'
+          add-paths: |
+            data-static/**
+            web/public/data/**
+
+      - name: Enable auto-merge
+        if: steps.cpr.outputs.pull-request-number
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh pr merge ${{ steps.cpr.outputs.pull-request-number }} --auto --squash
