@@ -50,25 +50,7 @@ async function main() {
     process.exit(0);
   }
 
-  // Use Asia/Seoul timezone for directory names
-  const now = new Date();
-  const seoulFormatter = new Intl.DateTimeFormat("en-CA", {
-    timeZone: "Asia/Seoul",
-    year: "numeric",
-    month: "2-digit",
-    day: "2-digit",
-  });
-  const seoulTimeFormatter = new Intl.DateTimeFormat("en-GB", {
-    timeZone: "Asia/Seoul",
-    hour: "2-digit",
-    minute: "2-digit",
-    hour12: false,
-  });
-
-  const dateStr = seoulFormatter.format(now); // YYYY-MM-DD
-  const timeStr = seoulTimeFormatter.format(now).replace(":", "-"); // HH-MM
-
-  const outDir = path.join(ROOT, "data", dateStr, timeStr);
+  const outDir = path.join(ROOT, "data", "realtime");
   await mkdir(outDir, { recursive: true });
 
   console.log(`Collecting realtime data to ${outDir}`);
@@ -98,7 +80,16 @@ async function main() {
   }
 
   // Set COLLECT_TIME env var for GitHub Actions commit message
-  const collectTime = `${dateStr} ${timeStr.replace("-", ":")}`;
+  const now = new Date();
+  const collectTime = now.toLocaleString("en-CA", {
+    timeZone: "Asia/Seoul",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: false,
+  });
   process.env.COLLECT_TIME = collectTime;
 
   // Write to GITHUB_ENV if available (for GitHub Actions)

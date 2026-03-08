@@ -37,7 +37,7 @@ Seoul Open Data API → GitHub Actions (cron) → Node.js scripts → data/*.jso
 
 - **Real-time collection** runs every 5 minutes via GitHub Actions (`collect-realtime.yml`)
 - **Static facility data** collected daily at 3:15 PM KST (`collect-static.yml`)
-- Data stored as timestamped JSON under `data/YYYY-MM-DD/HH-MM/`
+- Realtime data stored in `data/realtime/` (overwritten on each collection)
 - Frontend reads `data/latest.json` (aggregated snapshot)
 
 ### Frontend (web/src/)

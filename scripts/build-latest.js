@@ -21,36 +21,8 @@ const STATIC_TYPES = [
   "helper",
 ];
 
-async function findLatestDataDir() {
-  const dataDir = path.join(ROOT, "data");
-  const dateDirs = await readdir(dataDir);
-  const sortedDates = dateDirs
-    .filter((d) => /^\d{4}-\d{2}-\d{2}$/.test(d))
-    .sort()
-    .reverse();
-
-  if (sortedDates.length === 0) {
-    throw new Error("No data directories found");
-  }
-
-  const latestDate = sortedDates[0];
-  const timeDirPath = path.join(dataDir, latestDate);
-  const timeDirs = await readdir(timeDirPath);
-  const sortedTimes = timeDirs
-    .filter((d) => /^\d{2}-\d{2}$/.test(d))
-    .sort()
-    .reverse();
-
-  if (sortedTimes.length === 0) {
-    throw new Error(`No time directories found in ${latestDate}`);
-  }
-
-  const latestTime = sortedTimes[0];
-  return {
-    dirPath: path.join(dataDir, latestDate, latestTime),
-    date: latestDate,
-    time: latestTime,
-  };
+function getRealtimeDataDir() {
+  return path.join(ROOT, "data", "realtime");
 }
 
 async function readJsonFile(filePath) {
@@ -129,9 +101,9 @@ async function main() {
   // Load previous latest.json for fallback
   const previousLatest = await loadPreviousLatest();
 
-  // Find most recent data directory
-  const { dirPath, date, time } = await findLatestDataDir();
-  console.log(`Latest data: ${date}/${time}`);
+  // Read from fixed realtime data directory
+  const dirPath = getRealtimeDataDir();
+  console.log(`Reading realtime data from: ${dirPath}`);
 
   // Read all 5 realtime JSON files
   const realtimeData = {};

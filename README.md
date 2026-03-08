@@ -34,9 +34,9 @@
 서울시 열린데이터광장 API
   → GitHub Actions (cron)
     → Node.js 수집 스크립트
-      → data/YYYY-MM-DD/HH-MM/*.json
+      → data/realtime/*.json (변경 시 덮어쓰기)
         → build-latest.js
-          → data/latest.json
+          → web/public/data/latest.json
             → Next.js 정적 사이트 (GitHub Pages)
 ```
 
@@ -46,7 +46,6 @@
 | `collect-static.yml` | 일 1회 | 정적 시설 정보 수집 |
 | `collect-environment.yml` | 매시간 | 대기질 데이터 수집 |
 | `deploy.yml` | push 시 | GitHub Pages 배포 |
-| `cleanup.yml` | 일 1회 | 1일(24시간) 이상 경과 데이터 정리 |
 
 ## 로컬 개발
 
@@ -92,7 +91,7 @@ cd web && npm run build  # 정적 내보내기 → web/out/
 ├── scripts/               # Node.js 수집 스크립트 (ES Modules)
 │   ├── api/               #   시설별 API 모듈 (elevator.js, escalator.js, …)
 │   └── config/            #   API 엔드포인트 설정
-├── data/                  # 수집 데이터 (YYYY-MM-DD/HH-MM/)
+├── data/realtime/         # 실시간 수집 데이터 (변경 시 덮어쓰기)
 ├── web/                   # Next.js 프론트엔드
 │   └── src/
 │       ├── app/           #   App Router 페이지 (메인, 역 상세, 소개, 아카이브, 노선)
