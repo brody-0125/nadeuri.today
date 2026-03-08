@@ -1,0 +1,80 @@
+# 나들이 — 이동약자 실시간 안심 지도
+
+서울 지하철 교통약자 편의시설(9종)의 실시간 가동 상태를 수집·저장·표시하는 정적 웹 서비스입니다.
+
+🔗 **https://nadeuri.today**
+
+## 수집 대상 시설
+
+| 시설 | 갱신주기 |
+|------|----------|
+| 엘리베이터 | 5분 (실시간) |
+| 에스컬레이터 | 5분 (실시간) |
+| 무빙워크 | 5분 (실시간) |
+| 휠체어리프트 | 5분 (실시간) |
+| 안전발판 | 5분 (실시간) |
+| 장애인화장실 | 일 1회 |
+| 수어영상전화기 | 일 1회 |
+| 휠체어급속충전기 | 일 1회 |
+| 교통약자도우미 | 일 1회 |
+
+## 기술 스택
+
+- **데이터 수집**: Node.js scripts + GitHub Actions
+- **프론트엔드**: Next.js 14 (Static Export) + TypeScript + Tailwind CSS
+- **문의 폼 백엔드**: Google Apps Script + Google Sheets
+- **호스팅**: GitHub Pages
+- **데이터 소스**: 서울시 열린데이터광장 API
+
+## 로컬 개발
+
+```bash
+# 웹 개발 서버
+cd web && npm install
+npm run dev
+```
+
+### 데이터 수집 (선택)
+
+```bash
+cd scripts && npm install
+
+# 환경변수 설정
+echo "SEOUL_API_KEY=your_key_here" > .env
+
+# 수집 실행
+npm run collect          # 실시간 시설 수집
+npm run collect-static   # 정적 시설 수집
+npm run build-latest     # data/latest.json 생성
+npm run validate         # 데이터 무결성 검증
+```
+
+### 프로덕션 빌드
+
+```bash
+cd web && npm run build  # 정적 내보내기 → web/out/
+```
+
+### 환경변수
+
+| 변수 | 용도 | 위치 |
+|------|------|------|
+| `SEOUL_API_KEY` | 서울시 열린데이터광장 API 키 | `scripts/.env` |
+| `NEXT_PUBLIC_RECAPTCHA_SITE_KEY` | reCAPTCHA v3 사이트 키 | `web/.env` |
+| `NEXT_PUBLIC_GAS_URL` | Google Apps Script 배포 URL | `web/.env` |
+
+## 프로젝트 구조
+
+```
+├── .github/workflows/     # GitHub Actions (수집 자동화)
+├── scripts/               # Node.js 수집 스크립트
+├── data/                  # 실시간 수집 데이터
+├── data-static/           # 정적 시설 데이터
+├── web/                   # Next.js 프론트엔드
+├── gas/                   # Google Apps Script (문의 폼 백엔드)
+└── docs/                  # 브랜드·UX 가이드라인
+```
+
+## 라이선스
+
+MIT

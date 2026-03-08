@@ -1,0 +1,93 @@
+:root,
+[data-theme='light'] {
+  color-scheme: light;
+  --color-bg: 245 240 232;
+  --color-surface: 252 249 245;
+  --color-surface-elevated: 255 255 255;
+  --color-status-operating: 61 140 110;
+  --color-status-operating-strong: 42 102 80;
+  --color-status-operating-bg: 235 245 240;
+  --color-status-operating-border: 198 224 212;
+  --color-status-fault: 196 113 74;
+  --color-status-fault-bg: 250 237 230;
+  --color-status-fault-border: 235 206 191;
+  --color-status-maintenance: 196 154 58;
+  --color-status-maintenance-bg: 250 245 231;
+  --color-status-maintenance-border: 232 215 173;
+  --color-status-unknown: 138 133 128;
+  --color-status-unknown-bg: 243 240 236;
+  --color-status-unknown-border: 219 212 206;
+  --color-text-primary: 44 39 36;
+  --color-text-secondary: 138 133 128;
+  --color-text-inverse: 255 255 255;
+  --color-border: 230 223 214;
+  --color-border-strong: 170 163 156;
+  --color-selection: 61 140 110;
+  --color-scrollbar-thumb: 230 223 214;
+  --color-scrollbar-thumb-hover: 212 204 195;
+  --color-focus-ring: 61 140 110;
+  --focus-ring-width: 0.125rem;
+  --color-shadow-paper: 44 39 36;
+}
+
+[data-theme='dark'] {
+  color-scheme: dark;
+  --color-bg: 20 20 20;
+  --color-surface: 28 28 28;
+  --color-surface-elevated: 37 37 37;
+  --color-status-operating: 126 211 177;
+  --color-status-operating-strong: 103 184 151;
+  --color-status-operating-bg: 23 52 43;
+  --color-status-operating-border: 41 95 76;
+  --color-status-fault: 240 142 96;
+  --color-status-fault-bg: 66 36 25;
+  --color-status-fault-border: 111 60 40;
+  --color-status-maintenance: 229 186 87;
+  --color-status-maintenance-bg: 72 58 25;
+  --color-status-maintenance-border: 115 94 40;
+  --color-status-unknown: 168 160 153;
+  --color-status-unknown-bg: 49 49 49;
+  --color-status-unknown-border: 74 74 74;
+  --color-text-primary: 240 237 232;
+  --color-text-secondary: 178 170 163;
+  --color-text-inverse: 20 20 20;
+  --color-border: 63 63 63;
+  --color-border-strong: 110 110 110;
+  --color-selection: 126 211 177;
+  --color-scrollbar-thumb: 63 63 63;
+  --color-scrollbar-thumb-hover: 94 94 94;
+  --color-focus-ring: 152 255 219;
+  --focus-ring-width: 0.125rem;
+  --color-shadow-paper: 0 0 0;
+}
+
+[data-theme='colorblind'] {
+  color-scheme: light;
+  --color-bg: 245 240 232;
+  --color-surface: 252 249 245;
+  --color-surface-elevated: 255 255 255;
+  --color-status-operating: 21 96 189;
+  --color-status-operating-strong: 17 78 153;
+  --color-status-operating-bg: 230 239 250;
+  --color-status-operating-border: 170 198 234;
+  --color-status-fault: 180 83 9;
+  --color-status-fault-bg: 251 236 220;
+  --color-status-fault-border: 234 188 145;
+  --color-status-maintenance: 91 33 182;
+  --color-status-maintenance-bg: 237 233 254;
+  --color-status-maintenance-border: 124 58 237;
+  --color-status-unknown: 87 83 78;
+  --color-status-unknown-bg: 245 245 244;
+  --color-status-unknown-border: 168 162 158;
+  --color-text-primary: 44 39 36;
+  --color-text-secondary: 109 102 96;
+  --color-text-inverse: 255 255 255;
+  --color-border: 221 215 207;
+  --color-border-strong: 166 158 149;
+  --color-selection: 21 96 189;
+  --color-scrollbar-thumb: 209 217 227;
+  --color-scrollbar-thumb-hover: 173 189 206;
+  --color-focus-ring: 21 96 189;
+  --focus-ring-width: 0.1875rem;
+  --color-shadow-paper: 44 39 36;
+}

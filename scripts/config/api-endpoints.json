@@ -1,0 +1,131 @@
+{
+  "realtime": {
+    "elevator": {
+      "datasetIds": ["OA-22740", "OA-15994"],
+      "url": "http://openapi.seoul.go.kr:8088/{KEY}/json/tbTraficElvtr/1/1000/",
+      "serviceName": "tbTraficElvtr",
+      "fields": {
+        "station_code": ["RAIL_OPR_ISTT_CD", "STATN_ID", "STATN_CD"],
+        "station_name": ["STATN_NM"],
+        "facility_id": ["ELV_NO", "ELVTR_NO"],
+        "status_code": ["OPER_STTS_CD", "OPER_STTUS_CD"],
+        "location_detail": ["INSTL_PSTN", "INSTALL_POS"],
+        "line": ["LN_NM", "LINE_NM"],
+        "floor_from": ["STRT_FLOOR", "FROM_FLOOR"],
+        "floor_to": ["END_FLOOR", "TO_FLOOR"]
+      }
+    },
+    "escalator": {
+      "url": "http://openapi.seoul.go.kr:8088/{KEY}/json/tbTraficEsclt/1/1000/",
+      "serviceName": "tbTraficEsclt",
+      "fields": {
+        "station_code": "RAIL_OPR_ISTT_CD",
+        "station_name": "STATN_NM",
+        "facility_id": "ESCLT_NO",
+        "status_code": "OPER_STTS_CD",
+        "location_detail": "INSTL_PSTN",
+        "line": "LN_NM",
+        "floor_from": "STRT_FLOOR",
+        "floor_to": "END_FLOOR"
+      }
+    },
+    "moving-walk": {
+      "url": "http://openapi.seoul.go.kr:8088/{KEY}/json/tbTraficMovwk/1/1000/",
+      "serviceName": "tbTraficMovwk",
+      "fields": {
+        "station_code": "RAIL_OPR_ISTT_CD",
+        "station_name": "STATN_NM",
+        "facility_id": "MOVWK_NO",
+        "status_code": "OPER_STTS_CD",
+        "location_detail": "INSTL_PSTN",
+        "line": "LN_NM",
+        "floor_from": "STRT_FLOOR",
+        "floor_to": "END_FLOOR"
+      }
+    },
+    "wheelchair-lift": {
+      "url": "http://openapi.seoul.go.kr:8088/{KEY}/json/tbTraficWhlchairLift/1/1000/",
+      "serviceName": "tbTraficWhlchairLift",
+      "fields": {
+        "station_code": "RAIL_OPR_ISTT_CD",
+        "station_name": "STATN_NM",
+        "facility_id": "WHLCHAIR_LIFT_NO",
+        "status_code": "OPER_STTS_CD",
+        "location_detail": "INSTL_PSTN",
+        "line": "LN_NM",
+        "floor_from": "STRT_FLOOR",
+        "floor_to": "END_FLOOR"
+      }
+    },
+    "safety-board": {
+      "url": "http://openapi.seoul.go.kr:8088/{KEY}/json/tbTraficSftyPlatform/1/1000/",
+      "serviceName": "tbTraficSftyPlatform",
+      "fields": {
+        "station_code": "RAIL_OPR_ISTT_CD",
+        "station_name": "STATN_NM",
+        "facility_id": "SFTY_PLATFORM_NO",
+        "status_code": "OPER_STTS_CD",
+        "location_detail": "INSTL_PSTN",
+        "line": "LN_NM",
+        "floor_from": null,
+        "floor_to": null
+      }
+    }
+  },
+  "static": {
+    "disabled-restroom": {
+      "url": "http://openapi.seoul.go.kr:8088/{KEY}/json/tbTraficDspsRstrm/1/1000/",
+      "serviceName": "tbTraficDspsRstrm",
+      "fields": {
+        "station_code": "STATN_ID",
+        "station_name": "STATN_NM",
+        "facility_id": "RSTRM_NO",
+        "location_detail": "INSTL_PSTN",
+        "line": "LINE_NM"
+      }
+    },
+    "sign-language-phone": {
+      "url": "http://openapi.seoul.go.kr:8088/{KEY}/json/tbTraficSignLangPhone/1/1000/",
+      "serviceName": "tbTraficSignLangPhone",
+      "fields": {
+        "station_code": "STATN_ID",
+        "station_name": "STATN_NM",
+        "facility_id": "SIGN_LANG_PHONE_NO",
+        "location_detail": "INSTL_PSTN",
+        "line": "LINE_NM"
+      }
+    },
+    "wheelchair-charger": {
+      "url": "http://openapi.seoul.go.kr:8088/{KEY}/json/tbTraficWhlchairChrg/1/1000/",
+      "serviceName": "tbTraficWhlchairChrg",
+      "fields": {
+        "station_code": "STATN_ID",
+        "station_name": "STATN_NM",
+        "facility_id": "WHLCHAIR_CHRG_NO",
+        "location_detail": "INSTL_PSTN",
+        "line": "LINE_NM"
+      }
+    },
+    "helper": {
+      "url": "http://openapi.seoul.go.kr:8088/{KEY}/json/tbTraficHelper/1/1000/",
+      "serviceName": "tbTraficHelper",
+      "fields": {
+        "station_code": "STATN_ID",
+        "station_name": "STATN_NM",
+        "facility_id": "HELPER_NO",
+        "location_detail": "INSTL_PSTN",
+        "line": "LINE_NM"
+      }
+    }
+  },
+  "environment": {
+    "air_quality": {
+      "url": "http://openapi.seoul.go.kr:8088/{KEY}/json/ListAirQualityByDistrictService/1/1/",
+      "serviceName": "ListAirQualityByDistrictService",
+      "fields": {
+        "pm10": ["PM10", "PM10_VALUE"],
+        "pm25": ["PM25", "PM25_VALUE"]
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "accessibility-seoul-scripts",
+  "version": "1.0.0",
+  "description": "Seoul subway accessibility data collection scripts",
+  "type": "module",
+  "scripts": {
+    "collect": "node collect.js --all-realtime",
+    "collect-static": "node collect-static.js",
+    "build-latest": "node build-latest.js",
+    "validate": "node validate.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.0"
+  }
+}

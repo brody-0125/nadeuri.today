@@ -1,0 +1,24 @@
+# Gran Maestro
+.gran-maestro/
+
+# IDE
+.idea/
+
+# Dependencies
+node_modules/
+
+# Next.js
+web/.next/
+web/out/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Build artifacts
+web/tsconfig.tsbuildinfo
+web/next-env.d.ts
+
+# Package lock (pnpm project)
+web/package-lock.json
