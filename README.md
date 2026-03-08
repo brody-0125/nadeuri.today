@@ -46,7 +46,7 @@
 | `collect-static.yml` | 일 1회 | 정적 시설 정보 수집 |
 | `collect-environment.yml` | 매시간 | 대기질 데이터 수집 |
 | `deploy.yml` | push 시 | GitHub Pages 배포 |
-| `cleanup.yml` | 일 1회 | 7일 이상 경과 데이터 정리 |
+| `cleanup.yml` | 일 1회 | 1일(24시간) 이상 경과 데이터 정리 |
 
 ## 로컬 개발
 
