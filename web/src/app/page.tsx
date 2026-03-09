@@ -366,6 +366,7 @@ export default function HomePage() {
             나들이 · 서울 지하철 편의시설 실시간 정보
           </p>
           <nav aria-label="푸터 링크" className="mt-3 flex justify-center gap-4 text-xs text-text-secondary">
+            <Link href="/route/" className="transition-colors hover:text-status-operating">경로 안내</Link>
             <Link href="/about/" className="transition-colors hover:text-status-operating">데이터 출처</Link>
             <Link href="/archive/" className="transition-colors hover:text-status-operating">아카이브</Link>
             <a href="https://github.com/brody-0125/nadeuri.today" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-status-operating">GitHub</a>
