@@ -81,6 +81,15 @@ const _RAW_STATIONS: StationMeta[] = [
   { code: '0241', name: '이대', lines: ['2'], lat: 37.5569, lng: 126.9458 },
   { code: '0242', name: '아현', lines: ['2'], lat: 37.5576, lng: 126.9560 },
   { code: '0243', name: '충정로', lines: ['2', '5'], lat: 37.5601, lng: 126.9636 },
+  // ── 2호선 성수지선 ──
+  { code: '0244', name: '용답', lines: ['2'], lat: 37.5649, lng: 127.0574 },
+  { code: '0245', name: '신답', lines: ['2'], lat: 37.5697, lng: 127.0471 },
+  { code: '0246', name: '신설동', lines: ['1', '2'], lat: 37.5757, lng: 127.0251 },
+  { code: '0250', name: '용두', lines: ['2'], lat: 37.5741, lng: 127.0381 },
+  // ── 2호선 신정지선 ──
+  { code: '0247', name: '도림천', lines: ['2'], lat: 37.5087, lng: 126.8763 },
+  { code: '0248', name: '양천구청', lines: ['2'], lat: 37.5073, lng: 126.8593 },
+  { code: '0249', name: '신정네거리', lines: ['2'], lat: 37.5187, lng: 126.8517 },
 
   // ── 3호선 ──
   { code: '0309', name: '경복궁', lines: ['3'], lat: 37.5759, lng: 126.9736 },
@@ -149,7 +158,7 @@ const _RAW_STATIONS: StationMeta[] = [
   { code: '0515', name: '발산', lines: ['5'], lat: 37.5575, lng: 126.8387 },
   { code: '0516', name: '우장산', lines: ['5'], lat: 37.5473, lng: 126.8366 },
   { code: '0517', name: '화곡', lines: ['5'], lat: 37.5409, lng: 126.8391 },
-  { code: '0518', name: '까치산', lines: ['5'], lat: 37.5316, lng: 126.8475 },
+  { code: '0518', name: '까치산', lines: ['2', '5'], lat: 37.5316, lng: 126.8475 },
   { code: '0519', name: '신정', lines: ['5'], lat: 37.5267, lng: 126.8543 },
   { code: '0520', name: '목동', lines: ['5'], lat: 37.5262, lng: 126.8683 },
   { code: '0521', name: '오목교', lines: ['5'], lat: 37.5244, lng: 126.8752 },
