@@ -11,6 +11,7 @@ import EnvironmentBanner from '@/components/EnvironmentBanner';
 import StatusSummaryBar from '@/components/StatusSummaryBar';
 import DataFreshnessBar from '@/components/DataFreshnessBar';
 import DevSettingsPanel from '@/components/DevSettingsPanel';
+import MetroSupportBanner from '@/components/MetroSupportBanner';
 import { SummarySkeleton, AlertsSkeleton } from '@/components/LoadingSkeleton';
 import ThemeToggle from '@/components/ThemeToggle';
 
@@ -94,6 +95,9 @@ export default function HomePage() {
 
   return (
     <>
+      {/* Metro Support Banner */}
+      <MetroSupportBanner />
+
       {/* Sticky Freshness Bar */}
       {data && <DataFreshnessBar updatedAt={data.updated_at} isStale={data.is_stale} />}
 
