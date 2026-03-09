@@ -1,6 +1,18 @@
-'use client';
-
+import type { Metadata } from 'next';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: '경로 안내',
+  description:
+    '교통약자를 위한 서울 지하철 최적 경로 안내. 엘리베이터, 에스컬레이터 등 편의시설 상태를 고려한 경로를 제공합니다.',
+  alternates: { canonical: '/route/' },
+  openGraph: {
+    title: '경로 안내 | 나들이',
+    description:
+      '교통약자를 위한 서울 지하철 최적 경로 안내. 엘리베이터, 에스컬레이터 등 편의시설 상태를 고려한 경로를 제공합니다.',
+    url: '/route/',
+  },
+};
 
 export default function RoutePage() {
   return (

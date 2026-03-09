@@ -8,10 +8,55 @@ import './globals.css';
 const recaptchaSiteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY;
 const goatcounterCode = process.env.NEXT_PUBLIC_GOATCOUNTER_CODE;
 
+const SITE_URL = 'https://nadeuri.today';
+const SITE_NAME = '나들이';
+const SITE_DESCRIPTION =
+  '서울 지하철 엘리베이터, 에스컬레이터 등 교통약자 편의시설의 실시간 운행 상태를 확인하세요. 1~9호선, 우이신설선 300개 이상 역의 편의시설 정보를 제공합니다.';
+
 export const metadata: Metadata = {
-  title: '나들이 — 오늘은 어디로 가볼까?',
-  description:
-    '서울 지하철 엘리베이터, 에스컬레이터 등 교통약자 편의시설의 실시간 운행 상태를 확인하세요.',
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: '나들이 — 서울 지하철 교통약자 편의시설 실시간 현황',
+    template: '%s | 나들이',
+  },
+  description: SITE_DESCRIPTION,
+  keywords: [
+    '서울 지하철',
+    '교통약자',
+    '편의시설',
+    '엘리베이터',
+    '에스컬레이터',
+    '실시간',
+    '장애인',
+    '휠체어',
+    '지하철 엘리베이터 고장',
+    '서울 메트로',
+  ],
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    type: 'website',
+    siteName: SITE_NAME,
+    title: '나들이 — 서울 지하철 교통약자 편의시설 실시간 현황',
+    description: SITE_DESCRIPTION,
+    url: SITE_URL,
+    locale: 'ko_KR',
+  },
+  twitter: {
+    card: 'summary',
+    title: '나들이 — 서울 지하철 교통약자 편의시설 실시간 현황',
+    description: SITE_DESCRIPTION,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-snippet': -1,
+    },
+  },
 };
 
 export default function RootLayout({
@@ -27,6 +72,19 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700;900&family=Noto+Sans+KR:wght@300;400;500;700&family=DM+Mono:wght@300;400;500&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
         />
         <script dangerouslySetInnerHTML={{ __html: THEME_INIT_SCRIPT }} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'WebSite',
+              name: SITE_NAME,
+              url: SITE_URL,
+              description: SITE_DESCRIPTION,
+              inLanguage: 'ko',
+            }),
+          }}
+        />
       </head>
       <body className="antialiased min-h-screen flex flex-col font-sans">
         {recaptchaSiteKey && (

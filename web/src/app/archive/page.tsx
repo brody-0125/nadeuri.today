@@ -1,6 +1,18 @@
-'use client';
-
+import type { Metadata } from 'next';
 import Link from 'next/link';
+
+export const metadata: Metadata = {
+  title: '데이터 아카이브',
+  description:
+    '서울 지하철 이동편의시설 과거 운행 기록을 조회할 수 있는 데이터 아카이브입니다.',
+  alternates: { canonical: '/archive/' },
+  openGraph: {
+    title: '데이터 아카이브 | 나들이',
+    description:
+      '서울 지하철 이동편의시설 과거 운행 기록을 조회할 수 있는 데이터 아카이브입니다.',
+    url: '/archive/',
+  },
+};
 
 export default function ArchivePage() {
   return (

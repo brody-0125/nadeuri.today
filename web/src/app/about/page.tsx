@@ -1,7 +1,19 @@
-'use client';
-
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import ThemeToggle from '@/components/ThemeToggle';
+
+export const metadata: Metadata = {
+  title: '데이터 출처 및 투명성',
+  description:
+    '나들이는 서울 열린 데이터 광장의 공식 API를 통해 지하철 편의시설 실시간 데이터를 제공합니다.',
+  alternates: { canonical: '/about/' },
+  openGraph: {
+    title: '데이터 출처 및 투명성 | 나들이',
+    description:
+      '나들이는 서울 열린 데이터 광장의 공식 API를 통해 지하철 편의시설 실시간 데이터를 제공합니다.',
+    url: '/about/',
+  },
+};
 
 export default function AboutPage() {
   return (
