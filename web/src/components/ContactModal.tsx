@@ -322,7 +322,7 @@ export default function ContactModal({ isOpen, onClose, onSubmit }: ContactModal
           >
             {status === 'loading' ? (
               <>
-                <span className="inline-block h-4 w-4 animate-spin rounded-full border-2 border-white border-t-transparent" />
+                <span className="inline-block h-4 w-4 animate-spin rounded-full border-2 border-white border-t-transparent" aria-hidden="true" />
                 <span>전송 중...</span>
               </>
             ) : status === 'success' ? (

@@ -137,7 +137,7 @@ export default function HomePage() {
               <ThemeToggle />
             </nav>
             <div className="py-12 text-center">
-              <p className="text-4xl mb-3">✏️</p>
+              <p className="text-4xl mb-3" aria-hidden="true">✏️</p>
               <p className="mb-2 font-serif text-base font-bold text-text-primary">
                 더 입력하면 검색 결과가 표시됩니다
               </p>
@@ -179,7 +179,7 @@ export default function HomePage() {
               ))}
               {filteredStations.length === 0 && (
                 <div className="py-12 text-center">
-                  <p className="text-4xl mb-3">🔍</p>
+                  <p className="text-4xl mb-3" aria-hidden="true">🔍</p>
                   <p className="mb-2 font-serif text-base font-bold text-text-primary">
                     &lsquo;{query.trim()}&rsquo;와 일치하는 역이 없어요
                   </p>

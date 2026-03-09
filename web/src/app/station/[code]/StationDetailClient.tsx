@@ -153,8 +153,8 @@ export default function StationDetailClient({ code }: { code: string }) {
         )}
 
         {!data && !error && (
-          <div className="flex flex-col items-center justify-center py-16 gap-3">
-            <div className="w-8 h-8 border-2 border-status-operating/30 border-t-status-operating rounded-full animate-spin" />
+          <div role="status" aria-label="데이터 로딩 중" className="flex flex-col items-center justify-center py-16 gap-3">
+            <div className="w-8 h-8 border-2 border-status-operating/30 border-t-status-operating rounded-full animate-spin" aria-hidden="true" />
             <p className="text-text-secondary text-sm">역 정보를 가져오고 있어요...</p>
           </div>
         )}
@@ -164,7 +164,7 @@ export default function StationDetailClient({ code }: { code: string }) {
             {/* Fault Banner */}
             {hasFault && (
               <div className="bg-status-fault-bg border border-status-fault-border rounded-xl p-4 mt-4 flex gap-3 items-start">
-                <span className="text-lg shrink-0 mt-0.5">⚠️</span>
+                <span className="text-lg shrink-0 mt-0.5" aria-hidden="true">⚠️</span>
                 <div className="text-[13px] leading-relaxed text-status-fault">
                   <strong>
                     {faultDetails.length === 1
@@ -211,7 +211,7 @@ export default function StationDetailClient({ code }: { code: string }) {
                           >
                             <div className="flex items-center justify-between mb-1">
                               <div className="flex items-center gap-2">
-                                <span className="material-symbols-outlined text-text-secondary text-lg">
+                                <span className="material-symbols-outlined text-text-secondary text-lg" aria-hidden="true">
                                   {FACILITY_TYPE_ICONS[type]}
                                 </span>
                                 <span className="font-serif font-semibold text-[14px] text-text-primary">

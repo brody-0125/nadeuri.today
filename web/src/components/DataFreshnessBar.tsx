@@ -32,7 +32,7 @@ export default function DataFreshnessBar({ updatedAt, isStale }: DataFreshnessBa
       <div className="flex items-center gap-2">
         {isStale ? (
           <>
-            <span className="material-symbols-outlined text-base text-status-fault">warning</span>
+            <span className="material-symbols-outlined text-base text-status-fault" aria-hidden="true">warning</span>
             <p className="font-mono text-xs font-medium tracking-tight text-status-fault sm:text-sm">
               {relativeTime} 데이터 · 현장 확인 권장
             </p>

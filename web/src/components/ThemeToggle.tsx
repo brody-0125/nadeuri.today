@@ -52,7 +52,7 @@ export default function ThemeToggle() {
         aria-expanded={open}
         aria-haspopup="true"
       >
-        <span className="material-symbols-outlined text-[20px]">{THEME_ICONS[theme]}</span>
+        <span className="material-symbols-outlined text-[20px]" aria-hidden="true">{THEME_ICONS[theme]}</span>
       </button>
 
       {open && (
@@ -81,7 +81,7 @@ export default function ThemeToggle() {
                 >
                   <span className={`material-symbols-outlined text-lg mt-0.5 ${
                     isSelected ? 'text-status-operating' : 'text-text-secondary'
-                  }`}>
+                  }`} aria-hidden="true">
                     {opt.icon}
                   </span>
                   <div>
@@ -93,7 +93,7 @@ export default function ThemeToggle() {
                     <p className="text-xs text-text-secondary mt-0.5">{opt.desc}</p>
                   </div>
                   {isSelected && (
-                    <span className="material-symbols-outlined text-status-operating text-lg ml-auto mt-0.5">check</span>
+                    <span className="material-symbols-outlined text-status-operating text-lg ml-auto mt-0.5" aria-hidden="true">check</span>
                   )}
                 </button>
               );

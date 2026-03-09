@@ -49,7 +49,7 @@ export default function SearchInput({ value, onChange, compact }: SearchInputPro
           onKeyDown={handleKeyDown}
           placeholder="역 이름을 입력하세요 (예: 강남, 서울역)"
           aria-label="지하철역 검색"
-          className="block w-full rounded-md border border-border bg-bg py-2 pl-10 pr-20 font-sans text-text-primary transition-colors placeholder:text-text-secondary focus:border-border-strong focus:outline-none focus:ring-0"
+          className="block w-full rounded-md border border-border bg-bg py-2 pl-10 pr-20 font-sans text-text-primary transition-colors placeholder:text-text-secondary focus:border-border-strong focus:outline-none focus:ring-2 focus:ring-status-operating/30"
         />
         <div className="absolute inset-y-0 right-0 flex items-center gap-0.5 pr-1">
           {localValue && (
@@ -90,7 +90,7 @@ export default function SearchInput({ value, onChange, compact }: SearchInputPro
         onKeyDown={handleKeyDown}
         placeholder="역 이름을 입력하세요 (예: 강남, 서울역)"
         aria-label="지하철역 검색"
-        className="block h-[52px] w-full rounded-xl border-2 border-border bg-surface pl-12 pr-14 font-sans text-lg text-text-primary shadow-xs outline-none transition-colors placeholder:text-text-secondary/60 focus:border-status-operating focus:ring-0"
+        className="block h-[52px] w-full rounded-xl border-2 border-border bg-surface pl-12 pr-14 font-sans text-lg text-text-primary shadow-xs outline-none transition-colors placeholder:text-text-secondary focus:border-status-operating focus:ring-2 focus:ring-status-operating/30"
       />
       <button
         type="submit"

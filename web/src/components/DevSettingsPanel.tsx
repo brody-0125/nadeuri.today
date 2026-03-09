@@ -93,7 +93,7 @@ export default function DevSettingsPanel({ onSettingsChange }: { onSettingsChang
                     value={key}
                     onChange={(e) => setKey(e.target.value)}
                     placeholder="인증키 입력"
-                    className="flex-1 px-3 py-2 text-sm border border-border-cream rounded-sm bg-bg text-text-primary placeholder:text-text-secondary/60 focus:outline-2 focus:outline-status-operating focus:outline-offset-1 font-mono"
+                    className="flex-1 px-3 py-2 text-sm border border-border-cream rounded-sm bg-bg text-text-primary placeholder:text-text-secondary focus:outline-2 focus:outline-status-operating focus:outline-offset-1 font-mono"
                   />
                   <button
                     onClick={handleKeySave}

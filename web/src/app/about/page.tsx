@@ -7,17 +7,17 @@ export default function AboutPage() {
   return (
     <>
       {/* Navbar */}
-      <nav className="bg-surface border-b border-border">
+      <nav className="bg-surface border-b border-border" aria-label="상단 탐색">
         <div className="max-w-5xl mx-auto px-4 md:px-8 h-16 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2 text-status-operating hover:opacity-80 transition-opacity">
-            <span className="material-symbols-outlined text-3xl">subway</span>
+            <span className="material-symbols-outlined text-3xl" aria-hidden="true">subway</span>
             <span className="font-serif font-bold text-xl text-text-primary tracking-tight">나들이</span>
           </Link>
           <div className="flex items-center gap-3">
             <ThemeToggle />
             <Link href="/" className="text-sm text-text-secondary hover:text-status-operating transition-colors flex items-center gap-1">
               홈으로
-              <span className="material-symbols-outlined text-base">arrow_forward</span>
+              <span className="material-symbols-outlined text-base" aria-hidden="true">arrow_forward</span>
             </Link>
           </div>
         </div>
@@ -27,7 +27,7 @@ export default function AboutPage() {
         {/* Header */}
         <div className="text-center mb-12">
           <div className="inline-flex items-center justify-center w-16 h-16 bg-status-operating/10 rounded-full mb-6">
-            <span className="material-symbols-outlined text-status-operating text-3xl">handshake</span>
+            <span className="material-symbols-outlined text-status-operating text-3xl" aria-hidden="true">handshake</span>
           </div>
           <h1 className="font-serif text-3xl md:text-4xl font-bold text-text-primary mb-3">
             데이터 출처 및 투명성
@@ -68,7 +68,7 @@ export default function AboutPage() {
             <div className="grid grid-cols-3 divide-x divide-border">
               <div className="p-5">
                 <div className="flex items-center gap-1.5 text-text-secondary text-xs mb-1">
-                  <span className="material-symbols-outlined text-xs">settings</span>
+                  <span className="material-symbols-outlined text-xs" aria-hidden="true">settings</span>
                   출처
                 </div>
                 <p className="font-mono text-lg font-medium text-text-primary">서울 지하철</p>
@@ -76,7 +76,7 @@ export default function AboutPage() {
               </div>
               <div className="p-5">
                 <div className="flex items-center gap-1.5 text-text-secondary text-xs mb-1">
-                  <span className="material-symbols-outlined text-xs">speed</span>
+                  <span className="material-symbols-outlined text-xs" aria-hidden="true">speed</span>
                   지연 시간
                 </div>
                 <p className="font-mono text-lg font-medium text-text-primary">&lt; 60s</p>
@@ -95,7 +95,7 @@ export default function AboutPage() {
           {/* Accuracy Note */}
           <div className="border-l-4 border-status-maintenance bg-status-maintenance-bg rounded-lg p-5">
             <div className="flex items-center gap-2 mb-2">
-              <span className="material-symbols-outlined text-status-maintenance text-base">warning</span>
+              <span className="material-symbols-outlined text-status-maintenance text-base" aria-hidden="true">warning</span>
               <span className="font-bold text-text-primary">정확성에 관한 안내</span>
             </div>
             <p className="text-sm text-text-secondary leading-relaxed">

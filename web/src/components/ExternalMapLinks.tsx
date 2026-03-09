@@ -28,7 +28,7 @@ export default function ExternalMapLinks({ station }: ExternalMapLinksProps) {
           aria-label={`네이버 지도에서 ${station.name}역 길찾기 열기 (외부 앱)`}
         >
           네이버 길찾기
-          <span className="material-symbols-outlined text-sm">open_in_new</span>
+          <span className="material-symbols-outlined text-sm" aria-hidden="true">open_in_new</span>
         </a>
         <a
           href={buildKakaoDirectionsUrl(params)}
@@ -38,7 +38,7 @@ export default function ExternalMapLinks({ station }: ExternalMapLinksProps) {
           aria-label={`카카오맵에서 ${station.name}역 길찾기 열기 (외부 앱)`}
         >
           카카오 길찾기
-          <span className="material-symbols-outlined text-sm">open_in_new</span>
+          <span className="material-symbols-outlined text-sm" aria-hidden="true">open_in_new</span>
         </a>
       </div>
     </div>
