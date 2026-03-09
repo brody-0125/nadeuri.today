@@ -44,6 +44,8 @@ jobs:
       - name: Build
         run: npm run build
         working-directory: web
+        env:
+          NEXT_PUBLIC_GOATCOUNTER_CODE: ${{ secrets.NEXT_PUBLIC_GOATCOUNTER_CODE }}
 
       - name: Copy CNAME
         run: cp CNAME web/out/CNAME
