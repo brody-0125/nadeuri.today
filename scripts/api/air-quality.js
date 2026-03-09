@@ -48,7 +48,7 @@ export async function collect(apiKey) {
   const url = endpoint.url.replace("{KEY}", apiKey);
   const fields = endpoint.fields;
 
-  const raw = await fetchApi(url);
+  const raw = await fetchApi(url, { apiKey });
 
   if (raw.error) {
     return {

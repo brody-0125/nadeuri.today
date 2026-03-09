@@ -1,6 +1,7 @@
 import { fetchApi } from "./client.js";
 
 const PAGE_SIZE = 1000;
+const MAX_PAGES = 10;
 const SERVICE_NAME = "SeoulMetroFaciInfo";
 
 let cachedRows = null;
@@ -16,10 +17,10 @@ export async function fetchAllFacilities(apiKey) {
   const allRows = [];
   let start = 1;
 
-  while (true) {
+  for (let page = 0; page < MAX_PAGES; page++) {
     const end = start + PAGE_SIZE - 1;
     const url = `http://openapi.seoul.go.kr:8088/${apiKey}/json/${SERVICE_NAME}/${start}/${end}/`;
-    const raw = await fetchApi(url);
+    const raw = await fetchApi(url, { apiKey });
 
     if (raw.error) {
       if (allRows.length > 0) break; // partial data is better than none
