@@ -108,6 +108,7 @@ export default function AboutPage() {
         <footer className="mt-16 pt-8 border-t border-border text-center pb-8">
           <div className="flex justify-center gap-4 text-sm text-text-secondary">
             <span>나들이 프로젝트</span>
+            <a href="https://github.com/brody-0125/nadeuri.today" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-text-primary">GitHub</a>
           </div>
         </footer>
       </main>
