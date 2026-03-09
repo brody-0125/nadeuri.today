@@ -58,6 +58,12 @@ const config: Config = {
           cream: colorVar('--color-border'),
           strong: colorVar('--color-border-strong'),
         },
+        info: {
+          DEFAULT: colorVar('--color-info'),
+          bg: colorVar('--color-info-bg'),
+          border: colorVar('--color-info-border'),
+          text: colorVar('--color-info-text'),
+        },
         line: {
           '1': '#0052A4',
           '2': '#009D3E',
