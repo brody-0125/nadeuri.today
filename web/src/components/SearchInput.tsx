@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 interface SearchInputProps {
   value: string;
@@ -10,37 +10,27 @@ interface SearchInputProps {
 
 export default function SearchInput({ value, onChange, compact }: SearchInputProps) {
   const [localValue, setLocalValue] = useState(value);
-  const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
     setLocalValue(value);
   }, [value]);
 
-  useEffect(() => {
-    return () => {
-      if (timerRef.current) clearTimeout(timerRef.current);
-    };
-  }, []);
-
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const next = e.target.value;
-    setLocalValue(next);
-    if (timerRef.current) clearTimeout(timerRef.current);
-    timerRef.current = setTimeout(() => {
-      onChange(next);
-    }, 300);
+    setLocalValue(e.target.value);
   };
 
   const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key === 'Enter') {
       e.preventDefault();
-      if (timerRef.current) clearTimeout(timerRef.current);
       onChange(localValue);
     }
   };
 
+  const handleSubmit = () => {
+    onChange(localValue);
+  };
+
   const handleClear = () => {
-    if (timerRef.current) clearTimeout(timerRef.current);
     setLocalValue('');
     onChange('');
   };
@@ -59,17 +49,28 @@ export default function SearchInput({ value, onChange, compact }: SearchInputPro
           onKeyDown={handleKeyDown}
           placeholder="역 이름을 입력하세요 (예: 강남, 서울역)"
           aria-label="지하철역 검색"
-          className="block w-full rounded-md border border-border bg-bg py-2 pl-10 pr-10 font-sans text-text-primary transition-colors placeholder:text-text-secondary focus:border-border-strong focus:outline-none focus:ring-0"
+          className="block w-full rounded-md border border-border bg-bg py-2 pl-10 pr-20 font-sans text-text-primary transition-colors placeholder:text-text-secondary focus:border-border-strong focus:outline-none focus:ring-0"
         />
-        {localValue && (
+        <div className="absolute inset-y-0 right-0 flex items-center gap-0.5 pr-1">
+          {localValue && (
+            <button
+              type="button"
+              onClick={handleClear}
+              className="flex h-8 w-8 items-center justify-center text-text-secondary hover:text-text-primary"
+              aria-label="검색어 지우기"
+            >
+              <span className="material-symbols-outlined text-lg" aria-hidden="true">close</span>
+            </button>
+          )}
           <button
-            onClick={handleClear}
-            className="absolute inset-y-0 right-0 flex w-10 items-center justify-center text-text-secondary hover:text-text-primary"
-            aria-label="검색어 지우기"
+            type="submit"
+            onClick={handleSubmit}
+            className="flex h-8 w-8 items-center justify-center rounded-md text-text-secondary hover:text-status-operating transition-colors"
+            aria-label="검색"
           >
-            <span className="material-symbols-outlined text-lg" aria-hidden="true">close</span>
+            <span className="material-symbols-outlined text-lg" aria-hidden="true">arrow_forward</span>
           </button>
-        )}
+        </div>
       </div>
     );
   }
@@ -89,8 +90,16 @@ export default function SearchInput({ value, onChange, compact }: SearchInputPro
         onKeyDown={handleKeyDown}
         placeholder="역 이름을 입력하세요 (예: 강남, 서울역)"
         aria-label="지하철역 검색"
-        className="block h-[52px] w-full rounded-xl border-2 border-border bg-surface pl-12 pr-4 font-sans text-lg text-text-primary shadow-xs outline-none transition-colors placeholder:text-text-secondary/60 focus:border-status-operating focus:ring-0"
+        className="block h-[52px] w-full rounded-xl border-2 border-border bg-surface pl-12 pr-14 font-sans text-lg text-text-primary shadow-xs outline-none transition-colors placeholder:text-text-secondary/60 focus:border-status-operating focus:ring-0"
       />
+      <button
+        type="submit"
+        onClick={handleSubmit}
+        className="absolute inset-y-0 right-0 flex w-12 items-center justify-center text-text-secondary hover:text-status-operating transition-colors"
+        aria-label="검색"
+      >
+        <span className="material-symbols-outlined text-xl" aria-hidden="true">arrow_forward</span>
+      </button>
     </div>
   );
 }
