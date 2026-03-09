@@ -102,7 +102,7 @@ export default function HomePage() {
       {data && <DataFreshnessBar updatedAt={data.updated_at} isStale={data.is_stale} />}
 
       {/* Main Content */}
-      <main id="main-content" className="flex-1 w-full px-5 md:px-8 flex flex-col gap-6 py-6">
+      <main id="main-content" className="flex-1 w-full max-w-3xl mx-auto px-5 md:px-8 flex flex-col gap-6 py-6">
         {/* Header — Brand + Tagline */}
         {!hasQuery && (
           <header className="pt-2">
@@ -355,7 +355,7 @@ export default function HomePage() {
 
       {/* Footer — hidden on mobile (TabBar replaces it) */}
       {!hasQuery && (
-        <footer className="hidden w-full border-t border-border px-8 pb-8 pt-6 text-center md:block">
+        <footer className="hidden w-full max-w-3xl mx-auto border-t border-border px-8 pb-8 pt-6 text-center md:block">
           <div className="mb-3 inline-flex items-center gap-2 rounded-full border border-border bg-surface-elevated px-4 py-2">
             <span className="material-symbols-outlined text-sm text-status-operating" aria-hidden="true">cloud_done</span>
             <span className="text-xs font-mono text-text-secondary">서울 열린데이터 광장 연결됨</span>
