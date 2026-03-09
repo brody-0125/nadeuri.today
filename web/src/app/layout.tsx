@@ -6,6 +6,7 @@ import { THEME_INIT_SCRIPT } from '@/lib/theme';
 import './globals.css';
 
 const recaptchaSiteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY;
+const goatcounterCode = process.env.NEXT_PUBLIC_GOATCOUNTER_CODE;
 
 export const metadata: Metadata = {
   title: '나들이 — 오늘은 어디로 가볼까?',
@@ -40,6 +41,13 @@ export default function RootLayout({
           {children}
         </ThemeProvider>
         <ContactCTA />
+        {goatcounterCode && (
+          <Script
+            data-goatcounter={`https://${goatcounterCode}.goatcounter.com/count`}
+            src="//gc.zgo.at/count.js"
+            strategy="afterInteractive"
+          />
+        )}
       </body>
     </html>
   );
