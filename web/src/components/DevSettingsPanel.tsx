@@ -89,7 +89,7 @@ export default function DevSettingsPanel({ onSettingsChange }: { onSettingsChang
                 <div className="flex gap-2">
                   <input
                     id="api-key-input"
-                    type="text"
+                    type="password"
                     value={key}
                     onChange={(e) => setKey(e.target.value)}
                     placeholder="인증키 입력"
