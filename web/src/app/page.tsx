@@ -237,7 +237,7 @@ export default function HomePage() {
         {/* Fault Station List (Mockup style) */}
         {!hasQuery && data && faultStations.length > 0 && (
           <section>
-            <p className="mb-2.5 font-mono text-[10px] uppercase tracking-[0.14em] text-text-secondary">
+            <p className="mb-2.5 font-mono text-xs uppercase tracking-[0.14em] text-text-secondary">
               ⚠ 현재 고장 역
             </p>
             <ul role="list" className="space-y-2">
@@ -266,7 +266,7 @@ export default function HomePage() {
         {/* Normal Stations (Preview) */}
         {!hasQuery && data && normalStations.length > 0 && (
           <section>
-            <p className="mb-2.5 font-mono text-[10px] uppercase tracking-[0.14em] text-text-secondary">
+            <p className="mb-2.5 font-mono text-xs uppercase tracking-[0.14em] text-text-secondary">
               정상 운행 역 (일부)
             </p>
             <div className="space-y-2">

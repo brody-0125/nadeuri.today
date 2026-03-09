@@ -43,7 +43,7 @@ export default function StatusSummaryBar({ summary }: StatusSummaryBarProps) {
       {/* Elevator Rate */}
       <div className="flex h-32 flex-col justify-between rounded-lg border border-border bg-surface p-5 transition-colors hover:border-status-operating/30">
         <div className="flex justify-between items-start">
-          <span className="text-sm font-sans font-medium text-text-secondary">엘리베이터 가동률</span>
+          <span className="text-sm font-sans font-medium text-text-secondary">엘리베이터<br />가동률</span>
           <span className="material-symbols-outlined text-xl text-text-secondary" aria-hidden="true">elevator</span>
         </div>
         <span className="font-mono text-3xl font-medium text-text-primary">
@@ -54,7 +54,7 @@ export default function StatusSummaryBar({ summary }: StatusSummaryBarProps) {
       {/* Escalator Rate */}
       <div className="flex h-32 flex-col justify-between rounded-lg border border-border bg-surface p-5 transition-colors hover:border-status-operating/30">
         <div className="flex justify-between items-start">
-          <span className="text-sm font-sans font-medium text-text-secondary">에스컬레이터 가동률</span>
+          <span className="text-sm font-sans font-medium text-text-secondary">에스컬레이터<br />가동률</span>
           <span className="material-symbols-outlined text-xl text-text-secondary" aria-hidden="true">escalator</span>
         </div>
         <span className="font-mono text-3xl font-medium text-text-primary">
