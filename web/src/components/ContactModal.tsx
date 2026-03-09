@@ -159,7 +159,7 @@ export default function ContactModal({ isOpen, onClose, onSubmit }: ContactModal
           try {
             recaptchaToken = await window.grecaptcha.execute(siteKey, { action: 'contact' });
           } catch {
-            // reCAPTCHA blocked (ad blocker etc), proceed without token
+            console.warn('reCAPTCHA token 획득 실패 — 토큰 없이 제출합니다');
           }
         }
 
@@ -233,6 +233,7 @@ export default function ContactModal({ isOpen, onClose, onSubmit }: ContactModal
               id="contact-name"
               type="text"
               required
+              maxLength={100}
               value={name}
               onChange={(e) => setName(e.target.value)}
               placeholder="이름을 입력해주세요"
@@ -249,6 +250,7 @@ export default function ContactModal({ isOpen, onClose, onSubmit }: ContactModal
               id="contact-info"
               type="text"
               required
+              maxLength={200}
               value={contact}
               onChange={(e) => setContact(e.target.value)}
               placeholder="전화번호 또는 이메일"
@@ -264,6 +266,7 @@ export default function ContactModal({ isOpen, onClose, onSubmit }: ContactModal
             <textarea
               id="contact-message"
               required
+              maxLength={2000}
               rows={4}
               value={message}
               onChange={(e) => setMessage(e.target.value)}

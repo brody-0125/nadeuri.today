@@ -147,8 +147,9 @@ async function main() {
 
   // Write to GITHUB_ENV if available (for GitHub Actions)
   if (process.env.GITHUB_ENV) {
+    const sanitized = collectTime.replace(/[\n\r]/g, "");
     const { appendFile } = await import("fs/promises");
-    await appendFile(process.env.GITHUB_ENV, `COLLECT_TIME=${collectTime}\n`);
+    await appendFile(process.env.GITHUB_ENV, `COLLECT_TIME=${sanitized}\n`);
   }
 
   if (unchanged.length > 0) {
