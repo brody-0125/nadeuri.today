@@ -240,12 +240,13 @@ export default function HomePage() {
             <p className="mb-2.5 font-mono text-xs uppercase tracking-[0.14em] text-text-secondary">
               ⚠ 현재 고장 역
             </p>
-            <ul role="list" className="space-y-2">
+            <ul role="list" className="space-y-1.5">
               {faultStations.slice(0, 8).map((station) => (
                 <li key={station.code}>
                   <StationCard
                     station={station}
                     status={data.stations[station.code]}
+                    compact
                   />
                 </li>
               ))}
@@ -269,12 +270,13 @@ export default function HomePage() {
             <p className="mb-2.5 font-mono text-xs uppercase tracking-[0.14em] text-text-secondary">
               정상 운행 역 (일부)
             </p>
-            <div className="space-y-2">
+            <div className="space-y-1.5">
               {normalStations.map((station) => (
                 <StationCard
                   key={station.code}
                   station={station}
                   status={data.stations[station.code]}
+                  compact
                 />
               ))}
             </div>
