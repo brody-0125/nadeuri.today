@@ -92,6 +92,11 @@ const _RAW_STATIONS: StationMeta[] = [
   { code: '0249', name: '신정네거리', lines: ['2'], lat: 37.5187, lng: 126.8517 },
 
   // ── 3호선 ──
+  { code: '0301', name: '지축', lines: ['3'], lat: 37.6480, lng: 126.9140 },
+  { code: '0302', name: '구파발', lines: ['3'], lat: 37.6368, lng: 126.9188 },
+  { code: '0303', name: '녹번', lines: ['3'], lat: 37.6009, lng: 126.9358 },
+  { code: '0304', name: '홍제', lines: ['3'], lat: 37.5891, lng: 126.9437 },
+  { code: '0305', name: '무악재', lines: ['3'], lat: 37.5823, lng: 126.9503 },
   { code: '0309', name: '경복궁', lines: ['3'], lat: 37.5759, lng: 126.9736 },
   { code: '0310', name: '안국', lines: ['3'], lat: 37.5765, lng: 126.9852 },
   { code: '0312', name: '동대입구', lines: ['3'], lat: 37.5581, lng: 127.0070 },
@@ -117,8 +122,11 @@ const _RAW_STATIONS: StationMeta[] = [
   { code: '0306', name: '연신내', lines: ['3', '6'], lat: 37.6190, lng: 126.9214 },
   { code: '0307', name: '불광', lines: ['3', '6'], lat: 37.6100, lng: 126.9298 },
   { code: '0308', name: '독립문', lines: ['3'], lat: 37.5726, lng: 126.9607 },
+  { code: '0332', name: '남부터미널', lines: ['3'], lat: 37.4850, lng: 127.0162 },
 
   // ── 4호선 ──
+  { code: '0401', name: '불암산', lines: ['4'], lat: 37.6387, lng: 127.0712 },
+  { code: '0402', name: '상계', lines: ['4'], lat: 37.6609, lng: 127.0736 },
   { code: '0409', name: '노원', lines: ['4'], lat: 37.6544, lng: 127.0614 },
   { code: '0410', name: '쌍문', lines: ['4'], lat: 37.6482, lng: 127.0347 },
   { code: '0411', name: '수유', lines: ['4'], lat: 37.6382, lng: 127.0253 },
@@ -148,6 +156,7 @@ const _RAW_STATIONS: StationMeta[] = [
   { code: '0435', name: '범계', lines: ['4'], lat: 37.3894, lng: 126.9521 },
   { code: '0436', name: '금정', lines: ['4'], lat: 37.3716, lng: 126.9425 },
   { code: '0437', name: '산본', lines: ['4'], lat: 37.3588, lng: 126.9330 },
+  { code: '0438', name: '신용산', lines: ['4'], lat: 37.5292, lng: 126.9679 },
 
   // ── 5호선 ──
   { code: '0510', name: '방화', lines: ['5'], lat: 37.5735, lng: 126.8150 },
@@ -194,6 +203,12 @@ const _RAW_STATIONS: StationMeta[] = [
   { code: '0554', name: '하남풍산', lines: ['5'], lat: 37.5523, lng: 127.2014 },
   { code: '0555', name: '하남시청', lines: ['5'], lat: 37.5407, lng: 127.2139 },
   { code: '0556', name: '하남검단산', lines: ['5'], lat: 37.5337, lng: 127.2249 },
+  // ── 5호선 마천지선 ──
+  { code: '0557', name: '둔촌동', lines: ['5'], lat: 37.5278, lng: 127.1362 },
+  { code: '0558', name: '방이', lines: ['5'], lat: 37.5089, lng: 127.1261 },
+  { code: '0559', name: '개롱', lines: ['5'], lat: 37.4981, lng: 127.1348 },
+  { code: '0560', name: '거여', lines: ['5'], lat: 37.4931, lng: 127.1442 },
+  { code: '0561', name: '마천', lines: ['5'], lat: 37.4950, lng: 127.1528 },
 
   // ── 6호선 ──
   { code: '0610', name: '응암', lines: ['6'], lat: 37.5987, lng: 126.9132 },
@@ -217,6 +232,16 @@ const _RAW_STATIONS: StationMeta[] = [
   { code: '0617', name: '광흥창', lines: ['6'], lat: 37.5477, lng: 126.9320 },
   { code: '0618', name: '대흥', lines: ['6'], lat: 37.5475, lng: 126.9421 },
   { code: '0619', name: '효창공원앞', lines: ['6'], lat: 37.5397, lng: 126.9615 },
+  { code: '0624', name: '동묘앞', lines: ['1', '6'], lat: 37.5726, lng: 127.0164 },
+  { code: '0632', name: '독바위', lines: ['6'], lat: 37.6185, lng: 126.9330 },
+  { code: '0633', name: '구산', lines: ['6'], lat: 37.6114, lng: 126.9173 },
+  { code: '0634', name: '월드컵경기장', lines: ['6'], lat: 37.5695, lng: 126.8993 },
+  { code: '0635', name: '상수', lines: ['6'], lat: 37.5477, lng: 126.9229 },
+  { code: '0636', name: '창신', lines: ['6'], lat: 37.5797, lng: 127.0152 },
+  { code: '0637', name: '보문', lines: ['6'], lat: 37.5853, lng: 127.0194 },
+  { code: '0638', name: '안암', lines: ['6'], lat: 37.5863, lng: 127.0290 },
+  { code: '0639', name: '고려대', lines: ['6'], lat: 37.5905, lng: 127.0363 },
+  { code: '0640', name: '월곡', lines: ['6'], lat: 37.6019, lng: 127.0415 },
 
   // ── 7호선 ──
   { code: '0709', name: '장암', lines: ['7'], lat: 37.6905, lng: 127.0532 },
@@ -227,11 +252,13 @@ const _RAW_STATIONS: StationMeta[] = [
   { code: '0714', name: '중계', lines: ['7'], lat: 37.6444, lng: 127.0635 },
   { code: '0715', name: '하계', lines: ['7'], lat: 37.6369, lng: 127.0675 },
   { code: '0716', name: '공릉', lines: ['7'], lat: 37.6260, lng: 127.0726 },
+  { code: '0717', name: '먹골', lines: ['7'], lat: 37.6106, lng: 127.0777 },
   { code: '0718', name: '상봉', lines: ['7'], lat: 37.5966, lng: 127.0855 },
   { code: '0719', name: '면목', lines: ['7'], lat: 37.5833, lng: 127.0854 },
   { code: '0720', name: '사가정', lines: ['7'], lat: 37.5730, lng: 127.0878 },
   { code: '0721', name: '용마산', lines: ['7'], lat: 37.5640, lng: 127.0863 },
   { code: '0722', name: '중곡', lines: ['7'], lat: 37.5571, lng: 127.0836 },
+  { code: '0723', name: '중화', lines: ['7'], lat: 37.6025, lng: 127.0793 },
   { code: '0724', name: '어린이대공원', lines: ['7'], lat: 37.5481, lng: 127.0739 },
   { code: '0725', name: '뚝섬유원지', lines: ['7'], lat: 37.5317, lng: 127.0661 },
   { code: '0726', name: '청담', lines: ['7'], lat: 37.5189, lng: 127.0533 },
@@ -255,8 +282,10 @@ const _RAW_STATIONS: StationMeta[] = [
   { code: '0744', name: '광명사거리', lines: ['7'], lat: 37.4673, lng: 126.8589 },
   { code: '0745', name: '천왕', lines: ['7'], lat: 37.4597, lng: 126.8472 },
   { code: '0746', name: '온수', lines: ['1', '7'], lat: 37.4926, lng: 126.8230 },
+  { code: '0747', name: '자양', lines: ['7'], lat: 37.5313, lng: 127.0667 },
 
   // ── 8호선 ──
+  { code: '0809', name: '암사역사공원', lines: ['8'], lat: 37.5520, lng: 127.1310 },
   { code: '0810', name: '암사', lines: ['8'], lat: 37.5505, lng: 127.1271 },
   { code: '0811', name: '천호', lines: ['5', '8'], lat: 37.5392, lng: 127.1236 },
   { code: '0812', name: '강동구청', lines: ['8'], lat: 37.5311, lng: 127.1270 },
@@ -274,6 +303,7 @@ const _RAW_STATIONS: StationMeta[] = [
   { code: '0824', name: '신흥', lines: ['8'], lat: 37.4397, lng: 127.1570 },
   { code: '0825', name: '수진', lines: ['8'], lat: 37.4362, lng: 127.1496 },
   { code: '0826', name: '모란', lines: ['8'], lat: 37.4326, lng: 127.1292 },
+  { code: '0827', name: '남위례', lines: ['8'], lat: 37.4628, lng: 127.1392 },
 
   // ── 9호선 ──
   { code: '0901', name: '개화', lines: ['9'], lat: 37.5729, lng: 126.7987 },
