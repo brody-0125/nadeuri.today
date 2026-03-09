@@ -22,6 +22,7 @@ export default function ContactModal({ isOpen, onClose, onSubmit }: ContactModal
   const [message, setMessage] = useState('');
   const [honeypot, setHoneypot] = useState('');
   const [status, setStatus] = useState<SubmitStatus>('idle');
+  const [recaptchaFailed, setRecaptchaFailed] = useState(false);
   const [lastSubmitTime, setLastSubmitTime] = useState(0);
   const [cooldownRemaining, setCooldownRemaining] = useState(0);
 
@@ -127,6 +128,7 @@ export default function ContactModal({ isOpen, onClose, onSubmit }: ContactModal
     setMessage('');
     setHoneypot('');
     setStatus('idle');
+    setRecaptchaFailed(false);
   }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -158,8 +160,11 @@ export default function ContactModal({ isOpen, onClose, onSubmit }: ContactModal
         if (siteKey && typeof window !== 'undefined' && window.grecaptcha) {
           try {
             recaptchaToken = await window.grecaptcha.execute(siteKey, { action: 'contact' });
+            setRecaptchaFailed(false);
           } catch {
-            console.warn('reCAPTCHA token 획득 실패 — 토큰 없이 제출합니다');
+            setRecaptchaFailed(true);
+            setStatus('idle');
+            return;
           }
         }
 
@@ -310,6 +315,12 @@ export default function ContactModal({ isOpen, onClose, onSubmit }: ContactModal
           {status === 'error' && (
             <p className="text-sm text-status-fault font-medium">
               전송에 실패했습니다. 다시 시도해주세요
+            </p>
+          )}
+
+          {recaptchaFailed && status === 'idle' && (
+            <p className="text-sm text-status-fault font-medium">
+              보안 인증에 실패했습니다. 페이지를 새로고침 후 다시 시도해주세요
             </p>
           )}
 
