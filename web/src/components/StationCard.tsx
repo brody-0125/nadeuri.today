@@ -110,7 +110,7 @@ export default function StationCard({ station, status }: StationCardProps) {
           <div className="flex gap-3 text-xs text-text-secondary">
             <span className="flex items-center gap-1 transition-colors group-hover:text-status-operating">
               상세 보기
-              <span className="material-symbols-outlined text-sm">arrow_forward</span>
+              <span className="material-symbols-outlined text-sm" aria-hidden="true">arrow_forward</span>
             </span>
           </div>
         </div>
