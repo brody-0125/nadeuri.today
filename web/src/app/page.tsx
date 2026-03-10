@@ -231,9 +231,18 @@ export default function HomePage() {
         {/* Fault Station List (Mockup style) */}
         {!hasQuery && data && faultStations.length > 0 && (
           <section>
-            <p className="mb-2.5 font-mono text-xs uppercase tracking-[0.14em] text-text-secondary">
-              ⚠ 현재 고장 역
-            </p>
+            <div className="flex items-baseline justify-between mb-2.5">
+              <p className="font-mono text-xs uppercase tracking-[0.14em] text-text-secondary">
+                ⚠ 현재 고장 역 (일부)
+              </p>
+              <Link
+                href="/faults/"
+                className="text-xs font-medium text-status-fault hover:text-status-fault/80 transition-colors flex items-center gap-0.5"
+              >
+                전체 보기
+                <span className="material-symbols-outlined text-sm" aria-hidden="true">arrow_forward</span>
+              </Link>
+            </div>
             <ul role="list" className="space-y-1.5">
               {faultStations.slice(0, 8).map((station) => (
                 <li key={station.code}>
@@ -245,8 +254,14 @@ export default function HomePage() {
                 </li>
               ))}
               {faultStations.length > 8 && (
-                <li className="pt-1 text-center text-xs text-text-secondary list-none">
-                  외 {faultStations.length - 8}개 역
+                <li className="list-none">
+                  <Link
+                    href="/faults/"
+                    className="flex items-center justify-center gap-1 pt-2 pb-1 text-xs font-medium text-status-fault hover:text-status-fault/80 transition-colors"
+                  >
+                    외 {faultStations.length - 8}개 역 보기
+                    <span className="material-symbols-outlined text-sm" aria-hidden="true">arrow_forward</span>
+                  </Link>
                 </li>
               )}
             </ul>
