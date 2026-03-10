@@ -54,12 +54,12 @@ export default function StationCard({ station, status, compact = false }: Statio
       <article
         aria-label={`${station.name} ${station.lines.join('·')}호선, ${hasIssue ? (faultCount > 0 ? `${faultCount}개 고장` : `${maintCount}개 점검 중`) : '전체 정상'}`}
         className={`flex items-center justify-between rounded-lg border border-border bg-surface transition-all hover:border-border-strong hover:shadow-paper ${
-          compact ? 'gap-3 px-4 py-3' : 'flex-col gap-4 p-5 sm:flex-row sm:items-center'
+          compact ? 'gap-3 px-4 py-3' : 'gap-4 p-5'
         } ${
           faultCount > 0 ? 'border-l-[4px] border-l-status-fault-border' : maintCount > 0 ? 'border-l-[4px] border-l-status-maintenance-border' : ''
         }`}
       >
-        <div className={`flex items-center ${compact ? 'gap-3' : 'items-start gap-4'}`}>
+        <div className={`flex min-w-0 items-center ${compact ? 'gap-3' : 'items-start gap-4'}`}>
           {/* Line Badge */}
           <div className="flex-shrink-0">
             <div
@@ -72,14 +72,14 @@ export default function StationCard({ station, status, compact = false }: Statio
             </div>
           </div>
           {/* Info */}
-          <div>
+          <div className="min-w-0">
             <h3 className={`font-serif font-bold text-text-primary transition-colors group-hover:text-status-operating ${
               compact ? 'text-[15px]' : 'text-xl'
             }`}>
               {station.name}
             </h3>
             {!compact && (
-              <div className="flex items-center gap-2 mt-1.5">
+              <div className="flex flex-wrap items-center gap-1.5 mt-1.5">
                 {station.lines.map((line) => (
                   <span
                     key={line}
@@ -94,7 +94,7 @@ export default function StationCard({ station, status, compact = false }: Statio
         </div>
 
         {/* Status Pill + Actions */}
-        <div className={`flex items-center gap-2 ${compact ? '' : 'flex-col items-start sm:items-end gap-2'}`}>
+        <div className={`flex-shrink-0 flex items-center gap-2 ${compact ? '' : 'flex-col items-end gap-2'}`}>
           {status ? (
             hasIssue ? (
               <div className={`inline-flex items-center gap-1.5 rounded-full border border-status-fault-border bg-status-fault-bg ${
