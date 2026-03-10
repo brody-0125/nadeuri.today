@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState, useMemo } from 'react';
+import { useEffect, useState, useMemo, useCallback } from 'react';
 import Link from 'next/link';
 import { LatestData, FacilityType } from '@/types';
 import { fetchLatest } from '@/lib/data';
@@ -8,6 +8,7 @@ import { STATIONS, LINES } from '@/lib/stations';
 import StationCard from '@/components/StationCard';
 import ThemeToggle from '@/components/ThemeToggle';
 import DataFreshnessBar from '@/components/DataFreshnessBar';
+import DevSettingsPanel from '@/components/DevSettingsPanel';
 
 const FACILITY_TYPES: FacilityType[] = [
   'elevator', 'escalator', 'moving_walk', 'wheelchair_lift', 'safety_board',
@@ -45,11 +46,17 @@ export default function FaultsClient() {
   const [error, setError] = useState<string | null>(null);
   const [selectedLine, setSelectedLine] = useState<string | null>(null);
 
-  useEffect(() => {
+  const loadData = useCallback(() => {
+    setData(null);
+    setError(null);
     fetchLatest()
       .then(setData)
       .catch(() => setError('데이터를 불러오지 못했습니다. 잠시 후 새로고침 해보세요.'));
   }, []);
+
+  useEffect(() => {
+    loadData();
+  }, [loadData]);
 
   const faultStations = useMemo(() => {
     if (!data) return [];
@@ -77,12 +84,10 @@ export default function FaultsClient() {
 
       {/* Navbar — consistent with about page */}
       <nav className="bg-surface border-b border-border" aria-label="상단 탐색">
-        <div className="max-w-3xl mx-auto px-5 md:px-8 h-14 flex items-center justify-between">
+        <div className="max-w-5xl mx-auto px-4 md:px-8 h-16 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2 text-status-operating hover:opacity-80 transition-opacity">
-            <div className="flex h-[28px] w-[28px] items-center justify-center rounded-[8px] bg-status-operating">
-              <span className="material-symbols-outlined text-white text-[16px]" aria-hidden="true">subway</span>
-            </div>
-            <span className="font-serif font-bold text-[17px] text-text-primary tracking-tight">나들이</span>
+            <span className="material-symbols-outlined text-3xl" aria-hidden="true">subway</span>
+            <span className="font-serif font-bold text-xl text-text-primary tracking-tight">나들이</span>
           </Link>
           <div className="flex items-center gap-3">
             <ThemeToggle />
@@ -94,7 +99,7 @@ export default function FaultsClient() {
         </div>
       </nav>
 
-      <main id="main-content" className="flex-1 w-full max-w-3xl mx-auto px-5 md:px-8 py-6 flex flex-col gap-5">
+      <main id="main-content" className="flex-1 w-full max-w-3xl mx-auto px-4 md:px-8 py-6 flex flex-col gap-5">
         {/* Page Header */}
         <div>
           <h1 className="font-serif text-xl font-bold text-text-primary mb-1">
@@ -112,7 +117,16 @@ export default function FaultsClient() {
         {/* Error */}
         {error && (
           <div className="flex flex-col gap-3 rounded-xl border border-status-fault-border bg-status-fault-bg p-4 text-sm text-status-fault" role="alert">
-            <p className="font-medium">{error}</p>
+            <div>
+              <p className="font-medium">{error}</p>
+              <p className="mt-1 text-xs text-status-fault/70">개발 환경에서는 우측 하단 설정에서 Mock 데이터를 사용해보세요.</p>
+            </div>
+            <button
+              onClick={loadData}
+              className="self-start rounded-sm bg-status-fault px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-status-fault/90"
+            >
+              다시 시도
+            </button>
           </div>
         )}
 
@@ -165,7 +179,7 @@ export default function FaultsClient() {
             </div>
 
             {/* Station List */}
-            <div className="space-y-2">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
               {filteredStations.map((station) => (
                 <StationCard
                   key={station.code}
@@ -175,7 +189,7 @@ export default function FaultsClient() {
                 />
               ))}
               {filteredStations.length === 0 && (
-                <div className="py-12 text-center">
+                <div className="py-12 text-center md:col-span-2">
                   <p className="text-3xl mb-3" aria-hidden="true">✅</p>
                   <p className="font-serif text-base font-bold text-text-primary mb-1">
                     {selectedLine ? `${selectedLine}호선에 고장 역이 없어요` : '현재 고장 역이 없어요'}
@@ -189,6 +203,8 @@ export default function FaultsClient() {
           </>
         )}
       </main>
+
+      <DevSettingsPanel onSettingsChange={loadData} />
     </>
   );
 }
