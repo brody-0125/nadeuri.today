@@ -77,12 +77,6 @@ export default function HomePage() {
       .sort((a, b) => countFaults(data, b.code) - countFaults(data, a.code));
   }, [data]);
 
-  const normalStations = useMemo(() => {
-    if (!data) return [];
-    return STATIONS.filter((s) => data.stations[s.code] && !hasFaultStation(data, s.code))
-      .slice(0, 5);
-  }, [data]);
-
   // Line filter view
   const displayStations = useMemo(() => {
     if (!selectedLine) return [];
@@ -256,30 +250,6 @@ export default function HomePage() {
                 </li>
               )}
             </ul>
-          </section>
-        )}
-
-        {/* Divider */}
-        {!hasQuery && data && (
-          <hr className="border-border" />
-        )}
-
-        {/* Normal Stations (Preview) */}
-        {!hasQuery && data && normalStations.length > 0 && (
-          <section>
-            <p className="mb-2.5 font-mono text-xs uppercase tracking-[0.14em] text-text-secondary">
-              정상 운행 역 (일부)
-            </p>
-            <div className="space-y-1.5">
-              {normalStations.map((station) => (
-                <StationCard
-                  key={station.code}
-                  station={station}
-                  status={data.stations[station.code]}
-                  compact
-                />
-              ))}
-            </div>
           </section>
         )}
 
