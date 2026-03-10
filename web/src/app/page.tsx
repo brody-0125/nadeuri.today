@@ -231,17 +231,10 @@ export default function HomePage() {
         {/* Fault Station List (Mockup style) */}
         {!hasQuery && data && faultStations.length > 0 && (
           <section>
-            <div className="flex items-baseline justify-between mb-2.5">
+            <div className="mb-2.5">
               <p className="font-mono text-xs uppercase tracking-[0.14em] text-text-secondary">
-                ⚠ 현재 고장 역 (일부)
+                ⚠ 현재 고장 역
               </p>
-              <Link
-                href="/faults/"
-                className="text-xs font-medium text-status-fault hover:text-status-fault/80 transition-colors flex items-center gap-0.5"
-              >
-                전체 보기
-                <span className="material-symbols-outlined text-sm" aria-hidden="true">arrow_forward</span>
-              </Link>
             </div>
             <ul role="list" className="space-y-1.5">
               {faultStations.slice(0, 8).map((station) => (
