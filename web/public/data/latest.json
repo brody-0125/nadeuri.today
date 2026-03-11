@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-03-11T04:36:46.046Z",
+  "updated_at": "2026-03-11T05:24:18.198Z",
   "data_age_minutes": 0,
   "is_stale": false,
   "summary": {
     "elevator": {
       "total": 866,
-      "operating": 858,
+      "operating": 857,
       "fault": 0
     },
     "escalator": {
       "total": 1874,
-      "operating": 1824,
+      "operating": 1825,
       "fault": 0
     },
     "moving-walk": {
@@ -151,8 +151,8 @@
             "location_detail": "회현 방면1-1,숙대입구 방면10-4",
             "floor_from": "B2",
             "floor_to": "B1",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-서울(4)역 사당방향(10-4) 1호기",
@@ -3518,8 +3518,8 @@
             "location_detail": "4번 출입구",
             "floor_from": "1F",
             "floor_to": "B1",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           }
         ]
       },
@@ -21526,8 +21526,8 @@
             "location_detail": "2번 출입구",
             "floor_from": "B1",
             "floor_to": "1F",
-            "status": "OPERATING",
-            "status_code": "01"
+            "status": "MAINTENANCE",
+            "status_code": "03"
           }
         ],
         "escalator": [
@@ -21858,8 +21858,8 @@
             "location_detail": "2번 출입구",
             "floor_from": "B1",
             "floor_to": "1F",
-            "status": "OPERATING",
-            "status_code": "01"
+            "status": "MAINTENANCE",
+            "status_code": "03"
           },
           {
             "facility_id": "승강기)에스컬레이터-상봉(7) 3번 출입구 외부 5호기",
