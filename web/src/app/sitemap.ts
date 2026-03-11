@@ -8,10 +8,16 @@ const SITE_URL = 'https://nadeuri.today';
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages: MetadataRoute.Sitemap = [
     {
-      url: SITE_URL,
+      url: `${SITE_URL}/`,
       lastModified: new Date(),
       changeFrequency: 'always',
       priority: 1.0,
+    },
+    {
+      url: `${SITE_URL}/faults/`,
+      lastModified: new Date(),
+      changeFrequency: 'always',
+      priority: 0.7,
     },
     {
       url: `${SITE_URL}/about/`,
