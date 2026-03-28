@@ -50,7 +50,7 @@ export default function AboutPage() {
         {/* Content */}
         <div className="space-y-8 text-text-primary leading-relaxed">
           <p>
-            나들이는 서울 지하철 실시간 API에 직접 연결해 엘리베이터와 에스컬레이터의 상태를 전달해요. 공공데이터를 쉽고 빠르게 확인할 수 있도록 도와드려요.
+            나들이는 서울 지하철 편의시설의 운행 상태를 주기적으로 수집해 전달해요. 엘리베이터, 에스컬레이터, 무빙워크, 휠체어리프트, 안전발판 등 실시간 시설 5종의 상태를 확인할 수 있어요.
           </p>
           <p>
             나들이에서 보여드리는 모든 정보는{' '}
@@ -62,10 +62,10 @@ export default function AboutPage() {
             >
               서울 열린 데이터 광장
             </a>
-            에서 직접 가져와요. 공식 정부 데이터를 기반으로 하고 있어요.
+            의 공식 API에서 가져와요. 자동화된 수집 시스템이 매 시간 데이터를 갱신하고 있어요.
           </p>
           <p>
-            서버는 60초마다 최신 데이터를 확인해요. 엘리베이터가 고장 나거나 점검에 들어가면, 거의 실시간으로 반영돼요.
+            시설 상태는 매 시간 자동으로 수집돼요. 고장이나 점검 정보는 다음 수집 시점에 반영되므로, 현장 상황과 차이가 있을 수 있어요.
           </p>
 
           {/* System Status Card */}
@@ -88,17 +88,17 @@ export default function AboutPage() {
               </div>
               <div className="p-5">
                 <div className="flex items-center gap-1.5 text-text-secondary text-xs mb-1">
-                  <span className="material-symbols-outlined text-xs" aria-hidden="true">speed</span>
-                  지연 시간
+                  <span className="material-symbols-outlined text-xs" aria-hidden="true">category</span>
+                  실시간 시설
                 </div>
-                <p className="font-mono text-lg font-medium text-text-primary">&lt; 60s</p>
-                <span className="text-xs text-status-operating font-medium">연결 안정적</span>
+                <p className="font-mono text-lg font-medium text-text-primary">5종</p>
+                <span className="text-xs text-status-operating font-medium">자동 수집</span>
               </div>
               <div className="p-5">
                 <div className="flex items-center gap-1.5 text-text-secondary text-xs mb-1">
                   갱신 주기
                 </div>
-                <p className="font-mono text-lg font-medium text-text-primary">60s</p>
+                <p className="font-mono text-lg font-medium text-text-primary">1시간</p>
                 <span className="text-xs text-text-secondary">자동 갱신</span>
               </div>
             </div>
