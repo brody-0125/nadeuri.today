@@ -1,10 +1,22 @@
 {
-  "collected_at": "2026-04-02T10:22:56.259Z",
+  "collected_at": "2026-04-02T11:19:47.611Z",
   "source_api": "SeoulMetroFaciInfo",
   "total_count": 1874,
-  "operating_count": 1733,
+  "operating_count": 1728,
   "fault_count": 0,
   "facilities": [
+    {
+      "station_code": "2723",
+      "station_name": "면목",
+      "line": "",
+      "facility_id": "승강기)에스컬레이터-면목 내부 2호기",
+      "location_detail": "대합실",
+      "floor_from": "B3",
+      "floor_to": "B1",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
     {
       "station_code": "0150",
       "station_name": "서울역",
@@ -253,8 +265,8 @@
       "location_detail": "6번 출입구",
       "floor_from": "1F",
       "floor_to": "B1",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -313,8 +325,8 @@
       "location_detail": "2번 출입구",
       "floor_from": "B1",
       "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -1045,8 +1057,8 @@
       "location_detail": "6번 출입구",
       "floor_from": "2F",
       "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -2005,8 +2017,8 @@
       "location_detail": "방배 방면3-3",
       "floor_from": "B2",
       "floor_to": "B1",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -6673,8 +6685,8 @@
       "location_detail": "충무로 방면5-2,동대문 방면6-3",
       "floor_from": "B3",
       "floor_to": "B2",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -6709,8 +6721,8 @@
       "location_detail": "동대문 방면6-3,충무로 방면5-2",
       "floor_from": "B2",
       "floor_to": "B3",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -10417,8 +10429,8 @@
       "location_detail": "5번 출입구",
       "floor_from": "B1",
       "floor_to": "1F",
-      "status": "MAINTENANCE",
-      "status_code": "03",
+      "status": "OPERATING",
+      "status_code": "01",
       "last_normal_at": null
     },
     {
@@ -16254,6 +16266,18 @@
       "last_normal_at": null
     },
     {
+      "station_code": "2723",
+      "station_name": "면목",
+      "line": "",
+      "facility_id": "승강기)에스컬레이터-면목 내부 1호기",
+      "location_detail": "대합실",
+      "floor_from": "B1",
+      "floor_to": "B3",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
       "station_code": "2646",
       "station_name": "태릉입구",
       "line": "6호선",
@@ -17556,30 +17580,6 @@
       "facility_id": "승강기)에스컬레이터-면목 3번 출입구 외부 4호기",
       "location_detail": "3번 출입구",
       "floor_from": "1F",
-      "floor_to": "B1",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "2723",
-      "station_name": "면목",
-      "line": "",
-      "facility_id": "승강기)에스컬레이터-면목 내부 1호기",
-      "location_detail": "대합실",
-      "floor_from": "B1",
-      "floor_to": "B3",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "2723",
-      "station_name": "면목",
-      "line": "",
-      "facility_id": "승강기)에스컬레이터-면목 내부 2호기",
-      "location_detail": "대합실",
-      "floor_from": "B3",
       "floor_to": "B1",
       "status": "OPERATING",
       "status_code": "01",
