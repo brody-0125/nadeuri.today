@@ -1,9 +1,8 @@
 import "dotenv/config";
-import { writeFile, mkdir } from "fs/promises";
 import path from "path";
 import { fileURLToPath } from "url";
 
-import { loadJSON } from "./lib/hash-store.js";
+import { loadJSON, saveJSON } from "./lib/json-utils.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
@@ -279,7 +278,6 @@ function getRealtimeDataDir() {
   return path.join(ROOT, "data", "realtime");
 }
 
-
 function normalizeEnvironmentData(environmentData) {
   if (
     !environmentData ||
@@ -539,8 +537,7 @@ async function main() {
     }
   }
 
-  await mkdir(path.dirname(outputPath), { recursive: true });
-  await writeFile(outputPath, JSON.stringify(latestData, null, 2), "utf-8");
+  await saveJSON(outputPath, latestData);
 
   console.log(`\nBuilt latest.json:`);
   console.log(`  Updated at: ${latestData.updated_at}`);

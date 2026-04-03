@@ -3,7 +3,7 @@ import { mkdir, writeFile } from "fs/promises";
 import path from "path";
 import { fileURLToPath } from "url";
 
-import { hashJSON, loadJSON, saveJSON } from "./lib/hash-store.js";
+import { hashJSON, loadJSON, saveJSON } from "./lib/json-utils.js";
 
 import { collect as collectAirQuality } from "./api/air-quality.js";
 
