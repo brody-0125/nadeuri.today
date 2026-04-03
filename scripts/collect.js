@@ -1,8 +1,9 @@
 import "dotenv/config";
-import { createHash } from "crypto";
-import { mkdir, readFile, writeFile } from "fs/promises";
+import { mkdir, writeFile } from "fs/promises";
 import path from "path";
 import { fileURLToPath } from "url";
+
+import { hashJSON, loadJSON, saveJSON } from "./lib/hash-store.js";
 
 import { collect as collectElevator } from "./api/elevator.js";
 import { collect as collectEscalator } from "./api/escalator.js";
@@ -31,11 +32,10 @@ function isValidCollection(result) {
 }
 
 /**
- * Hash facility data for change detection.
  * Excludes collected_at so only actual facility state changes are detected.
  */
 function hashFacilities(result) {
-  const payload = result.facilities.map((f) => ({
+  return hashJSON(result.facilities.map((f) => ({
     station_code: f.station_code,
     facility_id: f.facility_id,
     status: f.status,
@@ -43,22 +43,7 @@ function hashFacilities(result) {
     location_detail: f.location_detail,
     floor_from: f.floor_from,
     floor_to: f.floor_to,
-  }));
-  return createHash("sha256").update(JSON.stringify(payload)).digest("hex");
-}
-
-async function loadHashes() {
-  try {
-    const content = await readFile(HASH_FILE, "utf-8");
-    return JSON.parse(content);
-  } catch {
-    return {};
-  }
-}
-
-async function saveHashes(hashes) {
-  await mkdir(path.dirname(HASH_FILE), { recursive: true });
-  await writeFile(HASH_FILE, JSON.stringify(hashes, null, 2), "utf-8");
+  })));
 }
 
 const REALTIME_TYPES = [
@@ -87,7 +72,7 @@ async function main() {
 
   console.log(`Collecting realtime data to ${outDir}`);
 
-  const prevHashes = await loadHashes();
+  const prevHashes = await loadJSON(HASH_FILE, {});
   const newHashes = { ...prevHashes };
   const errors = [];
   const skipped = [];
@@ -129,7 +114,7 @@ async function main() {
 
   // Save updated hashes
   if (hasChanges) {
-    await saveHashes(newHashes);
+    await saveJSON(HASH_FILE, newHashes);
   }
 
   // Set COLLECT_TIME env var for GitHub Actions commit message

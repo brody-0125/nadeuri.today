@@ -1,8 +1,9 @@
 import "dotenv/config";
-import { createHash } from "crypto";
-import { mkdir, readFile, writeFile } from "fs/promises";
+import { mkdir, writeFile } from "fs/promises";
 import path from "path";
 import { fileURLToPath } from "url";
+
+import { hashJSON, loadJSON, saveJSON } from "./lib/hash-store.js";
 
 import { collect as collectDisabledRestroom } from "./api/disabled-restroom.js";
 import { collect as collectSignLanguagePhone } from "./api/sign-language-phone.js";
@@ -14,33 +15,17 @@ const ROOT = path.resolve(__dirname, "..");
 const HASH_FILE = path.join(ROOT, "data-static", ".last-hashes.json");
 
 /**
- * Hash facility data for change detection.
  * Excludes collected_at so only actual facility content changes are detected.
  */
 function hashStaticFacilities(result) {
-  const payload = result.facilities.map((f) => ({
+  return hashJSON(result.facilities.map((f) => ({
     id: f.id,
     station_code: f.station_code,
     station_name: f.station_name,
     line: f.line,
     location: f.location,
     detail: f.detail,
-  }));
-  return createHash("sha256").update(JSON.stringify(payload)).digest("hex");
-}
-
-async function loadHashes() {
-  try {
-    const content = await readFile(HASH_FILE, "utf-8");
-    return JSON.parse(content);
-  } catch {
-    return {};
-  }
-}
-
-async function saveHashes(hashes) {
-  await mkdir(path.dirname(HASH_FILE), { recursive: true });
-  await writeFile(HASH_FILE, JSON.stringify(hashes, null, 2), "utf-8");
+  })));
 }
 
 const STATIC_TYPES = [
@@ -63,7 +48,7 @@ async function main() {
 
   console.log(`Collecting static data to ${outDir}`);
 
-  const prevHashes = await loadHashes();
+  const prevHashes = await loadJSON(HASH_FILE, {});
   const newHashes = { ...prevHashes };
   const errors = [];
   const unchanged = [];
@@ -94,7 +79,7 @@ async function main() {
   }
 
   if (hasChanges) {
-    await saveHashes(newHashes);
+    await saveJSON(HASH_FILE, newHashes);
   }
 
   if (unchanged.length > 0) {

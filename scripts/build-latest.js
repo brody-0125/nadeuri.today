@@ -1,7 +1,9 @@
 import "dotenv/config";
-import { readdir, readFile, writeFile, mkdir } from "fs/promises";
+import { writeFile, mkdir } from "fs/promises";
 import path from "path";
 import { fileURLToPath } from "url";
+
+import { loadJSON } from "./lib/hash-store.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
@@ -277,14 +279,6 @@ function getRealtimeDataDir() {
   return path.join(ROOT, "data", "realtime");
 }
 
-async function readJsonFile(filePath) {
-  try {
-    const content = await readFile(filePath, "utf-8");
-    return JSON.parse(content);
-  } catch {
-    return null;
-  }
-}
 
 function normalizeEnvironmentData(environmentData) {
   if (
@@ -308,7 +302,7 @@ function normalizeEnvironmentData(environmentData) {
 
 async function loadPreviousLatest() {
   const outputPath = path.join(ROOT, "web", "public", "data", "latest.json");
-  return readJsonFile(outputPath);
+  return loadJSON(outputPath);
 }
 
 function extractRealtimeFromLatest(latest, type) {
@@ -361,7 +355,7 @@ async function main() {
   const realtimeData = {};
   for (const type of REALTIME_TYPES) {
     const filePath = path.join(dirPath, `${type}.json`);
-    const data = await readJsonFile(filePath);
+    const data = await loadJSON(filePath);
     if (data) {
       realtimeData[type] = data;
       console.log(`  Loaded ${type}: ${data.total_count} facilities`);
@@ -382,7 +376,7 @@ async function main() {
   const staticDir = path.join(ROOT, "data-static");
   for (const type of STATIC_TYPES) {
     const filePath = path.join(staticDir, `${type}.json`);
-    const data = await readJsonFile(filePath);
+    const data = await loadJSON(filePath);
     if (data) {
       staticData[type] = data;
       console.log(`  Loaded static ${type}: ${data.total_count} facilities`);
@@ -392,7 +386,7 @@ async function main() {
   }
 
   const environmentPath = path.join(staticDir, "air-quality.json");
-  const environmentData = normalizeEnvironmentData(await readJsonFile(environmentPath));
+  const environmentData = normalizeEnvironmentData(await loadJSON(environmentPath));
   if (environmentData) {
     console.log("  Loaded environment air-quality");
   } else {
