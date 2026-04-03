@@ -532,6 +532,19 @@ async function main() {
 
   // Write to web/public/data/latest.json (served as static asset)
   const outputPath = path.join(ROOT, "web", "public", "data", "latest.json");
+
+  // Compare with previous output excluding volatile fields (data_age_minutes, is_stale)
+  // These fields change every run based on wall-clock time, not actual data changes
+  if (previousLatest) {
+    const stripVolatile = ({ data_age_minutes, is_stale, ...rest }) => rest;
+    const prevStable = JSON.stringify(stripVolatile(previousLatest));
+    const newStable = JSON.stringify(stripVolatile(latestData));
+    if (prevStable === newStable) {
+      console.log("\nlatest.json: no meaningful changes, skipping write");
+      return;
+    }
+  }
+
   await mkdir(path.dirname(outputPath), { recursive: true });
   await writeFile(outputPath, JSON.stringify(latestData, null, 2), "utf-8");
 

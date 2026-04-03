@@ -46,8 +46,8 @@ jobs:
           title: 'chore: collect environment data'
           body: 'Automated environment data collection.'
           add-paths: |
-            data/**
-            data-static/air-quality.json
+            data-static/**
+            web/public/data/**
 
       - name: Enable auto-merge
         if: steps.cpr.outputs.pull-request-number
