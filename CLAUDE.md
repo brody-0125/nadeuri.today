@@ -35,7 +35,7 @@ npm run validate             # Validate data integrity
 Seoul Open Data API → GitHub Actions (cron) → Node.js scripts → data/*.json → build-latest.js → data/latest.json → Next.js static site → GitHub Pages
 ```
 
-- **Real-time collection** runs every 5 minutes via GitHub Actions (`collect-realtime.yml`)
+- **Real-time collection** runs every 1.5 hours via GitHub Actions (`collect-realtime.yml`)
 - **Static facility data** collected daily at 3:15 PM KST (`collect-static.yml`)
 - Realtime data stored in `data/realtime/` (overwritten on each collection)
 - Frontend reads `data/latest.json` (aggregated snapshot)
