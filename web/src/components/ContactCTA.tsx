@@ -1,10 +1,12 @@
 'use client';
 
 import { useState } from 'react';
+import { useTranslations } from 'next-intl';
 import ContactModal from './ContactModal';
 
 export default function ContactCTA() {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const t = useTranslations('contact');
 
   const gasUrl = process.env.NEXT_PUBLIC_GAS_URL;
   if (!gasUrl) return null;
@@ -19,12 +21,12 @@ export default function ContactCTA() {
             minHeight: '56px',
             paddingBottom: 'env(safe-area-inset-bottom, 0px)',
           }}
-          aria-label="문의하기"
+          aria-label={t('title')}
         >
           <span className="material-symbols-outlined text-xl" aria-hidden="true">
             mail
           </span>
-          <span>문의하기</span>
+          <span>{t('title')}</span>
         </button>
       )}
 

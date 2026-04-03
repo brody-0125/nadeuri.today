@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState, useCallback } from 'react';
+import { useTranslations } from 'next-intl';
 
 type SubmitStatus = 'idle' | 'loading' | 'success' | 'error';
 
@@ -17,6 +18,9 @@ interface ContactModalProps {
 }
 
 export default function ContactModal({ isOpen, onClose, onSubmit }: ContactModalProps) {
+  const t = useTranslations('contact');
+  const tCommon = useTranslations('common');
+
   const [name, setName] = useState('');
   const [contact, setContact] = useState('');
   const [message, setMessage] = useState('');
@@ -31,7 +35,6 @@ export default function ContactModal({ isOpen, onClose, onSubmit }: ContactModal
   const firstFocusableRef = useRef<HTMLButtonElement>(null);
   const lastFocusableRef = useRef<HTMLButtonElement>(null);
 
-  // Lock body scroll when open
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = 'hidden';
@@ -44,7 +47,6 @@ export default function ContactModal({ isOpen, onClose, onSubmit }: ContactModal
     };
   }, [isOpen]);
 
-  // ESC to close
   useEffect(() => {
     if (!isOpen) return;
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -56,7 +58,6 @@ export default function ContactModal({ isOpen, onClose, onSubmit }: ContactModal
     return () => document.removeEventListener('keydown', handleKeyDown);
   }, [isOpen, onClose]);
 
-  // Focus trap
   useEffect(() => {
     if (!isOpen || !modalRef.current) return;
 
@@ -88,7 +89,6 @@ export default function ContactModal({ isOpen, onClose, onSubmit }: ContactModal
 
     document.addEventListener('keydown', handleTab);
 
-    // Auto-focus first focusable element
     const focusableElements = modal.querySelectorAll<HTMLElement>(focusableSelectors);
     if (focusableElements.length > 0) {
       focusableElements[0].focus();
@@ -97,7 +97,6 @@ export default function ContactModal({ isOpen, onClose, onSubmit }: ContactModal
     return () => document.removeEventListener('keydown', handleTab);
   }, [isOpen]);
 
-  // Cooldown timer
   useEffect(() => {
     if (cooldownRemaining <= 0) return;
     const timer = setInterval(() => {
@@ -112,7 +111,6 @@ export default function ContactModal({ isOpen, onClose, onSubmit }: ContactModal
     return () => clearInterval(timer);
   }, [cooldownRemaining]);
 
-  // Auto-close on success
   useEffect(() => {
     if (status !== 'success') return;
     const timer = setTimeout(() => {
@@ -134,13 +132,9 @@ export default function ContactModal({ isOpen, onClose, onSubmit }: ContactModal
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    // Honeypot check
     if (honeypot) return;
-
-    // Timestamp check: less than 3 seconds since mount
     if (Date.now() - mountTime.current < 3000) return;
 
-    // Cooldown check
     const now = Date.now();
     const elapsed = (now - lastSubmitTime) / 1000;
     if (lastSubmitTime > 0 && elapsed < 30) {
@@ -154,7 +148,6 @@ export default function ContactModal({ isOpen, onClose, onSubmit }: ContactModal
       if (onSubmit) {
         await onSubmit({ name, contact, message });
       } else {
-        // reCAPTCHA v3 token
         const siteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY;
         let recaptchaToken = '';
         if (siteKey && typeof window !== 'undefined' && window.grecaptcha) {
@@ -184,7 +177,6 @@ export default function ContactModal({ isOpen, onClose, onSubmit }: ContactModal
             timestamp: Date.now(),
           }),
         });
-        // no-cors: can't read response, assume success
       }
       setStatus('success');
       setLastSubmitTime(Date.now());
@@ -197,29 +189,26 @@ export default function ContactModal({ isOpen, onClose, onSubmit }: ContactModal
 
   return (
     <div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center">
-      {/* Overlay */}
       <div
         className="absolute inset-0 bg-black/50"
         onClick={onClose}
         aria-hidden="true"
       />
 
-      {/* Modal Card */}
       <div
         ref={modalRef}
         role="dialog"
         aria-modal="true"
-        aria-label="문의하기"
+        aria-label={t('title')}
         className="relative w-full sm:max-w-md bg-surface border border-border rounded-t-2xl sm:rounded-2xl max-h-[90vh] overflow-y-auto"
       >
-        {/* Header */}
         <div className="flex items-center justify-between p-4 border-b border-border">
-          <h2 className="font-serif text-lg font-bold text-text-primary">문의하기</h2>
+          <h2 className="font-serif text-lg font-bold text-text-primary">{t('title')}</h2>
           <button
             ref={firstFocusableRef}
             onClick={onClose}
             className="flex items-center justify-center w-11 h-11 rounded-full text-text-secondary hover:text-text-primary hover:bg-bg transition-colors"
-            aria-label="닫기"
+            aria-label={tCommon('close')}
           >
             <span className="material-symbols-outlined text-xl" aria-hidden="true">
               close
@@ -227,12 +216,10 @@ export default function ContactModal({ isOpen, onClose, onSubmit }: ContactModal
           </button>
         </div>
 
-        {/* Form */}
         <form onSubmit={handleSubmit} className="p-4 space-y-4">
-          {/* Name */}
           <div>
             <label htmlFor="contact-name" className="block text-sm font-medium text-text-primary mb-1">
-              이름
+              {t('name')}
             </label>
             <input
               id="contact-name"
@@ -241,15 +228,14 @@ export default function ContactModal({ isOpen, onClose, onSubmit }: ContactModal
               maxLength={100}
               value={name}
               onChange={(e) => setName(e.target.value)}
-              placeholder="이름을 입력해주세요"
+              placeholder={t('namePlaceholder')}
               className="block w-full bg-bg border border-border rounded-lg px-4 py-3 text-text-primary placeholder:text-text-secondary focus:border-border-strong focus:outline-none transition-colors"
             />
           </div>
 
-          {/* Contact */}
           <div>
             <label htmlFor="contact-info" className="block text-sm font-medium text-text-primary mb-1">
-              연락처
+              {t('contactInfo')}
             </label>
             <input
               id="contact-info"
@@ -258,15 +244,14 @@ export default function ContactModal({ isOpen, onClose, onSubmit }: ContactModal
               maxLength={200}
               value={contact}
               onChange={(e) => setContact(e.target.value)}
-              placeholder="전화번호 또는 이메일"
+              placeholder={t('contactPlaceholder')}
               className="block w-full bg-bg border border-border rounded-lg px-4 py-3 text-text-primary placeholder:text-text-secondary focus:border-border-strong focus:outline-none transition-colors"
             />
           </div>
 
-          {/* Message */}
           <div>
             <label htmlFor="contact-message" className="block text-sm font-medium text-text-primary mb-1">
-              문의 내용
+              {t('message')}
             </label>
             <textarea
               id="contact-message"
@@ -275,12 +260,11 @@ export default function ContactModal({ isOpen, onClose, onSubmit }: ContactModal
               rows={4}
               value={message}
               onChange={(e) => setMessage(e.target.value)}
-              placeholder="문의 내용을 입력해주세요"
+              placeholder={t('messagePlaceholder')}
               className="block w-full bg-bg border border-border rounded-lg px-4 py-3 text-text-primary placeholder:text-text-secondary focus:border-border-strong focus:outline-none transition-colors resize-none"
             />
           </div>
 
-          {/* Honeypot */}
           <div
             style={{ position: 'absolute', left: '-9999px', opacity: 0 }}
             aria-hidden="true"
@@ -296,10 +280,9 @@ export default function ContactModal({ isOpen, onClose, onSubmit }: ContactModal
             />
           </div>
 
-          {/* Status messages */}
           {cooldownRemaining > 0 && (
             <p className="text-sm text-status-fault font-medium">
-              {cooldownRemaining}초 후 다시 시도해주세요
+              {t('cooldown', { seconds: cooldownRemaining })}
             </p>
           )}
 
@@ -308,23 +291,22 @@ export default function ContactModal({ isOpen, onClose, onSubmit }: ContactModal
               <span className="material-symbols-outlined text-lg" aria-hidden="true">
                 check_circle
               </span>
-              <span className="text-sm font-medium">문의가 접수되었습니다</span>
+              <span className="text-sm font-medium">{t('success')}</span>
             </div>
           )}
 
           {status === 'error' && (
             <p className="text-sm text-status-fault font-medium">
-              전송에 실패했습니다. 다시 시도해주세요
+              {t('error')}
             </p>
           )}
 
           {recaptchaFailed && status === 'idle' && (
             <p className="text-sm text-status-fault font-medium">
-              보안 인증에 실패했습니다. 페이지를 새로고침 후 다시 시도해주세요
+              {t('recaptchaError')}
             </p>
           )}
 
-          {/* Submit */}
           <button
             ref={lastFocusableRef}
             type="submit"
@@ -334,17 +316,17 @@ export default function ContactModal({ isOpen, onClose, onSubmit }: ContactModal
             {status === 'loading' ? (
               <>
                 <span className="inline-block h-4 w-4 animate-spin rounded-full border-2 border-white border-t-transparent" aria-hidden="true" />
-                <span>전송 중...</span>
+                <span>{t('sending')}</span>
               </>
             ) : status === 'success' ? (
               <>
                 <span className="material-symbols-outlined text-lg" aria-hidden="true">
                   check
                 </span>
-                <span>접수 완료</span>
+                <span>{t('sent')}</span>
               </>
             ) : (
-              '전송하기'
+              t('submit')
             )}
           </button>
         </form>
