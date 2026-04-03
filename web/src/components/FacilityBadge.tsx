@@ -33,13 +33,6 @@ const STATUS_CONFIG: Record<FacilityStatus, { bg: string; border: string; dot: s
   },
 };
 
-const STATUS_ARIA: Record<FacilityStatus, string> = {
-  OPERATING: '정상',
-  FAULT: '고장',
-  MAINTENANCE: '점검 중',
-  UNKNOWN: '확인불가',
-};
-
 const STATUS_ICONS: Record<FacilityStatus, string> = {
   OPERATING: 'check_circle',
   FAULT: 'warning',
@@ -53,7 +46,7 @@ export default function FacilityBadge({ status, label }: FacilityBadgeProps) {
   return (
     <span
       className={`inline-flex items-center gap-1.5 rounded-full border px-3 py-1.5 min-w-[48px] justify-center ${c.bg} ${c.border}`}
-      aria-label={`${label}: ${STATUS_ARIA[status]}`}
+      aria-label={label}
     >
       <span
         className={`material-symbols-outlined text-sm ${c.text}`}

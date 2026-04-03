@@ -1,0 +1,213 @@
+{
+  "common": {
+    "appName": "나들이",
+    "skipToMain": "본문으로 바로가기",
+    "home": "홈",
+    "search": "검색",
+    "route": "경로",
+    "data": "데이터",
+    "retry": "다시 시도",
+    "close": "닫기",
+    "loading": "데이터 로딩 중",
+    "loadingMessage": "역 정보를 가져오고 있어요...",
+    "homeNav": "홈으로",
+    "topNav": "상단 탐색",
+    "mainNav": "주요 탐색",
+    "backToDashboard": "대시보드로 돌아가기",
+    "comingSoon": "준비 중"
+  },
+  "meta": {
+    "title": "나들이 — 서울 지하철 교통약자 편의시설 실시간 현황",
+    "titleTemplate": "%s | 나들이",
+    "description": "서울 지하철 엘리베이터, 에스컬레이터 등 교통약자 편의시설의 실시간 운행 상태를 확인하세요. 1~9호선, 우이신설선 300개 이상 역의 편의시설 정보를 제공합니다.",
+    "shortDescription": "서울 지하철 엘리베이터, 에스컬레이터 등 교통약자 편의시설의 실시간 운행 상태를 확인하세요."
+  },
+  "facility": {
+    "elevator": "엘리베이터",
+    "escalator": "에스컬레이터",
+    "movingWalk": "무빙워크",
+    "wheelchairLift": "휠체어리프트",
+    "safetyBoard": "안전발판",
+    "disabledRestroom": "장애인화장실",
+    "signLanguagePhone": "수어영상전화기",
+    "wheelchairCharger": "휠체어급속충전기",
+    "helper": "교통약자도우미"
+  },
+  "status": {
+    "operating": "정상",
+    "fault": "고장",
+    "maintenance": "점검 중",
+    "unknown": "확인불가"
+  },
+  "home": {
+    "tagline": "오늘은 어디로 가볼까?",
+    "searchPlaceholder": "역 이름을 입력하세요 (예: 강남, 서울역)",
+    "searchLabel": "지하철역 검색",
+    "clearSearch": "검색어 지우기",
+    "searchResults": "검색 결과",
+    "resultCount": "'{query}' 검색 결과 {count}개",
+    "noResults": "'{query}'와 일치하는 역이 없어요",
+    "noResultsHelp": "다른 이름이나 호선 번호로 검색해 보세요.",
+    "faultStations": "현재 고장 역",
+    "viewMoreFaults": "외 {count}개 역 보기",
+    "lineStations": "호선별 역 목록",
+    "stationCount": "{count}개 역",
+    "lineN": "{line}호선",
+    "selectLine": "호선을 선택하면 역 목록이 표시됩니다",
+    "filterFaults": "고장·점검 역만 보기",
+    "noFaults": "현재 고장·점검 중인 역이 없습니다.",
+    "noStations": "해당 호선에 역이 없습니다.",
+    "typeMoreToSearch": "더 입력하면 검색 결과가 표시됩니다",
+    "lineFilter": "호선 필터",
+    "summaryLabel": "전체 현황 요약"
+  },
+  "station": {
+    "notFound": "존재하지 않는 역입니다.",
+    "notFoundTitle": "존재하지 않는 역",
+    "backHome": "홈으로 돌아가기",
+    "backHomeShort": "← 홈으로",
+    "facilityTitle": "{name} 편의시설 현황",
+    "facilityDescription": "{name}({lines}) 엘리베이터, 에스컬레이터 등 교통약자 편의시설의 실시간 운행 상태를 확인하세요.",
+    "faultBannerSingle": "{type} 1개 수리 중",
+    "faultBannerMultiple": "시설 {count}개 수리 중",
+    "faultBannerSuffix": "· 아래에서 확인하세요.",
+    "externalMaps": "외부 지도",
+    "otherFacilities": "기타 편의시설",
+    "available": "정상",
+    "unavailable": "없음",
+    "noLocation": "위치 정보 없음",
+    "viewDetail": "상세 보기"
+  },
+  "stationCard": {
+    "allOperating": "전체 정상",
+    "faultCount": "{count}개 고장",
+    "maintCount": "{count}개 점검 중",
+    "noInfo": "정보 없음"
+  },
+  "faults": {
+    "title": "현재 고장 역",
+    "description": "서울 지하철 엘리베이터, 에스컬레이터 등 현재 고장·점검 중인 역의 편의시설 상태를 확인하세요.",
+    "count": "현재 고장·점검 중인 시설이 있는 역 {count}개",
+    "loadingData": "데이터를 불러오는 중...",
+    "all": "전체",
+    "noFaultsLine": "{line}호선에 고장 역이 없어요",
+    "noFaults": "현재 고장 역이 없어요",
+    "allOperating": "모든 시설이 정상 운행 중입니다"
+  },
+  "contact": {
+    "title": "문의하기",
+    "name": "이름",
+    "namePlaceholder": "이름을 입력해주세요",
+    "contactInfo": "연락처",
+    "contactPlaceholder": "전화번호 또는 이메일",
+    "message": "문의 내용",
+    "messagePlaceholder": "문의 내용을 입력해주세요",
+    "cooldown": "{seconds}초 후 다시 시도해주세요",
+    "success": "문의가 접수되었습니다",
+    "error": "전송에 실패했습니다. 다시 시도해주세요",
+    "recaptchaError": "보안 인증에 실패했습니다. 페이지를 새로고침 후 다시 시도해주세요",
+    "sending": "전송 중...",
+    "sent": "접수 완료",
+    "submit": "전송하기"
+  },
+  "dataFreshness": {
+    "justNow": "방금 전",
+    "minutesAgo": "{minutes}분 전",
+    "hoursAgo": "{hours}시간 전",
+    "staleMessage": "{time} 데이터 · 현장 확인 권장",
+    "liveMessage": "실시간 업데이트 중 · {time}"
+  },
+  "statusSummary": {
+    "systemHealth": "시스템 상태",
+    "healthy": "정상",
+    "caution": "주의",
+    "elevatorRate": "엘리베이터\n가동률",
+    "escalatorRate": "에스컬레이터\n가동률",
+    "realtimeAlerts": "실시간 알림",
+    "noAlerts": "없음",
+    "alertCount": "{count}건",
+    "faultInProgress": "고장/점검 진행 중"
+  },
+  "environment": {
+    "airQuality": "대기오염 현황",
+    "fineDust": "미세먼지",
+    "good": "좋음",
+    "moderate": "보통",
+    "bad": "나쁨",
+    "veryBad": "매우나쁨"
+  },
+  "maps": {
+    "directions": "길찾기",
+    "naver": "네이버 길찾기",
+    "naverAriaLabel": "네이버 지도에서 {name}역 길찾기 열기 (외부 앱)",
+    "kakao": "카카오 길찾기",
+    "kakaoAriaLabel": "카카오맵에서 {name}역 길찾기 열기 (외부 앱)"
+  },
+  "banner": {
+    "metroSupport": "현재 서울 지하철 1~9호선만 지원하고 있어요. 다른 노선도 곧 만나요!",
+    "dismiss": "배너 닫기"
+  },
+  "theme": {
+    "settings": "테마 설정",
+    "select": "테마 선택",
+    "light": "기본 (라이트)",
+    "lightDesc": "기본 밝은 테마",
+    "dark": "다크 모드",
+    "darkDesc": "저시력자, 야간 사용 권장",
+    "colorblind": "색각 이상 모드",
+    "colorblindDesc": "적록색약 사용자를 위한 팔레트"
+  },
+  "error": {
+    "fetchFailed": "데이터를 불러오지 못했습니다. 잠시 후 새로고침 해보세요.",
+    "devHint": "개발 환경에서는 우측 하단 설정에서 Mock 데이터를 사용해보세요."
+  },
+  "about": {
+    "title": "데이터 출처 및 투명성",
+    "description": "나들이는 서울 열린 데이터 광장의 공식 API를 통해 지하철 편의시설 실시간 데이터를 제공합니다.",
+    "subtitle": "투명하고 신뢰할 수 있는 정보를 제공해요",
+    "body1": "나들이는 서울 지하철 편의시설의 운행 상태를 주기적으로 수집해 전달해요. 엘리베이터, 에스컬레이터, 무빙워크, 휠체어리프트, 안전발판 등 실시간 시설 5종의 상태를 확인할 수 있어요.",
+    "body2prefix": "나들이에서 보여드리는 모든 정보는",
+    "seoulOpenData": "서울 열린 데이터 광장",
+    "body2suffix": "의 공식 API에서 가져와요. 자동화된 수집 시스템이 1시간 30분마다 데이터를 갱신하고 있어요.",
+    "body3": "시설 상태는 1시간 30분마다 자동으로 수집돼요. 고장이나 점검 정보는 다음 수집 시점에 반영되므로, 현장 상황과 차이가 있을 수 있어요.",
+    "systemStatus": "시스템 상태",
+    "lastCheck": "마지막 확인: 방금 전",
+    "source": "출처",
+    "sourceValue": "서울 지하철",
+    "officialApi": "공식 API",
+    "realtimeFacilities": "실시간 시설",
+    "fiveTypes": "5종",
+    "autoCollection": "자동 수집",
+    "updateInterval": "갱신 주기",
+    "intervalValue": "1시간 30분",
+    "autoUpdate": "자동 갱신",
+    "accuracyTitle": "정확성에 관한 안내",
+    "accuracyBody": "최대한 정확한 정보를 제공하려 노력하지만, 현장 상황이 더 빠르게 변할 수 있어요. 갑작스러운 장애는 시스템에 반영되기까지 최대 1시간 30분이 걸릴 수 있어요. 불확실한 경우 역 직원에게 확인해 주세요.",
+    "projectName": "나들이 프로젝트"
+  },
+  "routePage": {
+    "title": "경로 안내",
+    "description": "교통약자를 위한 서울 지하철 최적 경로 안내. 엘리베이터, 에스컬레이터 등 편의시설 상태를 고려한 경로를 제공합니다.",
+    "body": "이동약자를 위한 최적 경로 안내 기능이 곧 제공될 예정입니다. 엘리베이터, 에스컬레이터 등 편의시설 상태를 고려한 경로를 안내합니다."
+  },
+  "archive": {
+    "title": "데이터 아카이브",
+    "description": "서울 지하철 이동편의시설 과거 운행 기록을 조회할 수 있는 데이터 아카이브입니다.",
+    "body": "과거 이동편의시설 운행 기록을 조회할 수 있는 기능이 곧 제공될 예정입니다. 고장 이력, 가동률 추이 등 데이터를 투명하게 공개합니다."
+  },
+  "footer": {
+    "source": "서울 열린데이터 광장 연결됨",
+    "tagline": "나들이 · 서울 지하철 편의시설 실시간 정보",
+    "footerNav": "푸터 링크",
+    "routeGuide": "경로 안내",
+    "dataSource": "데이터 출처",
+    "archive": "아카이브"
+  },
+  "language": {
+    "label": "언어",
+    "ko": "한국어",
+    "en": "English",
+    "ja": "日本語",
+    "zh": "中文"
+  }
+}

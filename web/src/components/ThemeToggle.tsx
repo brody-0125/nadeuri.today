@@ -1,25 +1,27 @@
 'use client';
 
 import { useState, useRef, useEffect } from 'react';
+import { useTranslations } from 'next-intl';
 import { Theme } from '@/lib/theme';
 import { useTheme } from '@/components/ThemeProvider';
-
-const OPTIONS: Array<{ value: Theme; label: string; desc: string; icon: string }> = [
-  { value: 'light', label: '기본 (라이트)', desc: '기본 밝은 테마', icon: 'light_mode' },
-  { value: 'dark', label: '다크 모드', desc: '저시력자, 야간 사용 권장', icon: 'dark_mode' },
-  { value: 'colorblind', label: '색각 이상 모드', desc: '적록색약 사용자를 위한 팔레트', icon: 'contrast' },
-];
-
-const THEME_ICONS: Record<Theme, string> = {
-  light: 'light_mode',
-  dark: 'dark_mode',
-  colorblind: 'contrast',
-};
 
 export default function ThemeToggle() {
   const { theme, setTheme } = useTheme();
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
+  const t = useTranslations('theme');
+
+  const OPTIONS: Array<{ value: Theme; labelKey: 'light' | 'dark' | 'colorblind'; descKey: 'lightDesc' | 'darkDesc' | 'colorblindDesc'; icon: string }> = [
+    { value: 'light', labelKey: 'light', descKey: 'lightDesc', icon: 'light_mode' },
+    { value: 'dark', labelKey: 'dark', descKey: 'darkDesc', icon: 'dark_mode' },
+    { value: 'colorblind', labelKey: 'colorblind', descKey: 'colorblindDesc', icon: 'contrast' },
+  ];
+
+  const THEME_ICONS: Record<Theme, string> = {
+    light: 'light_mode',
+    dark: 'dark_mode',
+    colorblind: 'contrast',
+  };
 
   useEffect(() => {
     function handleClickOutside(e: MouseEvent) {
@@ -48,7 +50,7 @@ export default function ThemeToggle() {
       <button
         onClick={() => setOpen(!open)}
         className="flex h-11 w-11 items-center justify-center rounded-lg border border-border bg-surface text-text-secondary transition-colors hover:text-text-primary hover:border-text-secondary"
-        aria-label="테마 설정"
+        aria-label={t('settings')}
         aria-expanded={open}
         aria-haspopup="true"
       >
@@ -59,7 +61,7 @@ export default function ThemeToggle() {
         <div
           className="absolute right-0 top-full mt-2 w-64 rounded-xl border border-border bg-surface shadow-lg z-50"
           role="radiogroup"
-          aria-label="테마 선택"
+          aria-label={t('select')}
         >
           <div className="p-2">
             {OPTIONS.map((opt) => {
@@ -88,9 +90,9 @@ export default function ThemeToggle() {
                     <p className={`text-sm font-medium ${
                       isSelected ? 'text-status-operating' : 'text-text-primary'
                     }`}>
-                      {opt.label}
+                      {t(opt.labelKey)}
                     </p>
-                    <p className="text-xs text-text-secondary mt-0.5">{opt.desc}</p>
+                    <p className="text-xs text-text-secondary mt-0.5">{t(opt.descKey)}</p>
                   </div>
                   {isSelected && (
                     <span className="material-symbols-outlined text-status-operating text-lg ml-auto mt-0.5" aria-hidden="true">check</span>

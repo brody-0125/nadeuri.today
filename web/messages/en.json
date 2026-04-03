@@ -1,0 +1,213 @@
+{
+  "common": {
+    "appName": "Nadeuri",
+    "skipToMain": "Skip to main content",
+    "home": "Home",
+    "search": "Search",
+    "route": "Route",
+    "data": "Data",
+    "retry": "Retry",
+    "close": "Close",
+    "loading": "Loading data",
+    "loadingMessage": "Loading station info...",
+    "homeNav": "Home",
+    "topNav": "Top navigation",
+    "mainNav": "Main navigation",
+    "backToDashboard": "Back to dashboard",
+    "comingSoon": "Coming soon"
+  },
+  "meta": {
+    "title": "Nadeuri — Seoul Metro Accessibility Facility Live Status",
+    "titleTemplate": "%s | Nadeuri",
+    "description": "Check real-time operating status of accessibility facilities including elevators, escalators, and more across 300+ Seoul Metro stations on lines 1-9 and Ui-Sinseol.",
+    "shortDescription": "Check real-time status of Seoul Metro accessibility facilities including elevators and escalators."
+  },
+  "facility": {
+    "elevator": "Elevator",
+    "escalator": "Escalator",
+    "movingWalk": "Moving Walk",
+    "wheelchairLift": "Wheelchair Lift",
+    "safetyBoard": "Safety Board",
+    "disabledRestroom": "Accessible Restroom",
+    "signLanguagePhone": "Sign Language Videophone",
+    "wheelchairCharger": "Wheelchair Charger",
+    "helper": "Mobility Helper"
+  },
+  "status": {
+    "operating": "Normal",
+    "fault": "Fault",
+    "maintenance": "Maintenance",
+    "unknown": "Unknown"
+  },
+  "home": {
+    "tagline": "Where shall we go today?",
+    "searchPlaceholder": "Enter station name (e.g. Gangnam, Seoul Station)",
+    "searchLabel": "Search metro station",
+    "clearSearch": "Clear search",
+    "searchResults": "Search results",
+    "resultCount": "'{query}' — {count} results",
+    "noResults": "No stations matching '{query}'",
+    "noResultsHelp": "Try a different name or line number.",
+    "faultStations": "Current faults",
+    "viewMoreFaults": "View {count} more stations",
+    "lineStations": "Stations by line",
+    "stationCount": "{count} stations",
+    "lineN": "Line {line}",
+    "selectLine": "Select a line to view stations",
+    "filterFaults": "Show faults only",
+    "noFaults": "No faults or maintenance at this time.",
+    "noStations": "No stations on this line.",
+    "typeMoreToSearch": "Type more to see results",
+    "lineFilter": "Line filter",
+    "summaryLabel": "Overall status summary"
+  },
+  "station": {
+    "notFound": "Station not found.",
+    "notFoundTitle": "Station not found",
+    "backHome": "Back to home",
+    "backHomeShort": "← Home",
+    "facilityTitle": "{name} Facility Status",
+    "facilityDescription": "Check real-time accessibility facility status at {name} ({lines}), including elevators and escalators.",
+    "faultBannerSingle": "1 {type} under repair",
+    "faultBannerMultiple": "{count} facilities under repair",
+    "faultBannerSuffix": "— see details below.",
+    "externalMaps": "External maps",
+    "otherFacilities": "Other facilities",
+    "available": "Available",
+    "unavailable": "None",
+    "noLocation": "No location info",
+    "viewDetail": "View details"
+  },
+  "stationCard": {
+    "allOperating": "All normal",
+    "faultCount": "{count} faults",
+    "maintCount": "{count} maintenance",
+    "noInfo": "No info"
+  },
+  "faults": {
+    "title": "Current faults",
+    "description": "Check current faults and maintenance status of Seoul Metro accessibility facilities.",
+    "count": "Stations with faults or maintenance: {count}",
+    "loadingData": "Loading data...",
+    "all": "All",
+    "noFaultsLine": "No faults on Line {line}",
+    "noFaults": "No faults at this time",
+    "allOperating": "All facilities are operating normally"
+  },
+  "contact": {
+    "title": "Contact us",
+    "name": "Name",
+    "namePlaceholder": "Enter your name",
+    "contactInfo": "Contact",
+    "contactPlaceholder": "Phone or email",
+    "message": "Message",
+    "messagePlaceholder": "Enter your message",
+    "cooldown": "Please wait {seconds} seconds",
+    "success": "Your message has been submitted",
+    "error": "Failed to send. Please try again.",
+    "recaptchaError": "Security verification failed. Please refresh and try again.",
+    "sending": "Sending...",
+    "sent": "Sent",
+    "submit": "Send"
+  },
+  "dataFreshness": {
+    "justNow": "Just now",
+    "minutesAgo": "{minutes} min ago",
+    "hoursAgo": "{hours} hr ago",
+    "staleMessage": "{time} data — verify on site",
+    "liveMessage": "Live updates — {time}"
+  },
+  "statusSummary": {
+    "systemHealth": "System Health",
+    "healthy": "Healthy",
+    "caution": "Caution",
+    "elevatorRate": "Elevator\nUptime",
+    "escalatorRate": "Escalator\nUptime",
+    "realtimeAlerts": "Live Alerts",
+    "noAlerts": "None",
+    "alertCount": "{count}",
+    "faultInProgress": "Faults/maintenance active"
+  },
+  "environment": {
+    "airQuality": "Air quality",
+    "fineDust": "Fine dust",
+    "good": "Good",
+    "moderate": "Moderate",
+    "bad": "Poor",
+    "veryBad": "Very poor"
+  },
+  "maps": {
+    "directions": "Directions",
+    "naver": "Naver Map",
+    "naverAriaLabel": "Open directions to {name} Station on Naver Map (external)",
+    "kakao": "Kakao Map",
+    "kakaoAriaLabel": "Open directions to {name} Station on Kakao Map (external)"
+  },
+  "banner": {
+    "metroSupport": "Currently supporting Seoul Metro lines 1-9 only. More lines coming soon!",
+    "dismiss": "Dismiss banner"
+  },
+  "theme": {
+    "settings": "Theme settings",
+    "select": "Select theme",
+    "light": "Light (default)",
+    "lightDesc": "Default light theme",
+    "dark": "Dark mode",
+    "darkDesc": "Recommended for low vision / nighttime",
+    "colorblind": "Color-blind mode",
+    "colorblindDesc": "Palette for red-green color deficiency"
+  },
+  "error": {
+    "fetchFailed": "Failed to load data. Please refresh and try again.",
+    "devHint": "In development, use Mock data from settings (bottom-right)."
+  },
+  "about": {
+    "title": "Data Sources & Transparency",
+    "description": "Nadeuri provides real-time subway accessibility data via the official Seoul Open Data API.",
+    "subtitle": "Transparent and reliable information",
+    "body1": "Nadeuri collects and delivers operating status of Seoul Metro accessibility facilities. You can check the status of 5 types of real-time facilities: elevators, escalators, moving walks, wheelchair lifts, and safety boards.",
+    "body2prefix": "All information shown on Nadeuri comes from the official API of",
+    "seoulOpenData": "Seoul Open Data Plaza",
+    "body2suffix": ". Our automated collection system refreshes data every 90 minutes.",
+    "body3": "Facility status is collected automatically every 90 minutes. Faults or maintenance information is reflected at the next collection cycle, so there may be discrepancies with on-site conditions.",
+    "systemStatus": "System Status",
+    "lastCheck": "Last check: just now",
+    "source": "Source",
+    "sourceValue": "Seoul Metro",
+    "officialApi": "Official API",
+    "realtimeFacilities": "Real-time facilities",
+    "fiveTypes": "5 types",
+    "autoCollection": "Auto collected",
+    "updateInterval": "Update cycle",
+    "intervalValue": "90 min",
+    "autoUpdate": "Auto update",
+    "accuracyTitle": "About Accuracy",
+    "accuracyBody": "We strive to provide accurate information, but on-site conditions may change faster. Sudden failures can take up to 90 minutes to be reflected. When in doubt, please verify with station staff.",
+    "projectName": "Nadeuri Project"
+  },
+  "routePage": {
+    "title": "Route Guide",
+    "description": "Optimal route guide for mobility-impaired users on Seoul Metro, considering elevator and escalator availability.",
+    "body": "An optimal route guide for mobility-impaired users is coming soon. Routes will consider the availability of elevators, escalators, and other accessibility facilities."
+  },
+  "archive": {
+    "title": "Data Archive",
+    "description": "Browse historical records of Seoul Metro accessibility facility operations.",
+    "body": "Historical operation records for accessibility facilities will be available soon. We will transparently share fault history, uptime trends, and more."
+  },
+  "footer": {
+    "source": "Connected to Seoul Open Data Plaza",
+    "tagline": "Nadeuri — Seoul Metro accessibility info",
+    "footerNav": "Footer links",
+    "routeGuide": "Route guide",
+    "dataSource": "Data sources",
+    "archive": "Archive"
+  },
+  "language": {
+    "label": "Language",
+    "ko": "한국어",
+    "en": "English",
+    "ja": "日本語",
+    "zh": "中文"
+  }
+}

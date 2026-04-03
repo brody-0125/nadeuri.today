@@ -1,3 +1,6 @@
+'use client';
+
+import { useTranslations } from 'next-intl';
 import { AirQualityGrade, EnvironmentData } from '@/types';
 
 interface EnvironmentBannerProps {
@@ -30,11 +33,20 @@ const GRADE_STYLES: Record<AirQualityGrade, { text: string; badge: string }> = {
   },
 };
 
+const GRADE_TRANSLATION_KEY: Record<AirQualityGrade, string> = {
+  좋음: 'good',
+  보통: 'moderate',
+  나쁨: 'bad',
+  매우나쁨: 'veryBad',
+};
+
 function getWorseGrade(pm10Grade: AirQualityGrade, pm25Grade: AirQualityGrade): AirQualityGrade {
   return GRADE_PRIORITY[pm10Grade] >= GRADE_PRIORITY[pm25Grade] ? pm10Grade : pm25Grade;
 }
 
 export default function EnvironmentBanner({ environment }: EnvironmentBannerProps) {
+  const t = useTranslations('environment');
+
   if (!environment) {
     return null;
   }
@@ -45,15 +57,19 @@ export default function EnvironmentBanner({ environment }: EnvironmentBannerProp
   return (
     <div
       className={`rounded-lg border px-4 py-3 ${backgroundStyles.badge}`}
-      aria-label="대기오염 현황"
+      aria-label={t('airQuality')}
     >
       <p className="whitespace-nowrap text-[13px] font-medium text-text-primary sm:text-sm">
-        미세먼지{' '}
+        {t('fineDust')}{' '}
         <span className="font-mono">PM10: {environment.pm10}</span>{' '}
-        <span className={GRADE_STYLES[environment.pm10_grade].text}>{environment.pm10_grade}</span>
+        <span className={GRADE_STYLES[environment.pm10_grade].text}>
+          {t(GRADE_TRANSLATION_KEY[environment.pm10_grade] as 'good' | 'moderate' | 'bad' | 'veryBad')}
+        </span>
         <span className="px-2 text-text-secondary">·</span>
         <span className="font-mono">PM2.5: {environment.pm25}</span>{' '}
-        <span className={GRADE_STYLES[environment.pm25_grade].text}>{environment.pm25_grade}</span>
+        <span className={GRADE_STYLES[environment.pm25_grade].text}>
+          {t(GRADE_TRANSLATION_KEY[environment.pm25_grade] as 'good' | 'moderate' | 'bad' | 'veryBad')}
+        </span>
       </p>
     </div>
   );

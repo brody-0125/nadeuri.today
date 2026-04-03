@@ -1,4 +1,7 @@
+'use client';
+
 import Link from 'next/link';
+import { useTranslations, useLocale } from 'next-intl';
 import { StationMeta, StationStatus, FacilityType } from '@/types';
 
 interface StationCardProps {
@@ -28,6 +31,11 @@ const FACILITY_TYPES: FacilityType[] = [
 ];
 
 export default function StationCard({ station, status, compact = false }: StationCardProps) {
+  const t = useTranslations('stationCard');
+  const tHome = useTranslations('home');
+  const tStation = useTranslations('station');
+  const locale = useLocale();
+
   const faultCount = status
     ? FACILITY_TYPES.reduce(
         (acc, type) =>
@@ -48,11 +56,11 @@ export default function StationCard({ station, status, compact = false }: Statio
 
   return (
     <Link
-      href={`/station/${station.code}/`}
+      href={`/${locale}/station/${station.code}/`}
       className="block group"
     >
       <article
-        aria-label={`${station.name} ${station.lines.join('·')}호선, ${hasIssue ? (faultCount > 0 ? `${faultCount}개 고장` : `${maintCount}개 점검 중`) : '전체 정상'}`}
+        aria-label={`${station.name} ${station.lines.map(l => tHome('lineN', { line: l })).join('·')}, ${hasIssue ? (faultCount > 0 ? t('faultCount', { count: faultCount }) : t('maintCount', { count: maintCount })) : t('allOperating')}`}
         className={`flex items-center justify-between rounded-lg border border-border bg-surface transition-all hover:border-border-strong hover:shadow-paper ${
           compact ? 'gap-3 px-4 py-3' : 'flex-col gap-4 p-5 sm:flex-row sm:items-center'
         } ${
@@ -66,7 +74,7 @@ export default function StationCard({ station, status, compact = false }: Statio
               className={`flex items-center justify-center rounded-full font-mono font-bold text-white shadow-sm ${
                 compact ? 'h-7 w-7 text-xs' : 'h-10 w-10 text-sm mt-1'
               } ${LINE_COLORS[station.lines[0]] ?? 'bg-status-unknown'}`}
-              aria-label={`${station.lines[0]}호선`}
+              aria-label={tHome('lineN', { line: station.lines[0] })}
             >
               {station.lines[0]}
             </div>
@@ -85,7 +93,7 @@ export default function StationCard({ station, status, compact = false }: Statio
                     key={line}
                     className="inline-flex items-center rounded border border-border bg-bg px-2 py-0.5 text-xs font-medium text-text-secondary"
                   >
-                    {line}호선
+                    {tHome('lineN', { line })}
                   </span>
                 ))}
               </div>
@@ -102,7 +110,7 @@ export default function StationCard({ station, status, compact = false }: Statio
               }`}>
                 <span className={`${compact ? 'h-1.5 w-1.5' : 'h-2 w-2'} animate-pulse rounded-full bg-status-fault`} />
                 <span className={`font-mono font-medium text-status-fault ${compact ? 'text-xs' : 'text-sm'}`}>
-                  {faultCount > 0 ? `${faultCount}개 고장` : `${maintCount}개 점검 중`}
+                  {faultCount > 0 ? t('faultCount', { count: faultCount }) : t('maintCount', { count: maintCount })}
                 </span>
               </div>
             ) : (
@@ -110,7 +118,7 @@ export default function StationCard({ station, status, compact = false }: Statio
                 compact ? 'px-2.5 py-1' : 'px-3 py-1.5'
               }`}>
                 <span className={`${compact ? 'h-1.5 w-1.5' : 'h-2 w-2'} rounded-full bg-status-operating`} />
-                <span className={`font-mono font-medium text-status-operating ${compact ? 'text-xs' : 'text-sm'}`}>전체 정상</span>
+                <span className={`font-mono font-medium text-status-operating ${compact ? 'text-xs' : 'text-sm'}`}>{t('allOperating')}</span>
               </div>
             )
           ) : (
@@ -118,14 +126,14 @@ export default function StationCard({ station, status, compact = false }: Statio
               compact ? 'px-2.5 py-1' : 'px-3 py-1.5'
             }`}>
               <span className={`${compact ? 'h-1.5 w-1.5' : 'h-2 w-2'} rounded-full bg-status-unknown`} />
-              <span className={`font-mono font-medium text-status-unknown ${compact ? 'text-xs' : 'text-sm'}`}>정보 없음</span>
+              <span className={`font-mono font-medium text-status-unknown ${compact ? 'text-xs' : 'text-sm'}`}>{t('noInfo')}</span>
             </div>
           )}
 
           {!compact && (
             <div className="flex gap-3 text-xs text-text-secondary">
               <span className="flex items-center gap-1 transition-colors group-hover:text-status-operating">
-                상세 보기
+                {tStation('viewDetail')}
                 <span className="material-symbols-outlined text-sm" aria-hidden="true">arrow_forward</span>
               </span>
             </div>

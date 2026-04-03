@@ -1,0 +1,213 @@
+{
+  "common": {
+    "appName": "ナドゥリ",
+    "skipToMain": "メインコンテンツへ",
+    "home": "ホーム",
+    "search": "検索",
+    "route": "経路",
+    "data": "データ",
+    "retry": "再試行",
+    "close": "閉じる",
+    "loading": "データ読み込み中",
+    "loadingMessage": "駅情報を取得中...",
+    "homeNav": "ホームへ",
+    "topNav": "上部ナビゲーション",
+    "mainNav": "メインナビゲーション",
+    "backToDashboard": "ダッシュボードに戻る",
+    "comingSoon": "準備中"
+  },
+  "meta": {
+    "title": "ナドゥリ — ソウル地下鉄バリアフリー施設リアルタイム状況",
+    "titleTemplate": "%s | ナドゥリ",
+    "description": "ソウル地下鉄1〜9号線、牛耳新設線の300以上の駅のエレベーター、エスカレーターなどバリアフリー施設のリアルタイム運行状況をご確認ください。",
+    "shortDescription": "ソウル地下鉄のエレベーター、エスカレーターなどバリアフリー施設のリアルタイム状況をご確認ください。"
+  },
+  "facility": {
+    "elevator": "エレベーター",
+    "escalator": "エスカレーター",
+    "movingWalk": "動く歩道",
+    "wheelchairLift": "車椅子リフト",
+    "safetyBoard": "安全ステップ",
+    "disabledRestroom": "バリアフリートイレ",
+    "signLanguagePhone": "手話テレビ電話",
+    "wheelchairCharger": "車椅子充電器",
+    "helper": "移動支援員"
+  },
+  "status": {
+    "operating": "正常",
+    "fault": "故障",
+    "maintenance": "点検中",
+    "unknown": "不明"
+  },
+  "home": {
+    "tagline": "今日はどこへ行こうか？",
+    "searchPlaceholder": "駅名を入力（例：カンナム、ソウル駅）",
+    "searchLabel": "地下鉄駅検索",
+    "clearSearch": "検索をクリア",
+    "searchResults": "検索結果",
+    "resultCount": "'{query}' の検索結果 {count}件",
+    "noResults": "'{query}' に一致する駅はありません",
+    "noResultsHelp": "別の名前や路線番号で検索してみてください。",
+    "faultStations": "現在の故障駅",
+    "viewMoreFaults": "他 {count}駅を表示",
+    "lineStations": "路線別駅一覧",
+    "stationCount": "{count}駅",
+    "lineN": "{line}号線",
+    "selectLine": "路線を選択すると駅一覧が表示されます",
+    "filterFaults": "故障・点検駅のみ",
+    "noFaults": "現在故障・点検中の駅はありません。",
+    "noStations": "この路線に駅はありません。",
+    "typeMoreToSearch": "もう少し入力すると結果が表示されます",
+    "lineFilter": "路線フィルター",
+    "summaryLabel": "全体状況サマリー"
+  },
+  "station": {
+    "notFound": "存在しない駅です。",
+    "notFoundTitle": "存在しない駅",
+    "backHome": "ホームに戻る",
+    "backHomeShort": "← ホーム",
+    "facilityTitle": "{name} 施設状況",
+    "facilityDescription": "{name}（{lines}）のエレベーター、エスカレーターなどバリアフリー施設のリアルタイム運行状況をご確認ください。",
+    "faultBannerSingle": "{type} 1台修理中",
+    "faultBannerMultiple": "施設 {count}台修理中",
+    "faultBannerSuffix": "— 下記をご確認ください。",
+    "externalMaps": "外部マップ",
+    "otherFacilities": "その他の施設",
+    "available": "正常",
+    "unavailable": "なし",
+    "noLocation": "位置情報なし",
+    "viewDetail": "詳細を見る"
+  },
+  "stationCard": {
+    "allOperating": "全て正常",
+    "faultCount": "{count}件故障",
+    "maintCount": "{count}件点検中",
+    "noInfo": "情報なし"
+  },
+  "faults": {
+    "title": "現在の故障駅",
+    "description": "ソウル地下鉄のエレベーター、エスカレーターなど現在故障・点検中の駅の施設状況をご確認ください。",
+    "count": "故障・点検中の施設がある駅 {count}駅",
+    "loadingData": "データ読み込み中...",
+    "all": "全て",
+    "noFaultsLine": "{line}号線に故障駅はありません",
+    "noFaults": "現在故障駅はありません",
+    "allOperating": "全施設が正常運行中です"
+  },
+  "contact": {
+    "title": "お問い合わせ",
+    "name": "お名前",
+    "namePlaceholder": "お名前を入力してください",
+    "contactInfo": "連絡先",
+    "contactPlaceholder": "電話番号またはメール",
+    "message": "お問い合わせ内容",
+    "messagePlaceholder": "お問い合わせ内容を入力してください",
+    "cooldown": "{seconds}秒後にもう一度お試しください",
+    "success": "お問い合わせを受け付けました",
+    "error": "送信に失敗しました。もう一度お試しください。",
+    "recaptchaError": "セキュリティ認証に失敗しました。ページを更新してもう一度お試しください。",
+    "sending": "送信中...",
+    "sent": "送信完了",
+    "submit": "送信する"
+  },
+  "dataFreshness": {
+    "justNow": "たった今",
+    "minutesAgo": "{minutes}分前",
+    "hoursAgo": "{hours}時間前",
+    "staleMessage": "{time}のデータ — 現地でご確認ください",
+    "liveMessage": "リアルタイム更新中 — {time}"
+  },
+  "statusSummary": {
+    "systemHealth": "システム状態",
+    "healthy": "正常",
+    "caution": "注意",
+    "elevatorRate": "エレベーター\n稼働率",
+    "escalatorRate": "エスカレーター\n稼働率",
+    "realtimeAlerts": "リアルタイム通知",
+    "noAlerts": "なし",
+    "alertCount": "{count}件",
+    "faultInProgress": "故障/点検進行中"
+  },
+  "environment": {
+    "airQuality": "大気汚染状況",
+    "fineDust": "微細粉塵",
+    "good": "良好",
+    "moderate": "普通",
+    "bad": "悪い",
+    "veryBad": "非常に悪い"
+  },
+  "maps": {
+    "directions": "経路案内",
+    "naver": "Naverマップ",
+    "naverAriaLabel": "Naverマップで{name}駅への経路を開く（外部アプリ）",
+    "kakao": "Kakaoマップ",
+    "kakaoAriaLabel": "Kakaoマップで{name}駅への経路を開く（外部アプリ）"
+  },
+  "banner": {
+    "metroSupport": "現在ソウル地下鉄1〜9号線のみ対応しています。他の路線も近日対応予定！",
+    "dismiss": "バナーを閉じる"
+  },
+  "theme": {
+    "settings": "テーマ設定",
+    "select": "テーマを選択",
+    "light": "ライト（デフォルト）",
+    "lightDesc": "デフォルトの明るいテーマ",
+    "dark": "ダークモード",
+    "darkDesc": "低視力者・夜間使用推奨",
+    "colorblind": "色覚異常モード",
+    "colorblindDesc": "赤緑色覚異常向けパレット"
+  },
+  "error": {
+    "fetchFailed": "データの読み込みに失敗しました。しばらく後にリロードしてください。",
+    "devHint": "開発環境では右下の設定からMockデータをご使用ください。"
+  },
+  "about": {
+    "title": "データソースと透明性",
+    "description": "ナドゥリはソウルオープンデータ広場の公式APIを通じて地下鉄バリアフリー施設のリアルタイムデータを提供しています。",
+    "subtitle": "透明で信頼できる情報を提供します",
+    "body1": "ナドゥリはソウル地下鉄バリアフリー施設の運行状態を定期的に収集してお届けしています。エレベーター、エスカレーター、動く歩道、車椅子リフト、安全ステップなどリアルタイム施設5種の状態を確認できます。",
+    "body2prefix": "ナドゥリで表示される全ての情報は",
+    "seoulOpenData": "ソウルオープンデータ広場",
+    "body2suffix": "の公式APIから取得しています。自動収集システムが90分ごとにデータを更新しています。",
+    "body3": "施設の状態は90分ごとに自動収集されます。故障や点検情報は次の収集時点に反映されるため、現場の状況と異なる場合があります。",
+    "systemStatus": "システム状態",
+    "lastCheck": "最終確認: たった今",
+    "source": "ソース",
+    "sourceValue": "ソウル地下鉄",
+    "officialApi": "公式API",
+    "realtimeFacilities": "リアルタイム施設",
+    "fiveTypes": "5種",
+    "autoCollection": "自動収集",
+    "updateInterval": "更新周期",
+    "intervalValue": "90分",
+    "autoUpdate": "自動更新",
+    "accuracyTitle": "正確性について",
+    "accuracyBody": "できる限り正確な情報を提供するよう努めていますが、現場の状況がより早く変化する場合があります。突発的な障害はシステムへの反映に最大90分かかる場合があります。不確かな場合は駅係員にご確認ください。",
+    "projectName": "ナドゥリプロジェクト"
+  },
+  "routePage": {
+    "title": "経路案内",
+    "description": "交通弱者のためのソウル地下鉄最適経路案内。エレベーター、エスカレーターなどバリアフリー施設の状況を考慮した経路を提供します。",
+    "body": "移動弱者のための最適経路案内機能は近日提供予定です。エレベーター、エスカレーターなどバリアフリー施設の状況を考慮した経路をご案内します。"
+  },
+  "archive": {
+    "title": "データアーカイブ",
+    "description": "ソウル地下鉄バリアフリー施設の過去の運行記録を閲覧できるデータアーカイブです。",
+    "body": "バリアフリー施設の過去の運行記録を閲覧できる機能は近日提供予定です。故障履歴、稼働率の推移などのデータを透明に公開します。"
+  },
+  "footer": {
+    "source": "ソウルオープンデータ広場接続中",
+    "tagline": "ナドゥリ — ソウル地下鉄バリアフリー情報",
+    "footerNav": "フッターリンク",
+    "routeGuide": "経路案内",
+    "dataSource": "データソース",
+    "archive": "アーカイブ"
+  },
+  "language": {
+    "label": "言語",
+    "ko": "한국어",
+    "en": "English",
+    "ja": "日本語",
+    "zh": "中文"
+  }
+}

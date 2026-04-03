@@ -1,11 +1,13 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { useTranslations } from 'next-intl';
 
 const STORAGE_KEY = 'nadeuri-metro-banner-dismissed';
 
 export default function MetroSupportBanner() {
   const [dismissed, setDismissed] = useState(true);
+  const t = useTranslations('banner');
 
   useEffect(() => {
     setDismissed(sessionStorage.getItem(STORAGE_KEY) === '1');
@@ -30,12 +32,12 @@ export default function MetroSupportBanner() {
         info
       </span>
       <p className="text-center text-xs font-medium text-info-text sm:text-sm">
-        현재 서울 지하철 1~9호선만 지원하고 있어요. 다른 노선도 곧 만나요!
+        {t('metroSupport')}
       </p>
       <button
         onClick={handleDismiss}
         className="absolute right-3 top-1/2 -translate-y-1/2 rounded-md p-1 text-info transition-colors hover:bg-info-border/30 hover:text-info-text"
-        aria-label="배너 닫기"
+        aria-label={t('dismiss')}
       >
         <span className="material-symbols-outlined text-[18px]" aria-hidden="true">close</span>
       </button>
