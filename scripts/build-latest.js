@@ -1,7 +1,8 @@
 import "dotenv/config";
-import { readdir, readFile, writeFile, mkdir } from "fs/promises";
 import path from "path";
 import { fileURLToPath } from "url";
+
+import { loadJSON, saveJSON } from "./lib/json-utils.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
@@ -277,15 +278,6 @@ function getRealtimeDataDir() {
   return path.join(ROOT, "data", "realtime");
 }
 
-async function readJsonFile(filePath) {
-  try {
-    const content = await readFile(filePath, "utf-8");
-    return JSON.parse(content);
-  } catch {
-    return null;
-  }
-}
-
 function normalizeEnvironmentData(environmentData) {
   if (
     !environmentData ||
@@ -308,7 +300,7 @@ function normalizeEnvironmentData(environmentData) {
 
 async function loadPreviousLatest() {
   const outputPath = path.join(ROOT, "web", "public", "data", "latest.json");
-  return readJsonFile(outputPath);
+  return loadJSON(outputPath);
 }
 
 function extractRealtimeFromLatest(latest, type) {
@@ -361,7 +353,7 @@ async function main() {
   const realtimeData = {};
   for (const type of REALTIME_TYPES) {
     const filePath = path.join(dirPath, `${type}.json`);
-    const data = await readJsonFile(filePath);
+    const data = await loadJSON(filePath);
     if (data) {
       realtimeData[type] = data;
       console.log(`  Loaded ${type}: ${data.total_count} facilities`);
@@ -382,7 +374,7 @@ async function main() {
   const staticDir = path.join(ROOT, "data-static");
   for (const type of STATIC_TYPES) {
     const filePath = path.join(staticDir, `${type}.json`);
-    const data = await readJsonFile(filePath);
+    const data = await loadJSON(filePath);
     if (data) {
       staticData[type] = data;
       console.log(`  Loaded static ${type}: ${data.total_count} facilities`);
@@ -392,7 +384,7 @@ async function main() {
   }
 
   const environmentPath = path.join(staticDir, "air-quality.json");
-  const environmentData = normalizeEnvironmentData(await readJsonFile(environmentPath));
+  const environmentData = normalizeEnvironmentData(await loadJSON(environmentPath));
   if (environmentData) {
     console.log("  Loaded environment air-quality");
   } else {
@@ -532,8 +524,20 @@ async function main() {
 
   // Write to web/public/data/latest.json (served as static asset)
   const outputPath = path.join(ROOT, "web", "public", "data", "latest.json");
-  await mkdir(path.dirname(outputPath), { recursive: true });
-  await writeFile(outputPath, JSON.stringify(latestData, null, 2), "utf-8");
+
+  // Compare with previous output excluding volatile fields (data_age_minutes, is_stale)
+  // These fields change every run based on wall-clock time, not actual data changes
+  if (previousLatest) {
+    const stripVolatile = ({ data_age_minutes, is_stale, ...rest }) => rest;
+    const prevStable = JSON.stringify(stripVolatile(previousLatest));
+    const newStable = JSON.stringify(stripVolatile(latestData));
+    if (prevStable === newStable) {
+      console.log("\nlatest.json: no meaningful changes, skipping write");
+      return;
+    }
+  }
+
+  await saveJSON(outputPath, latestData);
 
   console.log(`\nBuilt latest.json:`);
   console.log(`  Updated at: ${latestData.updated_at}`);

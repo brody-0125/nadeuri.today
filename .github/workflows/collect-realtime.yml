@@ -47,7 +47,7 @@ jobs:
           title: 'chore: collect realtime data'
           body: 'Automated realtime facility data collection.'
           add-paths: |
-            data/realtime/**
+            data/**
             web/public/data/**
 
       - name: Enable auto-merge
