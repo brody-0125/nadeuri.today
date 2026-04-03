@@ -62,10 +62,10 @@ export default function AboutPage() {
             >
               서울 열린 데이터 광장
             </a>
-            의 공식 API에서 가져와요. 자동화된 수집 시스템이 매 시간 데이터를 갱신하고 있어요.
+            의 공식 API에서 가져와요. 자동화된 수집 시스템이 1시간 30분마다 데이터를 갱신하고 있어요.
           </p>
           <p>
-            시설 상태는 매 시간 자동으로 수집돼요. 고장이나 점검 정보는 다음 수집 시점에 반영되므로, 현장 상황과 차이가 있을 수 있어요.
+            시설 상태는 1시간 30분마다 자동으로 수집돼요. 고장이나 점검 정보는 다음 수집 시점에 반영되므로, 현장 상황과 차이가 있을 수 있어요.
           </p>
 
           {/* System Status Card */}
@@ -98,7 +98,7 @@ export default function AboutPage() {
                 <div className="flex items-center gap-1.5 text-text-secondary text-xs mb-1">
                   갱신 주기
                 </div>
-                <p className="font-mono text-lg font-medium text-text-primary">1시간</p>
+                <p className="font-mono text-lg font-medium text-text-primary">1시간 30분</p>
                 <span className="text-xs text-text-secondary">자동 갱신</span>
               </div>
             </div>
@@ -111,7 +111,7 @@ export default function AboutPage() {
               <span className="font-bold text-text-primary">정확성에 관한 안내</span>
             </div>
             <p className="text-sm text-text-secondary leading-relaxed">
-              최대한 정확한 정보를 제공하려 노력하지만, 현장 상황이 더 빠르게 변할 수 있어요. 갑작스러운 장애는 시스템에 반영되기까지 몇 분이 걸릴 수 있어요. 불확실한 경우 역 직원에게 확인해 주세요.
+              최대한 정확한 정보를 제공하려 노력하지만, 현장 상황이 더 빠르게 변할 수 있어요. 갑작스러운 장애는 시스템에 반영되기까지 최대 1시간 30분이 걸릴 수 있어요. 불확실한 경우 역 직원에게 확인해 주세요.
             </p>
           </div>
         </div>

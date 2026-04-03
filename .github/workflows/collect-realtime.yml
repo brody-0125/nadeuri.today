@@ -2,8 +2,8 @@ name: Collect Realtime Facility Status
 
 on:
   schedule:
-    - cron: '0 20-23 * * *'  # Every hour during Seoul Metro operating hours (05:00~00:59 KST, UTC+9)
-    - cron: '0 0-15 * * *'   # Continued from above (cron doesn't support wrap-around ranges)
+    - cron: '0 2,5,8,11,14,20,23 * * *'   # Every 1.5 hours during Seoul Metro operating hours (05:00~00:59 KST, UTC+9)
+    - cron: '30 0,3,6,9,12,15,21 * * *'   # Half-hour slots for 90-minute interval
   workflow_dispatch:
 
 permissions:
