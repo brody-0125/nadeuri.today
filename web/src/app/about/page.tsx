@@ -98,7 +98,7 @@ export default function AboutPage() {
                 <div className="flex items-center gap-1.5 text-text-secondary text-xs mb-1">
                   갱신 주기
                 </div>
-                <p className="font-mono text-lg font-medium text-text-primary">1시간</p>
+                <p className="font-mono text-lg font-medium text-text-primary">1시간 30분</p>
                 <span className="text-xs text-text-secondary">자동 갱신</span>
               </div>
             </div>
