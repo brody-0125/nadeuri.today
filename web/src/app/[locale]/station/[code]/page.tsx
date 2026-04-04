@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { STATIONS, getStation } from '@/lib/stations';
+import { getStationDisplayName } from '@/lib/station-i18n';
 import { setRequestLocale } from 'next-intl/server';
 import { locales } from '@/i18n/config';
 import StationDetailClient from './StationDetailClient';
@@ -38,7 +39,7 @@ export async function generateMetadata({
   }
 
   const lineText = station.lines.map((l) => messages.home.lineN.replace('{line}', l)).join(' · ');
-  const label = stationLabel(station.name, locale);
+  const label = stationLabel(getStationDisplayName(code, locale), locale);
   const title = messages.station.facilityTitle.replace('{name}', label);
   const description = messages.station.facilityDescription
     .replace('{name}', label)

@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useTranslations, useLocale } from 'next-intl';
 import { StationMeta, StationStatus, FacilityType } from '@/types';
+import { useStationName } from '@/lib/station-i18n';
 
 interface StationCardProps {
   station: StationMeta;
@@ -35,6 +36,7 @@ export default function StationCard({ station, status, compact = false }: Statio
   const tHome = useTranslations('home');
   const tStation = useTranslations('station');
   const locale = useLocale();
+  const displayName = useStationName(station);
 
   const faultCount = status
     ? FACILITY_TYPES.reduce(
@@ -60,7 +62,7 @@ export default function StationCard({ station, status, compact = false }: Statio
       className="block group"
     >
       <article
-        aria-label={`${station.name} ${station.lines.map(l => tHome('lineN', { line: l })).join('·')}, ${hasIssue ? (faultCount > 0 ? t('faultCount', { count: faultCount }) : t('maintCount', { count: maintCount })) : t('allOperating')}`}
+        aria-label={`${displayName} ${station.lines.map(l => tHome('lineN', { line: l })).join('·')}, ${hasIssue ? (faultCount > 0 ? t('faultCount', { count: faultCount }) : t('maintCount', { count: maintCount })) : t('allOperating')}`}
         className={`flex items-center justify-between rounded-lg border border-border bg-surface transition-all hover:border-border-strong hover:shadow-paper ${
           compact ? 'gap-3 px-4 py-3' : 'flex-col gap-4 p-5 sm:flex-row sm:items-center'
         } ${
@@ -84,7 +86,7 @@ export default function StationCard({ station, status, compact = false }: Statio
             <h3 className={`font-serif font-bold text-text-primary transition-colors group-hover:text-status-operating ${
               compact ? 'text-[15px]' : 'text-xl'
             }`}>
-              {station.name}
+              {displayName}
             </h3>
             {!compact && (
               <div className="flex items-center gap-2 mt-1.5">
