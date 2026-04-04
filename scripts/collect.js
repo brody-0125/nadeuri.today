@@ -94,7 +94,15 @@ async function main() {
       // Hash-based change detection: skip writing if data unchanged
       const hash = hashFacilities(result);
       if (prevHashes[name] === hash) {
-        console.log(`  ${name}: unchanged (${result.total_count} facilities) — skipped`);
+        // Refresh collected_at timestamp so build-latest.js sees fresh data
+        const filePath = path.join(outDir, `${name}.json`);
+        const existing = await loadJSON(filePath);
+        if (existing) {
+          existing.collected_at = new Date().toISOString();
+          await mkdir(outDir, { recursive: true });
+          await writeFile(filePath, JSON.stringify(existing, null, 2), "utf-8");
+        }
+        console.log(`  ${name}: unchanged (${result.total_count} facilities) — timestamp refreshed`);
         unchanged.push(name);
         continue;
       }
