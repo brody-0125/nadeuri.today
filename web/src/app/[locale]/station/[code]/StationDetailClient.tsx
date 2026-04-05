@@ -7,6 +7,7 @@ import { LatestData, StationStatus, FacilityType, FacilitySummary } from '@/type
 import { fetchLatest } from '@/lib/data';
 import { getStation } from '@/lib/stations';
 import { getStationDisplayName } from '@/lib/station-i18n';
+import { getStationSubtitle } from '@/lib/station-display';
 import DataFreshnessBar from '@/components/DataFreshnessBar';
 import FacilityBadge from '@/components/FacilityBadge';
 import ExternalMapLinks from '@/components/ExternalMapLinks';
@@ -134,7 +135,14 @@ export default function StationDetailClient({ code }: { code: string }) {
               <ThemeToggle />
             </div>
           </div>
-          <h1 className="font-serif font-black text-[28px] leading-tight mb-1.5">{getStationDisplayName(code, locale)}</h1>
+          <h1 className="font-serif font-black text-[28px] leading-tight mb-1.5">
+            {getStationDisplayName(code, locale)}
+            {getStationSubtitle(station, locale) && (
+              <span className="block text-lg font-normal opacity-75" lang="ko">
+                {getStationSubtitle(station, locale)}
+              </span>
+            )}
+          </h1>
           <div className="flex items-center gap-2">
             {station.lines.map((line) => (
               <span key={line} className="bg-white/25 rounded-full px-2.5 py-0.5 text-[12px] font-medium">

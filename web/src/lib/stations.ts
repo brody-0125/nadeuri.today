@@ -1,5 +1,6 @@
 import { StationMeta } from '@/types';
 import { getChosung, isChosungOnly } from '@/lib/hangul';
+import { STATION_NAMES_I18N } from './station-names-i18n';
 
 const _RAW_STATIONS: StationMeta[] = [
   // ── 1호선 ──
@@ -373,20 +374,39 @@ export function searchStations(query: string): StationMeta[] {
 
   const isChosung = isChosungOnly(q);
   const qLower = q.toLowerCase();
+  const isLatin = /^[a-z\s\-]+$/i.test(q);
 
   type Ranked = { station: StationMeta; rank: number };
   const results: Ranked[] = [];
 
   for (const s of STATIONS) {
     const name = s.name.toLowerCase();
+    let matched = false;
     if (name === qLower) {
       results.push({ station: s, rank: 0 }); // 정확일치
+      matched = true;
     } else if (name.startsWith(qLower)) {
       results.push({ station: s, rank: 1 }); // prefix
+      matched = true;
     } else if (isChosung && getChosung(s.name).startsWith(q)) {
       results.push({ station: s, rank: 2 }); // 초성
+      matched = true;
     } else if (name.includes(qLower)) {
       results.push({ station: s, rank: 3 }); // contains
+      matched = true;
+    }
+
+    // English name matching
+    const enName = STATION_NAMES_I18N[s.code]?.en;
+    if (!matched && isLatin && enName) {
+      const en = enName.toLowerCase();
+      if (en === qLower) {
+        results.push({ station: s, rank: 0 });
+      } else if (en.startsWith(qLower)) {
+        results.push({ station: s, rank: 1 });
+      } else if (en.includes(qLower)) {
+        results.push({ station: s, rank: 3 });
+      }
     }
   }
 
