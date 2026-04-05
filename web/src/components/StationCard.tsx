@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { useTranslations, useLocale } from 'next-intl';
 import { StationMeta, StationStatus, FacilityType } from '@/types';
 import { useStationName } from '@/lib/station-i18n';
+import { getStationSubtitle } from '@/lib/station-display';
 
 interface StationCardProps {
   station: StationMeta;
@@ -37,6 +38,7 @@ export default function StationCard({ station, status, compact = false }: Statio
   const tStation = useTranslations('station');
   const locale = useLocale();
   const displayName = useStationName(station);
+  const subtitle = getStationSubtitle(station, locale);
 
   const faultCount = status
     ? FACILITY_TYPES.reduce(
@@ -87,6 +89,11 @@ export default function StationCard({ station, status, compact = false }: Statio
               compact ? 'text-[15px]' : 'text-xl'
             }`}>
               {displayName}
+              {!compact && subtitle && (
+                <span className="block text-sm font-normal text-text-secondary" lang="ko">
+                  {subtitle}
+                </span>
+              )}
             </h3>
             {!compact && (
               <div className="flex items-center gap-2 mt-1.5">

@@ -1,9 +1,10 @@
 import type { Metadata } from 'next';
 import { STATIONS, getStation } from '@/lib/stations';
-import { getStationDisplayName } from '@/lib/station-i18n';
 import { setRequestLocale } from 'next-intl/server';
 import { locales } from '@/i18n/config';
 import StationDetailClient from './StationDetailClient';
+import { STATION_NAMES_I18N } from '@/lib/station-names-i18n';
+import type { StationMeta } from '@/types';
 
 import koMessages from '../../../../../messages/ko.json';
 import enMessages from '../../../../../messages/en.json';
@@ -14,9 +15,11 @@ const messagesMap: Record<string, typeof koMessages> = {
   ko: koMessages, en: enMessages, ja: jaMessages, zh: zhMessages,
 };
 
-function stationLabel(name: string, locale: string): string {
-  if (locale === 'ko') return name.endsWith('역') ? name : `${name}역`;
-  return name;
+function stationLabel(station: StationMeta, locale: string): string {
+  if (locale === 'ko') return station.name.endsWith('역') ? station.name : `${station.name}역`;
+  const localized = STATION_NAMES_I18N[station.code]?.[locale as 'en' | 'ja' | 'zh'];
+  if (!localized) return station.name;
+  return `${localized} (${station.name})`;
 }
 
 export const dynamicParams = false;
@@ -39,7 +42,7 @@ export async function generateMetadata({
   }
 
   const lineText = station.lines.map((l) => messages.home.lineN.replace('{line}', l)).join(' · ');
-  const label = stationLabel(getStationDisplayName(code, locale), locale);
+  const label = stationLabel(station, locale);
   const title = messages.station.facilityTitle.replace('{name}', label);
   const description = messages.station.facilityDescription
     .replace('{name}', label)
