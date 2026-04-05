@@ -2,6 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { StationMeta } from '@/types';
+import { useStationName } from '@/lib/station-i18n';
 import {
   buildNaverDirectionsUrl,
   buildKakaoDirectionsUrl,
@@ -13,7 +14,9 @@ interface ExternalMapLinksProps {
 
 export default function ExternalMapLinks({ station }: ExternalMapLinksProps) {
   const t = useTranslations('maps');
+  const displayName = useStationName(station);
 
+  // Keep Korean name for map URL params (Naver/Kakao APIs need Korean input)
   const params = {
     stationName: station.name,
     lat: station.lat,
@@ -28,7 +31,7 @@ export default function ExternalMapLinks({ station }: ExternalMapLinksProps) {
           target="_blank"
           rel="noopener noreferrer"
           className="flex-1 flex items-center justify-center gap-2 px-4 py-3 bg-transparent border border-border rounded-lg text-sm text-text-secondary hover:border-text-primary transition-colors min-h-[44px]"
-          aria-label={t('naverAriaLabel', { name: station.name })}
+          aria-label={t('naverAriaLabel', { name: displayName })}
         >
           {t('naver')}
           <span className="material-symbols-outlined text-sm" aria-hidden="true">open_in_new</span>
@@ -38,7 +41,7 @@ export default function ExternalMapLinks({ station }: ExternalMapLinksProps) {
           target="_blank"
           rel="noopener noreferrer"
           className="flex-1 flex items-center justify-center gap-2 px-4 py-3 bg-transparent border border-border rounded-lg text-sm text-text-secondary hover:border-text-primary transition-colors min-h-[44px]"
-          aria-label={t('kakaoAriaLabel', { name: station.name })}
+          aria-label={t('kakaoAriaLabel', { name: displayName })}
         >
           {t('kakao')}
           <span className="material-symbols-outlined text-sm" aria-hidden="true">open_in_new</span>
