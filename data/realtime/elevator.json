@@ -1,34 +1,10 @@
 {
-  "collected_at": "2026-04-09T05:38:10.664Z",
+  "collected_at": "2026-04-09T07:00:38.966Z",
   "source_api": "SeoulMetroFaciInfo",
   "total_count": 864,
-  "operating_count": 816,
+  "operating_count": 815,
   "fault_count": 0,
   "facilities": [
-    {
-      "station_code": "2514",
-      "station_name": "송정",
-      "line": "",
-      "facility_id": "승강기)엘리베이터-송정 외부3",
-      "location_detail": "2번 출입구",
-      "floor_from": "B2",
-      "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "2514",
-      "station_name": "송정",
-      "line": "",
-      "facility_id": "승강기)엘리베이터-송정 외부4",
-      "location_detail": "3번 출입구",
-      "floor_from": "B1",
-      "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
     {
       "station_code": "0150",
       "station_name": "서울역",
@@ -289,8 +265,8 @@
       "location_detail": "2,3번 출입구 사이",
       "floor_from": "B1",
       "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -2857,8 +2833,8 @@
       "location_detail": "신사 방면3-2",
       "floor_from": "B2",
       "floor_to": "B1",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -4489,8 +4465,8 @@
       "location_detail": "김포공항 방면5-1",
       "floor_from": "B2",
       "floor_to": "B3",
-      "status": "MAINTENANCE",
-      "status_code": "03",
+      "status": "OPERATING",
+      "status_code": "01",
       "last_normal_at": null
     },
     {
@@ -4501,6 +4477,30 @@
       "location_detail": "마곡 방면5-1",
       "floor_from": "B2",
       "floor_to": "B3",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2514",
+      "station_name": "송정",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-송정 외부3",
+      "location_detail": "2번 출입구",
+      "floor_from": "B2",
+      "floor_to": "1F",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2514",
+      "station_name": "송정",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-송정 외부4",
+      "location_detail": "3번 출입구",
+      "floor_from": "B1",
+      "floor_to": "1F",
       "status": "OPERATING",
       "status_code": "01",
       "last_normal_at": null
@@ -5802,18 +5802,6 @@
       "last_normal_at": null
     },
     {
-      "station_code": "2624",
-      "station_name": "상수",
-      "line": "",
-      "facility_id": "승강기)엘리베이터-상수 내부 3호기",
-      "location_detail": "대합실",
-      "floor_from": "B2",
-      "floor_to": "B1",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
       "station_code": "2551",
       "station_name": "굽은다리",
       "line": "",
@@ -7021,6 +7009,18 @@
       "location_detail": "6번 출입구",
       "floor_from": "B1",
       "floor_to": "1F",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2624",
+      "station_name": "상수",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-상수 내부 3호기",
+      "location_detail": "대합실",
+      "floor_from": "B2",
+      "floor_to": "B1",
       "status": "OPERATING",
       "status_code": "01",
       "last_normal_at": null
