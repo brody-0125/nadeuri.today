@@ -1,8 +1,8 @@
 {
-  "collected_at": "2026-04-10T15:48:23.197Z",
+  "collected_at": "2026-04-10T21:46:09.159Z",
   "source_api": "SeoulMetroFaciInfo",
   "total_count": 864,
-  "operating_count": 849,
+  "operating_count": 848,
   "fault_count": 0,
   "facilities": [
     {
@@ -445,6 +445,18 @@
       "location_detail": "동대문(1) 방면7-3",
       "floor_from": "B2",
       "floor_to": "B1",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2518",
+      "station_name": "화곡",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-화곡 외부2",
+      "location_detail": "2번 출입구",
+      "floor_from": "B1",
+      "floor_to": "1F",
       "status": "OPERATING",
       "status_code": "01",
       "last_normal_at": null
@@ -4662,18 +4674,6 @@
       "last_normal_at": null
     },
     {
-      "station_code": "2518",
-      "station_name": "화곡",
-      "line": "",
-      "facility_id": "승강기)엘리베이터-화곡 외부2",
-      "location_detail": "2번 출입구",
-      "floor_from": "B1",
-      "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
       "station_code": "2519",
       "station_name": "까치산",
       "line": "5호선",
@@ -5298,6 +5298,18 @@
       "last_normal_at": null
     },
     {
+      "station_code": "2543",
+      "station_name": "답십리",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-답십리 외부4",
+      "location_detail": "6번 출입구",
+      "floor_from": "B2",
+      "floor_to": "1F",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
       "station_code": "2537",
       "station_name": "동대문역사문화공원",
       "line": "5호선",
@@ -5495,18 +5507,6 @@
       "line": "",
       "facility_id": "승강기)엘리베이터-답십리 외부3",
       "location_detail": "2번 출입구",
-      "floor_from": "B2",
-      "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "2543",
-      "station_name": "답십리",
-      "line": "",
-      "facility_id": "승강기)엘리베이터-답십리 외부4",
-      "location_detail": "6번 출입구",
       "floor_from": "B2",
       "floor_to": "1F",
       "status": "OPERATING",
@@ -7561,8 +7561,8 @@
       "location_detail": "신당 방면8-4, 창신 방면1-1",
       "floor_from": "B2",
       "floor_to": "B3",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
