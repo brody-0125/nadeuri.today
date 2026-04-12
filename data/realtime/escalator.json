@@ -1,10 +1,22 @@
 {
-  "collected_at": "2026-04-12T12:48:23.810Z",
+  "collected_at": "2026-04-12T14:17:20.801Z",
   "source_api": "SeoulMetroFaciInfo",
   "total_count": 1873,
-  "operating_count": 1807,
+  "operating_count": 1806,
   "fault_count": 0,
   "facilities": [
+    {
+      "station_code": "2531",
+      "station_name": "애오개",
+      "line": "",
+      "facility_id": "승강기)에스컬레이터-애오개 내부1",
+      "location_detail": "대합실",
+      "floor_from": "B3",
+      "floor_to": "B1",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
     {
       "station_code": "0150",
       "station_name": "서울역",
@@ -1201,18 +1213,6 @@
       "location_detail": "1번 출입구",
       "floor_from": "B1",
       "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "2618",
-      "station_name": "증산",
-      "line": "",
-      "facility_id": "승강기)에스컬레이터-증산 내부3",
-      "location_detail": "새절 방면3-4",
-      "floor_from": "B2",
-      "floor_to": "B1",
       "status": "OPERATING",
       "status_code": "01",
       "last_normal_at": null
@@ -3198,18 +3198,6 @@
       "last_normal_at": null
     },
     {
-      "station_code": "2618",
-      "station_name": "증산",
-      "line": "",
-      "facility_id": "승강기)에스컬레이터-증산 내부4",
-      "location_detail": "새절 방면3-4",
-      "floor_from": "B1",
-      "floor_to": "B2",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
       "station_code": "0248",
       "station_name": "양천구청",
       "line": "",
@@ -4302,18 +4290,6 @@
       "last_normal_at": null
     },
     {
-      "station_code": "2632",
-      "station_name": "한강진",
-      "line": "",
-      "facility_id": "승강기)에스컬레이터-한강진 내부2",
-      "location_detail": "대합실",
-      "floor_from": "B1",
-      "floor_to": "B3",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
       "station_code": "0327",
       "station_name": "신사",
       "line": "",
@@ -4597,8 +4573,8 @@
       "location_detail": "잠원 방면4-3",
       "floor_from": "B3",
       "floor_to": "B2",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -5631,18 +5607,6 @@
       "floor_to": "1F",
       "status": "OPERATING",
       "status_code": "01",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "2632",
-      "station_name": "한강진",
-      "line": "",
-      "facility_id": "승강기)에스컬레이터-한강진 외부3",
-      "location_detail": "2번 출입구",
-      "floor_from": "B1",
-      "floor_to": "1F",
-      "status": "MAINTENANCE",
-      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -9360,18 +9324,6 @@
       "facility_id": "승강기)에스컬레이터-공덕 외부9",
       "location_detail": "4번 출입구",
       "floor_from": "1F",
-      "floor_to": "B1",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "2531",
-      "station_name": "애오개",
-      "line": "",
-      "facility_id": "승강기)에스컬레이터-애오개 내부1",
-      "location_detail": "대합실",
-      "floor_from": "B3",
       "floor_to": "B1",
       "status": "OPERATING",
       "status_code": "01",
@@ -13617,6 +13569,30 @@
       "station_code": "2618",
       "station_name": "증산",
       "line": "",
+      "facility_id": "승강기)에스컬레이터-증산 내부3",
+      "location_detail": "새절 방면3-4",
+      "floor_from": "B2",
+      "floor_to": "B1",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2618",
+      "station_name": "증산",
+      "line": "",
+      "facility_id": "승강기)에스컬레이터-증산 내부4",
+      "location_detail": "새절 방면3-4",
+      "floor_from": "B1",
+      "floor_to": "B2",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2618",
+      "station_name": "증산",
+      "line": "",
       "facility_id": "승강기)에스컬레이터-증산 내부5",
       "location_detail": "디지털미디어시티 방면3-3",
       "floor_from": "B2",
@@ -14895,6 +14871,30 @@
       "floor_to": "B1",
       "status": "OPERATING",
       "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2632",
+      "station_name": "한강진",
+      "line": "",
+      "facility_id": "승강기)에스컬레이터-한강진 내부2",
+      "location_detail": "대합실",
+      "floor_from": "B1",
+      "floor_to": "B3",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2632",
+      "station_name": "한강진",
+      "line": "",
+      "facility_id": "승강기)에스컬레이터-한강진 외부3",
+      "location_detail": "2번 출입구",
+      "floor_from": "B1",
+      "floor_to": "1F",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
