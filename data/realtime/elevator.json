@@ -1,8 +1,8 @@
 {
-  "collected_at": "2026-04-12T05:42:01.743Z",
+  "collected_at": "2026-04-12T12:48:23.800Z",
   "source_api": "SeoulMetroFaciInfo",
   "total_count": 864,
-  "operating_count": 845,
+  "operating_count": 841,
   "fault_count": 0,
   "facilities": [
     {
@@ -445,6 +445,18 @@
       "location_detail": "동대문(1) 방면7-3",
       "floor_from": "B2",
       "floor_to": "B1",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2611",
+      "station_name": "응암",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-응암 외부2",
+      "location_detail": "4번 출입구",
+      "floor_from": "B1",
+      "floor_to": "1F",
       "status": "OPERATING",
       "status_code": "01",
       "last_normal_at": null
@@ -1129,8 +1141,8 @@
       "location_detail": "10번 출입구",
       "floor_from": "B1",
       "floor_to": "1F",
-      "status": "MAINTENANCE",
-      "status_code": "03",
+      "status": "OPERATING",
+      "status_code": "01",
       "last_normal_at": null
     },
     {
@@ -1621,8 +1633,8 @@
       "location_detail": "신대방 방면3-4",
       "floor_from": "1F",
       "floor_to": "2F",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -4201,8 +4213,8 @@
       "location_detail": "2번 출입구",
       "floor_from": "B1",
       "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -5413,8 +5425,8 @@
       "location_detail": "마장 방면6-2",
       "floor_from": "B4",
       "floor_to": "B5",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -5749,8 +5761,8 @@
       "location_detail": "1번 출입구",
       "floor_from": "B3",
       "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -6097,8 +6109,8 @@
       "location_detail": "1번 출입구",
       "floor_from": "B1",
       "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -6613,18 +6625,6 @@
       "location_detail": "역촌 방면5-2, 새절 방면4-2",
       "floor_from": "B1",
       "floor_to": "B2",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "2611",
-      "station_name": "응암",
-      "line": "",
-      "facility_id": "승강기)엘리베이터-응암 외부2",
-      "location_detail": "4번 출입구",
-      "floor_from": "B1",
-      "floor_to": "1F",
       "status": "OPERATING",
       "status_code": "01",
       "last_normal_at": null
@@ -8838,18 +8838,6 @@
       "last_normal_at": null
     },
     {
-      "station_code": "2745",
-      "station_name": "신풍",
-      "line": "",
-      "facility_id": "승강기)엘리베이터-신풍 외부4",
-      "location_detail": "5번 출입구",
-      "floor_from": "B1",
-      "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
       "station_code": "2733",
       "station_name": "학동",
       "line": "",
@@ -9378,6 +9366,18 @@
       "last_normal_at": null
     },
     {
+      "station_code": "2745",
+      "station_name": "신풍",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-신풍 외부4",
+      "location_detail": "5번 출입구",
+      "floor_from": "B1",
+      "floor_to": "1F",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
       "station_code": "2746",
       "station_name": "대림",
       "line": "7호선",
@@ -9745,8 +9745,8 @@
       "location_detail": "천호 방면4-2",
       "floor_from": "B3",
       "floor_to": "B2",
-      "status": "MAINTENANCE",
-      "status_code": "03",
+      "status": "OPERATING",
+      "status_code": "01",
       "last_normal_at": null
     },
     {
@@ -9889,8 +9889,8 @@
       "location_detail": "1번 출입구",
       "floor_from": "B1",
       "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
