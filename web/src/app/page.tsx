@@ -1,28 +1,25 @@
-'use client';
+import type { Metadata } from 'next';
+import { defaultLocale } from '@/i18n/config';
+import RootRedirect from './RootRedirect';
 
-import { useEffect } from 'react';
-import { useRouter } from 'next/navigation';
-import { defaultLocale, locales, type Locale } from '@/i18n/config';
-
-function detectLocale(): Locale {
-  if (typeof navigator === 'undefined') return defaultLocale;
-  const languages = navigator.languages ?? [navigator.language];
-  for (const lang of languages) {
-    const code = lang.split('-')[0].toLowerCase();
-    if (locales.includes(code as Locale)) {
-      return code as Locale;
-    }
-  }
-  return defaultLocale;
-}
+export const metadata: Metadata = {
+  title: '나들이 — 서울 지하철 교통약자 편의시설 실시간 현황',
+  robots: { index: false, follow: true },
+  alternates: {
+    canonical: `https://nadeuri.today/${defaultLocale}/`,
+  },
+};
 
 export default function RootPage() {
-  const router = useRouter();
-
-  useEffect(() => {
-    const locale = detectLocale();
-    router.replace(`/${locale}/`);
-  }, [router]);
-
-  return null;
+  return (
+    <>
+      <meta httpEquiv="refresh" content={`0;url=/${defaultLocale}/`} />
+      <RootRedirect />
+      <noscript>
+        <p>
+          <a href={`/${defaultLocale}/`}>나들이 — 서울 지하철 편의시설 실시간 현황</a>
+        </p>
+      </noscript>
+    </>
+  );
 }

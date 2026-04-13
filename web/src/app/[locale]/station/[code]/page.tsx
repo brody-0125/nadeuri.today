@@ -1,9 +1,10 @@
 import type { Metadata } from 'next';
 import { STATIONS, getStation } from '@/lib/stations';
 import { setRequestLocale } from 'next-intl/server';
-import { locales } from '@/i18n/config';
+import { buildAlternateLanguages } from '@/lib/seo';
 import StationDetailClient from './StationDetailClient';
 import { STATION_NAMES_I18N } from '@/lib/station-names-i18n';
+import { transitStationSchema, breadcrumbSchema } from '@/lib/schema';
 import type { StationMeta } from '@/types';
 
 import koMessages from '../../../../../messages/ko.json';
@@ -48,22 +49,22 @@ export async function generateMetadata({
     .replace('{name}', label)
     .replace('{lines}', lineText);
 
-  const alternateLanguages: Record<string, string> = {};
-  for (const l of locales) {
-    alternateLanguages[l] = `/${l}/station/${code}/`;
-  }
-
   return {
     title,
     description,
     alternates: {
       canonical: `/${locale}/station/${code}/`,
-      languages: alternateLanguages,
+      languages: buildAlternateLanguages(`/station/${code}/`),
     },
     openGraph: {
       title: `${title} | ${locale === 'ko' ? '나들이' : 'Nadeuri'}`,
       description,
       url: `/${locale}/station/${code}/`,
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${title} | ${locale === 'ko' ? '나들이' : 'Nadeuri'}`,
+      description,
     },
   };
 }
@@ -71,5 +72,32 @@ export async function generateMetadata({
 export default async function StationPage({ params }: { params: Promise<{ locale: string; code: string }> }) {
   const { locale, code } = await params;
   setRequestLocale(locale);
-  return <StationDetailClient code={code} />;
+  const station = getStation(code);
+  const messages = messagesMap[locale] ?? koMessages;
+  const homeName = locale === 'ko' ? '홈' : 'Home';
+
+  return (
+    <>
+      {station && (
+        <>
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(transitStationSchema(station, locale)) }}
+          />
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify(
+                breadcrumbSchema([
+                  { name: homeName, url: `/${locale}/` },
+                  { name: stationLabel(station, locale), url: `/${locale}/station/${code}/` },
+                ]),
+              ),
+            }}
+          />
+        </>
+      )}
+      <StationDetailClient code={code} />
+    </>
+  );
 }

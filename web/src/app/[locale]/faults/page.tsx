@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
 import { setRequestLocale } from 'next-intl/server';
-import { locales } from '@/i18n/config';
+import { buildAlternateLanguages } from '@/lib/seo';
 import FaultsClient from './FaultsClient';
+import { breadcrumbSchema } from '@/lib/schema';
 
 import koMessages from '../../../../messages/ko.json';
 import enMessages from '../../../../messages/en.json';
@@ -20,19 +21,19 @@ export async function generateMetadata({
   const { locale } = await params;
   const messages = messagesMap[locale] ?? koMessages;
 
-  const alternateLanguages: Record<string, string> = {};
-  for (const l of locales) {
-    alternateLanguages[l] = `/${l}/faults/`;
-  }
-
   return {
     title: messages.faults.title,
     description: messages.faults.description,
-    alternates: { canonical: `/${locale}/faults/`, languages: alternateLanguages },
+    alternates: { canonical: `/${locale}/faults/`, languages: buildAlternateLanguages('/faults/') },
     openGraph: {
       title: `${messages.faults.title} | ${locale === 'ko' ? '나들이' : 'Nadeuri'}`,
       description: messages.faults.description,
       url: `/${locale}/faults/`,
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${messages.faults.title} | ${locale === 'ko' ? '나들이' : 'Nadeuri'}`,
+      description: messages.faults.description,
     },
   };
 }
@@ -40,5 +41,23 @@ export async function generateMetadata({
 export default async function FaultsPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  return <FaultsClient />;
+  const messages = messagesMap[locale] ?? koMessages;
+  const homeName = locale === 'ko' ? '홈' : 'Home';
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(
+            breadcrumbSchema([
+              { name: homeName, url: `/${locale}/` },
+              { name: messages.faults.title, url: `/${locale}/faults/` },
+            ]),
+          ),
+        }}
+      />
+      <FaultsClient />
+    </>
+  );
 }

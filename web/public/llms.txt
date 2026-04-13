@@ -1,0 +1,52 @@
+# Nadeuri (나들이)
+
+> Real-time accessibility facility monitoring for Seoul Metro
+
+## About
+
+Nadeuri is a public service that monitors real-time operating status of accessibility facilities across Seoul Metro stations. It tracks 9 types of accessibility facilities (elevators, escalators, moving walks, wheelchair lifts, safety boards, disabled restrooms, sign language phones, wheelchair chargers, and mobility helpers) across 300+ stations on lines 1-9 and S-line.
+
+## Key Pages
+
+- Home (Korean): https://nadeuri.today/ko/
+- Home (English): https://nadeuri.today/en/
+- Home (Japanese): https://nadeuri.today/ja/
+- Home (Chinese): https://nadeuri.today/zh/
+- Current Faults: https://nadeuri.today/ko/faults/
+- About / Data Sources: https://nadeuri.today/ko/about/
+- Station pages: https://nadeuri.today/ko/station/{station_code}/
+
+## Data Source
+
+All facility data is collected from the Seoul Open Data Plaza (서울 열린 데이터 광장) official API.
+Data is updated automatically every 90 minutes via scheduled collection.
+
+## Facility Types Monitored
+
+### Real-time (status tracked)
+- Elevators (엘리베이터)
+- Escalators (에스컬레이터)
+- Moving walks (무빙워크)
+- Wheelchair lifts (휠체어리프트)
+- Safety boards (안전발판)
+
+### Static (availability tracked)
+- Disabled restrooms (장애인화장실)
+- Sign language video phones (수어영상전화기)
+- Wheelchair chargers (휠체어급속충전기)
+- Mobility helpers (교통약자도우미)
+
+## Facility Statuses
+
+- OPERATING: Normal operation
+- FAULT: Out of service
+- MAINTENANCE: Under maintenance
+- UNKNOWN: Status unavailable
+
+## Languages
+
+Korean (primary), English, Japanese, Chinese (Simplified)
+
+## Open Source
+
+Source code: https://github.com/brody-0125/nadeuri.today

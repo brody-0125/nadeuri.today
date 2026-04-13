@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { setRequestLocale } from 'next-intl/server';
 import { locales } from '@/i18n/config';
+import { buildAlternateLanguages } from '@/lib/seo';
 import RouteContent from './RouteContent';
 
 import koMessages from '../../../../messages/ko.json';
@@ -20,20 +21,16 @@ export async function generateMetadata({
   const { locale } = await params;
   const messages = messagesMap[locale] ?? koMessages;
 
-  const alternateLanguages: Record<string, string> = {};
-  for (const l of locales) {
-    alternateLanguages[l] = `/${l}/route/`;
-  }
-
   return {
     title: messages.routePage.title,
     description: messages.routePage.description,
-    alternates: { canonical: `/${locale}/route/`, languages: alternateLanguages },
+    alternates: { canonical: `/${locale}/route/`, languages: buildAlternateLanguages('/route/') },
     openGraph: {
       title: `${messages.routePage.title} | ${locale === 'ko' ? '나들이' : 'Nadeuri'}`,
       description: messages.routePage.description,
       url: `/${locale}/route/`,
     },
+    robots: { index: false, follow: true },
   };
 }
 
