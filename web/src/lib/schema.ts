@@ -1,7 +1,6 @@
 import type { StationMeta } from '@/types';
 import { STATION_NAMES_I18N } from '@/lib/station-names-i18n';
-
-const SITE_URL = 'https://nadeuri.today';
+import { SITE_URL } from '@/lib/constants';
 
 export function websiteSchema(locale: string) {
   return {
@@ -26,16 +25,30 @@ export function websiteSchema(locale: string) {
   };
 }
 
-export function organizationSchema() {
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'Organization',
-    name: '나들이',
-    alternateName: 'Nadeuri',
-    url: SITE_URL,
-    sameAs: ['https://github.com/brody-0125/nadeuri.today'],
-  };
-}
+export const ORGANIZATION_SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: '나들이',
+  alternateName: 'Nadeuri',
+  url: SITE_URL,
+  sameAs: ['https://github.com/brody-0125/nadeuri.today'],
+} as const;
+
+const AMENITIES_KO = [
+  { name: '엘리베이터' },
+  { name: '에스컬레이터' },
+  { name: '무빙워크' },
+  { name: '휠체어리프트' },
+  { name: '안전발판' },
+];
+
+const AMENITIES_EN = [
+  { name: 'Elevator' },
+  { name: 'Escalator' },
+  { name: 'Moving Walk' },
+  { name: 'Wheelchair Lift' },
+  { name: 'Safety Board' },
+];
 
 export function transitStationSchema(station: StationMeta, locale: string) {
   const i18n = STATION_NAMES_I18N[station.code];
@@ -48,13 +61,7 @@ export function transitStationSchema(station: StationMeta, locale: string) {
       ? i18n?.en ?? undefined
       : station.name;
 
-  const amenities = [
-    { name: locale === 'ko' ? '엘리베이터' : 'Elevator' },
-    { name: locale === 'ko' ? '에스컬레이터' : 'Escalator' },
-    { name: locale === 'ko' ? '무빙워크' : 'Moving Walk' },
-    { name: locale === 'ko' ? '휠체어리프트' : 'Wheelchair Lift' },
-    { name: locale === 'ko' ? '안전발판' : 'Safety Board' },
-  ];
+  const amenities = locale === 'ko' ? AMENITIES_KO : AMENITIES_EN;
 
   return {
     '@context': 'https://schema.org',
@@ -79,6 +86,17 @@ export function transitStationSchema(station: StationMeta, locale: string) {
     })),
     isAccessibleForFree: true,
     publicAccess: true,
+  };
+}
+
+export function aboutPageSchema(title: string, description: string, locale: string) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'AboutPage',
+    name: title,
+    description,
+    url: `${SITE_URL}/${locale}/about/`,
+    inLanguage: locale,
   };
 }
 

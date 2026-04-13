@@ -6,26 +6,14 @@ import Script from 'next/script';
 import ThemeProvider from '@/components/ThemeProvider';
 import ContactCTA from '@/components/ContactCTA';
 import { THEME_INIT_SCRIPT } from '@/lib/theme';
-import { locales, type Locale } from '@/i18n/config';
+import { locales } from '@/i18n/config';
+import { SITE_URL } from '@/lib/constants';
+import { getMessages } from '@/lib/messages';
 import { buildAlternateLanguages } from '@/lib/seo';
 import '../globals.css';
 
-import koMessages from '../../../messages/ko.json';
-import enMessages from '../../../messages/en.json';
-import jaMessages from '../../../messages/ja.json';
-import zhMessages from '../../../messages/zh.json';
-
-const messagesMap: Record<string, typeof koMessages> = {
-  ko: koMessages,
-  en: enMessages,
-  ja: jaMessages,
-  zh: zhMessages,
-};
-
 const recaptchaSiteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY;
 const goatcounterCode = process.env.NEXT_PUBLIC_GOATCOUNTER_CODE;
-
-const SITE_URL = 'https://nadeuri.today';
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -37,11 +25,10 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const messages = messagesMap[locale] ?? koMessages;
+  const messages = getMessages(locale);
   const meta = messages.meta;
 
   return {
-    metadataBase: new URL(SITE_URL),
     title: {
       default: meta.title,
       template: meta.titleTemplate,
@@ -53,7 +40,7 @@ export async function generateMetadata({
     },
     openGraph: {
       type: 'website',
-      siteName: locale === 'ko' ? '나들이' : 'Nadeuri',
+      siteName: messages.common.appName,
       title: meta.title,
       description: meta.description,
       url: `${SITE_URL}/${locale}/`,
@@ -63,7 +50,7 @@ export async function generateMetadata({
           url: '/og-image.png',
           width: 1200,
           height: 630,
-          alt: locale === 'ko' ? '나들이 — 서울 지하철 편의시설 실시간 현황' : 'Nadeuri — Seoul Metro Accessibility Status',
+          alt: meta.shortDescription,
         },
       ],
     },
@@ -94,7 +81,7 @@ export default async function LocaleLayout({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const messages = messagesMap[locale] ?? koMessages;
+  const messages = getMessages(locale);
 
   const fontUrl =
     'https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;600;700;900&family=Noto+Sans+KR:wght@300;400;500;700&family=DM+Mono:wght@300;400;500&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap';

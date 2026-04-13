@@ -1,17 +1,8 @@
 import type { Metadata } from 'next';
 import { setRequestLocale } from 'next-intl/server';
-import { locales } from '@/i18n/config';
 import { buildAlternateLanguages } from '@/lib/seo';
+import { getMessages } from '@/lib/messages';
 import RouteContent from './RouteContent';
-
-import koMessages from '../../../../messages/ko.json';
-import enMessages from '../../../../messages/en.json';
-import jaMessages from '../../../../messages/ja.json';
-import zhMessages from '../../../../messages/zh.json';
-
-const messagesMap: Record<string, typeof koMessages> = {
-  ko: koMessages, en: enMessages, ja: jaMessages, zh: zhMessages,
-};
 
 export async function generateMetadata({
   params,
@@ -19,14 +10,14 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const messages = messagesMap[locale] ?? koMessages;
+  const messages = getMessages(locale);
 
   return {
     title: messages.routePage.title,
     description: messages.routePage.description,
     alternates: { canonical: `/${locale}/route/`, languages: buildAlternateLanguages('/route/') },
     openGraph: {
-      title: `${messages.routePage.title} | ${locale === 'ko' ? '나들이' : 'Nadeuri'}`,
+      title: `${messages.routePage.title} | ${messages.common.appName}`,
       description: messages.routePage.description,
       url: `/${locale}/route/`,
     },

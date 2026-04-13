@@ -1,17 +1,10 @@
 import type { Metadata } from 'next';
 import { setRequestLocale } from 'next-intl/server';
 import { buildAlternateLanguages } from '@/lib/seo';
-import FaultsClient from './FaultsClient';
+import { getMessages } from '@/lib/messages';
 import { breadcrumbSchema } from '@/lib/schema';
-
-import koMessages from '../../../../messages/ko.json';
-import enMessages from '../../../../messages/en.json';
-import jaMessages from '../../../../messages/ja.json';
-import zhMessages from '../../../../messages/zh.json';
-
-const messagesMap: Record<string, typeof koMessages> = {
-  ko: koMessages, en: enMessages, ja: jaMessages, zh: zhMessages,
-};
+import JsonLd from '@/components/JsonLd';
+import FaultsClient from './FaultsClient';
 
 export async function generateMetadata({
   params,
@@ -19,20 +12,21 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const messages = messagesMap[locale] ?? koMessages;
+  const messages = getMessages(locale);
+  const ogTitle = `${messages.faults.title} | ${messages.common.appName}`;
 
   return {
     title: messages.faults.title,
     description: messages.faults.description,
     alternates: { canonical: `/${locale}/faults/`, languages: buildAlternateLanguages('/faults/') },
     openGraph: {
-      title: `${messages.faults.title} | ${locale === 'ko' ? '나들이' : 'Nadeuri'}`,
+      title: ogTitle,
       description: messages.faults.description,
       url: `/${locale}/faults/`,
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${messages.faults.title} | ${locale === 'ko' ? '나들이' : 'Nadeuri'}`,
+      title: ogTitle,
       description: messages.faults.description,
     },
   };
@@ -41,21 +35,15 @@ export async function generateMetadata({
 export default async function FaultsPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const messages = messagesMap[locale] ?? koMessages;
-  const homeName = locale === 'ko' ? '홈' : 'Home';
+  const messages = getMessages(locale);
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(
-            breadcrumbSchema([
-              { name: homeName, url: `/${locale}/` },
-              { name: messages.faults.title, url: `/${locale}/faults/` },
-            ]),
-          ),
-        }}
+      <JsonLd
+        data={breadcrumbSchema([
+          { name: messages.common.home, url: `/${locale}/` },
+          { name: messages.faults.title, url: `/${locale}/faults/` },
+        ])}
       />
       <FaultsClient />
     </>

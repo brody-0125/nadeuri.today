@@ -1,10 +1,10 @@
 import type { MetadataRoute } from 'next';
 import { STATIONS } from '@/lib/stations';
 import { locales } from '@/i18n/config';
+import { SITE_URL } from '@/lib/constants';
 
 export const dynamic = 'force-static';
 
-const SITE_URL = 'https://nadeuri.today';
 const BUILD_DATE = new Date().toISOString().split('T')[0];
 const STATIC_DATE = '2025-06-01';
 
