@@ -1,19 +1,13 @@
 import type { Metadata } from 'next';
 import { STATIONS, getStation } from '@/lib/stations';
 import { setRequestLocale } from 'next-intl/server';
-import { locales } from '@/i18n/config';
+import { buildAlternateLanguages } from '@/lib/seo';
+import { getMessages } from '@/lib/messages';
+import { transitStationSchema, breadcrumbSchema } from '@/lib/schema';
+import JsonLd from '@/components/JsonLd';
 import StationDetailClient from './StationDetailClient';
 import { STATION_NAMES_I18N } from '@/lib/station-names-i18n';
 import type { StationMeta } from '@/types';
-
-import koMessages from '../../../../../messages/ko.json';
-import enMessages from '../../../../../messages/en.json';
-import jaMessages from '../../../../../messages/ja.json';
-import zhMessages from '../../../../../messages/zh.json';
-
-const messagesMap: Record<string, typeof koMessages> = {
-  ko: koMessages, en: enMessages, ja: jaMessages, zh: zhMessages,
-};
 
 function stationLabel(station: StationMeta, locale: string): string {
   if (locale === 'ko') return station.name.endsWith('역') ? station.name : `${station.name}역`;
@@ -34,7 +28,7 @@ export async function generateMetadata({
   params: Promise<{ locale: string; code: string }>;
 }): Promise<Metadata> {
   const { locale, code } = await params;
-  const messages = messagesMap[locale] ?? koMessages;
+  const messages = getMessages(locale);
   const station = getStation(code);
 
   if (!station) {
@@ -47,23 +41,24 @@ export async function generateMetadata({
   const description = messages.station.facilityDescription
     .replace('{name}', label)
     .replace('{lines}', lineText);
-
-  const alternateLanguages: Record<string, string> = {};
-  for (const l of locales) {
-    alternateLanguages[l] = `/${l}/station/${code}/`;
-  }
+  const ogTitle = `${title} | ${messages.common.appName}`;
 
   return {
     title,
     description,
     alternates: {
       canonical: `/${locale}/station/${code}/`,
-      languages: alternateLanguages,
+      languages: buildAlternateLanguages(`/station/${code}/`),
     },
     openGraph: {
-      title: `${title} | ${locale === 'ko' ? '나들이' : 'Nadeuri'}`,
+      title: ogTitle,
       description,
       url: `/${locale}/station/${code}/`,
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: ogTitle,
+      description,
     },
   };
 }
@@ -71,5 +66,23 @@ export async function generateMetadata({
 export default async function StationPage({ params }: { params: Promise<{ locale: string; code: string }> }) {
   const { locale, code } = await params;
   setRequestLocale(locale);
-  return <StationDetailClient code={code} />;
+  const station = getStation(code);
+  const messages = getMessages(locale);
+
+  return (
+    <>
+      {station && (
+        <JsonLd
+          data={[
+            transitStationSchema(station, locale),
+            breadcrumbSchema([
+              { name: messages.common.home, url: `/${locale}/` },
+              { name: stationLabel(station, locale), url: `/${locale}/station/${code}/` },
+            ]),
+          ]}
+        />
+      )}
+      <StationDetailClient code={code} />
+    </>
+  );
 }

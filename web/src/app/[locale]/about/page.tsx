@@ -1,17 +1,10 @@
 import type { Metadata } from 'next';
-import Link from 'next/link';
 import { setRequestLocale } from 'next-intl/server';
-import { locales } from '@/i18n/config';
+import { buildAlternateLanguages } from '@/lib/seo';
+import { getMessages } from '@/lib/messages';
+import { aboutPageSchema, breadcrumbSchema } from '@/lib/schema';
+import JsonLd from '@/components/JsonLd';
 import AboutContent from './AboutContent';
-
-import koMessages from '../../../../messages/ko.json';
-import enMessages from '../../../../messages/en.json';
-import jaMessages from '../../../../messages/ja.json';
-import zhMessages from '../../../../messages/zh.json';
-
-const messagesMap: Record<string, typeof koMessages> = {
-  ko: koMessages, en: enMessages, ja: jaMessages, zh: zhMessages,
-};
 
 export async function generateMetadata({
   params,
@@ -19,21 +12,22 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
-  const messages = messagesMap[locale] ?? koMessages;
-
-  const alternateLanguages: Record<string, string> = {};
-  for (const l of locales) {
-    alternateLanguages[l] = `/${l}/about/`;
-  }
+  const messages = getMessages(locale);
+  const ogTitle = `${messages.about.title} | ${messages.common.appName}`;
 
   return {
     title: messages.about.title,
     description: messages.about.description,
-    alternates: { canonical: `/${locale}/about/`, languages: alternateLanguages },
+    alternates: { canonical: `/${locale}/about/`, languages: buildAlternateLanguages('/about/') },
     openGraph: {
-      title: `${messages.about.title} | ${locale === 'ko' ? '나들이' : 'Nadeuri'}`,
+      title: ogTitle,
       description: messages.about.description,
       url: `/${locale}/about/`,
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: ogTitle,
+      description: messages.about.description,
     },
   };
 }
@@ -41,5 +35,20 @@ export async function generateMetadata({
 export default async function AboutPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  return <AboutContent />;
+  const messages = getMessages(locale);
+
+  return (
+    <>
+      <JsonLd
+        data={[
+          aboutPageSchema(messages.about.title, messages.about.description, locale),
+          breadcrumbSchema([
+            { name: messages.common.home, url: `/${locale}/` },
+            { name: messages.about.title, url: `/${locale}/about/` },
+          ]),
+        ]}
+      />
+      <AboutContent />
+    </>
+  );
 }
