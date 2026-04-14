@@ -1,22 +1,10 @@
 {
-  "collected_at": "2026-04-14T05:44:34.906Z",
+  "collected_at": "2026-04-14T07:05:08.457Z",
   "source_api": "SeoulMetroFaciInfo",
   "total_count": 864,
   "operating_count": 822,
   "fault_count": 0,
   "facilities": [
-    {
-      "station_code": "2543",
-      "station_name": "답십리",
-      "line": "",
-      "facility_id": "승강기)엘리베이터-답십리 외부4",
-      "location_detail": "6번 출입구",
-      "floor_from": "B2",
-      "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
     {
       "station_code": "0150",
       "station_name": "서울역",
@@ -913,6 +901,18 @@
       "location_detail": "구의 방면4-2",
       "floor_from": "1F",
       "floor_to": "2F",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2542",
+      "station_name": "마장",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-마장 내부1",
+      "location_detail": "왕십리 방면4-4",
+      "floor_from": "B2",
+      "floor_to": "B3",
       "status": "OPERATING",
       "status_code": "01",
       "last_normal_at": null
@@ -2610,18 +2610,6 @@
       "last_normal_at": null
     },
     {
-      "station_code": "0326",
-      "station_name": "압구정",
-      "line": "",
-      "facility_id": "승강기)엘리베이터-압구정 외부#1",
-      "location_detail": "2번 출입구",
-      "floor_from": "B1",
-      "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
       "station_code": "0319",
       "station_name": "종로3가",
       "line": "3호선",
@@ -2833,6 +2821,18 @@
       "location_detail": "옥수 방면8-2",
       "floor_from": "B2",
       "floor_to": "B1",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "0326",
+      "station_name": "압구정",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-압구정 외부#1",
+      "location_detail": "2번 출입구",
+      "floor_from": "B1",
+      "floor_to": "1F",
       "status": "OPERATING",
       "status_code": "01",
       "last_normal_at": null
@@ -4086,6 +4086,18 @@
       "last_normal_at": null
     },
     {
+      "station_code": "2542",
+      "station_name": "마장",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-마장 내부2",
+      "location_detail": "답십리 방면5-1",
+      "floor_from": "B2",
+      "floor_to": "B3",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
       "station_code": "0428",
       "station_name": "삼각지(전쟁기념관)",
       "line": "4호선",
@@ -5298,6 +5310,18 @@
       "last_normal_at": null
     },
     {
+      "station_code": "2542",
+      "station_name": "마장",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-마장 내부3",
+      "location_detail": "2번 출입구",
+      "floor_from": "B2",
+      "floor_to": "1F",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
       "station_code": "2536",
       "station_name": "을지로4가",
       "line": "5호선",
@@ -5305,18 +5329,6 @@
       "location_detail": "동대문역사문화공원방면 1-1,종로3가방면 10-4",
       "floor_from": "B1",
       "floor_to": "B5",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "2543",
-      "station_name": "답십리",
-      "line": "",
-      "facility_id": "승강기)엘리베이터-답십리 외부3",
-      "location_detail": "2번 출입구",
-      "floor_from": "B2",
-      "floor_to": "1F",
       "status": "OPERATING",
       "status_code": "01",
       "last_normal_at": null
@@ -5454,42 +5466,6 @@
       "last_normal_at": null
     },
     {
-      "station_code": "2542",
-      "station_name": "마장",
-      "line": "",
-      "facility_id": "승강기)엘리베이터-마장 내부1",
-      "location_detail": "왕십리 방면4-4",
-      "floor_from": "B2",
-      "floor_to": "B3",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "2542",
-      "station_name": "마장",
-      "line": "",
-      "facility_id": "승강기)엘리베이터-마장 내부2",
-      "location_detail": "답십리 방면5-1",
-      "floor_from": "B2",
-      "floor_to": "B3",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "2542",
-      "station_name": "마장",
-      "line": "",
-      "facility_id": "승강기)엘리베이터-마장 내부3",
-      "location_detail": "2번 출입구",
-      "floor_from": "B2",
-      "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
       "station_code": "2543",
       "station_name": "답십리",
       "line": "",
@@ -5509,6 +5485,30 @@
       "location_detail": "장한평 방면5-1",
       "floor_from": "B2",
       "floor_to": "B3",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2543",
+      "station_name": "답십리",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-답십리 외부3",
+      "location_detail": "2번 출입구",
+      "floor_from": "B2",
+      "floor_to": "1F",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2543",
+      "station_name": "답십리",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-답십리 외부4",
+      "location_detail": "6번 출입구",
+      "floor_from": "B2",
+      "floor_to": "1F",
       "status": "OPERATING",
       "status_code": "01",
       "last_normal_at": null
