@@ -1,16 +1,16 @@
 {
-  "updated_at": "2026-04-14T01:06:49.760Z",
-  "data_age_minutes": 174,
-  "is_stale": true,
+  "updated_at": "2026-04-14T04:30:51.937Z",
+  "data_age_minutes": 0,
+  "is_stale": false,
   "summary": {
     "elevator": {
       "total": 864,
-      "operating": 823,
+      "operating": 818,
       "fault": 0
     },
     "escalator": {
       "total": 1873,
-      "operating": 1715,
+      "operating": 1817,
       "fault": 0
     },
     "moving-walk": {
@@ -20,7 +20,7 @@
     },
     "wheelchair-lift": {
       "total": 55,
-      "operating": 54,
+      "operating": 53,
       "fault": 0
     },
     "safety-board": {
@@ -30,15 +30,73 @@
     }
   },
   "stations": {
-    "0530": {
-      "name": "애오개",
+    "0719": {
+      "name": "면목",
       "lines": [],
       "lat": 0,
       "lng": 0,
       "facilities": {
         "elevator": [
           {
-            "facility_id": "승강기)엘리베이터-애오개 외부5",
+            "facility_id": "승강기)엘리베이터-면목 내부1",
+            "location_detail": "상봉 방면4-4",
+            "floor_from": "B1",
+            "floor_to": "B4",
+            "status": "OPERATING",
+            "status_code": "01"
+          },
+          {
+            "facility_id": "승강기)엘리베이터-면목 내부2",
+            "location_detail": "사가정 방면5-2",
+            "floor_from": "B3",
+            "floor_to": "B4",
+            "status": "OPERATING",
+            "status_code": "01"
+          },
+          {
+            "facility_id": "승강기)엘리베이터-면목 외부3",
+            "location_detail": "3번 출입구",
+            "floor_from": "B1",
+            "floor_to": "1F",
+            "status": "OPERATING",
+            "status_code": "01"
+          }
+        ],
+        "escalator": [
+          {
+            "facility_id": "승강기)에스컬레이터-면목 내부 1호기",
+            "location_detail": "대합실",
+            "floor_from": "B1",
+            "floor_to": "B3",
+            "status": "OPERATING",
+            "status_code": "01"
+          },
+          {
+            "facility_id": "승강기)에스컬레이터-면목 내부 2호기",
+            "location_detail": "대합실",
+            "floor_from": "B3",
+            "floor_to": "B1",
+            "status": "OPERATING",
+            "status_code": "01"
+          },
+          {
+            "facility_id": "승강기)에스컬레이터-면목 2번 출입구 외부 5호기",
+            "location_detail": "2번 출입구",
+            "floor_from": "1F",
+            "floor_to": "B1",
+            "status": "OPERATING",
+            "status_code": "01"
+          },
+          {
+            "facility_id": "승강기)에스컬레이터-면목 2번 출입구 외부 6호기",
+            "location_detail": "2번 출입구",
+            "floor_from": "B1",
+            "floor_to": "1F",
+            "status": "OPERATING",
+            "status_code": "01"
+          },
+          {
+            "facility_id": "승강기)에스컬레이터-면목 3번 출입구 외부 3호기",
             "location_detail": "3번 출입구",
             "floor_from": "B1",
             "floor_to": "1F",
@@ -46,148 +104,10 @@
             "status_code": "01"
           },
           {
-            "facility_id": "승강기)엘리베이터-애오개 내부1",
-            "location_detail": "공덕 방면4-4",
-            "floor_from": "B3",
-            "floor_to": "B4",
-            "status": "OPERATING",
-            "status_code": "01"
-          },
-          {
-            "facility_id": "승강기)엘리베이터-애오개 내부2",
-            "location_detail": "충정로 방면5-1",
-            "floor_from": "B3",
-            "floor_to": "B4",
-            "status": "OPERATING",
-            "status_code": "01"
-          },
-          {
-            "facility_id": "승강기)엘리베이터-애오개 내부3",
-            "location_detail": "대합실",
-            "floor_from": "B1",
-            "floor_to": "B3",
-            "status": "OPERATING",
-            "status_code": "01"
-          },
-          {
-            "facility_id": "승강기)엘리베이터-애오개 외부4",
-            "location_detail": "2번 출입구",
-            "floor_from": "B1",
-            "floor_to": "1F",
-            "status": "OPERATING",
-            "status_code": "01"
-          }
-        ],
-        "escalator": [
-          {
-            "facility_id": "승강기)에스컬레이터-애오개 내부1",
-            "location_detail": "대합실",
-            "floor_from": "B3",
-            "floor_to": "B1",
-            "status": "OPERATING",
-            "status_code": "01"
-          },
-          {
-            "facility_id": "승강기)에스컬레이터-애오개 내부2",
-            "location_detail": "대합실",
-            "floor_from": "B1",
-            "floor_to": "B3",
-            "status": "OPERATING",
-            "status_code": "01"
-          },
-          {
-            "facility_id": "승강기)에스컬레이터-애오개 내부3",
-            "location_detail": "대합실",
-            "floor_from": "B3",
-            "floor_to": "B1",
-            "status": "MAINTENANCE",
-            "status_code": "03"
-          },
-          {
-            "facility_id": "승강기)에스컬레이터-애오개 내부4",
-            "location_detail": "대합실",
-            "floor_from": "B1",
-            "floor_to": "B3",
-            "status": "OPERATING",
-            "status_code": "01"
-          },
-          {
-            "facility_id": "승강기)에스컬레이터-애오개 외부5",
-            "location_detail": "4번 출입구",
-            "floor_from": "BM1",
-            "floor_to": "1F",
-            "status": "OPERATING",
-            "status_code": "01"
-          },
-          {
-            "facility_id": "승강기)에스컬레이터-애오개 외부6",
-            "location_detail": "4번 출입구",
+            "facility_id": "승강기)에스컬레이터-면목 3번 출입구 외부 4호기",
+            "location_detail": "3번 출입구",
             "floor_from": "1F",
-            "floor_to": "BM1",
-            "status": "OPERATING",
-            "status_code": "01"
-          }
-        ]
-      },
-      "disabled_restroom": [],
-      "sign_language_phone": [],
-      "wheelchair_charger": [],
-      "helper": []
-    },
-    "0560": {
-      "name": "거여",
-      "lines": [],
-      "lat": 0,
-      "lng": 0,
-      "facilities": {
-        "elevator": [
-          {
-            "facility_id": "승강기)엘리베이터-거여 내부1",
-            "location_detail": "개롱 방면6-2",
-            "floor_from": "B1",
-            "floor_to": "B2",
-            "status": "OPERATING",
-            "status_code": "01"
-          },
-          {
-            "facility_id": "승강기)엘리베이터-거여 내부2",
-            "location_detail": "마천 방면3-2",
-            "floor_from": "B1",
-            "floor_to": "B2",
-            "status": "OPERATING",
-            "status_code": "01"
-          },
-          {
-            "facility_id": "승강기)엘리베이터-거여 외부3",
-            "location_detail": "2번 출입구",
-            "floor_from": "B1",
-            "floor_to": "1F",
-            "status": "MAINTENANCE",
-            "status_code": "03"
-          }
-        ],
-        "escalator": [
-          {
-            "facility_id": "승강기)에스컬레이터-거여 내부 3호기",
-            "location_detail": "연결통로(5,6번 출입구 방면)",
-            "floor_from": "BM1",
             "floor_to": "B1",
-            "status": "OPERATING",
-            "status_code": "01"
-          },
-          {
-            "facility_id": "승강기)에스컬레이터-거여 내부1",
-            "location_detail": "2번 출입구",
-            "floor_from": "B1",
-            "floor_to": "BM1",
-            "status": "OPERATING",
-            "status_code": "01"
-          },
-          {
-            "facility_id": "승강기)에스컬레이터-거여 내부2",
-            "location_detail": "대합실(5,6번 출입구 방면)",
-            "floor_from": "B1",
-            "floor_to": "BM1",
             "status": "OPERATING",
             "status_code": "01"
           }
@@ -245,16 +165,16 @@
             "location_detail": "12번 출입구",
             "floor_from": "B1",
             "floor_to": "1F",
-            "status": "OPERATING",
-            "status_code": "01"
+            "status": "UNKNOWN",
+            "status_code": "04"
           },
           {
             "facility_id": "승강기)엘리베이터-서울(4)역 섬식(상) 9-1 내부#1",
             "location_detail": "회현 방면9-1,숙대입구 방면2-4",
             "floor_from": "B2",
             "floor_to": "B1",
-            "status": "OPERATING",
-            "status_code": "01"
+            "status": "UNKNOWN",
+            "status_code": "04"
           }
         ],
         "escalator": [
@@ -734,16 +654,16 @@
             "location_detail": "환승통로(광화문 방면8-4 을지로4가 방면1-1)",
             "floor_from": "B4",
             "floor_to": "B3",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-종로3가(5) 내부 9호기",
             "location_detail": "4번 출입구",
             "floor_from": "1F",
             "floor_to": "B1",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           }
         ]
       },
@@ -919,8 +839,8 @@
             "location_detail": "동대문역사문화공원 방면3-3,혜화 방면8-2",
             "floor_from": "B2",
             "floor_to": "B4",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-동대문(4) 하행(7-4) 1호기",
@@ -1131,8 +1051,8 @@
             "location_detail": "6번 출입구",
             "floor_from": "B1",
             "floor_to": "1F",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-청량리 6번출구 하행1",
@@ -1296,8 +1216,8 @@
             "location_detail": "3번 출입구",
             "floor_from": "1F",
             "floor_to": "B1",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-동묘앞(1) 3번출구 12호기",
@@ -1320,16 +1240,16 @@
             "location_detail": "동대문 방면2-4",
             "floor_from": "B2",
             "floor_to": "B1",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-동묘앞(1) 시청방향(5-4) 4호기",
             "location_detail": "동대문 방면5-4",
             "floor_from": "B2",
             "floor_to": "B1",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-동묘앞(1) 청량리방향(6-2) 3호기",
@@ -1352,8 +1272,8 @@
             "location_detail": "신설동 방면9-1",
             "floor_from": "B3",
             "floor_to": "B2",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-동묘앞(6) 내부1",
@@ -1678,8 +1598,8 @@
             "location_detail": "동대문역사문화공원방면 1-1,종로3가방면 10-4",
             "floor_from": "B1",
             "floor_to": "B5",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           }
         ],
         "escalator": [
@@ -1892,8 +1812,8 @@
             "location_detail": "충무로 방면5-2,동대문 방면6-3",
             "floor_from": "B3",
             "floor_to": "B2",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-동역사(4) 상행(9-1) 6호기",
@@ -1908,8 +1828,8 @@
             "location_detail": "충무로 방면2-4,동대문 방면9-1",
             "floor_from": "B2",
             "floor_to": "B3",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-동역사(4) 하행(5-2) 3호기",
@@ -2338,8 +2258,8 @@
             "location_detail": "마장 방면6-2",
             "floor_from": "B4",
             "floor_to": "B5",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)엘리베이터-왕십리 외부1",
@@ -2534,6 +2454,112 @@
             "location_detail": "뚝섬 방면8-2",
             "floor_from": "1F",
             "floor_to": "2F",
+            "status": "OPERATING",
+            "status_code": "01"
+          }
+        ]
+      },
+      "disabled_restroom": [],
+      "sign_language_phone": [],
+      "wheelchair_charger": [],
+      "helper": []
+    },
+    "0522": {
+      "name": "양평",
+      "lines": [
+        "5호선"
+      ],
+      "lat": 0,
+      "lng": 0,
+      "facilities": {
+        "elevator": [
+          {
+            "facility_id": "승강기)엘리베이터-양평 외부3",
+            "location_detail": "2번 출입구",
+            "floor_from": "B1",
+            "floor_to": "1F",
+            "status": "OPERATING",
+            "status_code": "01"
+          },
+          {
+            "facility_id": "승강기)엘리베이터-양평 내부1",
+            "location_detail": "오목교 방면3-2",
+            "floor_from": "B1",
+            "floor_to": "B5",
+            "status": "MAINTENANCE",
+            "status_code": "03"
+          },
+          {
+            "facility_id": "승강기)엘리베이터-양평 내부2",
+            "location_detail": "영등포구청 방면6-3",
+            "floor_from": "B4",
+            "floor_to": "B5",
+            "status": "OPERATING",
+            "status_code": "01"
+          }
+        ],
+        "escalator": [
+          {
+            "facility_id": "승강기)에스컬레이터-양평 내부1",
+            "location_detail": "고객안전실 측(지하1층)",
+            "floor_from": "B1",
+            "floor_to": "B3",
+            "status": "OPERATING",
+            "status_code": "01"
+          },
+          {
+            "facility_id": "승강기)에스컬레이터-양평 내부2",
+            "location_detail": "고객안전실 측(지하1층)",
+            "floor_from": "B1",
+            "floor_to": "B3",
+            "status": "OPERATING",
+            "status_code": "01"
+          },
+          {
+            "facility_id": "승강기)에스컬레이터-양평 내부3",
+            "location_detail": "고객안전실 측(지하1층)",
+            "floor_from": "B3",
+            "floor_to": "B1",
+            "status": "OPERATING",
+            "status_code": "01"
+          },
+          {
+            "facility_id": "승강기)에스컬레이터-양평 내부4",
+            "location_detail": "고객안전실 측(지하1층)",
+            "floor_from": "B3",
+            "floor_to": "B1",
+            "status": "OPERATING",
+            "status_code": "01"
+          },
+          {
+            "facility_id": "승강기)에스컬레이터-양평 내부7",
+            "location_detail": "대합실(E/L 1,2호기 앞)",
+            "floor_from": "B4",
+            "floor_to": "B3",
+            "status": "OPERATING",
+            "status_code": "01"
+          },
+          {
+            "facility_id": "승강기)에스컬레이터-양평 내부8",
+            "location_detail": "대합실(E/L 1,2호기 앞)",
+            "floor_from": "B3",
+            "floor_to": "B4",
+            "status": "OPERATING",
+            "status_code": "01"
+          },
+          {
+            "facility_id": "승강기)에스컬레이터-양평 외부5",
+            "location_detail": "2번 출입구",
+            "floor_from": "BM1",
+            "floor_to": "1F",
+            "status": "OPERATING",
+            "status_code": "01"
+          },
+          {
+            "facility_id": "승강기)에스컬레이터-양평 외부6",
+            "location_detail": "2번 출입구",
+            "floor_from": "1F",
+            "floor_to": "BM1",
             "status": "OPERATING",
             "status_code": "01"
           }
@@ -2758,8 +2784,8 @@
             "location_detail": "4번 출입구",
             "floor_from": "1F",
             "floor_to": "2F",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           }
         ]
       },
@@ -2817,8 +2843,8 @@
             "location_detail": "6번 출입구",
             "floor_from": "1F",
             "floor_to": "2F",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-건대입구 6번출구 하행1",
@@ -2913,8 +2939,8 @@
             "location_detail": "대합실(B2, 3번 출입구방면)",
             "floor_from": "B1",
             "floor_to": "B2",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           }
         ],
         "wheelchair-lift": [
@@ -3051,8 +3077,8 @@
             "location_detail": "잠실나루 방면9-1",
             "floor_from": "2F",
             "floor_to": "3F",
-            "status": "OPERATING",
-            "status_code": "01"
+            "status": "MAINTENANCE",
+            "status_code": "03"
           }
         ]
       },
@@ -3660,8 +3686,8 @@
             "location_detail": "1번 출입구",
             "floor_from": "B1",
             "floor_to": "1F",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)엘리베이터-선릉 5번 출구측 외부#2",
@@ -3774,8 +3800,8 @@
             "location_detail": "3번 출입구",
             "floor_from": "B1",
             "floor_to": "1F",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-역삼 3번출구 9호기",
@@ -3822,8 +3848,8 @@
             "location_detail": "대합실(1,2,5,6,7,8번 출입구 방면)",
             "floor_from": "1F",
             "floor_to": "B1",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-역삼 외부 2호기",
@@ -3846,8 +3872,8 @@
             "location_detail": "대합실(1,2,5,6,7,8번 출입구 방면)",
             "floor_from": "B1",
             "floor_to": "1F",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           }
         ]
       },
@@ -4057,8 +4083,8 @@
             "location_detail": "교대 방면2-4",
             "floor_from": "B2",
             "floor_to": "B1",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           }
         ],
         "escalator": [
@@ -4171,8 +4197,8 @@
             "location_detail": "4번 출입구",
             "floor_from": "1F",
             "floor_to": "B1",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-방배 4번출구 2호기",
@@ -4246,8 +4272,8 @@
             "location_detail": "14번 출입구",
             "floor_from": "B1",
             "floor_to": "1F",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-사당(2) 14번출구 9호기",
@@ -4790,8 +4816,8 @@
             "location_detail": "5번 출입구",
             "floor_from": "B1",
             "floor_to": "1F",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-신림 5번 출구측 7호기",
@@ -4964,8 +4990,8 @@
             "location_detail": "신대방 방면3-4",
             "floor_from": "1F",
             "floor_to": "2F",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           }
         ],
         "escalator": [
@@ -4998,8 +5024,8 @@
             "location_detail": "5번 출입구",
             "floor_from": "2F",
             "floor_to": "1F",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           }
         ]
       },
@@ -5081,24 +5107,24 @@
             "location_detail": "1번 출입구",
             "floor_from": "1F",
             "floor_to": "2F",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-대림 1번출구 하행1",
             "location_detail": "1번 출입구",
             "floor_from": "2F",
             "floor_to": "1F",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-대림 5번출구 상행6",
             "location_detail": "5번 출입구",
             "floor_from": "1F",
             "floor_to": "2F",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-대림 5번출구 하행5",
@@ -5616,16 +5642,16 @@
             "location_detail": "환승통로(2호선 방면)",
             "floor_from": "B1",
             "floor_to": "B4",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-영등포구청 내부6",
             "location_detail": "환승통로(2호선 방면)",
             "floor_from": "B4",
             "floor_to": "B1",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-영등포구청 내부7",
@@ -5879,8 +5905,8 @@
             "location_detail": "상수 방면6-1",
             "floor_from": "B3",
             "floor_to": "B4",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-합정(6) 내부 3호기",
@@ -7128,8 +7154,8 @@
             "location_detail": "독바위",
             "floor_from": "B2",
             "floor_to": "B4",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-불광(6) 내부10",
@@ -7334,8 +7360,8 @@
             "location_detail": "홍제 방면3-3",
             "floor_from": "B3",
             "floor_to": "B2",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)엘리베이터-무악재 하행 8-2 내부#2",
@@ -7390,8 +7416,8 @@
             "location_detail": "3-1번 출입구",
             "floor_from": "B1",
             "floor_to": "1F",
-            "status": "OPERATING",
-            "status_code": "01"
+            "status": "MAINTENANCE",
+            "status_code": "03"
           },
           {
             "facility_id": "승강기)에스컬레이터-독립문 4번 출입구 7호기",
@@ -7478,8 +7504,8 @@
             "location_detail": "3-1번 출입구",
             "floor_from": "B1",
             "floor_to": "1F",
-            "status": "OPERATING",
-            "status_code": "01"
+            "status": "MAINTENANCE",
+            "status_code": "03"
           },
           {
             "facility_id": "승강기)에스컬레이터-경복궁 3-1번출구 9호기",
@@ -7614,8 +7640,8 @@
             "location_detail": "경복궁 방면4-3, 종로3가 방면7-2",
             "floor_from": "B4",
             "floor_to": "B3",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-안국 내부 3호기",
@@ -7726,8 +7752,8 @@
             "location_detail": "5번 출입구",
             "floor_from": "1F",
             "floor_to": "B1",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-동대입구 6번출구 상행 2",
@@ -7791,8 +7817,8 @@
             "location_detail": "청구 방면4-4",
             "floor_from": "B2",
             "floor_to": "B3",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)엘리베이터-약수(6) 내부3",
@@ -8051,8 +8077,8 @@
             "location_detail": "3번 출입구",
             "floor_from": "1F",
             "floor_to": "2F",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-옥수(3) 3번출구 4호기",
@@ -8313,24 +8339,24 @@
             "location_detail": "1번 출입구",
             "floor_from": "B1",
             "floor_to": "1F",
-            "status": "OPERATING",
-            "status_code": "01"
+            "status": "UNKNOWN",
+            "status_code": "04"
           },
           {
             "facility_id": "승강기)엘리베이터-잠원 상행 3-3 내부#1",
             "location_detail": "신사 방면3-3",
             "floor_from": "B2",
             "floor_to": "B1",
-            "status": "OPERATING",
-            "status_code": "01"
+            "status": "UNKNOWN",
+            "status_code": "04"
           },
           {
             "facility_id": "승강기)엘리베이터-잠원 하행 8-2 내부#2",
             "location_detail": "고속터미널 방면8-2",
             "floor_from": "B2",
             "floor_to": "B1",
-            "status": "OPERATING",
-            "status_code": "01"
+            "status": "UNKNOWN",
+            "status_code": "04"
           }
         ]
       },
@@ -8436,8 +8462,8 @@
             "location_detail": "교대 방면9-2",
             "floor_from": "B2",
             "floor_to": "B3",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-고속터미널 내부 16호기",
@@ -8532,8 +8558,8 @@
             "location_detail": "잠원 방면4-3",
             "floor_from": "B3",
             "floor_to": "B2",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-고속터미널 내부 4호기",
@@ -8668,8 +8694,8 @@
             "location_detail": "반포 방면2-4",
             "floor_from": "B3",
             "floor_to": "B2",
-            "status": "OPERATING",
-            "status_code": "01"
+            "status": "MAINTENANCE",
+            "status_code": "03"
           },
           {
             "facility_id": "승강기)에스컬레이터-고속터미널(7) 내부 20호기",
@@ -8700,8 +8726,8 @@
             "location_detail": "내방 방면7-1",
             "floor_from": "B3",
             "floor_to": "B2",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-고속터미널(7) 내부 4호기",
@@ -8886,8 +8912,8 @@
             "location_detail": "남부터미널 방면3-1",
             "floor_from": "B2",
             "floor_to": "B1",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)엘리베이터-양재 하행 8-4 내부#2",
@@ -8960,8 +8986,8 @@
             "location_detail": "1번 출입구",
             "floor_from": "B1",
             "floor_to": "1F",
-            "status": "OPERATING",
-            "status_code": "01"
+            "status": "MAINTENANCE",
+            "status_code": "03"
           },
           {
             "facility_id": "승강기)에스컬레이터-매봉 1번출구 하행3",
@@ -9128,8 +9154,8 @@
             "location_detail": "대합실(1번출입구 방면)",
             "floor_from": "B3",
             "floor_to": "B2",
-            "status": "OPERATING",
-            "status_code": "01"
+            "status": "MAINTENANCE",
+            "status_code": "03"
           },
           {
             "facility_id": "승강기)에스컬레이터-학여울 B3(대) 하행1",
@@ -9200,8 +9226,8 @@
             "location_detail": "6번 출입구",
             "floor_from": "B1",
             "floor_to": "1F",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-대청 6번출구 하행1",
@@ -9260,14 +9286,6 @@
         ],
         "escalator": [
           {
-            "facility_id": "승강기)에스컬레이터-일원 3번출구 4호기",
-            "location_detail": "3번 출입구",
-            "floor_from": "1F",
-            "floor_to": "B1",
-            "status": "OPERATING",
-            "status_code": "01"
-          },
-          {
             "facility_id": "승강기)에스컬레이터-일원 1번출구 1호기",
             "location_detail": "1번 출입구",
             "floor_from": "1F",
@@ -9288,6 +9306,14 @@
             "location_detail": "2번 출입구",
             "floor_from": "B1",
             "floor_to": "1F",
+            "status": "OPERATING",
+            "status_code": "01"
+          },
+          {
+            "facility_id": "승강기)에스컬레이터-일원 3번출구 4호기",
+            "location_detail": "3번 출입구",
+            "floor_from": "1F",
+            "floor_to": "B1",
             "status": "OPERATING",
             "status_code": "01"
           },
@@ -9515,8 +9541,8 @@
             "location_detail": "암사 방면6-4",
             "floor_from": "B3",
             "floor_to": "B2",
-            "status": "OPERATING",
-            "status_code": "01"
+            "status": "MAINTENANCE",
+            "status_code": "03"
           },
           {
             "facility_id": "승강기)엘리베이터-가락시장(8) 내부 4호기",
@@ -9549,8 +9575,8 @@
             "location_detail": "7번 출입구",
             "floor_from": "1F",
             "floor_to": "B1",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-가락시장(3) 7번 출구 20호기",
@@ -9613,8 +9639,8 @@
             "location_detail": "경찰병원 방면7-1",
             "floor_from": "B4",
             "floor_to": "B2",
-            "status": "OPERATING",
-            "status_code": "01"
+            "status": "MAINTENANCE",
+            "status_code": "03"
           },
           {
             "facility_id": "승강기)에스컬레이터-가락시장(3) 내부 15호기",
@@ -9717,8 +9743,8 @@
             "location_detail": "경찰병원 방면3-2",
             "floor_from": "B3",
             "floor_to": "B4",
-            "status": "OPERATING",
-            "status_code": "01"
+            "status": "MAINTENANCE",
+            "status_code": "03"
           },
           {
             "facility_id": "승강기)에스컬레이터-가락시장(8) 1번 출구 5호기",
@@ -9797,8 +9823,8 @@
             "location_detail": "환승통로(송파 방면6-4)",
             "floor_from": "B2",
             "floor_to": "B3",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-가락시장(8) 내부 3호기",
@@ -9813,6 +9839,86 @@
             "location_detail": "환승통로(문정 방면1-1)",
             "floor_from": "B2",
             "floor_to": "B3",
+            "status": "OPERATING",
+            "status_code": "01"
+          }
+        ]
+      },
+      "disabled_restroom": [],
+      "sign_language_phone": [],
+      "wheelchair_charger": [],
+      "helper": []
+    },
+    "0611": {
+      "name": "역촌",
+      "lines": [],
+      "lat": 0,
+      "lng": 0,
+      "facilities": {
+        "elevator": [
+          {
+            "facility_id": "승강기)엘리베이터-역촌 내부1",
+            "location_detail": "불광 방면4-2",
+            "floor_from": "B1",
+            "floor_to": "B4",
+            "status": "OPERATING",
+            "status_code": "01"
+          },
+          {
+            "facility_id": "승강기)엘리베이터-역촌 외부2",
+            "location_detail": "4번 출입구",
+            "floor_from": "B1",
+            "floor_to": "1F",
+            "status": "OPERATING",
+            "status_code": "01"
+          }
+        ],
+        "escalator": [
+          {
+            "facility_id": "승강기)에스컬레이터-역촌 외부6",
+            "location_detail": "2번 출입구",
+            "floor_from": "B1",
+            "floor_to": "1F",
+            "status": "OPERATING",
+            "status_code": "01"
+          },
+          {
+            "facility_id": "승강기)에스컬레이터-역촌 내부 1호기",
+            "location_detail": "불광 방면4-1",
+            "floor_from": "B4",
+            "floor_to": "B1",
+            "status": "OPERATING",
+            "status_code": "01"
+          },
+          {
+            "facility_id": "승강기)에스컬레이터-역촌 내부 2호기",
+            "location_detail": "불광 방면4-1",
+            "floor_from": "B1",
+            "floor_to": "B4",
+            "status": "OPERATING",
+            "status_code": "01"
+          },
+          {
+            "facility_id": "승강기)에스컬레이터-역촌 외부3",
+            "location_detail": "4번 출입구",
+            "floor_from": "B1",
+            "floor_to": "1F",
+            "status": "OPERATING",
+            "status_code": "01"
+          },
+          {
+            "facility_id": "승강기)에스컬레이터-역촌 외부4",
+            "location_detail": "4번 출입구",
+            "floor_from": "1F",
+            "floor_to": "B1",
+            "status": "OPERATING",
+            "status_code": "01"
+          },
+          {
+            "facility_id": "승강기)에스컬레이터-역촌 외부5",
+            "location_detail": "2번 출입구",
+            "floor_from": "1F",
+            "floor_to": "B1",
             "status": "OPERATING",
             "status_code": "01"
           }
@@ -9885,8 +9991,8 @@
             "location_detail": "2번 출입구",
             "floor_from": "1F",
             "floor_to": "B1",
-            "status": "OPERATING",
-            "status_code": "01"
+            "status": "MAINTENANCE",
+            "status_code": "03"
           },
           {
             "facility_id": "승강기)에스컬레이터-경찰병원 2번출구 16호기",
@@ -9917,8 +10023,8 @@
             "location_detail": "3,4번 출입구 사이",
             "floor_from": "1F",
             "floor_to": "B1",
-            "status": "OPERATING",
-            "status_code": "01"
+            "status": "MAINTENANCE",
+            "status_code": "03"
           },
           {
             "facility_id": "승강기)에스컬레이터-경찰병원 대합실 18호기",
@@ -10144,8 +10250,8 @@
             "location_detail": "경찰병원 방면2-2",
             "floor_from": "B2",
             "floor_to": "B3",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-오금(3) 내부 2호기",
@@ -10791,8 +10897,8 @@
             "location_detail": "1번 출입구",
             "floor_from": "1F",
             "floor_to": "2F",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-창동 1번출구 하행1",
@@ -10855,8 +10961,8 @@
             "location_detail": "2번 출입구",
             "floor_from": "1F",
             "floor_to": "B1",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-쌍문 3번출구 상행6",
@@ -10879,8 +10985,8 @@
             "location_detail": "4번 출입구",
             "floor_from": "B1",
             "floor_to": "1F",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-쌍문 4번출구 하행1",
@@ -10959,8 +11065,8 @@
             "location_detail": "8번 출입구",
             "floor_from": "1F",
             "floor_to": "B1",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           }
         ]
       },
@@ -11007,8 +11113,8 @@
             "location_detail": "1번 출입구",
             "floor_from": "1F",
             "floor_to": "B1",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-미아 1번 출입구 4호기",
@@ -11241,8 +11347,8 @@
             "location_detail": "1번 출입구",
             "floor_from": "1F",
             "floor_to": "B1",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           }
         ]
       },
@@ -11345,8 +11451,8 @@
             "location_detail": "1번 출입구",
             "floor_from": "1F",
             "floor_to": "B1",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-혜화 3번출구 상행4",
@@ -11427,16 +11533,16 @@
             "location_detail": "1번 출입구",
             "floor_from": "B1",
             "floor_to": "1F",
-            "status": "OPERATING",
-            "status_code": "01"
+            "status": "MAINTENANCE",
+            "status_code": "03"
           },
           {
             "facility_id": "승강기)에스컬레이터-충무로(4) 3호선환승 17호기",
             "location_detail": "환승통로(동대입구 방면5-2)",
             "floor_from": "B4",
             "floor_to": "B2",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-충무로(4) 3호선환승 18호기",
@@ -11491,8 +11597,8 @@
             "location_detail": "대합실(동대문역사문화공원 방면6-3)",
             "floor_from": "B1",
             "floor_to": "B2",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-충무로(4) 내부 12호기",
@@ -11539,8 +11645,8 @@
             "location_detail": "동대문역사문화공원 방면4-2",
             "floor_from": "B3",
             "floor_to": "B2",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-충무로(4) 내부 2호기",
@@ -11555,8 +11661,8 @@
             "location_detail": "명동 방면6-3",
             "floor_from": "B2",
             "floor_to": "B3",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-충무로(4) 내부 4호기",
@@ -11659,8 +11765,8 @@
             "location_detail": "회현 방면1-1,충무로 방면10-4",
             "floor_from": "B3",
             "floor_to": "B2",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-명동역 내부 1호기",
@@ -11707,16 +11813,16 @@
             "location_detail": "서울역 방면10-4,명동 방면1-1",
             "floor_from": "B2",
             "floor_to": "B3",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-회현 2",
             "location_detail": "명동 방면1-1,서울역 방면10-4",
             "floor_from": "B3",
             "floor_to": "B2",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-회현 3",
@@ -12100,8 +12206,8 @@
             "location_detail": "2번 출입구",
             "floor_from": "B1",
             "floor_to": "1F",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)엘리베이터-이촌 상행 8-1 내부#1",
@@ -12150,8 +12256,8 @@
             "location_detail": "2번 출입구",
             "floor_from": "B1",
             "floor_to": "1F",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-이촌 2번출구 하행3",
@@ -12256,8 +12362,8 @@
             "location_detail": "14번 출입구",
             "floor_from": "B1",
             "floor_to": "1F",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-총신대입구 1번출구 3호기",
@@ -12328,78 +12434,6 @@
             "location_detail": "선바위 방면3-2,사당 방면8-3",
             "floor_from": "B3",
             "floor_to": "B2",
-            "status": "OPERATING",
-            "status_code": "01"
-          }
-        ]
-      },
-      "disabled_restroom": [],
-      "sign_language_phone": [],
-      "wheelchair_charger": [],
-      "helper": []
-    },
-    "0516": {
-      "name": "우장산",
-      "lines": [],
-      "lat": 0,
-      "lng": 0,
-      "facilities": {
-        "elevator": [
-          {
-            "facility_id": "승강기)엘리베이터-우장산 외부3",
-            "location_detail": "1번 출입구",
-            "floor_from": "B1",
-            "floor_to": "1F",
-            "status": "OPERATING",
-            "status_code": "01"
-          },
-          {
-            "facility_id": "승강기)엘리베이터-우장산 내부1",
-            "location_detail": "발산 방면4-2",
-            "floor_from": "B1",
-            "floor_to": "B2",
-            "status": "OPERATING",
-            "status_code": "01"
-          },
-          {
-            "facility_id": "승강기)엘리베이터-우장산 내부2",
-            "location_detail": "화곡 방면5-3",
-            "floor_from": "B1",
-            "floor_to": "B2",
-            "status": "OPERATING",
-            "status_code": "01"
-          }
-        ],
-        "escalator": [
-          {
-            "facility_id": "승강기)에스컬레이터-우장산 외부1",
-            "location_detail": "1번 출입구",
-            "floor_from": "B1",
-            "floor_to": "1F",
-            "status": "OPERATING",
-            "status_code": "01"
-          },
-          {
-            "facility_id": "승강기)에스컬레이터-우장산 외부2",
-            "location_detail": "2번 출입구",
-            "floor_from": "B1",
-            "floor_to": "1F",
-            "status": "OPERATING",
-            "status_code": "01"
-          },
-          {
-            "facility_id": "승강기)에스컬레이터-우장산 외부3",
-            "location_detail": "3번 출입구",
-            "floor_from": "B1",
-            "floor_to": "1F",
-            "status": "OPERATING",
-            "status_code": "01"
-          },
-          {
-            "facility_id": "승강기)에스컬레이터-우장산 외부4",
-            "location_detail": "3번 출입구",
-            "floor_from": "1F",
-            "floor_to": "B1",
             "status": "OPERATING",
             "status_code": "01"
           }
@@ -12584,8 +12618,8 @@
             "location_detail": "송정 방면5-4",
             "floor_from": "B3",
             "floor_to": "B2",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-김포공항 내부8",
@@ -12630,8 +12664,8 @@
             "location_detail": "김포공항 방면5-1",
             "floor_from": "B2",
             "floor_to": "B3",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)엘리베이터-송정 내부2",
@@ -12726,8 +12760,8 @@
             "location_detail": "송정 방면4-4",
             "floor_from": "B1",
             "floor_to": "B2",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)엘리베이터-마곡 내부2",
@@ -12896,6 +12930,78 @@
       "wheelchair_charger": [],
       "helper": []
     },
+    "0516": {
+      "name": "우장산",
+      "lines": [],
+      "lat": 0,
+      "lng": 0,
+      "facilities": {
+        "elevator": [
+          {
+            "facility_id": "승강기)엘리베이터-우장산 내부1",
+            "location_detail": "발산 방면4-2",
+            "floor_from": "B1",
+            "floor_to": "B2",
+            "status": "OPERATING",
+            "status_code": "01"
+          },
+          {
+            "facility_id": "승강기)엘리베이터-우장산 내부2",
+            "location_detail": "화곡 방면5-3",
+            "floor_from": "B1",
+            "floor_to": "B2",
+            "status": "OPERATING",
+            "status_code": "01"
+          },
+          {
+            "facility_id": "승강기)엘리베이터-우장산 외부3",
+            "location_detail": "1번 출입구",
+            "floor_from": "B1",
+            "floor_to": "1F",
+            "status": "OPERATING",
+            "status_code": "01"
+          }
+        ],
+        "escalator": [
+          {
+            "facility_id": "승강기)에스컬레이터-우장산 외부1",
+            "location_detail": "1번 출입구",
+            "floor_from": "B1",
+            "floor_to": "1F",
+            "status": "OPERATING",
+            "status_code": "01"
+          },
+          {
+            "facility_id": "승강기)에스컬레이터-우장산 외부2",
+            "location_detail": "2번 출입구",
+            "floor_from": "B1",
+            "floor_to": "1F",
+            "status": "OPERATING",
+            "status_code": "01"
+          },
+          {
+            "facility_id": "승강기)에스컬레이터-우장산 외부3",
+            "location_detail": "3번 출입구",
+            "floor_from": "B1",
+            "floor_to": "1F",
+            "status": "OPERATING",
+            "status_code": "01"
+          },
+          {
+            "facility_id": "승강기)에스컬레이터-우장산 외부4",
+            "location_detail": "3번 출입구",
+            "floor_from": "1F",
+            "floor_to": "B1",
+            "status": "OPERATING",
+            "status_code": "01"
+          }
+        ]
+      },
+      "disabled_restroom": [],
+      "sign_language_phone": [],
+      "wheelchair_charger": [],
+      "helper": []
+    },
     "0517": {
       "name": "화곡",
       "lines": [],
@@ -12908,16 +13014,16 @@
             "location_detail": "까치산 방면4-3,우장산 방면7-2",
             "floor_from": "B1",
             "floor_to": "B2",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)엘리베이터-화곡 외부2",
             "location_detail": "2번 출입구",
             "floor_from": "B1",
             "floor_to": "1F",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           }
         ],
         "escalator": [
@@ -12926,8 +13032,8 @@
             "location_detail": "3,4번 출입구 사이",
             "floor_from": "B2",
             "floor_to": "B1",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-화곡 내부2",
@@ -12942,8 +13048,8 @@
             "location_detail": "3번 출입구",
             "floor_from": "B1",
             "floor_to": "1F",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-화곡 외부4",
@@ -13016,8 +13122,8 @@
             "location_detail": "화곡 방면2-3",
             "floor_from": "B5",
             "floor_to": "B1",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-까치산 내부3",
@@ -13048,8 +13154,8 @@
             "location_detail": "화곡 방면7-3",
             "floor_from": "B1",
             "floor_to": "B5",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-까치산 내부7",
@@ -13080,8 +13186,8 @@
             "location_detail": "3번 출입구",
             "floor_from": "1F",
             "floor_to": "B1",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-까치산 외부12",
@@ -13096,8 +13202,8 @@
             "location_detail": "1번 출입구",
             "floor_from": "B1",
             "floor_to": "1F",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           }
         ],
         "wheelchair-lift": [
@@ -13436,112 +13542,6 @@
       "wheelchair_charger": [],
       "helper": []
     },
-    "0522": {
-      "name": "양평",
-      "lines": [
-        "5호선"
-      ],
-      "lat": 0,
-      "lng": 0,
-      "facilities": {
-        "elevator": [
-          {
-            "facility_id": "승강기)엘리베이터-양평 내부1",
-            "location_detail": "오목교 방면3-2",
-            "floor_from": "B1",
-            "floor_to": "B5",
-            "status": "MAINTENANCE",
-            "status_code": "03"
-          },
-          {
-            "facility_id": "승강기)엘리베이터-양평 내부2",
-            "location_detail": "영등포구청 방면6-3",
-            "floor_from": "B4",
-            "floor_to": "B5",
-            "status": "OPERATING",
-            "status_code": "01"
-          },
-          {
-            "facility_id": "승강기)엘리베이터-양평 외부3",
-            "location_detail": "2번 출입구",
-            "floor_from": "B1",
-            "floor_to": "1F",
-            "status": "OPERATING",
-            "status_code": "01"
-          }
-        ],
-        "escalator": [
-          {
-            "facility_id": "승강기)에스컬레이터-양평 내부1",
-            "location_detail": "고객안전실 측(지하1층)",
-            "floor_from": "B1",
-            "floor_to": "B3",
-            "status": "OPERATING",
-            "status_code": "01"
-          },
-          {
-            "facility_id": "승강기)에스컬레이터-양평 내부2",
-            "location_detail": "고객안전실 측(지하1층)",
-            "floor_from": "B1",
-            "floor_to": "B3",
-            "status": "OPERATING",
-            "status_code": "01"
-          },
-          {
-            "facility_id": "승강기)에스컬레이터-양평 내부3",
-            "location_detail": "고객안전실 측(지하1층)",
-            "floor_from": "B3",
-            "floor_to": "B1",
-            "status": "OPERATING",
-            "status_code": "01"
-          },
-          {
-            "facility_id": "승강기)에스컬레이터-양평 내부4",
-            "location_detail": "고객안전실 측(지하1층)",
-            "floor_from": "B3",
-            "floor_to": "B1",
-            "status": "OPERATING",
-            "status_code": "01"
-          },
-          {
-            "facility_id": "승강기)에스컬레이터-양평 내부7",
-            "location_detail": "대합실(E/L 1,2호기 앞)",
-            "floor_from": "B4",
-            "floor_to": "B3",
-            "status": "OPERATING",
-            "status_code": "01"
-          },
-          {
-            "facility_id": "승강기)에스컬레이터-양평 내부8",
-            "location_detail": "대합실(E/L 1,2호기 앞)",
-            "floor_from": "B3",
-            "floor_to": "B4",
-            "status": "OPERATING",
-            "status_code": "01"
-          },
-          {
-            "facility_id": "승강기)에스컬레이터-양평 외부5",
-            "location_detail": "2번 출입구",
-            "floor_from": "BM1",
-            "floor_to": "1F",
-            "status": "OPERATING",
-            "status_code": "01"
-          },
-          {
-            "facility_id": "승강기)에스컬레이터-양평 외부6",
-            "location_detail": "2번 출입구",
-            "floor_from": "1F",
-            "floor_to": "BM1",
-            "status": "OPERATING",
-            "status_code": "01"
-          }
-        ]
-      },
-      "disabled_restroom": [],
-      "sign_language_phone": [],
-      "wheelchair_charger": [],
-      "helper": []
-    },
     "0524": {
       "name": "영등포시장",
       "lines": [],
@@ -13554,24 +13554,24 @@
             "location_detail": "영등포구청 방면4-3",
             "floor_from": "B5",
             "floor_to": "B6",
-            "status": "OPERATING",
-            "status_code": "01"
+            "status": "UNKNOWN",
+            "status_code": "04"
           },
           {
             "facility_id": "승강기)엘리베이터-영등포시장 내부2",
             "location_detail": "신길 방면5-2",
             "floor_from": "B1",
             "floor_to": "B6",
-            "status": "OPERATING",
-            "status_code": "01"
+            "status": "UNKNOWN",
+            "status_code": "04"
           },
           {
             "facility_id": "승강기)엘리베이터-영등포시장역 2번 출입구 외부 3호기",
             "location_detail": "2번 출입구",
             "floor_from": "B1",
             "floor_to": "1F",
-            "status": "OPERATING",
-            "status_code": "01"
+            "status": "UNKNOWN",
+            "status_code": "04"
           }
         ],
         "escalator": [
@@ -13596,8 +13596,8 @@
             "location_detail": "대합실",
             "floor_from": "B2",
             "floor_to": "B1",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-영등포시장 내부4",
@@ -13620,8 +13620,8 @@
             "location_detail": "대합실",
             "floor_from": "B3",
             "floor_to": "B2",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-영등포시장 외부7",
@@ -13758,8 +13758,8 @@
             "location_detail": "영등포시장 방면7-3",
             "floor_from": "B3",
             "floor_to": "B4",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-신길 내부 8호기",
@@ -14016,8 +14016,8 @@
             "location_detail": "대합실",
             "floor_from": "B3",
             "floor_to": "B1",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-마포 내부3",
@@ -14195,8 +14195,8 @@
             "location_detail": "마포 방면1-1, 애오개 방면8-4",
             "floor_from": "B2",
             "floor_to": "B3",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-공덕 내부5",
@@ -14301,6 +14301,182 @@
       "wheelchair_charger": [],
       "helper": []
     },
+    "0530": {
+      "name": "애오개",
+      "lines": [],
+      "lat": 0,
+      "lng": 0,
+      "facilities": {
+        "elevator": [
+          {
+            "facility_id": "승강기)엘리베이터-애오개 내부1",
+            "location_detail": "공덕 방면4-4",
+            "floor_from": "B3",
+            "floor_to": "B4",
+            "status": "OPERATING",
+            "status_code": "01"
+          },
+          {
+            "facility_id": "승강기)엘리베이터-애오개 내부2",
+            "location_detail": "충정로 방면5-1",
+            "floor_from": "B3",
+            "floor_to": "B4",
+            "status": "OPERATING",
+            "status_code": "01"
+          },
+          {
+            "facility_id": "승강기)엘리베이터-애오개 내부3",
+            "location_detail": "대합실",
+            "floor_from": "B1",
+            "floor_to": "B3",
+            "status": "OPERATING",
+            "status_code": "01"
+          },
+          {
+            "facility_id": "승강기)엘리베이터-애오개 외부4",
+            "location_detail": "2번 출입구",
+            "floor_from": "B1",
+            "floor_to": "1F",
+            "status": "OPERATING",
+            "status_code": "01"
+          },
+          {
+            "facility_id": "승강기)엘리베이터-애오개 외부5",
+            "location_detail": "3번 출입구",
+            "floor_from": "B1",
+            "floor_to": "1F",
+            "status": "OPERATING",
+            "status_code": "01"
+          }
+        ],
+        "escalator": [
+          {
+            "facility_id": "승강기)에스컬레이터-애오개 내부1",
+            "location_detail": "대합실",
+            "floor_from": "B3",
+            "floor_to": "B1",
+            "status": "OPERATING",
+            "status_code": "01"
+          },
+          {
+            "facility_id": "승강기)에스컬레이터-애오개 내부2",
+            "location_detail": "대합실",
+            "floor_from": "B1",
+            "floor_to": "B3",
+            "status": "OPERATING",
+            "status_code": "01"
+          },
+          {
+            "facility_id": "승강기)에스컬레이터-애오개 내부3",
+            "location_detail": "대합실",
+            "floor_from": "B3",
+            "floor_to": "B1",
+            "status": "OPERATING",
+            "status_code": "01"
+          },
+          {
+            "facility_id": "승강기)에스컬레이터-애오개 내부4",
+            "location_detail": "대합실",
+            "floor_from": "B1",
+            "floor_to": "B3",
+            "status": "OPERATING",
+            "status_code": "01"
+          },
+          {
+            "facility_id": "승강기)에스컬레이터-애오개 외부5",
+            "location_detail": "4번 출입구",
+            "floor_from": "BM1",
+            "floor_to": "1F",
+            "status": "OPERATING",
+            "status_code": "01"
+          },
+          {
+            "facility_id": "승강기)에스컬레이터-애오개 외부6",
+            "location_detail": "4번 출입구",
+            "floor_from": "1F",
+            "floor_to": "BM1",
+            "status": "OPERATING",
+            "status_code": "01"
+          }
+        ]
+      },
+      "disabled_restroom": [],
+      "sign_language_phone": [],
+      "wheelchair_charger": [],
+      "helper": []
+    },
+    "0622": {
+      "name": "한강진",
+      "lines": [],
+      "lat": 0,
+      "lng": 0,
+      "facilities": {
+        "elevator": [
+          {
+            "facility_id": "승강기)엘리베이터-한강진 외부3",
+            "location_detail": "3번 출입구",
+            "floor_from": "B1",
+            "floor_to": "1F",
+            "status": "OPERATING",
+            "status_code": "01"
+          },
+          {
+            "facility_id": "승강기)엘리베이터-한강진 내부1",
+            "location_detail": "이태원 방면5-2",
+            "floor_from": "B3",
+            "floor_to": "B4",
+            "status": "OPERATING",
+            "status_code": "01"
+          },
+          {
+            "facility_id": "승강기)엘리베이터-한강진 내부2",
+            "location_detail": "버티고개 방면4-2",
+            "floor_from": "B1",
+            "floor_to": "B4",
+            "status": "OPERATING",
+            "status_code": "01"
+          }
+        ],
+        "escalator": [
+          {
+            "facility_id": "승강기)에스컬레이터-한강진 내부1",
+            "location_detail": "대합실",
+            "floor_from": "B3",
+            "floor_to": "B1",
+            "status": "OPERATING",
+            "status_code": "01"
+          },
+          {
+            "facility_id": "승강기)에스컬레이터-한강진 내부2",
+            "location_detail": "대합실",
+            "floor_from": "B1",
+            "floor_to": "B3",
+            "status": "OPERATING",
+            "status_code": "01"
+          },
+          {
+            "facility_id": "승강기)에스컬레이터-한강진 외부3",
+            "location_detail": "2번 출입구",
+            "floor_from": "B1",
+            "floor_to": "1F",
+            "status": "MAINTENANCE",
+            "status_code": "03"
+          },
+          {
+            "facility_id": "승강기)에스컬레이터-한강진 외부4",
+            "location_detail": "2번 출입구",
+            "floor_from": "1F",
+            "floor_to": "B1",
+            "status": "OPERATING",
+            "status_code": "01"
+          }
+        ]
+      },
+      "disabled_restroom": [],
+      "sign_language_phone": [],
+      "wheelchair_charger": [],
+      "helper": []
+    },
     "0534": {
       "name": "서대문",
       "lines": [],
@@ -14387,8 +14563,8 @@
             "location_detail": "5번 출입구",
             "floor_from": "1F",
             "floor_to": "B1",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-서대문 외부8",
@@ -14699,8 +14875,8 @@
             "location_detail": "1번 출입구",
             "floor_from": "1F",
             "floor_to": "B1",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-행당 외부7",
@@ -14839,14 +15015,6 @@
         ],
         "escalator": [
           {
-            "facility_id": "승강기)에스컬레이터-답십리 외부3",
-            "location_detail": "5번 출입구",
-            "floor_from": "1F",
-            "floor_to": "BM1",
-            "status": "OPERATING",
-            "status_code": "01"
-          },
-          {
             "facility_id": "승강기)에스컬레이터-답십리 외부1",
             "location_detail": "1번 출입구",
             "floor_from": "B1",
@@ -14859,6 +15027,14 @@
             "location_detail": "1번 출입구",
             "floor_from": "1F",
             "floor_to": "B1",
+            "status": "OPERATING",
+            "status_code": "01"
+          },
+          {
+            "facility_id": "승강기)에스컬레이터-답십리 외부3",
+            "location_detail": "5번 출입구",
+            "floor_from": "1F",
+            "floor_to": "BM1",
             "status": "OPERATING",
             "status_code": "01"
           },
@@ -14992,8 +15168,8 @@
             "location_detail": "장한평 방면4-3, 아차산 방면5-1",
             "floor_from": "B3",
             "floor_to": "B1",
-            "status": "OPERATING",
-            "status_code": "01"
+            "status": "MAINTENANCE",
+            "status_code": "03"
           },
           {
             "facility_id": "승강기)엘리베이터-군자 외부3",
@@ -15194,8 +15370,8 @@
             "location_detail": "1번 출입구",
             "floor_from": "1F",
             "floor_to": "B1",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-아차산 외부5",
@@ -15264,16 +15440,16 @@
             "location_detail": "1번 출입구",
             "floor_from": "B2",
             "floor_to": "1F",
-            "status": "OPERATING",
-            "status_code": "01"
+            "status": "UNKNOWN",
+            "status_code": "04"
           },
           {
             "facility_id": "승강기)엘리베이터-광나루 외부4",
             "location_detail": "3번 출입구",
             "floor_from": "B1",
             "floor_to": "1F",
-            "status": "OPERATING",
-            "status_code": "01"
+            "status": "UNKNOWN",
+            "status_code": "04"
           }
         ],
         "escalator": [
@@ -15316,8 +15492,8 @@
             "location_detail": "대합실",
             "floor_from": "B1",
             "floor_to": "B2",
-            "status": "OPERATING",
-            "status_code": "01"
+            "status": "UNKNOWN",
+            "status_code": "04"
           }
         ]
       },
@@ -15341,8 +15517,8 @@
             "location_detail": "대합실",
             "floor_from": "B1",
             "floor_to": "B3",
-            "status": "OPERATING",
-            "status_code": "01"
+            "status": "MAINTENANCE",
+            "status_code": "03"
           },
           {
             "facility_id": "승강기)엘리베이터-천호(5) 내부3",
@@ -15521,6 +15697,94 @@
       "wheelchair_charger": [],
       "helper": []
     },
+    "0715": {
+      "name": "하계",
+      "lines": [],
+      "lat": 0,
+      "lng": 0,
+      "facilities": {
+        "elevator": [
+          {
+            "facility_id": "승강기)엘리베이터-하계 외부3",
+            "location_detail": "1번 출입구",
+            "floor_from": "B1",
+            "floor_to": "1F",
+            "status": "OPERATING",
+            "status_code": "01"
+          },
+          {
+            "facility_id": "승강기)엘리베이터-하계 외부4",
+            "location_detail": "6번 출입구",
+            "floor_from": "B1",
+            "floor_to": "1F",
+            "status": "OPERATING",
+            "status_code": "01"
+          },
+          {
+            "facility_id": "승강기)엘리베이터-하계 내부2",
+            "location_detail": "중계 방면4-4, 공릉 방면5-1",
+            "floor_from": "B3",
+            "floor_to": "B1",
+            "status": "OPERATING",
+            "status_code": "01"
+          }
+        ],
+        "escalator": [
+          {
+            "facility_id": "승강기)에스컬레이터-하계 2번 출입구 외부 1호기",
+            "location_detail": "2번 출입구",
+            "floor_from": "BM1",
+            "floor_to": "1F",
+            "status": "OPERATING",
+            "status_code": "01"
+          },
+          {
+            "facility_id": "승강기)에스컬레이터-하계 2번 출입구 외부 2호기",
+            "location_detail": "2번 출입구",
+            "floor_from": "1F",
+            "floor_to": "BM1",
+            "status": "OPERATING",
+            "status_code": "01"
+          },
+          {
+            "facility_id": "승강기)에스컬레이터-하계 3번 출입구 외부 5호기",
+            "location_detail": "3번 출입구",
+            "floor_from": "B1",
+            "floor_to": "1F",
+            "status": "OPERATING",
+            "status_code": "01"
+          },
+          {
+            "facility_id": "승강기)에스컬레이터-하계 3번 출입구 외부 6호기",
+            "location_detail": "3번 출입구",
+            "floor_from": "1F",
+            "floor_to": "B1",
+            "status": "OPERATING",
+            "status_code": "01"
+          },
+          {
+            "facility_id": "승강기)에스컬레이터-하계 4번 출입구 외부 3호기",
+            "location_detail": "4번 출입구",
+            "floor_from": "1F",
+            "floor_to": "BM1",
+            "status": "MAINTENANCE",
+            "status_code": "03"
+          },
+          {
+            "facility_id": "승강기)에스컬레이터-하계 4번 출입구 외부 4호기",
+            "location_detail": "4번 출입구",
+            "floor_from": "BM1",
+            "floor_to": "1F",
+            "status": "OPERATING",
+            "status_code": "01"
+          }
+        ]
+      },
+      "disabled_restroom": [],
+      "sign_language_phone": [],
+      "wheelchair_charger": [],
+      "helper": []
+    },
     "0546": {
       "name": "강동",
       "lines": [],
@@ -15549,8 +15813,8 @@
             "location_detail": "1번 출입구",
             "floor_from": "B3",
             "floor_to": "1F",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           }
         ],
         "escalator": [
@@ -15559,8 +15823,8 @@
             "location_detail": "4번 출입구",
             "floor_from": "B1",
             "floor_to": "1F",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-강동 4번 출입구 12호기",
@@ -15607,8 +15871,8 @@
             "location_detail": "천호 방면8-4",
             "floor_from": "B3",
             "floor_to": "B4",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-강동 내부 6호기",
@@ -15687,8 +15951,8 @@
             "location_detail": "대합실(2,3번 출입구 측)",
             "floor_from": "B1",
             "floor_to": "B2",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-길동역 내부 3호기",
@@ -15879,8 +16143,8 @@
             "location_detail": "4번 출입구",
             "floor_from": "1F",
             "floor_to": "B1",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-고덕 외부2",
@@ -16287,16 +16551,16 @@
             "location_detail": "3번 출입구",
             "floor_from": "B1",
             "floor_to": "1F",
-            "status": "OPERATING",
-            "status_code": "01"
+            "status": "MAINTENANCE",
+            "status_code": "03"
           },
           {
             "facility_id": "승강기)엘리베이터-방이 외부4",
             "location_detail": "1번 출입구",
             "floor_from": "B1",
             "floor_to": "1F",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           }
         ],
         "escalator": [
@@ -16369,6 +16633,70 @@
             "location_detail": "3번 출입구",
             "floor_from": "B1",
             "floor_to": "1F",
+            "status": "OPERATING",
+            "status_code": "01"
+          }
+        ]
+      },
+      "disabled_restroom": [],
+      "sign_language_phone": [],
+      "wheelchair_charger": [],
+      "helper": []
+    },
+    "0560": {
+      "name": "거여",
+      "lines": [],
+      "lat": 0,
+      "lng": 0,
+      "facilities": {
+        "elevator": [
+          {
+            "facility_id": "승강기)엘리베이터-거여 내부1",
+            "location_detail": "개롱 방면6-2",
+            "floor_from": "B1",
+            "floor_to": "B2",
+            "status": "OPERATING",
+            "status_code": "01"
+          },
+          {
+            "facility_id": "승강기)엘리베이터-거여 내부2",
+            "location_detail": "마천 방면3-2",
+            "floor_from": "B1",
+            "floor_to": "B2",
+            "status": "OPERATING",
+            "status_code": "01"
+          },
+          {
+            "facility_id": "승강기)엘리베이터-거여 외부3",
+            "location_detail": "2번 출입구",
+            "floor_from": "B1",
+            "floor_to": "1F",
+            "status": "OPERATING",
+            "status_code": "01"
+          }
+        ],
+        "escalator": [
+          {
+            "facility_id": "승강기)에스컬레이터-거여 내부 3호기",
+            "location_detail": "연결통로(5,6번 출입구 방면)",
+            "floor_from": "BM1",
+            "floor_to": "B1",
+            "status": "OPERATING",
+            "status_code": "01"
+          },
+          {
+            "facility_id": "승강기)에스컬레이터-거여 내부1",
+            "location_detail": "2번 출입구",
+            "floor_from": "B1",
+            "floor_to": "BM1",
+            "status": "OPERATING",
+            "status_code": "01"
+          },
+          {
+            "facility_id": "승강기)에스컬레이터-거여 내부2",
+            "location_detail": "대합실(5,6번 출입구 방면)",
+            "floor_from": "B1",
+            "floor_to": "BM1",
             "status": "OPERATING",
             "status_code": "01"
           }
@@ -16793,8 +17121,8 @@
             "location_detail": "6번 출입구",
             "floor_from": "B1",
             "floor_to": "1F",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-미사 내부 16호기",
@@ -16809,16 +17137,16 @@
             "location_detail": "7번 출입구",
             "floor_from": "B1",
             "floor_to": "1F",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-미사 내부 18호기",
             "location_detail": "7번 출입구",
             "floor_from": "1F",
             "floor_to": "B1",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-미사 내부 19호기",
@@ -16841,8 +17169,8 @@
             "location_detail": "9번 출입구",
             "floor_from": "1F",
             "floor_to": "B1",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-미사 내부 21호기",
@@ -16897,8 +17225,8 @@
             "location_detail": "하남풍산 방면3-4",
             "floor_from": "B1",
             "floor_to": "B2",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-미사 내부 7호기",
@@ -17545,8 +17873,8 @@
             "location_detail": "4번 출입구",
             "floor_from": "B2",
             "floor_to": "1F",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-하남검단산역 4번 출입구 20호기",
@@ -17577,8 +17905,8 @@
             "location_detail": "대합실(3번 출입구 방향)",
             "floor_from": "B1",
             "floor_to": "B2",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-하남검단산역 내부 1호기",
@@ -17601,8 +17929,8 @@
             "location_detail": "하남검단산 방면7-1",
             "floor_from": "B3",
             "floor_to": "B2",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-하남검단산역 내부 4호기",
@@ -17753,8 +18081,8 @@
             "location_detail": "대합실(2~5번 출입구 방면)",
             "floor_from": "B2",
             "floor_to": "B4",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-남구로 내부 5호기",
@@ -17791,14 +18119,6 @@
         ],
         "wheelchair-lift": [
           {
-            "facility_id": "승강기)휠체어리프트-남구로 내부 9",
-            "location_detail": "대합실(2~5번 출입구 방면)",
-            "floor_from": "B1",
-            "floor_to": "B2",
-            "status": "OPERATING",
-            "status_code": "01"
-          },
-          {
             "facility_id": "승강기)휠체어리프트-남구로 내부 10",
             "location_detail": "대합실(2~5번 출입구 방면)",
             "floor_from": "BM1",
@@ -17826,6 +18146,14 @@
             "facility_id": "승강기)휠체어리프트-남구로 내부 6",
             "location_detail": "대합실(2~5번 출입구 방면)",
             "floor_from": "B4",
+            "floor_to": "B2",
+            "status": "OPERATING",
+            "status_code": "01"
+          },
+          {
+            "facility_id": "승강기)휠체어리프트-남구로 내부 9",
+            "location_detail": "대합실(2~5번 출입구 방면)",
+            "floor_from": "B1",
             "floor_to": "B2",
             "status": "OPERATING",
             "status_code": "01"
@@ -17865,8 +18193,8 @@
             "location_detail": "4번 출입구",
             "floor_from": "B1",
             "floor_to": "1F",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           }
         ],
         "escalator": [
@@ -17883,102 +18211,22 @@
             "location_detail": "대합실",
             "floor_from": "B1",
             "floor_to": "BM1",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-응암 외부3",
             "location_detail": "2번 출입구",
             "floor_from": "BM1",
             "floor_to": "1F",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-응암 외부4",
             "location_detail": "2번 출입구",
             "floor_from": "1F",
             "floor_to": "BM1",
-            "status": "OPERATING",
-            "status_code": "01"
-          }
-        ]
-      },
-      "disabled_restroom": [],
-      "sign_language_phone": [],
-      "wheelchair_charger": [],
-      "helper": []
-    },
-    "0611": {
-      "name": "역촌",
-      "lines": [],
-      "lat": 0,
-      "lng": 0,
-      "facilities": {
-        "elevator": [
-          {
-            "facility_id": "승강기)엘리베이터-역촌 내부1",
-            "location_detail": "불광 방면4-2",
-            "floor_from": "B1",
-            "floor_to": "B4",
-            "status": "OPERATING",
-            "status_code": "01"
-          },
-          {
-            "facility_id": "승강기)엘리베이터-역촌 외부2",
-            "location_detail": "4번 출입구",
-            "floor_from": "B1",
-            "floor_to": "1F",
-            "status": "OPERATING",
-            "status_code": "01"
-          }
-        ],
-        "escalator": [
-          {
-            "facility_id": "승강기)에스컬레이터-역촌 내부 1호기",
-            "location_detail": "불광 방면4-1",
-            "floor_from": "B4",
-            "floor_to": "B1",
-            "status": "OPERATING",
-            "status_code": "01"
-          },
-          {
-            "facility_id": "승강기)에스컬레이터-역촌 내부 2호기",
-            "location_detail": "불광 방면4-1",
-            "floor_from": "B1",
-            "floor_to": "B4",
-            "status": "OPERATING",
-            "status_code": "01"
-          },
-          {
-            "facility_id": "승강기)에스컬레이터-역촌 외부3",
-            "location_detail": "4번 출입구",
-            "floor_from": "B1",
-            "floor_to": "1F",
-            "status": "MAINTENANCE",
-            "status_code": "03"
-          },
-          {
-            "facility_id": "승강기)에스컬레이터-역촌 외부4",
-            "location_detail": "4번 출입구",
-            "floor_from": "1F",
-            "floor_to": "B1",
-            "status": "OPERATING",
-            "status_code": "01"
-          },
-          {
-            "facility_id": "승강기)에스컬레이터-역촌 외부5",
-            "location_detail": "2번 출입구",
-            "floor_from": "1F",
-            "floor_to": "B1",
-            "status": "OPERATING",
-            "status_code": "01"
-          },
-          {
-            "facility_id": "승강기)에스컬레이터-역촌 외부6",
-            "location_detail": "2번 출입구",
-            "floor_from": "B1",
-            "floor_to": "1F",
             "status": "OPERATING",
             "status_code": "01"
           }
@@ -18187,8 +18435,8 @@
             "location_detail": "응암 방면3-3",
             "floor_from": "B2",
             "floor_to": "B1",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-새절 내부2",
@@ -18323,16 +18571,16 @@
             "location_detail": "증산 방면1-1",
             "floor_from": "B1",
             "floor_to": "B2",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)엘리베이터-디지털미디어시티(6) 내부2",
             "location_detail": "월드컵경기장 방면8-4",
             "floor_from": "B1",
             "floor_to": "B2",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)엘리베이터-디지털미디어시티(6) 외부3",
@@ -18503,8 +18751,8 @@
             "location_detail": "3번 출입구",
             "floor_from": "B1",
             "floor_to": "1F",
-            "status": "OPERATING",
-            "status_code": "01"
+            "status": "MAINTENANCE",
+            "status_code": "03"
           },
           {
             "facility_id": "승강기)에스컬레이터-월드컵경기장 외부3",
@@ -18671,8 +18919,8 @@
             "location_detail": "3번 출입구",
             "floor_from": "B1",
             "floor_to": "1F",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-마포구청 외부6",
@@ -18893,24 +19141,24 @@
             "location_detail": "상수 방면1-2, 대흥 방면8-3",
             "floor_from": "B2",
             "floor_to": "B3",
-            "status": "OPERATING",
-            "status_code": "01"
+            "status": "UNKNOWN",
+            "status_code": "04"
           },
           {
             "facility_id": "승강기)엘리베이터-광흥창 외부1",
             "location_detail": "1번 출입구",
             "floor_from": "B2",
             "floor_to": "1F",
-            "status": "OPERATING",
-            "status_code": "01"
+            "status": "UNKNOWN",
+            "status_code": "04"
           },
           {
             "facility_id": "승강기)엘리베이터-광흥창 외부3",
             "location_detail": "4번 출입구",
             "floor_from": "B1",
             "floor_to": "1F",
-            "status": "OPERATING",
-            "status_code": "01"
+            "status": "UNKNOWN",
+            "status_code": "04"
           }
         ],
         "escalator": [
@@ -19039,8 +19287,8 @@
             "location_detail": "대합실",
             "floor_from": "B1",
             "floor_to": "B2",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-대흥 내부3",
@@ -19145,8 +19393,8 @@
             "location_detail": "6번 출입구",
             "floor_from": "B1",
             "floor_to": "1F",
-            "status": "OPERATING",
-            "status_code": "01"
+            "status": "MAINTENANCE",
+            "status_code": "03"
           },
           {
             "facility_id": "승강기)에스컬레이터-효창공원앞(6) 외부4",
@@ -19201,8 +19449,8 @@
             "location_detail": "삼각지 방면3-3, 이태원 방면6-2",
             "floor_from": "B4",
             "floor_to": "B5",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-녹사평 내부2",
@@ -19361,78 +19609,6 @@
             "location_detail": "대합실",
             "floor_from": "BM1",
             "floor_to": "B1",
-            "status": "MAINTENANCE",
-            "status_code": "03"
-          }
-        ]
-      },
-      "disabled_restroom": [],
-      "sign_language_phone": [],
-      "wheelchair_charger": [],
-      "helper": []
-    },
-    "0622": {
-      "name": "한강진",
-      "lines": [],
-      "lat": 0,
-      "lng": 0,
-      "facilities": {
-        "elevator": [
-          {
-            "facility_id": "승강기)엘리베이터-한강진 내부1",
-            "location_detail": "이태원 방면5-2",
-            "floor_from": "B3",
-            "floor_to": "B4",
-            "status": "OPERATING",
-            "status_code": "01"
-          },
-          {
-            "facility_id": "승강기)엘리베이터-한강진 내부2",
-            "location_detail": "버티고개 방면4-2",
-            "floor_from": "B1",
-            "floor_to": "B4",
-            "status": "OPERATING",
-            "status_code": "01"
-          },
-          {
-            "facility_id": "승강기)엘리베이터-한강진 외부3",
-            "location_detail": "3번 출입구",
-            "floor_from": "B1",
-            "floor_to": "1F",
-            "status": "OPERATING",
-            "status_code": "01"
-          }
-        ],
-        "escalator": [
-          {
-            "facility_id": "승강기)에스컬레이터-한강진 내부1",
-            "location_detail": "대합실",
-            "floor_from": "B3",
-            "floor_to": "B1",
-            "status": "OPERATING",
-            "status_code": "01"
-          },
-          {
-            "facility_id": "승강기)에스컬레이터-한강진 내부2",
-            "location_detail": "대합실",
-            "floor_from": "B1",
-            "floor_to": "B3",
-            "status": "OPERATING",
-            "status_code": "01"
-          },
-          {
-            "facility_id": "승강기)에스컬레이터-한강진 외부3",
-            "location_detail": "2번 출입구",
-            "floor_from": "B1",
-            "floor_to": "1F",
-            "status": "MAINTENANCE",
-            "status_code": "03"
-          },
-          {
-            "facility_id": "승강기)에스컬레이터-한강진 외부4",
-            "location_detail": "2번 출입구",
-            "floor_from": "1F",
-            "floor_to": "B1",
             "status": "OPERATING",
             "status_code": "01"
           }
@@ -19471,8 +19647,8 @@
             "location_detail": "한강진 방면4-2",
             "floor_from": "B2",
             "floor_to": "B3",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)엘리베이터-버티고개 내부4",
@@ -19513,8 +19689,8 @@
             "location_detail": "3번 출입구",
             "floor_from": "B1",
             "floor_to": "1F",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-버티고개 외부4",
@@ -19611,8 +19787,8 @@
             "location_detail": "환승통로(5호선 방면)",
             "floor_from": "B2",
             "floor_to": "B3",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-청구(6) 내부5",
@@ -19651,8 +19827,8 @@
             "location_detail": "1번 출입구",
             "floor_from": "1F",
             "floor_to": "BM1",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-청구(6) 외부9",
@@ -19949,8 +20125,8 @@
             "location_detail": "1번 출입구 방면(B1)",
             "floor_from": "B1",
             "floor_to": "BM1",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-고려대 내부4",
@@ -20125,8 +20301,8 @@
             "location_detail": "3번 출입구",
             "floor_from": "1F",
             "floor_to": "BM1",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-월곡 외부6",
@@ -20606,8 +20782,8 @@
             "location_detail": "환승통로(7호선 먹골 방면)",
             "floor_from": "B3",
             "floor_to": "B4",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-태릉입구(6) 내부4",
@@ -20654,16 +20830,16 @@
             "location_detail": "7번 출입구",
             "floor_from": "1F",
             "floor_to": "B1",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-태릉입구(6) 외부11",
             "location_detail": "7번 출입구",
             "floor_from": "B1",
             "floor_to": "1F",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-태릉입구(6) 외부14",
@@ -21386,94 +21562,6 @@
       "wheelchair_charger": [],
       "helper": []
     },
-    "0715": {
-      "name": "하계",
-      "lines": [],
-      "lat": 0,
-      "lng": 0,
-      "facilities": {
-        "elevator": [
-          {
-            "facility_id": "승강기)엘리베이터-하계 내부2",
-            "location_detail": "중계 방면4-4, 공릉 방면5-1",
-            "floor_from": "B3",
-            "floor_to": "B1",
-            "status": "OPERATING",
-            "status_code": "01"
-          },
-          {
-            "facility_id": "승강기)엘리베이터-하계 외부3",
-            "location_detail": "1번 출입구",
-            "floor_from": "B1",
-            "floor_to": "1F",
-            "status": "OPERATING",
-            "status_code": "01"
-          },
-          {
-            "facility_id": "승강기)엘리베이터-하계 외부4",
-            "location_detail": "6번 출입구",
-            "floor_from": "B1",
-            "floor_to": "1F",
-            "status": "OPERATING",
-            "status_code": "01"
-          }
-        ],
-        "escalator": [
-          {
-            "facility_id": "승강기)에스컬레이터-하계 2번 출입구 외부 1호기",
-            "location_detail": "2번 출입구",
-            "floor_from": "BM1",
-            "floor_to": "1F",
-            "status": "OPERATING",
-            "status_code": "01"
-          },
-          {
-            "facility_id": "승강기)에스컬레이터-하계 2번 출입구 외부 2호기",
-            "location_detail": "2번 출입구",
-            "floor_from": "1F",
-            "floor_to": "BM1",
-            "status": "OPERATING",
-            "status_code": "01"
-          },
-          {
-            "facility_id": "승강기)에스컬레이터-하계 3번 출입구 외부 5호기",
-            "location_detail": "3번 출입구",
-            "floor_from": "B1",
-            "floor_to": "1F",
-            "status": "OPERATING",
-            "status_code": "01"
-          },
-          {
-            "facility_id": "승강기)에스컬레이터-하계 3번 출입구 외부 6호기",
-            "location_detail": "3번 출입구",
-            "floor_from": "1F",
-            "floor_to": "B1",
-            "status": "OPERATING",
-            "status_code": "01"
-          },
-          {
-            "facility_id": "승강기)에스컬레이터-하계 4번 출입구 외부 3호기",
-            "location_detail": "4번 출입구",
-            "floor_from": "1F",
-            "floor_to": "BM1",
-            "status": "MAINTENANCE",
-            "status_code": "03"
-          },
-          {
-            "facility_id": "승강기)에스컬레이터-하계 4번 출입구 외부 4호기",
-            "location_detail": "4번 출입구",
-            "floor_from": "BM1",
-            "floor_to": "1F",
-            "status": "OPERATING",
-            "status_code": "01"
-          }
-        ]
-      },
-      "disabled_restroom": [],
-      "sign_language_phone": [],
-      "wheelchair_charger": [],
-      "helper": []
-    },
     "0716": {
       "name": "공릉",
       "lines": [],
@@ -21656,8 +21744,8 @@
             "location_detail": "7번 출입구",
             "floor_from": "1F",
             "floor_to": "B1",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           }
         ]
       },
@@ -21860,94 +21948,6 @@
       "wheelchair_charger": [],
       "helper": []
     },
-    "0719": {
-      "name": "면목",
-      "lines": [],
-      "lat": 0,
-      "lng": 0,
-      "facilities": {
-        "elevator": [
-          {
-            "facility_id": "승강기)엘리베이터-면목 내부1",
-            "location_detail": "상봉 방면4-4",
-            "floor_from": "B1",
-            "floor_to": "B4",
-            "status": "OPERATING",
-            "status_code": "01"
-          },
-          {
-            "facility_id": "승강기)엘리베이터-면목 내부2",
-            "location_detail": "사가정 방면5-2",
-            "floor_from": "B3",
-            "floor_to": "B4",
-            "status": "OPERATING",
-            "status_code": "01"
-          },
-          {
-            "facility_id": "승강기)엘리베이터-면목 외부3",
-            "location_detail": "3번 출입구",
-            "floor_from": "B1",
-            "floor_to": "1F",
-            "status": "OPERATING",
-            "status_code": "01"
-          }
-        ],
-        "escalator": [
-          {
-            "facility_id": "승강기)에스컬레이터-면목 2번 출입구 외부 5호기",
-            "location_detail": "2번 출입구",
-            "floor_from": "1F",
-            "floor_to": "B1",
-            "status": "OPERATING",
-            "status_code": "01"
-          },
-          {
-            "facility_id": "승강기)에스컬레이터-면목 2번 출입구 외부 6호기",
-            "location_detail": "2번 출입구",
-            "floor_from": "B1",
-            "floor_to": "1F",
-            "status": "OPERATING",
-            "status_code": "01"
-          },
-          {
-            "facility_id": "승강기)에스컬레이터-면목 3번 출입구 외부 3호기",
-            "location_detail": "3번 출입구",
-            "floor_from": "B1",
-            "floor_to": "1F",
-            "status": "OPERATING",
-            "status_code": "01"
-          },
-          {
-            "facility_id": "승강기)에스컬레이터-면목 3번 출입구 외부 4호기",
-            "location_detail": "3번 출입구",
-            "floor_from": "1F",
-            "floor_to": "B1",
-            "status": "OPERATING",
-            "status_code": "01"
-          },
-          {
-            "facility_id": "승강기)에스컬레이터-면목 내부 1호기",
-            "location_detail": "대합실",
-            "floor_from": "B1",
-            "floor_to": "B3",
-            "status": "OPERATING",
-            "status_code": "01"
-          },
-          {
-            "facility_id": "승강기)에스컬레이터-면목 내부 2호기",
-            "location_detail": "대합실",
-            "floor_from": "B3",
-            "floor_to": "B1",
-            "status": "OPERATING",
-            "status_code": "01"
-          }
-        ]
-      },
-      "disabled_restroom": [],
-      "sign_language_phone": [],
-      "wheelchair_charger": [],
-      "helper": []
-    },
     "0720": {
       "name": "사가정",
       "lines": [],
@@ -22080,24 +22080,24 @@
             "location_detail": "사가정 방면3-3",
             "floor_from": "B3",
             "floor_to": "B4",
-            "status": "OPERATING",
-            "status_code": "01"
+            "status": "UNKNOWN",
+            "status_code": "04"
           },
           {
             "facility_id": "승강기)엘리베이터-용마산 내부2",
             "location_detail": "중곡 방면6-1",
             "floor_from": "B1",
             "floor_to": "B4",
-            "status": "OPERATING",
-            "status_code": "01"
+            "status": "UNKNOWN",
+            "status_code": "04"
           },
           {
             "facility_id": "승강기)엘리베이터-용마산 외부3",
             "location_detail": "1번 출입구",
             "floor_from": "B1",
             "floor_to": "2F",
-            "status": "OPERATING",
-            "status_code": "01"
+            "status": "UNKNOWN",
+            "status_code": "04"
           }
         ],
         "escalator": [
@@ -22154,8 +22154,8 @@
             "location_detail": "대합실",
             "floor_from": "BM1",
             "floor_to": "B1",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-용마산 내부 4호기",
@@ -22458,8 +22458,8 @@
             "location_detail": "10번 출입구",
             "floor_from": "1F",
             "floor_to": "B1",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-청담 10번 출입구 외부 6호기",
@@ -22588,112 +22588,6 @@
       "wheelchair_charger": [],
       "helper": []
     },
-    "0730": {
-      "name": "반포",
-      "lines": [],
-      "lat": 0,
-      "lng": 0,
-      "facilities": {
-        "elevator": [
-          {
-            "facility_id": "승강기)엘리베이터-반포 외부3",
-            "location_detail": "6번 출입구",
-            "floor_from": "B2",
-            "floor_to": "1F",
-            "status": "OPERATING",
-            "status_code": "01"
-          },
-          {
-            "facility_id": "승강기)엘리베이터-반포 내부1",
-            "location_detail": "논현 방면5-1",
-            "floor_from": "B2",
-            "floor_to": "B3",
-            "status": "OPERATING",
-            "status_code": "01"
-          },
-          {
-            "facility_id": "승강기)엘리베이터-반포 내부2",
-            "location_detail": "고속터미널(7) 방면4-4",
-            "floor_from": "B2",
-            "floor_to": "B3",
-            "status": "OPERATING",
-            "status_code": "01"
-          },
-          {
-            "facility_id": "승강기)엘리베이터-반포 외부4",
-            "location_detail": "1번 출입구",
-            "floor_from": "B2",
-            "floor_to": "1F",
-            "status": "OPERATING",
-            "status_code": "01"
-          }
-        ],
-        "escalator": [
-          {
-            "facility_id": "승강기)에스컬레이터-반포 1번 출입구 외부 1호기",
-            "location_detail": "1번 출입구",
-            "floor_from": "B1",
-            "floor_to": "1F",
-            "status": "OPERATING",
-            "status_code": "01"
-          },
-          {
-            "facility_id": "승강기)에스컬레이터-반포 1번 출입구 외부 2호기",
-            "location_detail": "1번 출입구",
-            "floor_from": "1F",
-            "floor_to": "B1",
-            "status": "OPERATING",
-            "status_code": "01"
-          },
-          {
-            "facility_id": "승강기)에스컬레이터-반포 6번 출입구 외부 3호기",
-            "location_detail": "6번 출입구",
-            "floor_from": "B1",
-            "floor_to": "1F",
-            "status": "OPERATING",
-            "status_code": "01"
-          },
-          {
-            "facility_id": "승강기)에스컬레이터-반포 6번 출입구 외부 4호기",
-            "location_detail": "6번 출입구",
-            "floor_from": "1F",
-            "floor_to": "B1",
-            "status": "OPERATING",
-            "status_code": "01"
-          },
-          {
-            "facility_id": "승강기)에스컬레이터-반포 내부 5호기",
-            "location_detail": "대합실(1~6번 출입구 방면)",
-            "floor_from": "B2",
-            "floor_to": "B1",
-            "status": "OPERATING",
-            "status_code": "01"
-          },
-          {
-            "facility_id": "승강기)에스컬레이터-반포 내부 6호기",
-            "location_detail": "대합실(1~6번 출입구 방면)",
-            "floor_from": "B1",
-            "floor_to": "B2",
-            "status": "OPERATING",
-            "status_code": "01"
-          }
-        ],
-        "wheelchair-lift": [
-          {
-            "facility_id": "승강기)휠체어리프트-반포 내부 1",
-            "location_detail": "대합실(1~6번 출입구 방면)",
-            "floor_from": "B1",
-            "floor_to": "B2",
-            "status": "OPERATING",
-            "status_code": "01"
-          }
-        ]
-      },
-      "disabled_restroom": [],
-      "sign_language_phone": [],
-      "wheelchair_charger": [],
-      "helper": []
-    },
     "0727": {
       "name": "강남구청",
       "lines": [
@@ -22726,8 +22620,8 @@
             "location_detail": "대합실(1~4번 출입구 방면)",
             "floor_from": "B1",
             "floor_to": "B2",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-강남구청(7) 내부 2호기",
@@ -23096,6 +22990,112 @@
       "wheelchair_charger": [],
       "helper": []
     },
+    "0730": {
+      "name": "반포",
+      "lines": [],
+      "lat": 0,
+      "lng": 0,
+      "facilities": {
+        "elevator": [
+          {
+            "facility_id": "승강기)엘리베이터-반포 내부1",
+            "location_detail": "논현 방면5-1",
+            "floor_from": "B2",
+            "floor_to": "B3",
+            "status": "OPERATING",
+            "status_code": "01"
+          },
+          {
+            "facility_id": "승강기)엘리베이터-반포 내부2",
+            "location_detail": "고속터미널(7) 방면4-4",
+            "floor_from": "B2",
+            "floor_to": "B3",
+            "status": "OPERATING",
+            "status_code": "01"
+          },
+          {
+            "facility_id": "승강기)엘리베이터-반포 외부3",
+            "location_detail": "6번 출입구",
+            "floor_from": "B2",
+            "floor_to": "1F",
+            "status": "OPERATING",
+            "status_code": "01"
+          },
+          {
+            "facility_id": "승강기)엘리베이터-반포 외부4",
+            "location_detail": "1번 출입구",
+            "floor_from": "B2",
+            "floor_to": "1F",
+            "status": "OPERATING",
+            "status_code": "01"
+          }
+        ],
+        "escalator": [
+          {
+            "facility_id": "승강기)에스컬레이터-반포 1번 출입구 외부 1호기",
+            "location_detail": "1번 출입구",
+            "floor_from": "B1",
+            "floor_to": "1F",
+            "status": "OPERATING",
+            "status_code": "01"
+          },
+          {
+            "facility_id": "승강기)에스컬레이터-반포 1번 출입구 외부 2호기",
+            "location_detail": "1번 출입구",
+            "floor_from": "1F",
+            "floor_to": "B1",
+            "status": "MAINTENANCE",
+            "status_code": "03"
+          },
+          {
+            "facility_id": "승강기)에스컬레이터-반포 6번 출입구 외부 3호기",
+            "location_detail": "6번 출입구",
+            "floor_from": "B1",
+            "floor_to": "1F",
+            "status": "OPERATING",
+            "status_code": "01"
+          },
+          {
+            "facility_id": "승강기)에스컬레이터-반포 6번 출입구 외부 4호기",
+            "location_detail": "6번 출입구",
+            "floor_from": "1F",
+            "floor_to": "B1",
+            "status": "OPERATING",
+            "status_code": "01"
+          },
+          {
+            "facility_id": "승강기)에스컬레이터-반포 내부 5호기",
+            "location_detail": "대합실(1~6번 출입구 방면)",
+            "floor_from": "B2",
+            "floor_to": "B1",
+            "status": "OPERATING",
+            "status_code": "01"
+          },
+          {
+            "facility_id": "승강기)에스컬레이터-반포 내부 6호기",
+            "location_detail": "대합실(1~6번 출입구 방면)",
+            "floor_from": "B1",
+            "floor_to": "B2",
+            "status": "OPERATING",
+            "status_code": "01"
+          }
+        ],
+        "wheelchair-lift": [
+          {
+            "facility_id": "승강기)휠체어리프트-반포 내부 1",
+            "location_detail": "대합실(1~6번 출입구 방면)",
+            "floor_from": "B1",
+            "floor_to": "B2",
+            "status": "OPERATING",
+            "status_code": "01"
+          }
+        ]
+      },
+      "disabled_restroom": [],
+      "sign_language_phone": [],
+      "wheelchair_charger": [],
+      "helper": []
+    },
     "0731": {
       "name": "내방",
       "lines": [],
@@ -23352,8 +23352,8 @@
             "location_detail": "대합실(9,10번 출입구방면)",
             "floor_from": "B1",
             "floor_to": "B3",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-이수(7) 내부 11호기",
@@ -23722,8 +23722,8 @@
             "location_detail": "4번 출입구",
             "floor_from": "B1",
             "floor_to": "1F",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-숭실대입구 내부 1호기",
@@ -23954,8 +23954,8 @@
             "location_detail": "1번 출입구",
             "floor_from": "1F",
             "floor_to": "B1",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-장승배기 2번 출입구 외부 8호기",
@@ -24072,32 +24072,32 @@
             "location_detail": "장승배기 방면4-4",
             "floor_from": "B2",
             "floor_to": "B3",
-            "status": "OPERATING",
-            "status_code": "01"
+            "status": "UNKNOWN",
+            "status_code": "04"
           },
           {
             "facility_id": "승강기)엘리베이터-신대방삼거리 내부2",
             "location_detail": "보라매 방면4-4",
             "floor_from": "B2",
             "floor_to": "B3",
-            "status": "OPERATING",
-            "status_code": "01"
+            "status": "UNKNOWN",
+            "status_code": "04"
           },
           {
             "facility_id": "승강기)엘리베이터-신대방삼거리 내부3",
             "location_detail": "고객안전실 측",
             "floor_from": "B1",
             "floor_to": "B2",
-            "status": "OPERATING",
-            "status_code": "01"
+            "status": "UNKNOWN",
+            "status_code": "04"
           },
           {
             "facility_id": "승강기)엘리베이터-신대방삼거리 외부4",
             "location_detail": "3번 출입구",
             "floor_from": "B1",
             "floor_to": "1F",
-            "status": "OPERATING",
-            "status_code": "01"
+            "status": "UNKNOWN",
+            "status_code": "04"
           }
         ],
         "escalator": [
@@ -24178,8 +24178,8 @@
             "location_detail": "1번 출입구",
             "floor_from": "B1",
             "floor_to": "BM1",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-신대방삼거리 내부 4호기",
@@ -24314,8 +24314,8 @@
             "location_detail": "1번 출입구",
             "floor_from": "B1",
             "floor_to": "1F",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-신풍 1번 출입구 외부 2호기",
@@ -24460,8 +24460,8 @@
             "location_detail": "대합실(4,5,6번 출입구 및 1호선 환승구간 방면)",
             "floor_from": "B3",
             "floor_to": "B1",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-가산디지털단지(7) 내부 3호기",
@@ -24614,8 +24614,8 @@
             "location_detail": "1번 출입구",
             "floor_from": "B1",
             "floor_to": "1F",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-철산 1번 출입구 외부 4호기",
@@ -24646,8 +24646,8 @@
             "location_detail": "4번 출입구",
             "floor_from": "B1",
             "floor_to": "1F",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-철산 4번 출입구 외부 6호기",
@@ -24790,8 +24790,8 @@
             "location_detail": "1번 출입구",
             "floor_from": "1F",
             "floor_to": "B1",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-천왕 외부 5호기",
@@ -24880,16 +24880,16 @@
             "location_detail": "5번 출입구",
             "floor_from": "B1",
             "floor_to": "1F",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-온수(7) 내부 13호기",
             "location_detail": "환승통로(1호선 오류동 방면)",
             "floor_from": "1F",
             "floor_to": "B1",
-            "status": "OPERATING",
-            "status_code": "01"
+            "status": "MAINTENANCE",
+            "status_code": "03"
           },
           {
             "facility_id": "승강기)에스컬레이터-온수(7) 내부 14호기",
@@ -25152,24 +25152,24 @@
             "location_detail": "암사역사공원 방면3-4",
             "floor_from": "B2",
             "floor_to": "B1",
-            "status": "OPERATING",
-            "status_code": "01"
+            "status": "UNKNOWN",
+            "status_code": "04"
           },
           {
             "facility_id": "승강기)엘리베이터-암사 내부 2호기",
             "location_detail": "천호 방면4-1",
             "floor_from": "B2",
             "floor_to": "B1",
-            "status": "OPERATING",
-            "status_code": "01"
+            "status": "UNKNOWN",
+            "status_code": "04"
           },
           {
             "facility_id": "승강기)엘리베이터-암사 외부 3호기",
             "location_detail": "3,4번 출입구 사이",
             "floor_from": "B1",
             "floor_to": "1F",
-            "status": "OPERATING",
-            "status_code": "01"
+            "status": "UNKNOWN",
+            "status_code": "04"
           }
         ],
         "escalator": [
@@ -25362,8 +25362,8 @@
             "location_detail": "대합실(개찰구 측)",
             "floor_from": "B1",
             "floor_to": "B2",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-몽촌토성 내부 3호기",
@@ -25434,8 +25434,8 @@
             "location_detail": "1번 출입구",
             "floor_from": "B1",
             "floor_to": "1F",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           }
         ]
       },
@@ -25514,8 +25514,8 @@
             "location_detail": "4번 출입구",
             "floor_from": "1F",
             "floor_to": "B1",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           }
         ]
       },
@@ -25578,8 +25578,8 @@
             "location_detail": "2번 출입구",
             "floor_from": "1F",
             "floor_to": "B1",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-문정 3번 출입구 외부 3호기",
@@ -25672,8 +25672,8 @@
             "location_detail": "3번 출입구",
             "floor_from": "B1",
             "floor_to": "1F",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           }
         ],
         "escalator": [
@@ -25908,8 +25908,8 @@
             "location_detail": "남위례 방면1-3",
             "floor_from": "B3",
             "floor_to": "B2",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-산성 내부 1200형 3호기",
@@ -25932,8 +25932,8 @@
             "location_detail": "남위례 방면6-2",
             "floor_from": "B3",
             "floor_to": "B2",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-산성 내부 1200형 6호기",
