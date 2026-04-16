@@ -1,10 +1,22 @@
 {
-  "collected_at": "2026-04-16T16:03:29.700Z",
+  "collected_at": "2026-04-16T21:46:48.859Z",
   "source_api": "SeoulMetroFaciInfo",
   "total_count": 864,
   "operating_count": 838,
   "fault_count": 0,
   "facilities": [
+    {
+      "station_code": "2530",
+      "station_name": "공덕",
+      "line": "5호선",
+      "facility_id": "승강기)엘리베이터-공덕 외부2",
+      "location_detail": "2번 출입구",
+      "floor_from": "B1",
+      "floor_to": "1F",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
     {
       "station_code": "0150",
       "station_name": "서울역",
@@ -1986,13 +1998,13 @@
       "last_normal_at": null
     },
     {
-      "station_code": "2521",
-      "station_name": "목동",
+      "station_code": "2515",
+      "station_name": "마곡",
       "line": "",
-      "facility_id": "승강기)엘리베이터-목동 외부3",
-      "location_detail": "5번 출입구",
+      "facility_id": "승강기)엘리베이터-마곡 내부2",
+      "location_detail": "발산 방면5-1",
       "floor_from": "B1",
-      "floor_to": "1F",
+      "floor_to": "B2",
       "status": "OPERATING",
       "status_code": "01",
       "last_normal_at": null
@@ -3306,18 +3318,6 @@
       "last_normal_at": null
     },
     {
-      "station_code": "2547",
-      "station_name": "광나루",
-      "line": "",
-      "facility_id": "승강기)엘리베이터-광나루 외부4",
-      "location_detail": "3번 출입구",
-      "floor_from": "B1",
-      "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
       "station_code": "0340",
       "station_name": "가락시장",
       "line": "3호선",
@@ -3913,6 +3913,18 @@
       "location_detail": "혜화 방면6-3,동대문역사문화공원 방면5-2",
       "floor_from": "B4",
       "floor_to": "B1",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2515",
+      "station_name": "마곡",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-마곡 외부3",
+      "location_detail": "1번 출입구",
+      "floor_from": "B1",
+      "floor_to": "1F",
       "status": "OPERATING",
       "status_code": "01",
       "last_normal_at": null
@@ -4569,30 +4581,6 @@
       "station_code": "2515",
       "station_name": "마곡",
       "line": "",
-      "facility_id": "승강기)엘리베이터-마곡 내부2",
-      "location_detail": "발산 방면5-1",
-      "floor_from": "B1",
-      "floor_to": "B2",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "2515",
-      "station_name": "마곡",
-      "line": "",
-      "facility_id": "승강기)엘리베이터-마곡 외부3",
-      "location_detail": "1번 출입구",
-      "floor_from": "B1",
-      "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "2515",
-      "station_name": "마곡",
-      "line": "",
       "facility_id": "승강기)엘리베이터-마곡 외부4",
       "location_detail": "6,7번 출입구 사이",
       "floor_from": "B1",
@@ -4789,6 +4777,18 @@
       "location_detail": "오목교 방면4-4",
       "floor_from": "B1",
       "floor_to": "B2",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2521",
+      "station_name": "목동",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-목동 외부3",
+      "location_detail": "5번 출입구",
+      "floor_from": "B1",
+      "floor_to": "1F",
       "status": "OPERATING",
       "status_code": "01",
       "last_normal_at": null
@@ -5113,18 +5113,6 @@
       "location_detail": "환승통로(애오개 방면8-4 마포 방면1-1)",
       "floor_from": "B3",
       "floor_to": "B1",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "2530",
-      "station_name": "공덕",
-      "line": "5호선",
-      "facility_id": "승강기)엘리베이터-공덕 외부2",
-      "location_detail": "2번 출입구",
-      "floor_from": "B1",
-      "floor_to": "1F",
       "status": "OPERATING",
       "status_code": "01",
       "last_normal_at": null
@@ -5664,6 +5652,18 @@
       "facility_id": "승강기)엘리베이터-광나루 외부3",
       "location_detail": "1번 출입구",
       "floor_from": "B2",
+      "floor_to": "1F",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2547",
+      "station_name": "광나루",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-광나루 외부4",
+      "location_detail": "3번 출입구",
+      "floor_from": "B1",
       "floor_to": "1F",
       "status": "OPERATING",
       "status_code": "01",
@@ -9414,6 +9414,18 @@
       "last_normal_at": null
     },
     {
+      "station_code": "2749",
+      "station_name": "철산",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-철산 외부3",
+      "location_detail": "1번 출입구",
+      "floor_from": "B1",
+      "floor_to": "1F",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
       "station_code": "2748",
       "station_name": "가산디지털단지",
       "line": "7호선",
@@ -9481,18 +9493,6 @@
       "location_detail": "광명사거리 방면4-4",
       "floor_from": "B1",
       "floor_to": "B2",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "2749",
-      "station_name": "철산",
-      "line": "",
-      "facility_id": "승강기)엘리베이터-철산 외부3",
-      "location_detail": "1번 출입구",
-      "floor_from": "B1",
-      "floor_to": "1F",
       "status": "OPERATING",
       "status_code": "01",
       "last_normal_at": null
