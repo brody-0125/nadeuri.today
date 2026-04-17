@@ -1,8 +1,8 @@
 {
-  "collected_at": "2026-04-17T08:39:05.303Z",
+  "collected_at": "2026-04-17T09:57:51.846Z",
   "source_api": "SeoulMetroFaciInfo",
   "total_count": 55,
-  "operating_count": 49,
+  "operating_count": 51,
   "fault_count": 0,
   "facilities": [
     {
@@ -373,8 +373,8 @@
       "location_detail": "대합실",
       "floor_from": "B1",
       "floor_to": "B2",
-      "status": "UNKNOWN",
-      "status_code": "04",
+      "status": "OPERATING",
+      "status_code": "01",
       "last_normal_at": null
     },
     {
@@ -385,8 +385,8 @@
       "location_detail": "5번 출입구",
       "floor_from": "1F",
       "floor_to": "B1",
-      "status": "UNKNOWN",
-      "status_code": "04",
+      "status": "OPERATING",
+      "status_code": "01",
       "last_normal_at": null
     },
     {
@@ -534,6 +534,18 @@
       "last_normal_at": null
     },
     {
+      "station_code": "2747",
+      "station_name": "남구로",
+      "line": "",
+      "facility_id": "승강기)휠체어리프트-남구로 내부 9",
+      "location_detail": "대합실(2~5번 출입구 방면)",
+      "floor_from": "B1",
+      "floor_to": "B2",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
       "station_code": "2746",
       "station_name": "대림",
       "line": "7호선",
@@ -588,18 +600,6 @@
       "facility_id": "승강기)휠체어리프트-남구로 내부 6",
       "location_detail": "대합실(2~5번 출입구 방면)",
       "floor_from": "B4",
-      "floor_to": "B2",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "2747",
-      "station_name": "남구로",
-      "line": "",
-      "facility_id": "승강기)휠체어리프트-남구로 내부 9",
-      "location_detail": "대합실(2~5번 출입구 방면)",
-      "floor_from": "B1",
       "floor_to": "B2",
       "status": "OPERATING",
       "status_code": "01",
