@@ -1,8 +1,8 @@
 {
-  "collected_at": "2026-04-23T23:20:18.721Z",
+  "collected_at": "2026-04-24T03:09:53.295Z",
   "source_api": "SeoulMetroFaciInfo",
   "total_count": 864,
-  "operating_count": 834,
+  "operating_count": 833,
   "fault_count": 0,
   "facilities": [
     {
@@ -447,6 +447,18 @@
       "floor_to": "B1",
       "status": "OPERATING",
       "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2518",
+      "station_name": "화곡",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-화곡 외부2",
+      "location_detail": "2번 출입구",
+      "floor_from": "B1",
+      "floor_to": "1F",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -930,6 +942,18 @@
       "last_normal_at": null
     },
     {
+      "station_code": "2543",
+      "station_name": "답십리",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-답십리 외부3",
+      "location_detail": "2번 출입구",
+      "floor_from": "B2",
+      "floor_to": "1F",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
       "station_code": "0216",
       "station_name": "잠실",
       "line": "2호선",
@@ -1129,8 +1153,8 @@
       "location_detail": "10번 출입구",
       "floor_from": "B1",
       "floor_to": "1F",
-      "status": "MAINTENANCE",
-      "status_code": "03",
+      "status": "OPERATING",
+      "status_code": "01",
       "last_normal_at": null
     },
     {
@@ -2070,6 +2094,18 @@
       "last_normal_at": null
     },
     {
+      "station_code": "2543",
+      "station_name": "답십리",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-답십리 외부4",
+      "location_detail": "6번 출입구",
+      "floor_from": "B2",
+      "floor_to": "1F",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
       "station_code": "0243",
       "station_name": "충정로",
       "line": "2호선",
@@ -2293,8 +2329,8 @@
       "location_detail": "4번 출입구",
       "floor_from": "B1",
       "floor_to": "1F",
-      "status": "MAINTENANCE",
-      "status_code": "03",
+      "status": "OPERATING",
+      "status_code": "01",
       "last_normal_at": null
     },
     {
@@ -4662,18 +4698,6 @@
       "last_normal_at": null
     },
     {
-      "station_code": "2518",
-      "station_name": "화곡",
-      "line": "",
-      "facility_id": "승강기)엘리베이터-화곡 외부2",
-      "location_detail": "2번 출입구",
-      "floor_from": "B1",
-      "floor_to": "1F",
-      "status": "MAINTENANCE",
-      "status_code": "03",
-      "last_normal_at": null
-    },
-    {
       "station_code": "2519",
       "station_name": "까치산",
       "line": "5호선",
@@ -5490,30 +5514,6 @@
       "last_normal_at": null
     },
     {
-      "station_code": "2543",
-      "station_name": "답십리",
-      "line": "",
-      "facility_id": "승강기)엘리베이터-답십리 외부3",
-      "location_detail": "2번 출입구",
-      "floor_from": "B2",
-      "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "2543",
-      "station_name": "답십리",
-      "line": "",
-      "facility_id": "승강기)엘리베이터-답십리 외부4",
-      "location_detail": "6번 출입구",
-      "floor_from": "B2",
-      "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
       "station_code": "2544",
       "station_name": "장한평",
       "line": "",
@@ -6097,20 +6097,8 @@
       "location_detail": "1번 출입구",
       "floor_from": "B1",
       "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "2614",
-      "station_name": "독바위",
-      "line": "",
-      "facility_id": "승강기)엘리베이터-독바위 외부2",
-      "location_detail": "1번 출입구",
-      "floor_from": "B1",
-      "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -6714,6 +6702,18 @@
       "last_normal_at": null
     },
     {
+      "station_code": "2614",
+      "station_name": "독바위",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-독바위 외부2",
+      "location_detail": "1번 출입구",
+      "floor_from": "B1",
+      "floor_to": "1F",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
       "station_code": "2615",
       "station_name": "연신내",
       "line": "6호선",
@@ -7141,6 +7141,18 @@
       "location_detail": "대흥 방면1-1",
       "floor_from": "B2",
       "floor_to": "B3",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2722",
+      "station_name": "상봉",
+      "line": "7호선",
+      "facility_id": "승강기)엘리베이터-상봉(7) 외부5",
+      "location_detail": "3번 출입구",
+      "floor_from": "B1",
+      "floor_to": "1F",
       "status": "OPERATING",
       "status_code": "01",
       "last_normal_at": null
@@ -8490,18 +8502,6 @@
       "last_normal_at": null
     },
     {
-      "station_code": "2722",
-      "station_name": "상봉",
-      "line": "7호선",
-      "facility_id": "승강기)엘리베이터-상봉(7) 외부5",
-      "location_detail": "3번 출입구",
-      "floor_from": "B1",
-      "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
       "station_code": "2723",
       "station_name": "면목",
       "line": "",
@@ -9301,8 +9301,8 @@
       "location_detail": "3번 출입구",
       "floor_from": "B1",
       "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -9373,8 +9373,8 @@
       "location_detail": "5번 출입구",
       "floor_from": "B1",
       "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
