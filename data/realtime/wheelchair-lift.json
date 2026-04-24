@@ -1,8 +1,8 @@
 {
-  "collected_at": "2026-04-24T03:09:53.497Z",
+  "collected_at": "2026-04-24T04:33:24.864Z",
   "source_api": "SeoulMetroFaciInfo",
   "total_count": 55,
-  "operating_count": 53,
+  "operating_count": 52,
   "fault_count": 0,
   "facilities": [
     {
@@ -126,18 +126,6 @@
       "last_normal_at": null
     },
     {
-      "station_code": "2543",
-      "station_name": "답십리",
-      "line": "",
-      "facility_id": "승강기)휠체어리프트-답십리 내부 1",
-      "location_detail": "대합실",
-      "floor_from": "B1",
-      "floor_to": "B1",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
       "station_code": "0330",
       "station_name": "교대",
       "line": "3호선",
@@ -217,6 +205,18 @@
       "location_detail": "영등포시장 방면2-3",
       "floor_from": "B2",
       "floor_to": "B4",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2543",
+      "station_name": "답십리",
+      "line": "",
+      "facility_id": "승강기)휠체어리프트-답십리 내부 1",
+      "location_detail": "대합실",
+      "floor_from": "B1",
+      "floor_to": "B1",
       "status": "OPERATING",
       "status_code": "01",
       "last_normal_at": null
@@ -661,8 +661,8 @@
       "location_detail": "6번 출입구",
       "floor_from": "1F",
       "floor_to": "B1",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "UNKNOWN",
+      "status_code": "04",
       "last_normal_at": null
     }
   ]
