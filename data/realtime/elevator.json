@@ -1,8 +1,8 @@
 {
-  "collected_at": "2026-04-25T20:15:02.032Z",
+  "collected_at": "2026-04-25T23:15:48.042Z",
   "source_api": "SeoulMetroFaciInfo",
   "total_count": 864,
-  "operating_count": 828,
+  "operating_count": 825,
   "fault_count": 0,
   "facilities": [
     {
@@ -649,18 +649,6 @@
       "location_detail": "동대문역사문화공원 방면3-4",
       "floor_from": "B2",
       "floor_to": "B1",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "2521",
-      "station_name": "목동",
-      "line": "",
-      "facility_id": "승강기)엘리베이터-목동 외부3",
-      "location_detail": "5번 출입구",
-      "floor_from": "B1",
-      "floor_to": "1F",
       "status": "OPERATING",
       "status_code": "01",
       "last_normal_at": null
@@ -2689,8 +2677,8 @@
       "location_detail": "6번 출입구",
       "floor_from": "B2",
       "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -4782,6 +4770,18 @@
       "last_normal_at": null
     },
     {
+      "station_code": "2521",
+      "station_name": "목동",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-목동 외부3",
+      "location_detail": "5번 출입구",
+      "floor_from": "B1",
+      "floor_to": "1F",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
       "station_code": "2522",
       "station_name": "오목교",
       "line": "",
@@ -4921,18 +4921,6 @@
       "location_detail": "신길 방면5-2",
       "floor_from": "B1",
       "floor_to": "B6",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "2547",
-      "station_name": "광나루",
-      "line": "",
-      "facility_id": "승강기)엘리베이터-광나루 외부4",
-      "location_detail": "3번 출입구",
-      "floor_from": "B1",
-      "floor_to": "1F",
       "status": "OPERATING",
       "status_code": "01",
       "last_normal_at": null
@@ -5667,6 +5655,18 @@
       "floor_to": "1F",
       "status": "MAINTENANCE",
       "status_code": "03",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2547",
+      "station_name": "광나루",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-광나루 외부4",
+      "location_detail": "3번 출입구",
+      "floor_from": "B1",
+      "floor_to": "1F",
+      "status": "OPERATING",
+      "status_code": "01",
       "last_normal_at": null
     },
     {
@@ -7345,8 +7345,8 @@
       "location_detail": "버티고개 방면4-2",
       "floor_from": "B1",
       "floor_to": "B4",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -7393,8 +7393,8 @@
       "location_detail": "한강진 방면4-2",
       "floor_from": "B2",
       "floor_to": "B3",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
