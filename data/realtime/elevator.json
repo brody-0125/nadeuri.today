@@ -1,10 +1,34 @@
 {
-  "collected_at": "2026-04-26T05:52:00.239Z",
+  "collected_at": "2026-04-26T08:31:01.334Z",
   "source_api": "SeoulMetroFaciInfo",
   "total_count": 864,
-  "operating_count": 837,
+  "operating_count": 836,
   "fault_count": 0,
   "facilities": [
+    {
+      "station_code": "2531",
+      "station_name": "애오개",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-애오개 외부4",
+      "location_detail": "2번 출입구",
+      "floor_from": "B1",
+      "floor_to": "1F",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2531",
+      "station_name": "애오개",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-애오개 외부5",
+      "location_detail": "3번 출입구",
+      "floor_from": "B1",
+      "floor_to": "1F",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
     {
       "station_code": "0150",
       "station_name": "서울역",
@@ -169,8 +193,8 @@
       "location_detail": "종각 방면6-4",
       "floor_from": "B2",
       "floor_to": "B1",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -3462,6 +3486,18 @@
       "last_normal_at": null
     },
     {
+      "station_code": "2531",
+      "station_name": "애오개",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-애오개 내부3",
+      "location_detail": "대합실",
+      "floor_from": "B1",
+      "floor_to": "B3",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
       "station_code": "0411",
       "station_name": "노원",
       "line": "4호선",
@@ -5137,42 +5173,6 @@
       "location_detail": "충정로 방면5-1",
       "floor_from": "B3",
       "floor_to": "B4",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "2531",
-      "station_name": "애오개",
-      "line": "",
-      "facility_id": "승강기)엘리베이터-애오개 내부3",
-      "location_detail": "대합실",
-      "floor_from": "B1",
-      "floor_to": "B3",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "2531",
-      "station_name": "애오개",
-      "line": "",
-      "facility_id": "승강기)엘리베이터-애오개 외부4",
-      "location_detail": "2번 출입구",
-      "floor_from": "B1",
-      "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "2531",
-      "station_name": "애오개",
-      "line": "",
-      "facility_id": "승강기)엘리베이터-애오개 외부5",
-      "location_detail": "3번 출입구",
-      "floor_from": "B1",
-      "floor_to": "1F",
       "status": "OPERATING",
       "status_code": "01",
       "last_normal_at": null
@@ -6870,18 +6870,6 @@
       "last_normal_at": null
     },
     {
-      "station_code": "2642",
-      "station_name": "월곡",
-      "line": "",
-      "facility_id": "승강기)엘리베이터-월곡 내부2",
-      "location_detail": "상월곡 방면4-4",
-      "floor_from": "B2",
-      "floor_to": "B3",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
       "station_code": "2620",
       "station_name": "월드컵경기장",
       "line": "",
@@ -7715,6 +7703,18 @@
       "line": "",
       "facility_id": "승강기)엘리베이터-월곡 내부1",
       "location_detail": "고려대 방면4-4",
+      "floor_from": "B2",
+      "floor_to": "B3",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2642",
+      "station_name": "월곡",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-월곡 내부2",
+      "location_detail": "상월곡 방면4-4",
       "floor_from": "B2",
       "floor_to": "B3",
       "status": "OPERATING",
@@ -9414,18 +9414,6 @@
       "last_normal_at": null
     },
     {
-      "station_code": "2752",
-      "station_name": "온수",
-      "line": "7호선",
-      "facility_id": "승강기)엘리베이터-온수(7) 내부1",
-      "location_detail": "천왕 방면4-4",
-      "floor_from": "B1",
-      "floor_to": "B2",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
       "station_code": "2748",
       "station_name": "가산디지털단지",
       "line": "7호선",
@@ -9601,6 +9589,18 @@
       "location_detail": "2번 출입구",
       "floor_from": "B1",
       "floor_to": "1F",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2752",
+      "station_name": "온수",
+      "line": "7호선",
+      "facility_id": "승강기)엘리베이터-온수(7) 내부1",
+      "location_detail": "천왕 방면4-4",
+      "floor_from": "B1",
+      "floor_to": "B2",
       "status": "OPERATING",
       "status_code": "01",
       "last_normal_at": null
