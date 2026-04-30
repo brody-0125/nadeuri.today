@@ -1,22 +1,10 @@
 {
-  "collected_at": "2026-04-30T04:42:01.888Z",
+  "collected_at": "2026-04-30T06:03:20.199Z",
   "source_api": "SeoulMetroFaciInfo",
   "total_count": 864,
-  "operating_count": 830,
+  "operating_count": 829,
   "fault_count": 0,
   "facilities": [
-    {
-      "station_code": "2560",
-      "station_name": "거여",
-      "line": "",
-      "facility_id": "승강기)엘리베이터-거여 내부1",
-      "location_detail": "개롱 방면6-2",
-      "floor_from": "B1",
-      "floor_to": "B2",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
     {
       "station_code": "0150",
       "station_name": "서울역",
@@ -702,18 +690,6 @@
       "last_normal_at": null
     },
     {
-      "station_code": "2531",
-      "station_name": "애오개",
-      "line": "",
-      "facility_id": "승강기)엘리베이터-애오개 외부4",
-      "location_detail": "2번 출입구",
-      "floor_from": "B1",
-      "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
       "station_code": "0208",
       "station_name": "왕십리",
       "line": "2호선",
@@ -949,18 +925,6 @@
       "location_detail": "강변 방면3-4",
       "floor_from": "1F",
       "floor_to": "2F",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "2531",
-      "station_name": "애오개",
-      "line": "",
-      "facility_id": "승강기)엘리베이터-애오개 외부5",
-      "location_detail": "3번 출입구",
-      "floor_from": "B1",
-      "floor_to": "1F",
       "status": "OPERATING",
       "status_code": "01",
       "last_normal_at": null
@@ -2641,8 +2605,8 @@
       "location_detail": "8번 출입구",
       "floor_from": "B1",
       "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -3003,18 +2967,6 @@
       "floor_to": "B1",
       "status": "UNKNOWN",
       "status_code": "04",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "2560",
-      "station_name": "거여",
-      "line": "",
-      "facility_id": "승강기)엘리베이터-거여 내부2",
-      "location_detail": "마천 방면3-2",
-      "floor_from": "B1",
-      "floor_to": "B2",
-      "status": "OPERATING",
-      "status_code": "01",
       "last_normal_at": null
     },
     {
@@ -4422,18 +4374,6 @@
       "last_normal_at": null
     },
     {
-      "station_code": "2560",
-      "station_name": "거여",
-      "line": "",
-      "facility_id": "승강기)엘리베이터-거여 외부3",
-      "location_detail": "2번 출입구",
-      "floor_from": "B1",
-      "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
       "station_code": "2511",
       "station_name": "방화",
       "line": "",
@@ -5209,6 +5149,30 @@
       "location_detail": "대합실",
       "floor_from": "B1",
       "floor_to": "B3",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2531",
+      "station_name": "애오개",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-애오개 외부4",
+      "location_detail": "2번 출입구",
+      "floor_from": "B1",
+      "floor_to": "1F",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2531",
+      "station_name": "애오개",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-애오개 외부5",
+      "location_detail": "3번 출입구",
+      "floor_from": "B1",
+      "floor_to": "1F",
       "status": "OPERATING",
       "status_code": "01",
       "last_normal_at": null
@@ -6227,6 +6191,42 @@
       "line": "",
       "facility_id": "승강기)엘리베이터-개롱 외부3",
       "location_detail": "3,4번 출입구 사이",
+      "floor_from": "B1",
+      "floor_to": "1F",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2560",
+      "station_name": "거여",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-거여 내부1",
+      "location_detail": "개롱 방면6-2",
+      "floor_from": "B1",
+      "floor_to": "B2",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2560",
+      "station_name": "거여",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-거여 내부2",
+      "location_detail": "마천 방면3-2",
+      "floor_from": "B1",
+      "floor_to": "B2",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2560",
+      "station_name": "거여",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-거여 외부3",
+      "location_detail": "2번 출입구",
       "floor_from": "B1",
       "floor_to": "1F",
       "status": "OPERATING",
@@ -8106,18 +8106,6 @@
       "last_normal_at": null
     },
     {
-      "station_code": "2716",
-      "station_name": "중계",
-      "line": "",
-      "facility_id": "승강기)엘리베이터-중계 외부3",
-      "location_detail": "3번 출입구",
-      "floor_from": "B2",
-      "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
       "station_code": "2713",
       "station_name": "수락산",
       "line": "",
@@ -8267,6 +8255,18 @@
       "line": "",
       "facility_id": "승강기)엘리베이터-중계 외부2",
       "location_detail": "5번 출입구",
+      "floor_from": "B2",
+      "floor_to": "1F",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2716",
+      "station_name": "중계",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-중계 외부3",
+      "location_detail": "3번 출입구",
       "floor_from": "B2",
       "floor_to": "1F",
       "status": "OPERATING",
