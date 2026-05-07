@@ -1,82 +1,10 @@
 {
-  "collected_at": "2026-05-07T13:07:17.026Z",
+  "collected_at": "2026-05-07T15:00:09.317Z",
   "source_api": "SeoulMetroFaciInfo",
   "total_count": 1874,
   "operating_count": 1747,
   "fault_count": 0,
   "facilities": [
-    {
-      "station_code": "2543",
-      "station_name": "답십리",
-      "line": "",
-      "facility_id": "승강기)에스컬레이터-답십리 외부1",
-      "location_detail": "1번 출입구",
-      "floor_from": "B1",
-      "floor_to": "1F",
-      "status": "MAINTENANCE",
-      "status_code": "03",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "2548",
-      "station_name": "천호",
-      "line": "5호선",
-      "facility_id": "승강기)에스컬레이터-천호(5) 외부5",
-      "location_detail": "7번 출입구",
-      "floor_from": "1F",
-      "floor_to": "B1",
-      "status": "MAINTENANCE",
-      "status_code": "03",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "2548",
-      "station_name": "천호",
-      "line": "5호선",
-      "facility_id": "승강기)에스컬레이터-천호(5) 외부6",
-      "location_detail": "7번 출입구",
-      "floor_from": "B1",
-      "floor_to": "1F",
-      "status": "MAINTENANCE",
-      "status_code": "03",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "2618",
-      "station_name": "증산",
-      "line": "",
-      "facility_id": "승강기)에스컬레이터-증산 내부3",
-      "location_detail": "새절 방면3-4",
-      "floor_from": "B2",
-      "floor_to": "B1",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "2618",
-      "station_name": "증산",
-      "line": "",
-      "facility_id": "승강기)에스컬레이터-증산 내부4",
-      "location_detail": "새절 방면3-4",
-      "floor_from": "B1",
-      "floor_to": "B2",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "2632",
-      "station_name": "한강진",
-      "line": "",
-      "facility_id": "승강기)에스컬레이터-한강진 외부3",
-      "location_detail": "2번 출입구",
-      "floor_from": "B1",
-      "floor_to": "1F",
-      "status": "MAINTENANCE",
-      "status_code": "03",
-      "last_normal_at": null
-    },
     {
       "station_code": "0150",
       "station_name": "서울역",
@@ -85,6 +13,18 @@
       "location_detail": "4번 출입구",
       "floor_from": "B1",
       "floor_to": "1F",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2723",
+      "station_name": "면목",
+      "line": "",
+      "facility_id": "승강기)에스컬레이터-면목 내부 2호기",
+      "location_detail": "대합실",
+      "floor_from": "B3",
+      "floor_to": "B1",
       "status": "OPERATING",
       "status_code": "01",
       "last_normal_at": null
@@ -2701,8 +2641,8 @@
       "location_detail": "5번 출입구",
       "floor_from": "2F",
       "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -6529,8 +6469,8 @@
       "location_detail": "1번 출입구",
       "floor_from": "B1",
       "floor_to": "1F",
-      "status": "MAINTENANCE",
-      "status_code": "03",
+      "status": "OPERATING",
+      "status_code": "01",
       "last_normal_at": null
     },
     {
@@ -10389,6 +10329,18 @@
       "station_code": "2543",
       "station_name": "답십리",
       "line": "",
+      "facility_id": "승강기)에스컬레이터-답십리 외부1",
+      "location_detail": "1번 출입구",
+      "floor_from": "B1",
+      "floor_to": "1F",
+      "status": "MAINTENANCE",
+      "status_code": "03",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2543",
+      "station_name": "답십리",
+      "line": "",
       "facility_id": "승강기)에스컬레이터-답십리 외부2",
       "location_detail": "1번 출입구",
       "floor_from": "1F",
@@ -10839,6 +10791,30 @@
       "floor_to": "1F",
       "status": "OPERATING",
       "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2548",
+      "station_name": "천호",
+      "line": "5호선",
+      "facility_id": "승강기)에스컬레이터-천호(5) 외부5",
+      "location_detail": "7번 출입구",
+      "floor_from": "1F",
+      "floor_to": "B1",
+      "status": "MAINTENANCE",
+      "status_code": "03",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2548",
+      "station_name": "천호",
+      "line": "5호선",
+      "facility_id": "승강기)에스컬레이터-천호(5) 외부6",
+      "location_detail": "7번 출입구",
+      "floor_from": "B1",
+      "floor_to": "1F",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -13617,6 +13593,30 @@
       "station_code": "2618",
       "station_name": "증산",
       "line": "",
+      "facility_id": "승강기)에스컬레이터-증산 내부3",
+      "location_detail": "새절 방면3-4",
+      "floor_from": "B2",
+      "floor_to": "B1",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2618",
+      "station_name": "증산",
+      "line": "",
+      "facility_id": "승강기)에스컬레이터-증산 내부4",
+      "location_detail": "새절 방면3-4",
+      "floor_from": "B1",
+      "floor_to": "B2",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2618",
+      "station_name": "증산",
+      "line": "",
       "facility_id": "승강기)에스컬레이터-증산 내부5",
       "location_detail": "디지털미디어시티 방면3-3",
       "floor_from": "B2",
@@ -14125,8 +14125,8 @@
       "location_detail": "환승통로(2호선 방면)",
       "floor_from": "B2",
       "floor_to": "B3",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -14907,6 +14907,18 @@
       "floor_to": "B3",
       "status": "OPERATING",
       "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2632",
+      "station_name": "한강진",
+      "line": "",
+      "facility_id": "승강기)에스컬레이터-한강진 외부3",
+      "location_detail": "2번 출입구",
+      "floor_from": "B1",
+      "floor_to": "1F",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -16254,6 +16266,18 @@
       "last_normal_at": null
     },
     {
+      "station_code": "2723",
+      "station_name": "면목",
+      "line": "",
+      "facility_id": "승강기)에스컬레이터-면목 내부 1호기",
+      "location_detail": "대합실",
+      "floor_from": "B1",
+      "floor_to": "B3",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
       "station_code": "2646",
       "station_name": "태릉입구",
       "line": "6호선",
@@ -16273,8 +16297,8 @@
       "location_detail": "환승통로(7호선 공릉 방면)",
       "floor_from": "B3",
       "floor_to": "B4",
-      "status": "MAINTENANCE",
-      "status_code": "03",
+      "status": "OPERATING",
+      "status_code": "01",
       "last_normal_at": null
     },
     {
@@ -17562,30 +17586,6 @@
       "last_normal_at": null
     },
     {
-      "station_code": "2723",
-      "station_name": "면목",
-      "line": "",
-      "facility_id": "승강기)에스컬레이터-면목 내부 1호기",
-      "location_detail": "대합실",
-      "floor_from": "B1",
-      "floor_to": "B3",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "2723",
-      "station_name": "면목",
-      "line": "",
-      "facility_id": "승강기)에스컬레이터-면목 내부 2호기",
-      "location_detail": "대합실",
-      "floor_from": "B3",
-      "floor_to": "B1",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
       "station_code": "2724",
       "station_name": "사가정",
       "line": "",
@@ -18709,8 +18709,8 @@
       "location_detail": "2번 출입구",
       "floor_from": "1F",
       "floor_to": "BM1",
-      "status": "MAINTENANCE",
-      "status_code": "03",
+      "status": "OPERATING",
+      "status_code": "01",
       "last_normal_at": null
     },
     {
@@ -20533,8 +20533,8 @@
       "location_detail": "2번 출입구",
       "floor_from": "BM1",
       "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
