@@ -1,34 +1,10 @@
 {
-  "collected_at": "2026-05-25T11:53:07.824Z",
+  "collected_at": "2026-05-25T15:36:08.675Z",
   "source_api": "SeoulMetroFaciInfo",
   "total_count": 864,
   "operating_count": 839,
   "fault_count": 0,
   "facilities": [
-    {
-      "station_code": "2511",
-      "station_name": "방화",
-      "line": "",
-      "facility_id": "승강기)엘리베이터-방화 내부2",
-      "location_detail": "개화산 방면5-4",
-      "floor_from": "B1",
-      "floor_to": "B2",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "2511",
-      "station_name": "방화",
-      "line": "",
-      "facility_id": "승강기)엘리베이터-방화 외부3",
-      "location_detail": "2번 출입구",
-      "floor_from": "B1",
-      "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
     {
       "station_code": "0150",
       "station_name": "서울역",
@@ -63,18 +39,6 @@
       "floor_to": "1F",
       "status": "OPERATING",
       "status_code": "01",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "0155",
-      "station_name": "동대문",
-      "line": "1호선",
-      "facility_id": "승강기)엘리베이터-동대문(1) 하행 2-1 내부#2",
-      "location_detail": "종로5가 방면2-1",
-      "floor_from": "B2",
-      "floor_to": "B1",
-      "status": "UNKNOWN",
-      "status_code": "04",
       "last_normal_at": null
     },
     {
@@ -263,6 +227,18 @@
       "line": "1호선",
       "facility_id": "승강기)엘리베이터-동대문(1) 상행 10-4 내부#1",
       "location_detail": "동묘앞 방면10-4",
+      "floor_from": "B2",
+      "floor_to": "B1",
+      "status": "UNKNOWN",
+      "status_code": "04",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "0155",
+      "station_name": "동대문",
+      "line": "1호선",
+      "facility_id": "승강기)엘리베이터-동대문(1) 하행 2-1 내부#2",
+      "location_detail": "종로5가 방면2-1",
       "floor_from": "B2",
       "floor_to": "B1",
       "status": "UNKNOWN",
@@ -4410,6 +4386,30 @@
       "last_normal_at": null
     },
     {
+      "station_code": "2511",
+      "station_name": "방화",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-방화 내부2",
+      "location_detail": "개화산 방면5-4",
+      "floor_from": "B1",
+      "floor_to": "B2",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2511",
+      "station_name": "방화",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-방화 외부3",
+      "location_detail": "2번 출입구",
+      "floor_from": "B1",
+      "floor_to": "1F",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
       "station_code": "2512",
       "station_name": "개화산",
       "line": "",
@@ -6978,18 +6978,6 @@
       "last_normal_at": null
     },
     {
-      "station_code": "2627",
-      "station_name": "공덕",
-      "line": "6호선",
-      "facility_id": "승강기)엘리베이터-공덕(6) 외부3",
-      "location_detail": "5번 출입구",
-      "floor_from": "B1",
-      "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
       "station_code": "2623",
       "station_name": "합정",
       "line": "6호선",
@@ -7177,6 +7165,18 @@
       "location_detail": "효창공원 방면4-4",
       "floor_from": "B1",
       "floor_to": "B2",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2627",
+      "station_name": "공덕",
+      "line": "6호선",
+      "facility_id": "승강기)엘리베이터-공덕(6) 외부3",
+      "location_detail": "5번 출입구",
+      "floor_from": "B1",
+      "floor_to": "1F",
       "status": "OPERATING",
       "status_code": "01",
       "last_normal_at": null
