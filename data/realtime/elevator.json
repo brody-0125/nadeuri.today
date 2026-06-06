@@ -1,8 +1,8 @@
 {
-  "collected_at": "2026-06-06T03:11:24.677Z",
+  "collected_at": "2026-06-06T04:48:20.386Z",
   "source_api": "SeoulMetroFaciInfo",
   "total_count": 866,
-  "operating_count": 844,
+  "operating_count": 843,
   "fault_count": 0,
   "facilities": [
     {
@@ -3925,8 +3925,8 @@
       "location_detail": "한성대입구 방면7-4",
       "floor_from": "B2",
       "floor_to": "B1",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -5934,18 +5934,6 @@
       "last_normal_at": null
     },
     {
-      "station_code": "2559",
-      "station_name": "개롱",
-      "line": "",
-      "facility_id": "승강기)엘리베이터-개롱 내부1",
-      "location_detail": "오금 방면5-1",
-      "floor_from": "B1",
-      "floor_to": "B2",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
       "station_code": "2554",
       "station_name": "상일동",
       "line": "",
@@ -6201,12 +6189,24 @@
       "station_code": "2559",
       "station_name": "개롱",
       "line": "",
+      "facility_id": "승강기)엘리베이터-개롱 내부1",
+      "location_detail": "오금 방면5-1",
+      "floor_from": "B1",
+      "floor_to": "B2",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2559",
+      "station_name": "개롱",
+      "line": "",
       "facility_id": "승강기)엘리베이터-개롱 내부2",
       "location_detail": "거여 방면4-4",
       "floor_from": "B1",
       "floor_to": "B2",
-      "status": "MAINTENANCE",
-      "status_code": "03",
+      "status": "OPERATING",
+      "status_code": "01",
       "last_normal_at": null
     },
     {
@@ -7981,8 +7981,8 @@
       "location_detail": "3번 출입구",
       "floor_from": "B1",
       "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
