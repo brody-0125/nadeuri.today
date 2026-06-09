@@ -1,8 +1,8 @@
 {
-  "collected_at": "2026-06-09T07:47:23.744Z",
+  "collected_at": "2026-06-09T09:13:57.267Z",
   "source_api": "SeoulMetroFaciInfo",
   "total_count": 1882,
-  "operating_count": 1812,
+  "operating_count": 1809,
   "fault_count": 0,
   "facilities": [
     {
@@ -1093,8 +1093,8 @@
       "location_detail": "6번 출입구",
       "floor_from": "1F",
       "floor_to": "2F",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -2065,8 +2065,8 @@
       "location_detail": "방배 방면3-3",
       "floor_from": "B2",
       "floor_to": "B1",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -2425,8 +2425,8 @@
       "location_detail": "2번 출입구",
       "floor_from": "1F",
       "floor_to": "B1",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -2461,8 +2461,8 @@
       "location_detail": "5번 출입구",
       "floor_from": "B1",
       "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -3577,8 +3577,8 @@
       "location_detail": "5번 출입구",
       "floor_from": "1F",
       "floor_to": "B1",
-      "status": "MAINTENANCE",
-      "status_code": "03",
+      "status": "OPERATING",
+      "status_code": "01",
       "last_normal_at": null
     },
     {
@@ -5401,8 +5401,8 @@
       "location_detail": "경찰병원 방면5-2",
       "floor_from": "B4",
       "floor_to": "B2",
-      "status": "MAINTENANCE",
-      "status_code": "03",
+      "status": "OPERATING",
+      "status_code": "01",
       "last_normal_at": null
     },
     {
@@ -12102,6 +12102,18 @@
       "last_normal_at": null
     },
     {
+      "station_code": "2626",
+      "station_name": "대흥",
+      "line": "",
+      "facility_id": "승강기)에스컬레이터-대흥 내부3",
+      "location_detail": "2번 출입구",
+      "floor_from": "B2",
+      "floor_to": "B1",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
       "station_code": "2563",
       "station_name": "미사",
       "line": "",
@@ -13122,6 +13134,18 @@
       "last_normal_at": null
     },
     {
+      "station_code": "2626",
+      "station_name": "대흥",
+      "line": "",
+      "facility_id": "승강기)에스컬레이터-대흥 내부4",
+      "location_detail": "4번 출입구",
+      "floor_from": "B2",
+      "floor_to": "B1",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
       "station_code": "2611",
       "station_name": "응암",
       "line": "",
@@ -13585,8 +13609,8 @@
       "location_detail": "응암 방면5-4",
       "floor_from": "B4",
       "floor_to": "B1",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -14029,6 +14053,18 @@
       "location_detail": "8번 출입구",
       "floor_from": "1F",
       "floor_to": "BM1",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2626",
+      "station_name": "대흥",
+      "line": "",
+      "facility_id": "승강기)에스컬레이터-대흥 외부5",
+      "location_detail": "1번 출입구",
+      "floor_from": "B1",
+      "floor_to": "1F",
       "status": "OPERATING",
       "status_code": "01",
       "last_normal_at": null
@@ -14521,42 +14557,6 @@
       "location_detail": "대합실",
       "floor_from": "B1",
       "floor_to": "B2",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "2626",
-      "station_name": "대흥",
-      "line": "",
-      "facility_id": "승강기)에스컬레이터-대흥 내부3",
-      "location_detail": "2번 출입구",
-      "floor_from": "B2",
-      "floor_to": "B1",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "2626",
-      "station_name": "대흥",
-      "line": "",
-      "facility_id": "승강기)에스컬레이터-대흥 내부4",
-      "location_detail": "4번 출입구",
-      "floor_from": "B2",
-      "floor_to": "B1",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "2626",
-      "station_name": "대흥",
-      "line": "",
-      "facility_id": "승강기)에스컬레이터-대흥 외부5",
-      "location_detail": "1번 출입구",
-      "floor_from": "B1",
-      "floor_to": "1F",
       "status": "OPERATING",
       "status_code": "01",
       "last_normal_at": null
