@@ -1,10 +1,46 @@
 {
-  "collected_at": "2026-06-09T13:28:41.989Z",
+  "collected_at": "2026-06-09T15:17:09.840Z",
   "source_api": "SeoulMetroFaciInfo",
   "total_count": 866,
-  "operating_count": 850,
+  "operating_count": 851,
   "fault_count": 0,
   "facilities": [
+    {
+      "station_code": "2723",
+      "station_name": "면목",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-면목 내부1",
+      "location_detail": "상봉 방면4-4",
+      "floor_from": "B1",
+      "floor_to": "B4",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2723",
+      "station_name": "면목",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-면목 내부2",
+      "location_detail": "사가정 방면5-2",
+      "floor_from": "B3",
+      "floor_to": "B4",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2723",
+      "station_name": "면목",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-면목 외부3",
+      "location_detail": "3번 출입구",
+      "floor_from": "B1",
+      "floor_to": "1F",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
     {
       "station_code": "0150",
       "station_name": "서울역",
@@ -1033,8 +1069,8 @@
       "location_detail": "6번 출입구",
       "floor_from": "B1",
       "floor_to": "1F",
-      "status": "MAINTENANCE",
-      "status_code": "03",
+      "status": "OPERATING",
+      "status_code": "01",
       "last_normal_at": null
     },
     {
@@ -1045,8 +1081,8 @@
       "location_detail": "삼성 방면8-4",
       "floor_from": "B2",
       "floor_to": "B1",
-      "status": "MAINTENANCE",
-      "status_code": "03",
+      "status": "OPERATING",
+      "status_code": "01",
       "last_normal_at": null
     },
     {
@@ -1249,6 +1285,18 @@
       "location_detail": "역삼 방면8-1",
       "floor_from": "B2",
       "floor_to": "B1",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2533",
+      "station_name": "서대문",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-서대문 외부2",
+      "location_detail": "2번 출입구",
+      "floor_from": "B1",
+      "floor_to": "1F",
       "status": "OPERATING",
       "status_code": "01",
       "last_normal_at": null
@@ -5241,18 +5289,6 @@
       "station_code": "2533",
       "station_name": "서대문",
       "line": "",
-      "facility_id": "승강기)엘리베이터-서대문 외부2",
-      "location_detail": "2번 출입구",
-      "floor_from": "B1",
-      "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "2533",
-      "station_name": "서대문",
-      "line": "",
       "facility_id": "승강기)엘리베이터-서대문 외부3",
       "location_detail": "5,6번 출입구 사이",
       "floor_from": "BM1",
@@ -8526,42 +8562,6 @@
       "last_normal_at": null
     },
     {
-      "station_code": "2723",
-      "station_name": "면목",
-      "line": "",
-      "facility_id": "승강기)엘리베이터-면목 내부1",
-      "location_detail": "상봉 방면4-4",
-      "floor_from": "B1",
-      "floor_to": "B4",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "2723",
-      "station_name": "면목",
-      "line": "",
-      "facility_id": "승강기)엘리베이터-면목 내부2",
-      "location_detail": "사가정 방면5-2",
-      "floor_from": "B3",
-      "floor_to": "B4",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "2723",
-      "station_name": "면목",
-      "line": "",
-      "facility_id": "승강기)엘리베이터-면목 외부3",
-      "location_detail": "3번 출입구",
-      "floor_from": "B1",
-      "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
       "station_code": "2724",
       "station_name": "사가정",
       "line": "",
@@ -8797,8 +8797,8 @@
       "location_detail": "장암 방면7-4",
       "floor_from": "B3",
       "floor_to": "B4",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -9013,8 +9013,8 @@
       "location_detail": "4번 출입구",
       "floor_from": "B2",
       "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -10021,8 +10021,8 @@
       "location_detail": "1,2번 출입구 사이",
       "floor_from": "B2",
       "floor_to": "1F",
-      "status": "MAINTENANCE",
-      "status_code": "03",
+      "status": "OPERATING",
+      "status_code": "01",
       "last_normal_at": null
     },
     {
