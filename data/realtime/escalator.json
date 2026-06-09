@@ -1,18 +1,30 @@
 {
-  "collected_at": "2026-06-09T22:03:07.090Z",
+  "collected_at": "2026-06-09T23:31:20.378Z",
   "source_api": "SeoulMetroFaciInfo",
   "total_count": 1882,
-  "operating_count": 1752,
+  "operating_count": 1743,
   "fault_count": 0,
   "facilities": [
     {
-      "station_code": "2542",
-      "station_name": "마장",
+      "station_code": "2543",
+      "station_name": "답십리",
       "line": "",
-      "facility_id": "승강기)에스컬레이터-마장 외부2",
-      "location_detail": "4번 출입구",
+      "facility_id": "승강기)에스컬레이터-답십리 외부2",
+      "location_detail": "1번 출입구",
       "floor_from": "1F",
-      "floor_to": "BM1",
+      "floor_to": "B1",
+      "status": "MAINTENANCE",
+      "status_code": "03",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2617",
+      "station_name": "새절",
+      "line": "",
+      "facility_id": "승강기)에스컬레이터-새절 내부2",
+      "location_detail": "응암 방면3-3",
+      "floor_from": "B1",
+      "floor_to": "B2",
       "status": "OPERATING",
       "status_code": "01",
       "last_normal_at": null
@@ -30,24 +42,24 @@
       "last_normal_at": null
     },
     {
-      "station_code": "2543",
-      "station_name": "답십리",
-      "line": "",
-      "facility_id": "승강기)에스컬레이터-답십리 외부1",
-      "location_detail": "1번 출입구",
-      "floor_from": "B1",
-      "floor_to": "1F",
-      "status": "MAINTENANCE",
-      "status_code": "03",
-      "last_normal_at": null
-    },
-    {
       "station_code": "0150",
       "station_name": "서울역",
       "line": "1호선",
       "facility_id": "승강기)에스컬레이터-서울(1)역 4번출구 5호기",
       "location_detail": "4번 출입구",
       "floor_from": "1F",
+      "floor_to": "B1",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2617",
+      "station_name": "새절",
+      "line": "",
+      "facility_id": "승강기)에스컬레이터-새절 내부3",
+      "location_detail": "증산 방면3-4",
+      "floor_from": "B2",
       "floor_to": "B1",
       "status": "OPERATING",
       "status_code": "01",
@@ -462,6 +474,18 @@
       "last_normal_at": null
     },
     {
+      "station_code": "0208",
+      "station_name": "왕십리",
+      "line": "2호선",
+      "facility_id": "승강기)에스컬레이터-왕십리 외선 7-1 상행4",
+      "location_detail": "상왕십리 방면7-1",
+      "floor_from": "B2",
+      "floor_to": "B1",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
       "station_code": "0201",
       "station_name": "시청",
       "line": "2호선",
@@ -805,18 +829,6 @@
       "location_detail": "한양대 방면3-1",
       "floor_from": "B1",
       "floor_to": "B2",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "0208",
-      "station_name": "왕십리",
-      "line": "2호선",
-      "facility_id": "승강기)에스컬레이터-왕십리 외선 7-1 상행4",
-      "location_detail": "상왕십리 방면7-1",
-      "floor_from": "B2",
-      "floor_to": "B1",
       "status": "OPERATING",
       "status_code": "01",
       "last_normal_at": null
@@ -6066,18 +6078,6 @@
       "last_normal_at": null
     },
     {
-      "station_code": "2517",
-      "station_name": "우장산",
-      "line": "",
-      "facility_id": "승강기)에스컬레이터-우장산 외부1",
-      "location_detail": "1번 출입구",
-      "floor_from": "B1",
-      "floor_to": "1F",
-      "status": "MAINTENANCE",
-      "status_code": "03",
-      "last_normal_at": null
-    },
-    {
       "station_code": "0411",
       "station_name": "노원",
       "line": "4호선",
@@ -7266,15 +7266,15 @@
       "last_normal_at": null
     },
     {
-      "station_code": "2531",
-      "station_name": "애오개",
+      "station_code": "2543",
+      "station_name": "답십리",
       "line": "",
-      "facility_id": "승강기)에스컬레이터-애오개 내부4",
-      "location_detail": "대합실",
+      "facility_id": "승강기)에스컬레이터-답십리 외부1",
+      "location_detail": "1번 출입구",
       "floor_from": "B1",
-      "floor_to": "B3",
-      "status": "OPERATING",
-      "status_code": "01",
+      "floor_to": "1F",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -7614,18 +7614,6 @@
       "last_normal_at": null
     },
     {
-      "station_code": "2542",
-      "station_name": "마장",
-      "line": "",
-      "facility_id": "승강기)에스컬레이터-마장 외부1",
-      "location_detail": "4번 출입구",
-      "floor_from": "BM1",
-      "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
       "station_code": "0434",
       "station_name": "남태령",
       "line": "",
@@ -7777,8 +7765,8 @@
       "location_detail": "송정 방면5-4",
       "floor_from": "B3",
       "floor_to": "B2",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -8007,6 +7995,18 @@
       "floor_to": "B1",
       "status": "OPERATING",
       "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2517",
+      "station_name": "우장산",
+      "line": "",
+      "facility_id": "승강기)에스컬레이터-우장산 외부1",
+      "location_detail": "1번 출입구",
+      "floor_from": "B1",
+      "floor_to": "1F",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -9465,6 +9465,18 @@
       "station_code": "2531",
       "station_name": "애오개",
       "line": "",
+      "facility_id": "승강기)에스컬레이터-애오개 내부4",
+      "location_detail": "대합실",
+      "floor_from": "B1",
+      "floor_to": "B3",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2531",
+      "station_name": "애오개",
+      "line": "",
       "facility_id": "승강기)에스컬레이터-애오개 외부5",
       "location_detail": "4번 출입구",
       "floor_from": "BM1",
@@ -10374,15 +10386,27 @@
       "last_normal_at": null
     },
     {
-      "station_code": "2543",
-      "station_name": "답십리",
+      "station_code": "2542",
+      "station_name": "마장",
       "line": "",
-      "facility_id": "승강기)에스컬레이터-답십리 외부2",
-      "location_detail": "1번 출입구",
+      "facility_id": "승강기)에스컬레이터-마장 외부1",
+      "location_detail": "4번 출입구",
+      "floor_from": "BM1",
+      "floor_to": "1F",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2542",
+      "station_name": "마장",
+      "line": "",
+      "facility_id": "승강기)에스컬레이터-마장 외부2",
+      "location_detail": "4번 출입구",
       "floor_from": "1F",
-      "floor_to": "B1",
-      "status": "MAINTENANCE",
-      "status_code": "03",
+      "floor_to": "BM1",
+      "status": "OPERATING",
+      "status_code": "01",
       "last_normal_at": null
     },
     {
@@ -12114,6 +12138,18 @@
       "last_normal_at": null
     },
     {
+      "station_code": "2617",
+      "station_name": "새절",
+      "line": "",
+      "facility_id": "승강기)에스컬레이터-새절 내부4",
+      "location_detail": "증산 방면3-4",
+      "floor_from": "B1",
+      "floor_to": "B2",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
       "station_code": "2563",
       "station_name": "미사",
       "line": "",
@@ -13213,8 +13249,8 @@
       "location_detail": "4번 출입구",
       "floor_from": "1F",
       "floor_to": "B1",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -13614,42 +13650,6 @@
       "last_normal_at": null
     },
     {
-      "station_code": "2617",
-      "station_name": "새절",
-      "line": "",
-      "facility_id": "승강기)에스컬레이터-새절 내부2",
-      "location_detail": "응암 방면3-3",
-      "floor_from": "B1",
-      "floor_to": "B2",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "2617",
-      "station_name": "새절",
-      "line": "",
-      "facility_id": "승강기)에스컬레이터-새절 내부3",
-      "location_detail": "증산 방면3-4",
-      "floor_from": "B2",
-      "floor_to": "B1",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "2617",
-      "station_name": "새절",
-      "line": "",
-      "facility_id": "승강기)에스컬레이터-새절 내부4",
-      "location_detail": "증산 방면3-4",
-      "floor_from": "B1",
-      "floor_to": "B2",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
       "station_code": "2618",
       "station_name": "증산",
       "line": "",
@@ -14034,18 +14034,6 @@
       "last_normal_at": null
     },
     {
-      "station_code": "2626",
-      "station_name": "대흥",
-      "line": "",
-      "facility_id": "승강기)에스컬레이터-대흥 내부3",
-      "location_detail": "2번 출입구",
-      "floor_from": "B2",
-      "floor_to": "B1",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
       "station_code": "2621",
       "station_name": "마포구청",
       "line": "",
@@ -14257,8 +14245,8 @@
       "location_detail": "환승통로(2호선 방면)",
       "floor_from": "B3",
       "floor_to": "B2",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -14281,8 +14269,8 @@
       "location_detail": "대합실",
       "floor_from": "B1",
       "floor_to": "B3",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -14533,6 +14521,18 @@
       "location_detail": "대합실",
       "floor_from": "B1",
       "floor_to": "B2",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2626",
+      "station_name": "대흥",
+      "line": "",
+      "facility_id": "승강기)에스컬레이터-대흥 내부3",
+      "location_detail": "2번 출입구",
+      "floor_from": "B2",
+      "floor_to": "B1",
       "status": "OPERATING",
       "status_code": "01",
       "last_normal_at": null
@@ -15001,8 +15001,8 @@
       "location_detail": "2번 출입구",
       "floor_from": "B1",
       "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -15097,8 +15097,8 @@
       "location_detail": "환승통로(3호선 방면)",
       "floor_from": "B2",
       "floor_to": "B3",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -15169,8 +15169,8 @@
       "location_detail": "6번 출입구",
       "floor_from": "B1",
       "floor_to": "BM1",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -15205,8 +15205,8 @@
       "location_detail": "환승통로(5호선 방면)",
       "floor_from": "B3",
       "floor_to": "B2",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -15961,8 +15961,8 @@
       "location_detail": "고려대 방면3-4",
       "floor_from": "B2",
       "floor_to": "B3",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
