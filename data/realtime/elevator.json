@@ -1,10 +1,22 @@
 {
-  "collected_at": "2026-06-10T10:48:40.147Z",
+  "collected_at": "2026-06-10T12:07:12.481Z",
   "source_api": "SeoulMetroFaciInfo",
   "total_count": 864,
   "operating_count": 852,
   "fault_count": 0,
   "facilities": [
+    {
+      "station_code": "2624",
+      "station_name": "상수",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-상수 내부 3호기",
+      "location_detail": "대합실",
+      "floor_from": "B2",
+      "floor_to": "B1",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
     {
       "station_code": "0150",
       "station_name": "서울역",
@@ -613,6 +625,18 @@
       "location_detail": "을지로4가 방면8-3",
       "floor_from": "B2",
       "floor_to": "B1",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2514",
+      "station_name": "송정",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-송정 내부2",
+      "location_detail": "마곡 방면5-1",
+      "floor_from": "B2",
+      "floor_to": "B3",
       "status": "OPERATING",
       "status_code": "01",
       "last_normal_at": null
@@ -1464,6 +1488,18 @@
       "facility_id": "승강기)엘리베이터-서울대입구 6번 출구측 외부#1",
       "location_detail": "6번 출입구",
       "floor_from": "B1",
+      "floor_to": "1F",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2514",
+      "station_name": "송정",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-송정 외부3",
+      "location_detail": "2번 출입구",
+      "floor_from": "B2",
       "floor_to": "1F",
       "status": "OPERATING",
       "status_code": "01",
@@ -3102,6 +3138,18 @@
       "last_normal_at": null
     },
     {
+      "station_code": "2514",
+      "station_name": "송정",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-송정 외부4",
+      "location_detail": "3번 출입구",
+      "floor_from": "B1",
+      "floor_to": "1F",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
       "station_code": "0335",
       "station_name": "대치",
       "line": "",
@@ -4489,42 +4537,6 @@
       "location_detail": "김포공항 방면5-1",
       "floor_from": "B2",
       "floor_to": "B3",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "2514",
-      "station_name": "송정",
-      "line": "",
-      "facility_id": "승강기)엘리베이터-송정 내부2",
-      "location_detail": "마곡 방면5-1",
-      "floor_from": "B2",
-      "floor_to": "B3",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "2514",
-      "station_name": "송정",
-      "line": "",
-      "facility_id": "승강기)엘리베이터-송정 외부3",
-      "location_detail": "2번 출입구",
-      "floor_from": "B2",
-      "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "2514",
-      "station_name": "송정",
-      "line": "",
-      "facility_id": "승강기)엘리베이터-송정 외부4",
-      "location_detail": "3번 출입구",
-      "floor_from": "B1",
-      "floor_to": "1F",
       "status": "OPERATING",
       "status_code": "01",
       "last_normal_at": null
@@ -7041,18 +7053,6 @@
       "station_code": "2624",
       "station_name": "상수",
       "line": "",
-      "facility_id": "승강기)엘리베이터-상수 내부 3호기",
-      "location_detail": "대합실",
-      "floor_from": "B2",
-      "floor_to": "B1",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "2624",
-      "station_name": "상수",
-      "line": "",
       "facility_id": "승강기)엘리베이터-상수 내부1",
       "location_detail": "합정 방면4-4, 광흥창 방면5-1",
       "floor_from": "B2",
@@ -9462,6 +9462,18 @@
       "last_normal_at": null
     },
     {
+      "station_code": "2816",
+      "station_name": "석촌",
+      "line": "8호선",
+      "facility_id": "승강기)엘리베이터-석촌 내부 2호기",
+      "location_detail": "모란 방면 3-4",
+      "floor_from": "B2",
+      "floor_to": "B1",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
       "station_code": "2749",
       "station_name": "철산",
       "line": "",
@@ -9863,18 +9875,6 @@
       "line": "8호선",
       "facility_id": "승강기)엘리베이터-석촌 내부 1호기",
       "location_detail": "암사 방면3-4",
-      "floor_from": "B2",
-      "floor_to": "B1",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "2816",
-      "station_name": "석촌",
-      "line": "8호선",
-      "facility_id": "승강기)엘리베이터-석촌 내부 2호기",
-      "location_detail": "모란 방면 3-4",
       "floor_from": "B2",
       "floor_to": "B1",
       "status": "OPERATING",
