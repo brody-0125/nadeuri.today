@@ -1,8 +1,8 @@
 {
-  "collected_at": "2026-06-11T09:35:02.875Z",
+  "collected_at": "2026-06-11T11:04:10.564Z",
   "source_api": "SeoulMetroFaciInfo",
   "total_count": 1882,
-  "operating_count": 1778,
+  "operating_count": 1775,
   "fault_count": 0,
   "facilities": [
     {
@@ -18,30 +18,6 @@
       "last_normal_at": null
     },
     {
-      "station_code": "2552",
-      "station_name": "명일",
-      "line": "",
-      "facility_id": "승강기)에스컬레이터-명일 외부2",
-      "location_detail": "4번 출입구",
-      "floor_from": "1F",
-      "floor_to": "B1",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "2557",
-      "station_name": "방이",
-      "line": "",
-      "facility_id": "승강기)에스컬레이터-방이 외부2",
-      "location_detail": "4번 출입구",
-      "floor_from": "1F",
-      "floor_to": "B1",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
       "station_code": "0150",
       "station_name": "서울역",
       "line": "1호선",
@@ -49,30 +25,6 @@
       "location_detail": "4번 출입구",
       "floor_from": "1F",
       "floor_to": "B1",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "2520",
-      "station_name": "신정",
-      "line": "",
-      "facility_id": "승강기)에스컬레이터-신정 내부7",
-      "location_detail": "1번 출입구",
-      "floor_from": "B2",
-      "floor_to": "B1",
-      "status": "MAINTENANCE",
-      "status_code": "03",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "2520",
-      "station_name": "신정",
-      "line": "",
-      "facility_id": "승강기)에스컬레이터-신정 내부8",
-      "location_detail": "1번 출입구",
-      "floor_from": "B1",
-      "floor_to": "B2",
       "status": "OPERATING",
       "status_code": "01",
       "last_normal_at": null
@@ -1896,18 +1848,6 @@
       "facility_id": "승강기)에스컬레이터-서초 6번출구 상행 2",
       "location_detail": "6번 출입구",
       "floor_from": "B1",
-      "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "2520",
-      "station_name": "신정",
-      "line": "",
-      "facility_id": "승강기)에스컬레이터-신정 외부10",
-      "location_detail": "1번 출입구",
-      "floor_from": "BM2",
       "floor_to": "1F",
       "status": "OPERATING",
       "status_code": "01",
@@ -7170,18 +7110,6 @@
       "last_normal_at": null
     },
     {
-      "station_code": "2520",
-      "station_name": "신정",
-      "line": "",
-      "facility_id": "승강기)에스컬레이터-신정 외부9",
-      "location_detail": "1번 출입구",
-      "floor_from": "1F",
-      "floor_to": "BM2",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
       "station_code": "0425",
       "station_name": "회현",
       "line": "",
@@ -8053,8 +7981,8 @@
       "location_detail": "3번 출입구",
       "floor_from": "B1",
       "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -8329,6 +8257,54 @@
       "location_detail": "대합실(1,4,5번 출입구 방향)",
       "floor_from": "B1",
       "floor_to": "B2",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2520",
+      "station_name": "신정",
+      "line": "",
+      "facility_id": "승강기)에스컬레이터-신정 내부7",
+      "location_detail": "1번 출입구",
+      "floor_from": "B2",
+      "floor_to": "B1",
+      "status": "MAINTENANCE",
+      "status_code": "03",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2520",
+      "station_name": "신정",
+      "line": "",
+      "facility_id": "승강기)에스컬레이터-신정 내부8",
+      "location_detail": "1번 출입구",
+      "floor_from": "B1",
+      "floor_to": "B2",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2520",
+      "station_name": "신정",
+      "line": "",
+      "facility_id": "승강기)에스컬레이터-신정 외부10",
+      "location_detail": "1번 출입구",
+      "floor_from": "BM2",
+      "floor_to": "1F",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2520",
+      "station_name": "신정",
+      "line": "",
+      "facility_id": "승강기)에스컬레이터-신정 외부9",
+      "location_detail": "1번 출입구",
+      "floor_from": "1F",
+      "floor_to": "BM2",
       "status": "OPERATING",
       "status_code": "01",
       "last_normal_at": null
@@ -11130,6 +11106,18 @@
       "last_normal_at": null
     },
     {
+      "station_code": "2552",
+      "station_name": "명일",
+      "line": "",
+      "facility_id": "승강기)에스컬레이터-명일 외부2",
+      "location_detail": "4번 출입구",
+      "floor_from": "1F",
+      "floor_to": "B1",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
       "station_code": "2553",
       "station_name": "고덕",
       "line": "",
@@ -11533,6 +11521,18 @@
       "location_detail": "4번 출입구",
       "floor_from": "B1",
       "floor_to": "1F",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2557",
+      "station_name": "방이",
+      "line": "",
+      "facility_id": "승강기)에스컬레이터-방이 외부2",
+      "location_detail": "4번 출입구",
+      "floor_from": "1F",
+      "floor_to": "B1",
       "status": "OPERATING",
       "status_code": "01",
       "last_normal_at": null
@@ -20569,8 +20569,8 @@
       "location_detail": "남구로 방면1-1",
       "floor_from": "B1",
       "floor_to": "B2",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -22429,8 +22429,8 @@
       "location_detail": "1번 출입구",
       "floor_from": "B1",
       "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
