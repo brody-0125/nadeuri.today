@@ -1,11 +1,11 @@
 {
-  "updated_at": "2026-06-11T12:22:50.040Z",
-  "data_age_minutes": 51,
-  "is_stale": true,
+  "updated_at": "2026-06-11T13:49:38.542Z",
+  "data_age_minutes": 0,
+  "is_stale": false,
   "summary": {
     "elevator": {
       "total": 864,
-      "operating": 845,
+      "operating": 843,
       "fault": 0
     },
     "escalator": {
@@ -1584,8 +1584,8 @@
             "location_detail": "대합실(아이센터 측)",
             "floor_from": "B1",
             "floor_to": "B2",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-을지로4가 내부8",
@@ -4060,16 +4060,16 @@
             "location_detail": "9,10번 출입구 사이",
             "floor_from": "B1",
             "floor_to": "1F",
-            "status": "OPERATING",
-            "status_code": "01"
+            "status": "UNKNOWN",
+            "status_code": "04"
           },
           {
             "facility_id": "승강기)엘리베이터-사당(4) 섬식(상)9-2 내부#1",
             "location_detail": "총신대입구 방면9-2,남태령 방면2-3",
             "floor_from": "B3",
             "floor_to": "B1",
-            "status": "OPERATING",
-            "status_code": "01"
+            "status": "UNKNOWN",
+            "status_code": "04"
           }
         ],
         "escalator": [
@@ -11227,8 +11227,8 @@
             "location_detail": "1번 출입구",
             "floor_from": "1F",
             "floor_to": "B1",
-            "status": "OPERATING",
-            "status_code": "01"
+            "status": "MAINTENANCE",
+            "status_code": "03"
           },
           {
             "facility_id": "승강기)에스컬레이터-혜화 3번출구 상행4",
