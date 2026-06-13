@@ -1,30 +1,42 @@
 {
-  "collected_at": "2026-06-13T03:12:43.992Z",
+  "collected_at": "2026-06-13T05:01:53.912Z",
   "source_api": "SeoulMetroFaciInfo",
   "total_count": 864,
-  "operating_count": 831,
+  "operating_count": 830,
   "fault_count": 0,
   "facilities": [
     {
-      "station_code": "2559",
-      "station_name": "개롱",
+      "station_code": "2521",
+      "station_name": "목동",
       "line": "",
-      "facility_id": "승강기)엘리베이터-개롱 외부3",
-      "location_detail": "3,4번 출입구 사이",
+      "facility_id": "승강기)엘리베이터-목동 내부2",
+      "location_detail": "오목교 방면4-4",
       "floor_from": "B1",
-      "floor_to": "1F",
-      "status": "MAINTENANCE",
-      "status_code": "03",
+      "floor_to": "B2",
+      "status": "OPERATING",
+      "status_code": "01",
       "last_normal_at": null
     },
     {
-      "station_code": "2716",
-      "station_name": "중계",
+      "station_code": "2521",
+      "station_name": "목동",
       "line": "",
-      "facility_id": "승강기)엘리베이터-중계 외부3",
-      "location_detail": "3번 출입구",
-      "floor_from": "B2",
+      "facility_id": "승강기)엘리베이터-목동 외부3",
+      "location_detail": "5번 출입구",
+      "floor_from": "B1",
       "floor_to": "1F",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2553",
+      "station_name": "고덕",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-고덕 내부2",
+      "location_detail": "상일동 방면6-1",
+      "floor_from": "B1",
+      "floor_to": "B2",
       "status": "OPERATING",
       "status_code": "01",
       "last_normal_at": null
@@ -2622,18 +2634,6 @@
       "last_normal_at": null
     },
     {
-      "station_code": "2531",
-      "station_name": "애오개",
-      "line": "",
-      "facility_id": "승강기)엘리베이터-애오개 내부3",
-      "location_detail": "대합실",
-      "floor_from": "B1",
-      "floor_to": "B3",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
       "station_code": "0319",
       "station_name": "종로3가",
       "line": "3호선",
@@ -3361,18 +3361,6 @@
       "location_detail": "경찰병원 방면3-2",
       "floor_from": "B4",
       "floor_to": "B2",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "2531",
-      "station_name": "애오개",
-      "line": "",
-      "facility_id": "승강기)엘리베이터-애오개 외부4",
-      "location_detail": "2번 출입구",
-      "floor_from": "B1",
-      "floor_to": "1F",
       "status": "OPERATING",
       "status_code": "01",
       "last_normal_at": null
@@ -4434,18 +4422,6 @@
       "last_normal_at": null
     },
     {
-      "station_code": "2531",
-      "station_name": "애오개",
-      "line": "",
-      "facility_id": "승강기)엘리베이터-애오개 외부5",
-      "location_detail": "3번 출입구",
-      "floor_from": "B1",
-      "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
       "station_code": "0434",
       "station_name": "남태령",
       "line": "",
@@ -4842,30 +4818,6 @@
       "last_normal_at": null
     },
     {
-      "station_code": "2521",
-      "station_name": "목동",
-      "line": "",
-      "facility_id": "승강기)엘리베이터-목동 내부2",
-      "location_detail": "오목교 방면4-4",
-      "floor_from": "B1",
-      "floor_to": "B2",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "2521",
-      "station_name": "목동",
-      "line": "",
-      "facility_id": "승강기)엘리베이터-목동 외부3",
-      "location_detail": "5번 출입구",
-      "floor_from": "B1",
-      "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
       "station_code": "2522",
       "station_name": "오목교",
       "line": "",
@@ -5005,6 +4957,18 @@
       "location_detail": "신길 방면5-2",
       "floor_from": "B1",
       "floor_to": "B6",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2647",
+      "station_name": "화랑대",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-화랑대 외부5",
+      "location_detail": "3번 출입구",
+      "floor_from": "B1",
+      "floor_to": "1F",
       "status": "OPERATING",
       "status_code": "01",
       "last_normal_at": null
@@ -5226,6 +5190,42 @@
       "last_normal_at": null
     },
     {
+      "station_code": "2531",
+      "station_name": "애오개",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-애오개 내부3",
+      "location_detail": "대합실",
+      "floor_from": "B1",
+      "floor_to": "B3",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2531",
+      "station_name": "애오개",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-애오개 외부4",
+      "location_detail": "2번 출입구",
+      "floor_from": "B1",
+      "floor_to": "1F",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2531",
+      "station_name": "애오개",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-애오개 외부5",
+      "location_detail": "3번 출입구",
+      "floor_from": "B1",
+      "floor_to": "1F",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
       "station_code": "2532",
       "station_name": "충정로",
       "line": "5호선",
@@ -5329,6 +5329,18 @@
       "location_detail": "광화문 방면8-4, 을지로4가 방면1-1",
       "floor_from": "B4",
       "floor_to": "B5",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2720",
+      "station_name": "먹골",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-먹골 내부2",
+      "location_detail": "중화 방면5-1",
+      "floor_from": "B2",
+      "floor_to": "B3",
       "status": "OPERATING",
       "status_code": "01",
       "last_normal_at": null
@@ -5925,18 +5937,6 @@
       "station_code": "2553",
       "station_name": "고덕",
       "line": "",
-      "facility_id": "승강기)엘리베이터-고덕 내부2",
-      "location_detail": "상일동 방면6-1",
-      "floor_from": "B1",
-      "floor_to": "B2",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "2553",
-      "station_name": "고덕",
-      "line": "",
       "facility_id": "승강기)엘리베이터-고덕 외부3",
       "location_detail": "2번 출입구(역사 화장실 앞)",
       "floor_from": "B1",
@@ -6150,6 +6150,18 @@
       "last_normal_at": null
     },
     {
+      "station_code": "2720",
+      "station_name": "먹골",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-먹골 외부3",
+      "location_detail": "2번 출입구",
+      "floor_from": "B2",
+      "floor_to": "1F",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
       "station_code": "2558",
       "station_name": "오금",
       "line": "5호선",
@@ -6231,6 +6243,18 @@
       "floor_to": "B2",
       "status": "OPERATING",
       "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2559",
+      "station_name": "개롱",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-개롱 외부3",
+      "location_detail": "3,4번 출입구 사이",
+      "floor_from": "B1",
+      "floor_to": "1F",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -7597,8 +7621,8 @@
       "location_detail": "신당 방면8-4, 창신 방면1-1",
       "floor_from": "B2",
       "floor_to": "B3",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -7986,18 +8010,6 @@
       "last_normal_at": null
     },
     {
-      "station_code": "2647",
-      "station_name": "화랑대",
-      "line": "",
-      "facility_id": "승강기)엘리베이터-화랑대 외부5",
-      "location_detail": "3번 출입구",
-      "floor_from": "B1",
-      "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
       "station_code": "2648",
       "station_name": "봉화산",
       "line": "",
@@ -8274,6 +8286,18 @@
       "last_normal_at": null
     },
     {
+      "station_code": "2716",
+      "station_name": "중계",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-중계 외부3",
+      "location_detail": "3번 출입구",
+      "floor_from": "B2",
+      "floor_to": "1F",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
       "station_code": "2717",
       "station_name": "하계",
       "line": "",
@@ -8377,30 +8401,6 @@
       "location_detail": "태릉입구 방면4-4",
       "floor_from": "B2",
       "floor_to": "B3",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "2720",
-      "station_name": "먹골",
-      "line": "",
-      "facility_id": "승강기)엘리베이터-먹골 내부2",
-      "location_detail": "중화 방면5-1",
-      "floor_from": "B2",
-      "floor_to": "B3",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "2720",
-      "station_name": "먹골",
-      "line": "",
-      "facility_id": "승강기)엘리베이터-먹골 외부3",
-      "location_detail": "2번 출입구",
-      "floor_from": "B2",
-      "floor_to": "1F",
       "status": "OPERATING",
       "status_code": "01",
       "last_normal_at": null
