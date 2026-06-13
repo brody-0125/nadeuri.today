@@ -1,10 +1,70 @@
 {
-  "collected_at": "2026-06-13T10:19:06.838Z",
+  "collected_at": "2026-06-13T11:39:22.821Z",
   "source_api": "SeoulMetroFaciInfo",
   "total_count": 864,
-  "operating_count": 852,
+  "operating_count": 851,
   "fault_count": 0,
   "facilities": [
+    {
+      "station_code": "2531",
+      "station_name": "애오개",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-애오개 외부5",
+      "location_detail": "3번 출입구",
+      "floor_from": "B1",
+      "floor_to": "1F",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2716",
+      "station_name": "중계",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-중계 외부2",
+      "location_detail": "5번 출입구",
+      "floor_from": "B2",
+      "floor_to": "1F",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "0159",
+      "station_name": "동묘앞",
+      "line": "1호선",
+      "facility_id": "승강기)엘리베이터-동묘앞 하행 7-3 내부#4",
+      "location_detail": "동대문(1) 방면7-3",
+      "floor_from": "B2",
+      "floor_to": "B1",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2716",
+      "station_name": "중계",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-중계 외부3",
+      "location_detail": "3번 출입구",
+      "floor_from": "B2",
+      "floor_to": "1F",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "0208",
+      "station_name": "왕십리",
+      "line": "2호선",
+      "facility_id": "승강기)엘리베이터-왕십리 내선 3-4 내부#2",
+      "location_detail": "한양대 방면3-4",
+      "floor_from": "B3",
+      "floor_to": "B2",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
     {
       "station_code": "0150",
       "station_name": "서울역",
@@ -438,18 +498,6 @@
       "last_normal_at": null
     },
     {
-      "station_code": "0159",
-      "station_name": "동묘앞",
-      "line": "1호선",
-      "facility_id": "승강기)엘리베이터-동묘앞 하행 7-3 내부#4",
-      "location_detail": "동대문(1) 방면7-3",
-      "floor_from": "B2",
-      "floor_to": "B1",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
       "station_code": "0201",
       "station_name": "시청",
       "line": "2호선",
@@ -685,18 +733,6 @@
       "location_detail": "신당 방면8-1",
       "floor_from": "B2",
       "floor_to": "B1",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "0208",
-      "station_name": "왕십리",
-      "line": "2호선",
-      "facility_id": "승강기)엘리베이터-왕십리 내선 3-4 내부#2",
-      "location_detail": "한양대 방면3-4",
-      "floor_from": "B3",
-      "floor_to": "B2",
       "status": "OPERATING",
       "status_code": "01",
       "last_normal_at": null
@@ -2389,8 +2425,8 @@
       "location_detail": "연신내 방면3-3",
       "floor_from": "B2",
       "floor_to": "B1",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -3325,6 +3361,18 @@
       "location_detail": "경찰병원 방면3-2",
       "floor_from": "B4",
       "floor_to": "B2",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2531",
+      "station_name": "애오개",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-애오개 내부3",
+      "location_detail": "대합실",
+      "floor_from": "B1",
+      "floor_to": "B3",
       "status": "OPERATING",
       "status_code": "01",
       "last_normal_at": null
@@ -4386,6 +4434,18 @@
       "last_normal_at": null
     },
     {
+      "station_code": "2531",
+      "station_name": "애오개",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-애오개 외부4",
+      "location_detail": "2번 출입구",
+      "floor_from": "B1",
+      "floor_to": "1F",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
       "station_code": "0434",
       "station_name": "남태령",
       "line": "",
@@ -5161,42 +5221,6 @@
       "location_detail": "충정로 방면5-1",
       "floor_from": "B3",
       "floor_to": "B4",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "2531",
-      "station_name": "애오개",
-      "line": "",
-      "facility_id": "승강기)엘리베이터-애오개 내부3",
-      "location_detail": "대합실",
-      "floor_from": "B1",
-      "floor_to": "B3",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "2531",
-      "station_name": "애오개",
-      "line": "",
-      "facility_id": "승강기)엘리베이터-애오개 외부4",
-      "location_detail": "2번 출입구",
-      "floor_from": "B1",
-      "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "2531",
-      "station_name": "애오개",
-      "line": "",
-      "facility_id": "승강기)엘리베이터-애오개 외부5",
-      "location_detail": "3번 출입구",
-      "floor_from": "B1",
-      "floor_to": "1F",
       "status": "OPERATING",
       "status_code": "01",
       "last_normal_at": null
@@ -8106,6 +8130,18 @@
       "last_normal_at": null
     },
     {
+      "station_code": "2751",
+      "station_name": "천왕",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-천왕 외부4",
+      "location_detail": "2번 출입구",
+      "floor_from": "B1",
+      "floor_to": "1F",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
       "station_code": "2713",
       "station_name": "수락산",
       "line": "",
@@ -8245,30 +8281,6 @@
       "location_detail": "노원 방면5-1, 하계 방면4-4",
       "floor_from": "B2",
       "floor_to": "B3",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "2716",
-      "station_name": "중계",
-      "line": "",
-      "facility_id": "승강기)엘리베이터-중계 외부2",
-      "location_detail": "5번 출입구",
-      "floor_from": "B2",
-      "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "2716",
-      "station_name": "중계",
-      "line": "",
-      "facility_id": "승강기)엘리베이터-중계 외부3",
-      "location_detail": "3번 출입구",
-      "floor_from": "B2",
-      "floor_to": "1F",
       "status": "OPERATING",
       "status_code": "01",
       "last_normal_at": null
@@ -9575,18 +9587,6 @@
       "line": "",
       "facility_id": "승강기)엘리베이터-천왕 외부3",
       "location_detail": "3번 출입구",
-      "floor_from": "B1",
-      "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "2751",
-      "station_name": "천왕",
-      "line": "",
-      "facility_id": "승강기)엘리베이터-천왕 외부4",
-      "location_detail": "2번 출입구",
       "floor_from": "B1",
       "floor_to": "1F",
       "status": "OPERATING",
