@@ -1,8 +1,8 @@
 {
-  "collected_at": "2026-06-16T12:37:33.816Z",
+  "collected_at": "2026-06-16T15:43:26.260Z",
   "source_api": "SeoulMetroFaciInfo",
   "total_count": 864,
-  "operating_count": 845,
+  "operating_count": 843,
   "fault_count": 0,
   "facilities": [
     {
@@ -3229,8 +3229,8 @@
       "location_detail": "대청 방면6-3",
       "floor_from": "B3",
       "floor_to": "B2",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "UNKNOWN",
+      "status_code": "04",
       "last_normal_at": null
     },
     {
@@ -3241,8 +3241,8 @@
       "location_detail": "수서 방면5-2",
       "floor_from": "B3",
       "floor_to": "B2",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "UNKNOWN",
+      "status_code": "04",
       "last_normal_at": null
     },
     {
@@ -5449,8 +5449,8 @@
       "location_detail": "4번 출입구",
       "floor_from": "B4",
       "floor_to": "1F",
-      "status": "MAINTENANCE",
-      "status_code": "03",
+      "status": "OPERATING",
+      "status_code": "01",
       "last_normal_at": null
     },
     {
@@ -5833,8 +5833,8 @@
       "location_detail": "명일 방면3-2, 3-3 사이",
       "floor_from": "B1",
       "floor_to": "B2",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -6589,42 +6589,6 @@
       "location_detail": "하남검단산 방면5-3",
       "floor_from": "B3",
       "floor_to": "B1",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "2747",
-      "station_name": "남구로",
-      "line": "",
-      "facility_id": "승강기)엘리베이터-남구로 내부 1호기",
-      "location_detail": "가산디지털단지방면 8-2",
-      "floor_from": "B2",
-      "floor_to": "B5",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "2747",
-      "station_name": "남구로",
-      "line": "",
-      "facility_id": "승강기)엘리베이터-남구로 내부 2호기",
-      "location_detail": "대림방면 1-4",
-      "floor_from": "B2",
-      "floor_to": "B5",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "2747",
-      "station_name": "남구로",
-      "line": "",
-      "facility_id": "승강기)엘리베이터-남구로 외부 3호기",
-      "location_detail": "1번 출입구",
-      "floor_from": "B1",
-      "floor_to": "1F",
       "status": "OPERATING",
       "status_code": "01",
       "last_normal_at": null
@@ -9407,6 +9371,42 @@
       "line": "7호선",
       "facility_id": "승강기)엘리베이터-대림(7) 외부3",
       "location_detail": "10번 출입구",
+      "floor_from": "B1",
+      "floor_to": "1F",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2747",
+      "station_name": "남구로",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-남구로 내부 1호기",
+      "location_detail": "가산디지털단지방면 8-2",
+      "floor_from": "B2",
+      "floor_to": "B5",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2747",
+      "station_name": "남구로",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-남구로 내부 2호기",
+      "location_detail": "대림방면 1-4",
+      "floor_from": "B2",
+      "floor_to": "B5",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2747",
+      "station_name": "남구로",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-남구로 외부 3호기",
+      "location_detail": "1번 출입구",
       "floor_from": "B1",
       "floor_to": "1F",
       "status": "OPERATING",
