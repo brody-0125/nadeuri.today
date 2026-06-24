@@ -1,34 +1,10 @@
 {
-  "collected_at": "2026-06-24T07:45:58.071Z",
+  "collected_at": "2026-06-24T09:11:46.826Z",
   "source_api": "SeoulMetroFaciInfo",
   "total_count": 864,
-  "operating_count": 831,
+  "operating_count": 832,
   "fault_count": 0,
   "facilities": [
-    {
-      "station_code": "0154",
-      "station_name": "종로5가",
-      "line": "",
-      "facility_id": "승강기)엘리베이터-종로5가 하행 3-2 내부#2",
-      "location_detail": "종로3가 방면3-2",
-      "floor_from": "B2",
-      "floor_to": "B1",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "2517",
-      "station_name": "우장산",
-      "line": "",
-      "facility_id": "승강기)엘리베이터-우장산 외부3",
-      "location_detail": "1번 출입구",
-      "floor_from": "B1",
-      "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
     {
       "station_code": "0150",
       "station_name": "서울역",
@@ -215,6 +191,18 @@
       "line": "",
       "facility_id": "승강기)엘리베이터-종로5가 상행 8-3 내부#1",
       "location_detail": "동대문(1) 방면8-3",
+      "floor_from": "B2",
+      "floor_to": "B1",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "0154",
+      "station_name": "종로5가",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-종로5가 하행 3-2 내부#2",
+      "location_detail": "종로3가 방면3-2",
       "floor_from": "B2",
       "floor_to": "B1",
       "status": "OPERATING",
@@ -4669,6 +4657,18 @@
       "location_detail": "화곡 방면5-3",
       "floor_from": "B1",
       "floor_to": "B2",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2517",
+      "station_name": "우장산",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-우장산 외부3",
+      "location_detail": "1번 출입구",
+      "floor_from": "B1",
+      "floor_to": "1F",
       "status": "OPERATING",
       "status_code": "01",
       "last_normal_at": null
@@ -10141,8 +10141,8 @@
       "location_detail": "남위례 방면6-2",
       "floor_from": "B3",
       "floor_to": "B2",
-      "status": "MAINTENANCE",
-      "status_code": "03",
+      "status": "OPERATING",
+      "status_code": "01",
       "last_normal_at": null
     },
     {
