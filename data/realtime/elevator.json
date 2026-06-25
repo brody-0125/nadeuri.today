@@ -1,22 +1,10 @@
 {
-  "collected_at": "2026-06-25T04:53:06.685Z",
+  "collected_at": "2026-06-25T07:46:30.553Z",
   "source_api": "SeoulMetroFaciInfo",
   "total_count": 864,
-  "operating_count": 831,
+  "operating_count": 830,
   "fault_count": 0,
   "facilities": [
-    {
-      "station_code": "2624",
-      "station_name": "상수",
-      "line": "",
-      "facility_id": "승강기)엘리베이터-상수 내부 3호기",
-      "location_detail": "대합실",
-      "floor_from": "B2",
-      "floor_to": "B1",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
     {
       "station_code": "0150",
       "station_name": "서울역",
@@ -2197,8 +2185,8 @@
       "location_detail": "양천구청 방면2-4",
       "floor_from": "B3",
       "floor_to": "B1",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -2593,8 +2581,8 @@
       "location_detail": "6번 출입구",
       "floor_from": "B2",
       "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -5077,8 +5065,8 @@
       "location_detail": "여의도 방면6-2, 마포 방면3-3",
       "floor_from": "B1",
       "floor_to": "B5",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -5221,8 +5209,8 @@
       "location_detail": "애오개 방면3-3, 서대문 방면6-2",
       "floor_from": "B5",
       "floor_to": "B1",
-      "status": "MAINTENANCE",
-      "status_code": "03",
+      "status": "OPERATING",
+      "status_code": "01",
       "last_normal_at": null
     },
     {
@@ -7017,6 +7005,18 @@
       "station_code": "2624",
       "station_name": "상수",
       "line": "",
+      "facility_id": "승강기)엘리베이터-상수 내부 3호기",
+      "location_detail": "대합실",
+      "floor_from": "B2",
+      "floor_to": "B1",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2624",
+      "station_name": "상수",
+      "line": "",
       "facility_id": "승강기)엘리베이터-상수 내부1",
       "location_detail": "합정 방면4-4, 광흥창 방면5-1",
       "floor_from": "B2",
@@ -7489,8 +7489,8 @@
       "location_detail": "신당 방면6-2",
       "floor_from": "B3",
       "floor_to": "B1",
-      "status": "MAINTENANCE",
-      "status_code": "03",
+      "status": "OPERATING",
+      "status_code": "01",
       "last_normal_at": null
     },
     {
