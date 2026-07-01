@@ -1,8 +1,8 @@
 {
-  "collected_at": "2026-07-01T12:02:48.972Z",
+  "collected_at": "2026-07-01T13:25:01.041Z",
   "source_api": "SeoulMetroFaciInfo",
   "total_count": 864,
-  "operating_count": 854,
+  "operating_count": 852,
   "fault_count": 0,
   "facilities": [
     {
@@ -1273,8 +1273,8 @@
       "location_detail": "10번 출입구",
       "floor_from": "B1",
       "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -8070,18 +8070,6 @@
       "last_normal_at": null
     },
     {
-      "station_code": "2716",
-      "station_name": "중계",
-      "line": "",
-      "facility_id": "승강기)엘리베이터-중계 외부3",
-      "location_detail": "3번 출입구",
-      "floor_from": "B2",
-      "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
       "station_code": "2713",
       "station_name": "수락산",
       "line": "",
@@ -8231,6 +8219,18 @@
       "line": "",
       "facility_id": "승강기)엘리베이터-중계 외부2",
       "location_detail": "5번 출입구",
+      "floor_from": "B2",
+      "floor_to": "1F",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2716",
+      "station_name": "중계",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-중계 외부3",
+      "location_detail": "3번 출입구",
       "floor_from": "B2",
       "floor_to": "1F",
       "status": "OPERATING",
@@ -10333,8 +10333,8 @@
       "location_detail": "11번 출입구",
       "floor_from": "B1",
       "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
