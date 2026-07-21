@@ -1,22 +1,10 @@
 {
-  "collected_at": "2026-07-21T11:22:23.830Z",
+  "collected_at": "2026-07-21T14:33:42.130Z",
   "source_api": "SeoulMetroFaciInfo",
   "total_count": 55,
   "operating_count": 53,
   "fault_count": 0,
   "facilities": [
-    {
-      "station_code": "2642",
-      "station_name": "월곡",
-      "line": "",
-      "facility_id": "승강기)휠체어리프트-월곡 내부 1",
-      "location_detail": "아이센터 측(B2)",
-      "floor_from": "B1",
-      "floor_to": "B2",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
     {
       "station_code": "0156",
       "station_name": "신설동",
@@ -121,8 +109,8 @@
       "location_detail": "신답 방면1-4",
       "floor_from": "1F",
       "floor_to": "2F",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -265,8 +253,8 @@
       "location_detail": "환승통로(3호선 방면)",
       "floor_from": "B1",
       "floor_to": "B2",
-      "status": "MAINTENANCE",
-      "status_code": "03",
+      "status": "OPERATING",
+      "status_code": "01",
       "last_normal_at": null
     },
     {
@@ -397,6 +385,18 @@
       "location_detail": "5번 출입구",
       "floor_from": "1F",
       "floor_to": "B1",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2642",
+      "station_name": "월곡",
+      "line": "",
+      "facility_id": "승강기)휠체어리프트-월곡 내부 1",
+      "location_detail": "아이센터 측(B2)",
+      "floor_from": "B1",
+      "floor_to": "B2",
       "status": "OPERATING",
       "status_code": "01",
       "last_normal_at": null
