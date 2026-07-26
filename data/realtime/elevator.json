@@ -1,10 +1,34 @@
 {
-  "collected_at": "2026-07-26T04:05:20.574Z",
+  "collected_at": "2026-07-26T08:55:46.712Z",
   "source_api": "SeoulMetroFaciInfo",
   "total_count": 864,
-  "operating_count": 849,
+  "operating_count": 840,
   "fault_count": 0,
   "facilities": [
+    {
+      "station_code": "0153",
+      "station_name": "종로3가",
+      "line": "1호선",
+      "facility_id": "승강기)엘리베이터-종로3가(1) 하행 6-4 내부#2",
+      "location_detail": "종각 방면6-4",
+      "floor_from": "B2",
+      "floor_to": "B1",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "0154",
+      "station_name": "종로5가",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-종로5가 8,9번 출입구 외부#1",
+      "location_detail": "8,9번 출입구 사이",
+      "floor_from": "B1",
+      "floor_to": "1F",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
     {
       "station_code": "0150",
       "station_name": "서울역",
@@ -157,30 +181,6 @@
       "location_detail": "종로5가 방면5-1",
       "floor_from": "B2",
       "floor_to": "B1",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "0153",
-      "station_name": "종로3가",
-      "line": "1호선",
-      "facility_id": "승강기)엘리베이터-종로3가(1) 하행 6-4 내부#2",
-      "location_detail": "종각 방면6-4",
-      "floor_from": "B2",
-      "floor_to": "B1",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "0154",
-      "station_name": "종로5가",
-      "line": "",
-      "facility_id": "승강기)엘리베이터-종로5가 8,9번 출입구 외부#1",
-      "location_detail": "8,9번 출입구 사이",
-      "floor_from": "B1",
-      "floor_to": "1F",
       "status": "OPERATING",
       "status_code": "01",
       "last_normal_at": null
@@ -450,6 +450,18 @@
       "last_normal_at": null
     },
     {
+      "station_code": "2522",
+      "station_name": "오목교",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-오목교 내부1",
+      "location_detail": "목동 방면7-1",
+      "floor_from": "B1",
+      "floor_to": "B3",
+      "status": "MAINTENANCE",
+      "status_code": "03",
+      "last_normal_at": null
+    },
+    {
       "station_code": "0201",
       "station_name": "시청",
       "line": "2호선",
@@ -709,8 +721,8 @@
       "location_detail": "상왕십리 방면3-2",
       "floor_from": "B2",
       "floor_to": "B1",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -877,8 +889,8 @@
       "location_detail": "강변 방면4-3",
       "floor_from": "2F",
       "floor_to": "3F",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -2082,6 +2094,18 @@
       "last_normal_at": null
     },
     {
+      "station_code": "2531",
+      "station_name": "애오개",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-애오개 외부4",
+      "location_detail": "2번 출입구",
+      "floor_from": "B1",
+      "floor_to": "1F",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
       "station_code": "0243",
       "station_name": "충정로",
       "line": "2호선",
@@ -2953,8 +2977,8 @@
       "location_detail": "13번 출입구",
       "floor_from": "B1",
       "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -2965,8 +2989,8 @@
       "location_detail": "고속터미널 방면4-2, 남부터미널 방면7-3",
       "floor_from": "B3",
       "floor_to": "B1",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -3109,8 +3133,8 @@
       "location_detail": "7번 출입구",
       "floor_from": "B1",
       "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -3253,8 +3277,8 @@
       "location_detail": "1번 출입구",
       "floor_from": "B1",
       "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -3301,8 +3325,8 @@
       "location_detail": "7번 출입구",
       "floor_from": "B2",
       "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -3325,6 +3349,18 @@
       "location_detail": "경찰병원 방면3-2",
       "floor_from": "B4",
       "floor_to": "B2",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2531",
+      "station_name": "애오개",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-애오개 외부5",
+      "location_detail": "3번 출입구",
+      "floor_from": "B1",
+      "floor_to": "1F",
       "status": "OPERATING",
       "status_code": "01",
       "last_normal_at": null
@@ -3589,8 +3625,8 @@
       "location_detail": "쌍문 방면3-2",
       "floor_from": "2F",
       "floor_to": "3F",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -3973,8 +4009,8 @@
       "location_detail": "동대문역사문화공원 방면8-1",
       "floor_from": "B3",
       "floor_to": "B1",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -4809,18 +4845,6 @@
       "station_code": "2522",
       "station_name": "오목교",
       "line": "",
-      "facility_id": "승강기)엘리베이터-오목교 내부1",
-      "location_detail": "목동 방면7-1",
-      "floor_from": "B1",
-      "floor_to": "B3",
-      "status": "MAINTENANCE",
-      "status_code": "03",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "2522",
-      "station_name": "오목교",
-      "line": "",
       "facility_id": "승강기)엘리베이터-오목교 내부2",
       "location_detail": "양평 방면2-4",
       "floor_from": "B1",
@@ -4957,8 +4981,8 @@
       "location_detail": "2번 출입구",
       "floor_from": "B1",
       "floor_to": "1F",
-      "status": "MAINTENANCE",
-      "status_code": "03",
+      "status": "OPERATING",
+      "status_code": "01",
       "last_normal_at": null
     },
     {
@@ -5178,30 +5202,6 @@
       "last_normal_at": null
     },
     {
-      "station_code": "2531",
-      "station_name": "애오개",
-      "line": "",
-      "facility_id": "승강기)엘리베이터-애오개 외부4",
-      "location_detail": "2번 출입구",
-      "floor_from": "B1",
-      "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "2531",
-      "station_name": "애오개",
-      "line": "",
-      "facility_id": "승강기)엘리베이터-애오개 외부5",
-      "location_detail": "3번 출입구",
-      "floor_from": "B1",
-      "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
       "station_code": "2532",
       "station_name": "충정로",
       "line": "5호선",
@@ -5377,8 +5377,8 @@
       "location_detail": "고객안전실 측",
       "floor_from": "B2",
       "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -5557,8 +5557,8 @@
       "location_detail": "7,8번 출입구 사이",
       "floor_from": "B2",
       "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -7110,6 +7110,18 @@
       "last_normal_at": null
     },
     {
+      "station_code": "2713",
+      "station_name": "수락산",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-수락산 외부1",
+      "location_detail": "1번 출입구",
+      "floor_from": "B2",
+      "floor_to": "1F",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
       "station_code": "2627",
       "station_name": "공덕",
       "line": "6호선",
@@ -7429,8 +7441,8 @@
       "location_detail": "청구 방면4-4",
       "floor_from": "B2",
       "floor_to": "B3",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -8073,18 +8085,6 @@
       "station_code": "2713",
       "station_name": "수락산",
       "line": "",
-      "facility_id": "승강기)엘리베이터-수락산 외부1",
-      "location_detail": "1번 출입구",
-      "floor_from": "B2",
-      "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "2713",
-      "station_name": "수락산",
-      "line": "",
       "facility_id": "승강기)엘리베이터-수락산역 내부 2호기",
       "location_detail": "도봉산 방면1-1",
       "floor_from": "B3",
@@ -8161,8 +8161,8 @@
       "location_detail": "3번 출입구",
       "floor_from": "B1",
       "floor_to": "1F",
-      "status": "MAINTENANCE",
-      "status_code": "03",
+      "status": "OPERATING",
+      "status_code": "01",
       "last_normal_at": null
     },
     {
@@ -8257,8 +8257,8 @@
       "location_detail": "1번 출입구",
       "floor_from": "B1",
       "floor_to": "1F",
-      "status": "MAINTENANCE",
-      "status_code": "03",
+      "status": "OPERATING",
+      "status_code": "01",
       "last_normal_at": null
     },
     {
