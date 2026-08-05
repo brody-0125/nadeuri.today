@@ -1,46 +1,10 @@
 {
-  "collected_at": "2026-08-05T10:19:15.609Z",
+  "collected_at": "2026-08-05T13:05:18.075Z",
   "source_api": "SeoulMetroFaciInfo",
   "total_count": 864,
-  "operating_count": 854,
+  "operating_count": 853,
   "fault_count": 0,
   "facilities": [
-    {
-      "station_code": "2731",
-      "station_name": "청담",
-      "line": "",
-      "facility_id": "승강기)엘리베이터-청담 외부1",
-      "location_detail": "5번 출입구",
-      "floor_from": "B3",
-      "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "2731",
-      "station_name": "청담",
-      "line": "",
-      "facility_id": "승강기)엘리베이터-청담 외부2",
-      "location_detail": "10번 출입구",
-      "floor_from": "B3",
-      "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "2735",
-      "station_name": "반포",
-      "line": "",
-      "facility_id": "승강기)엘리베이터-반포 외부3",
-      "location_detail": "6번 출입구",
-      "floor_from": "B2",
-      "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
     {
       "station_code": "0150",
       "station_name": "서울역",
@@ -48,18 +12,6 @@
       "facility_id": "승강기)엘리베이터-서울(1)역 2번 출구측 외부#1",
       "location_detail": "2번 출입구",
       "floor_from": "B1",
-      "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
-      "station_code": "2735",
-      "station_name": "반포",
-      "line": "",
-      "facility_id": "승강기)엘리베이터-반포 외부4",
-      "location_detail": "1번 출입구",
-      "floor_from": "B2",
       "floor_to": "1F",
       "status": "OPERATING",
       "status_code": "01",
@@ -7297,8 +7249,8 @@
       "location_detail": "12번 출입구",
       "floor_from": "B3",
       "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -8802,6 +8754,30 @@
       "last_normal_at": null
     },
     {
+      "station_code": "2731",
+      "station_name": "청담",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-청담 외부1",
+      "location_detail": "5번 출입구",
+      "floor_from": "B3",
+      "floor_to": "1F",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2731",
+      "station_name": "청담",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-청담 외부2",
+      "location_detail": "10번 출입구",
+      "floor_from": "B3",
+      "floor_to": "1F",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
       "station_code": "2732",
       "station_name": "강남구청",
       "line": "7호선",
@@ -8917,6 +8893,30 @@
       "location_detail": "고속터미널(7) 방면4-4",
       "floor_from": "B2",
       "floor_to": "B3",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2735",
+      "station_name": "반포",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-반포 외부3",
+      "location_detail": "6번 출입구",
+      "floor_from": "B2",
+      "floor_to": "1F",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2735",
+      "station_name": "반포",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-반포 외부4",
+      "location_detail": "1번 출입구",
+      "floor_from": "B2",
+      "floor_to": "1F",
       "status": "OPERATING",
       "status_code": "01",
       "last_normal_at": null
