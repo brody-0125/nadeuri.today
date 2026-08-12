@@ -1,8 +1,8 @@
 {
-  "collected_at": "2026-08-12T06:56:41.748Z",
+  "collected_at": "2026-08-12T08:31:40.814Z",
   "source_api": "SeoulMetroFaciInfo",
   "total_count": 864,
-  "operating_count": 844,
+  "operating_count": 839,
   "fault_count": 0,
   "facilities": [
     {
@@ -157,8 +157,8 @@
       "location_detail": "종로5가 방면5-1",
       "floor_from": "B2",
       "floor_to": "B1",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -2785,8 +2785,8 @@
       "location_detail": "압구정 방면1-2",
       "floor_from": "2F",
       "floor_to": "3F",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -3942,18 +3942,6 @@
       "last_normal_at": null
     },
     {
-      "station_code": "0429",
-      "station_name": "신용산",
-      "line": "",
-      "facility_id": "승강기)엘리베이터-신용산 하행 3-2 내부#2",
-      "location_detail": "이촌 방면3-2",
-      "floor_from": "B1",
-      "floor_to": "B2",
-      "status": "OPERATING",
-      "status_code": "01",
-      "last_normal_at": null
-    },
-    {
       "station_code": "0423",
       "station_name": "충무로",
       "line": "4호선",
@@ -4199,6 +4187,18 @@
       "line": "",
       "facility_id": "승강기)엘리베이터-신용산 상행 8-2 내부#1",
       "location_detail": "삼각지 방면8-2",
+      "floor_from": "B1",
+      "floor_to": "B2",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "0429",
+      "station_name": "신용산",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-신용산 하행 3-2 내부#2",
+      "location_detail": "이촌 방면3-2",
       "floor_from": "B1",
       "floor_to": "B2",
       "status": "OPERATING",
@@ -7105,8 +7105,8 @@
       "location_detail": "3번 출구",
       "floor_from": "B2",
       "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -7237,8 +7237,8 @@
       "location_detail": "8번 출입구",
       "floor_from": "B3",
       "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -8545,8 +8545,8 @@
       "location_detail": "사가정 방면3-3",
       "floor_from": "B3",
       "floor_to": "B4",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
