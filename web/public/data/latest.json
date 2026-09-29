@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-09-29T02:19:32.891Z",
-  "data_age_minutes": 47,
-  "is_stale": true,
+  "updated_at": "2026-09-29T03:43:17.038Z",
+  "data_age_minutes": 0,
+  "is_stale": false,
   "summary": {
     "elevator": {
       "total": 865,
@@ -10,7 +10,7 @@
     },
     "escalator": {
       "total": 1882,
-      "operating": 1839,
+      "operating": 1838,
       "fault": 0
     },
     "moving-walk": {
@@ -10002,16 +10002,16 @@
             "location_detail": "경찰병원 방면2-2",
             "floor_from": "B2",
             "floor_to": "B3",
-            "status": "OPERATING",
-            "status_code": "01"
+            "status": "MAINTENANCE",
+            "status_code": "03"
           },
           {
             "facility_id": "승강기)에스컬레이터-오금(3) 내부 2호기",
             "location_detail": "경찰병원 방면2-2",
             "floor_from": "B3",
             "floor_to": "B2",
-            "status": "MAINTENANCE",
-            "status_code": "03"
+            "status": "OPERATING",
+            "status_code": "01"
           },
           {
             "facility_id": "승강기)에스컬레이터-오금(3) 내부 3호기",
@@ -18663,8 +18663,8 @@
             "location_detail": "1번 출입구",
             "floor_from": "B1",
             "floor_to": "BM1",
-            "status": "OPERATING",
-            "status_code": "01"
+            "status": "MAINTENANCE",
+            "status_code": "03"
           }
         ]
       },
