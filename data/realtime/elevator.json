@@ -1,8 +1,8 @@
 {
-  "collected_at": "2026-11-01T00:16:57.202Z",
+  "collected_at": "2026-11-01T06:36:05.989Z",
   "source_api": "SeoulMetroFaciInfo",
-  "total_count": 865,
-  "operating_count": 852,
+  "total_count": 866,
+  "operating_count": 853,
   "fault_count": 0,
   "facilities": [
     {
@@ -2725,8 +2725,8 @@
       "location_detail": "2번 출입구",
       "floor_from": "B1",
       "floor_to": "1F",
-      "status": "OPERATING",
-      "status_code": "01",
+      "status": "MAINTENANCE",
+      "status_code": "03",
       "last_normal_at": null
     },
     {
@@ -4597,8 +4597,8 @@
       "location_detail": "6,7번 출입구 사이",
       "floor_from": "B1",
       "floor_to": "1F",
-      "status": "MAINTENANCE",
-      "status_code": "03",
+      "status": "OPERATING",
+      "status_code": "01",
       "last_normal_at": null
     },
     {
@@ -8015,6 +8015,18 @@
       "line": "6호선",
       "facility_id": "승강기)엘리베이터-신내 외부1",
       "location_detail": "신내, 봉화산 방면8-3",
+      "floor_from": "1F",
+      "floor_to": "2F",
+      "status": "OPERATING",
+      "status_code": "01",
+      "last_normal_at": null
+    },
+    {
+      "station_code": "2711",
+      "station_name": "장암",
+      "line": "",
+      "facility_id": "승강기)엘리베이터-장암 장암 임시정거장 2",
+      "location_detail": "장암 임시정거장",
       "floor_from": "1F",
       "floor_to": "2F",
       "status": "OPERATING",
