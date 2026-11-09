@@ -20,8 +20,9 @@ npm run build        # Static export to web/out/
 cd scripts && npm install
 npm run collect              # Collect real-time facility data
 npm run collect-static       # Collect static facility data (daily)
-npm run build-latest         # Aggregate into data/latest.json
-npm run validate             # Validate data integrity
+npm run build-latest         # Aggregate into web/public/data/latest.json
+npm run validate             # Validate generated public snapshot
+npm test                     # Collector merge regression tests
 ```
 
 ### Environment Variables
@@ -32,13 +33,13 @@ npm run validate             # Validate data integrity
 
 ### Data Pipeline
 ```
-Seoul Open Data API → GitHub Actions (cron) → Node.js scripts → data/*.json → build-latest.js → data/latest.json → Next.js static site → GitHub Pages
+Seoul Open Data API → GitHub Actions (cron) → Node.js scripts → data/*.json → build-latest.js → web/public/data/latest.json → Next.js static site → GitHub Pages
 ```
 
 - **Real-time collection** runs every 1.5 hours via GitHub Actions (`collect-realtime.yml`)
 - **Static facility data** collected daily at 3:15 PM KST (`collect-static.yml`)
 - Realtime data stored in `data/realtime/` (overwritten on each collection)
-- Frontend reads `data/latest.json` (aggregated snapshot)
+- Frontend reads `web/public/data/latest.json` (aggregated snapshot)
 
 ### Frontend (web/src/)
 - **Next.js 14** with App Router, TypeScript, Tailwind CSS
@@ -71,3 +72,5 @@ Seoul Open Data API → GitHub Actions (cron) → Node.js scripts → data/*.jso
 - **Facility types split**: Real-time (`elevator`, `escalator`, `moving_walk`, `wheelchair_lift`, `safety_board`) vs. Static (`disabled_restroom`, `sign_language_phone`, `wheelchair_charger`, `helper`)
 - **Theme system**: Light/dark via CSS variables and ThemeProvider component
 - **Mobile-first**: TabBar for mobile navigation, responsive layouts
+
+Collector PRs include only their raw source files, not the shared generated snapshot. Deployment rebuilds and validates `web/public/data/latest.json` from merged main. The shared collector concurrency group serializes collection/merge (GitHub retains only one pending run). `scripts/merge-data-pr.js` uses normal protected merge for CLEAN PRs, auto-merge for pending requirements, and succeeds only after confirming MERGED. Never add administrator/bypass flags.

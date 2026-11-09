@@ -16,7 +16,7 @@ const REQUIRED_TOP_LEVEL_FIELDS = [
 const REQUIRED_STATION_FIELDS = ["name", "facilities"];
 
 async function main() {
-  const latestPath = path.join(ROOT, "data", "latest.json");
+  const latestPath = path.join(ROOT, "web", "public", "data", "latest.json");
   let errors = 0;
   let warnings = 0;
 
@@ -53,7 +53,7 @@ async function main() {
   }
 
   // Check data_age_minutes is a number
-  if (typeof data.data_age_minutes !== "number") {
+  if (!Number.isFinite(data.data_age_minutes)) {
     console.error(`[FAIL] data_age_minutes is not a number: ${data.data_age_minutes}`);
     errors++;
   }
@@ -65,9 +65,14 @@ async function main() {
   }
 
   // Check stations
-  if (data.stations && typeof data.stations === "object") {
+  if (data.stations && typeof data.stations === "object" && !Array.isArray(data.stations)) {
     const stationCodes = Object.keys(data.stations);
     console.log(`[OK] Found ${stationCodes.length} stations`);
+
+    if (stationCodes.length === 0) {
+      console.error("[FAIL] stations is empty");
+      errors++;
+    }
 
     let stationErrors = 0;
     for (const code of stationCodes) {

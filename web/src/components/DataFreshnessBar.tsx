@@ -2,33 +2,36 @@
 
 import { useEffect, useState } from 'react';
 import { useTranslations } from 'next-intl';
+import type { LatestData } from '@/types';
+import { FRESHNESS_REFRESH_MS, getDataFreshness } from '@/lib/freshness';
 
 interface DataFreshnessBarProps {
-  updatedAt: string;
-  isStale: boolean;
+  data: LatestData;
 }
 
-export default function DataFreshnessBar({ updatedAt, isStale }: DataFreshnessBarProps) {
+export default function DataFreshnessBar({ data }: DataFreshnessBarProps) {
   const t = useTranslations('dataFreshness');
-
-  const formatRelativeTime = (updatedAtStr: string): string => {
-    const diff = Math.floor((Date.now() - new Date(updatedAtStr).getTime()) / 1000);
-    if (diff < 60) return t('justNow');
-    const minutes = Math.floor(diff / 60);
-    if (minutes < 60) return t('minutesAgo', { minutes });
-    const hours = Math.floor(minutes / 60);
-    return t('hoursAgo', { hours });
-  };
-
-  const [relativeTime, setRelativeTime] = useState(() => formatRelativeTime(updatedAt));
+  const [now, setNow] = useState(() => Date.now());
 
   useEffect(() => {
-    setRelativeTime(formatRelativeTime(updatedAt));
-    const timer = setInterval(() => {
-      setRelativeTime(formatRelativeTime(updatedAt));
-    }, 30_000);
-    return () => clearInterval(timer);
-  }, [updatedAt]);
+    const refresh = () => setNow(Date.now());
+    refresh();
+    const timer = setInterval(refresh, FRESHNESS_REFRESH_MS);
+    // Background tabs can throttle timers. Refresh immediately on return.
+    window.addEventListener('focus', refresh);
+    document.addEventListener('visibilitychange', refresh);
+    return () => {
+      clearInterval(timer);
+      window.removeEventListener('focus', refresh);
+      document.removeEventListener('visibilitychange', refresh);
+    };
+  }, [data]);
+
+  const { isStale, ageMinutes, hasUnknownTime } = getDataFreshness(data, now);
+  const relativeTime = ageMinutes === null ? t('unknownTime')
+    : ageMinutes < 1 ? t('justNow')
+    : ageMinutes < 60 ? t('minutesAgo', { minutes: ageMinutes })
+    : t('hoursAgo', { hours: Math.floor(ageMinutes / 60) });
 
   return (
     <div role="status" aria-live="polite" className="sticky top-0 z-50 flex h-9 w-full items-center justify-center border-b border-border bg-surface/95 px-4 backdrop-blur-sm transition-all">
@@ -37,7 +40,7 @@ export default function DataFreshnessBar({ updatedAt, isStale }: DataFreshnessBa
           <>
             <span className="material-symbols-outlined text-base text-status-fault" aria-hidden="true">warning</span>
             <p className="font-mono text-xs font-medium tracking-tight text-status-fault sm:text-sm">
-              {t('staleMessage', { time: relativeTime })}
+              {hasUnknownTime ? t('unknownMessage') : t('staleMessage', { time: relativeTime })}
             </p>
           </>
         ) : (

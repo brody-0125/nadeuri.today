@@ -87,7 +87,7 @@ export default function FaultsClient() {
 
   return (
     <>
-      {data && <DataFreshnessBar updatedAt={data.updated_at} isStale={data.is_stale} />}
+      {data && <DataFreshnessBar data={data} />}
 
       <nav className="bg-surface border-b border-border" aria-label={tCommon('topNav')}>
         <div className="max-w-5xl mx-auto px-4 md:px-8 h-16 flex items-center justify-between">
