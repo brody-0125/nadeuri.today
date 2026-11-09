@@ -63,7 +63,9 @@ export interface EnvironmentData {
 }
 
 export interface LatestData {
-  updated_at: string;
+  updated_at: string | null;
+  /** Collection times by realtime source; missing/invalid values are not live. */
+  collected_at_by_type?: Record<string, string | null>;
   data_age_minutes: number;
   is_stale: boolean;
   environment?: EnvironmentData;

@@ -9,13 +9,21 @@ permissions:
   contents: write
   pull-requests: write
 
+# Serialize collection and merge across all three collectors.
+# GitHub keeps at most one pending run per concurrency group.
+concurrency:
+  group: data-collection-main
+  cancel-in-progress: false
+
 jobs:
   collect-static:
     runs-on: ubuntu-latest
-    timeout-minutes: 3
+    timeout-minutes: 10
 
     steps:
       - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+        with:
+          ref: main
 
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
         with:
@@ -24,7 +32,11 @@ jobs:
           cache-dependency-path: scripts/package.json
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
+        working-directory: scripts
+
+      - name: Test collection pipeline
+        run: npm test
         working-directory: scripts
 
       - name: Collect static facilities
@@ -34,7 +46,11 @@ jobs:
         working-directory: scripts
 
       - name: Build latest.json
-        run: node build-latest.js || echo "Skipped (no realtime data yet)"
+        run: node build-latest.js
+        working-directory: scripts
+
+      - name: Validate generated snapshot
+        run: node validate.js
         working-directory: scripts
 
       - name: Create pull request with data
@@ -46,12 +62,16 @@ jobs:
           title: 'chore: update static facility data'
           body: 'Automated static facility data collection.'
           add-paths: |
-            data-static/**
-            web/public/data/**
+            data-static/disabled-restroom.json
+            data-static/sign-language-phone.json
+            data-static/wheelchair-charger.json
+            data-static/helper.json
+            data-static/.last-hashes.json
 
-      - name: Enable auto-merge
+      - name: Merge data PR and verify completion
         if: steps.cpr.outputs.pull-request-number
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PR_NUMBER: ${{ steps.cpr.outputs.pull-request-number }}
-        run: gh pr merge "$PR_NUMBER" --auto --squash
+          PR_BRANCH: auto/collect-static
+        run: node scripts/merge-data-pr.js

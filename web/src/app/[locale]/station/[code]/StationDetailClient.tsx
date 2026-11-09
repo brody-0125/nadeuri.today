@@ -124,7 +124,7 @@ export default function StationDetailClient({ code }: { code: string }) {
   return (
     <>
       <div className="bg-status-operating text-white">
-        {data && <DataFreshnessBar updatedAt={data.updated_at} isStale={data.is_stale} />}
+        {data && <DataFreshnessBar data={data} />}
         <div className="max-w-5xl mx-auto px-5 md:px-8 pt-4 pb-5">
           <div className="flex items-center justify-between mb-3">
             <Link href={`/${locale}/`} className="text-[13px] text-white/75 flex items-center gap-1 hover:text-white transition-colors">

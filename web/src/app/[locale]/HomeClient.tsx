@@ -96,7 +96,7 @@ export default function HomeClient() {
   return (
     <>
       <MetroSupportBanner />
-      {data && <DataFreshnessBar updatedAt={data.updated_at} isStale={data.is_stale} />}
+      {data && <DataFreshnessBar data={data} />}
 
       <main id="main-content" className="flex-1 w-full max-w-3xl mx-auto px-5 md:px-8 flex flex-col gap-6 py-6">
         {/* Header */}

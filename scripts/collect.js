@@ -78,6 +78,7 @@ async function main() {
   const skipped = [];
   const unchanged = [];
   let hasChanges = false;
+  let successfulRefreshes = 0;
 
   for (const { name, collect } of REALTIME_TYPES) {
     try {
@@ -101,6 +102,7 @@ async function main() {
           existing.collected_at = new Date().toISOString();
           await mkdir(outDir, { recursive: true });
           await writeFile(filePath, JSON.stringify(existing, null, 2), "utf-8");
+          successfulRefreshes++;
         }
         console.log(`  ${name}: unchanged (${result.total_count} facilities) — timestamp refreshed`);
         unchanged.push(name);
@@ -113,6 +115,7 @@ async function main() {
       await mkdir(outDir, { recursive: true });
       const filePath = path.join(outDir, `${name}.json`);
       await writeFile(filePath, JSON.stringify(result, null, 2), "utf-8");
+      successfulRefreshes++;
       console.log(`  ${name}: ${result.total_count} facilities (${result.operating_count} operating, ${result.fault_count} fault)`);
     } catch (err) {
       console.error(`  ERROR collecting ${name}: ${err.message}`);
@@ -160,7 +163,12 @@ async function main() {
     console.log("\nAll collections completed successfully.");
   }
 
-  // Exit with 0 even if some collections failed
+  // Partial results retain each failed source's previous timestamp. An entirely
+  // failed/empty refresh must not look like a successful collection/deployment.
+  if (successfulRefreshes === 0) {
+    console.error("No realtime facility source was successfully refreshed");
+    process.exit(1);
+  }
   process.exit(0);
 }
 

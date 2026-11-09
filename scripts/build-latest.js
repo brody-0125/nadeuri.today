@@ -2,6 +2,7 @@ import "dotenv/config";
 import path from "path";
 import { fileURLToPath } from "url";
 
+import { collectionFreshness } from "./lib/freshness.js";
 import { loadJSON, saveJSON } from "./lib/json-utils.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -330,7 +331,9 @@ function extractRealtimeFromLatest(latest, type) {
   const faultCount = facilities.filter((f) => f.status === "FAULT").length;
 
   return {
-    collected_at: latest.updated_at,
+    collected_at: latest.collected_at_by_type
+      ? (latest.collected_at_by_type[type] ?? null)
+      : latest.updated_at,
     source_api: "fallback",
     total_count: facilities.length,
     operating_count: operatingCount,
@@ -391,22 +394,8 @@ async function main() {
     console.warn("  WARNING: Missing static air-quality.json");
   }
 
-  // Calculate updated_at from the latest realtime collection
-  let updatedAt = null;
-  for (const type of REALTIME_TYPES) {
-    if (realtimeData[type]?.collected_at) {
-      const t = new Date(realtimeData[type].collected_at);
-      if (!updatedAt || t > updatedAt) {
-        updatedAt = t;
-      }
-    }
-  }
-  updatedAt = updatedAt || new Date();
-
-  // Calculate data age
-  const now = new Date();
-  const dataAgeMinutes = Math.round((now - updatedAt) / 1000 / 60);
-  const isStale = dataAgeMinutes > 15;
+  // Use the oldest source represented in the snapshot, not aggregation time.
+  const freshness = collectionFreshness(realtimeData);
 
   // Calculate summary counts per facility type
   const summary = {};
@@ -514,9 +503,7 @@ async function main() {
 
   // Build the final output
   const latestData = {
-    updated_at: updatedAt.toISOString(),
-    data_age_minutes: dataAgeMinutes,
-    is_stale: isStale,
+    ...freshness,
     environment: environmentData,
     summary,
     stations,
@@ -526,13 +513,13 @@ async function main() {
   const outputPath = path.join(ROOT, "web", "public", "data", "latest.json");
 
   // Compare with previous output excluding volatile fields
-  // updated_at, data_age_minutes, is_stale change every run based on wall-clock time
+  // Collection timestamps remain tied to sources; age/stale change with wall-clock time
   if (previousLatest) {
     const stripVolatile = ({ updated_at, data_age_minutes, is_stale, ...rest }) => rest;
     const prevStable = JSON.stringify(stripVolatile(previousLatest));
     const newStable = JSON.stringify(stripVolatile(latestData));
     if (prevStable === newStable) {
-      console.log("\nlatest.json: no data changes, refreshing timestamp only");
+      console.log("\nlatest.json: no data changes, refreshing freshness metadata only");
     }
   }
 
@@ -540,7 +527,7 @@ async function main() {
 
   console.log(`\nBuilt latest.json:`);
   console.log(`  Updated at: ${latestData.updated_at}`);
-  console.log(`  Data age: ${dataAgeMinutes} minutes (stale: ${isStale})`);
+  console.log(`  Data age: ${freshness.data_age_minutes} minutes (stale: ${freshness.is_stale})`);
   console.log(`  Stations: ${Object.keys(stations).length}`);
   console.log(`  Output: ${outputPath}`);
 }

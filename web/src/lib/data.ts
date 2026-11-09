@@ -1,4 +1,5 @@
 import { LatestData } from '@/types';
+import { withCurrentFreshness } from './freshness';
 import { generateMockData } from './mock-data';
 import { fetchFromOpenData } from './opendata';
 
@@ -34,11 +35,11 @@ const CACHE_TTL = 5 * 60 * 1000; // 5분
 
 async function fetchWithCache(fetcher: () => Promise<LatestData>): Promise<LatestData> {
   if (cache && Date.now() - cache.fetchedAt < CACHE_TTL) {
-    return cache.data;
+    return withCurrentFreshness(cache.data);
   }
   const data = await fetcher();
   cache = { data, fetchedAt: Date.now() };
-  return data;
+  return withCurrentFreshness(data);
 }
 
 async function fetchLatestJson(): Promise<LatestData> {
